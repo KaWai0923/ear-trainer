@@ -1,0 +1,254 @@
+{
+  "errors": [],
+  "lessons": [
+    {
+      "index": 1,
+      "title": "Frequency spectrum 同 Octaves",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 2,
+      "title": "dB、Gain 同聽覺安全",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 3,
+      "title": "EQ types 同 Q",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 4,
+      "title": "Vocal EQ 問題頻段",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 5,
+      "title": "Compressor 參數同 GR meter",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 6,
+      "title": "Live sound Compression 實戰",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 7,
+      "title": "Comb filtering 同 Polarity",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 8,
+      "title": "Feedback 同 Ring-out workflow",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    },
+    {
+      "index": 9,
+      "title": "CL / QL Gain Structure",
+      "audioAB": true,
+      "step": true,
+      "quiz": true
+    }
+  ],
+  "persisted": true,
+  "shelf": true,
+  "comb": true,
+  "layouts": [
+    {
+      "width": 320,
+      "lesson": 1,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 2,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 3,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 4,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 5,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 6,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 7,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 8,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "lesson": 9,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 1,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 2,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 3,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 4,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 5,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 6,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 7,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 8,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "lesson": 9,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 1,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 2,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 3,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 4,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 5,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 6,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 7,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 8,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "lesson": 9,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 1,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 2,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 3,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 4,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 5,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 6,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 7,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 8,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "lesson": 9,
+      "overflow": false
+    }
+  ],
+  "trainingJump": true
+}

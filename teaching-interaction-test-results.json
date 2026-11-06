@@ -1,0 +1,8 @@
+{
+  "errors": [],
+  "wrongDoesNotComplete": true,
+  "nextPrevious": true,
+  "bandFilter": true,
+  "touchEq": true,
+  "positionDemoRingLevel": true
+}
