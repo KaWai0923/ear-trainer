@@ -4,7 +4,7 @@ const {JSDOM,VirtualConsole}=require('jsdom');
 const vm=require('node:vm');
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const root=path.resolve(__dirname,'..'),results=[];
-const scripts=['modules/events.js', 'modules/synthesis-core.js', 'modules/audio-resources.js', 'modules/audio-lifecycle.js', 'modules/offline-render.js','modules/visuals.js', 'samples.js', 'dsp-core.js', 'dsp-engine.js', 'dsp.js', 'training-logic.js', 'app.js', 'lessons.js', 'teaching.js', 'explore.js', 'sunny-calculators.js', 'sunny-diagrams.js', 'sunny-audio.js', 'sunny.js', 'modules/learning.js', 'modules/progress-store.js', 'modules/app-ui.js', 'modules/offline.js', 'modules/batch2-ui.js'];
+const scripts=[...fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/<script src="([^"]+)"/g)].map(m=>m[1].split('?')[0]);
 function fixture(width=1440,storage={},options={}){
  const errors=[],vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));vc.on('error',(...args)=>errors.push(args.join(' ')));
  const dom=new JSDOM(fs.readFileSync(path.join(root,'index.html'),'utf8'),{url:'http://localhost/',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc}),w=dom.window;

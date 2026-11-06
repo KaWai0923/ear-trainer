@@ -1,4 +1,26 @@
-# Current release: v1.7 · Batch 2
+# Current release: v1.8 · Batch 3
+
+## 新增（Moss 編寫，非 Sunny 教材）
+- **現場 Lab**：入口有獨立顯眼按鈕，亦可由 Teaching sidebar 進入；沿用 Teaching tab，唔混入 Sunny 原教材。
+- **6 個四步情境**：vocal/wedge、kick/bass、speech/fill alignment、speech dynamics、Dante 無聲、wireless dropout。先決策／計算，再跳到現有 Training／Explore，保留確切返回位置。Kick gate／Speech strip 有選做 checkpoint，讀取真正儲存嘅 DSP 參數（唔冒充聽感評分）。錯誤答案唔開下一步，容許重試；冇速度扣分、唔冒充真場能力認證。
+- **6 課新概念**：fill arrival delay、TF magnitude/phase/coherence、Dante、Canada/ISED-aware RF workflow、monitor mix、hearing/exposure。12 題 quick checks、來源連結、calculator／紙上模型、進度 ticks 同草稿。TF 圖係解析模型，唔係咪量度；reference delay 唔會改聲音。
+- **安全**：冇 microphone、真 feedback、實體 Dante／RF 控制、SPL-meter 或聽力診斷聲稱。NIOSH 85 dBA/8h/3 dB 只係手動假設 exposure 示範，唔係 Ontario 法例、個人安全保證或安全倒數；無自動播放，原本低音量、limiter、STOP 保持。RF 唔提供通用合法 MHz／power 表，必須核對最新 ISED、設備核准、牌照／條件同場地 coordination。
+- **選用手動跨裝置同步**：既有 JSON export/import 保留；新增預覽＋合併／取代。訓練題去重，完成 ticks 聯集，每日 counts 取較大值（可能少計，唔盲目相加），review 取較低 stage／同 stage 較早到期；草稿／整組 DSP snapshot 衝突可揀此機或匯入。A/B 非衝突 slots 保留。無 server、account、背景寫檔或加密；Safari/iOS 用下載／Files，支援嘅 desktop browser 可主動另存選定檔案。備份含進度／草稿，請保管私人檔案，音檔不包含在內。
+- Backup schema 仍為 1，新 Moss store 屬 optional extension；v1.6／1.7 備份可讀入，reset 包括新資料。v1.8 檔未必可回灌舊 App，兩邊請先升級。
+- `moss-course.json` 為內容來源；`modules/moss-model.js` 為純模型／store，`moss-course.js` 為 view／navigation，`progress-sync.js` 為手動合併／檔案 UI。Sunny JSON／Markdown 保持不變。
+
+## v1.8 QA / deployment
+
+執行 `NODE_PATH=/path/to/node_modules node tests/batch3.cjs` 會跑 **全部 Batch 1、2、3 suites**（包括 Sunny 45 examples／75 numeric assertions、實際 Node OfflineAudioContext AudioWorklets 數值測試）。結果：`batch3-test-results.json`，另保留 batch1／batch2 報告。測試依賴放喺 public folder 以外，無 build requirement。
+
+本次係 Node/jsdom（320／390／1440 DOM widths）同 Cache API model；**唔係 Chromium／Safari render 或真機測試，冇新 screenshots**。呢個環境冇可用嘅獲准 browser automation surface。舊 screenshots／舊 browser reports 只係歷史交付，唔係 v1.8 畫面驗證。部署前請真機核對 mobile overflow、VoiceOver、Safari audio interruption 同 installed-PWA offline reload。
+
+部署整個 static folder（無 git／無發布操作）；所有 runtime query、SW、precache 同步升至 1.8。使用者確認套用 update 後 Stop／reload；舊 sample cache 會清理，要重新下載選用錄音包先依賴 offline audio。新 Moss JSON／scripts 已加入 shell cache。
+
+---
+
+## Previous release: v1.7 · Batch 2 (historical notes)
+
 
 Audit items 7–12 implemented. Still plain static files: no build step, no git, no publishing. Deploy the complete folder including `modules/`, `icons/`, `manifest.webmanifest`, `sw.js`, `precache.json`, and `synthetic-worker.js`. Serve HTTPS (or localhost for development), from the folder's trailing-slash URL.
 

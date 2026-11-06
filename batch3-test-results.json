@@ -1,0 +1,109 @@
+{
+  "version": "1.8",
+  "environment": "Node/jsdom DOM widths 320/390/1440; real node-web-audio-api OfflineAudioContext AudioWorklets; Cache API model. NOT Chromium/Safari.",
+  "baseline": {
+    "batch1": {
+      "passed": 11,
+      "total": 11
+    },
+    "batch2": {
+      "passed": 20,
+      "total": 20
+    },
+    "numbers": {
+      "goldenMaxError": 0,
+      "eq": [
+        {
+          "sampleRate": 44100,
+          "maxErrorDb": 1.9967052167224608e-7,
+          "bins": 36
+        },
+        {
+          "sampleRate": 48000,
+          "maxErrorDb": 2.1333736066608822e-7,
+          "bins": 36
+        }
+      ],
+      "compressor": {
+        "staticMaxErrorDb": 5.109652114754226e-7,
+        "attack63Ms": 19.979166666666657,
+        "release63MsIncludingDetectorHold": 106.02083333333334
+      }
+    }
+  },
+  "tests": [
+    {
+      "name": "All batch 1 / 2 regression groups and actual OfflineAudioContext DSP audits",
+      "passed": true
+    },
+    {
+      "name": "Moss provenance, safe subject coverage, HTTPS references and scenario integrity",
+      "passed": true
+    },
+    {
+      "name": "Fill arrival calculations, negative case, NIOSH dose and unitless intermods",
+      "passed": true
+    },
+    {
+      "name": "TF analytic model: in-phase +6.02 dB, comb null, reference only affects phase, theoretical coherence",
+      "passed": true
+    },
+    {
+      "name": "Dante model separates clock/rate/routing/latency and real redundancy assumptions",
+      "passed": true
+    },
+    {
+      "name": "Every lesson renders at desktop/mobile DOM widths, accessible labels, interactive calculators, no automatic sound",
+      "passed": true
+    },
+    {
+      "name": "All six scenarios: wrong answer blocks progress, correct steps unlock, final completion and no scores fabricated",
+      "passed": true
+    },
+    {
+      "name": "Numeric/choice drafts, lesson quiz ticks, calculator inputs and selected scenario resume on reload",
+      "passed": true
+    },
+    {
+      "name": "Practice bridges / return to exact scenario; contextual quick Play cannot trigger missing base-course controls",
+      "passed": true
+    },
+    {
+      "name": "Moss backup roundtrip and all-progress reset; old v1.6/1.7 backup migration; malformed state/prototype rejection",
+      "passed": true
+    },
+    {
+      "name": "Manual merge is pure/idempotent: training dedupe, completions union, conservative daily counts and local/import draft conflicts",
+      "passed": true
+    },
+    {
+      "name": "File sync unsupported-browser fallback and explicit-only apply / write",
+      "passed": true
+    },
+    {
+      "name": "Actual Explore checkpoint reads saved gate/HPF/comp parameters, without changing DSP or opening sound",
+      "passed": true
+    },
+    {
+      "name": "Manual file preview never applies silently, cancel is final, apply stops audio, reset invalidates preview",
+      "passed": true
+    },
+    {
+      "name": "A/B snapshot non-conflicts survive merge, same-slot policy chooses one intact DSP state",
+      "passed": true
+    },
+    {
+      "name": "v1.8 worker/precache cover all new assets and runtime version tags",
+      "passed": true
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "errors": [],
+  "limits": [
+    "No permitted browser automation surface available: no new Chromium screenshots or rendered-layout claims.",
+    "No actual PA, microphone SPL, Dante devices or RF transmissions. All new labs are educational models.",
+    "iOS audio, VoiceOver and physical-device RAM/CPU require manual device checks.",
+    "Manual sync has no server/accounts/encryption; merge counts conservatively use daily max."
+  ]
+}

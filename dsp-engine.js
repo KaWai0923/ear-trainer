@@ -1,7 +1,7 @@
 'use strict';
 const SoundEngine={contexts:new WeakMap(),fallback:typeof AudioWorkletNode==='undefined',lastError:'',version:'custom-worklet'};
 async function ensureSoundWorklets(c){
- if(!SoundEngine.contexts.has(c)){const p=(async()=>{if(!c.audioWorklet||typeof AudioWorkletNode==='undefined')return false;try{await c.audioWorklet.addModule(new URL('audio-worklets.js?v=1.7',document.baseURI).href);return true}catch(e){SoundEngine.lastError=e.message;return false}})();SoundEngine.contexts.set(c,p)}
+ if(!SoundEngine.contexts.has(c)){const p=(async()=>{if(!c.audioWorklet||typeof AudioWorkletNode==='undefined')return false;try{await c.audioWorklet.addModule(new URL('audio-worklets.js?v=1.8',document.baseURI).href);return true}catch(e){SoundEngine.lastError=e.message;return false}})();SoundEngine.contexts.set(c,p)}
  c._soundWorkletReady=await SoundEngine.contexts.get(c);
  // An unsupported OfflineAudioContext must not mislabel a working realtime engine.
  if(typeof ctx!=='undefined'&&c===ctx)SoundEngine.fallback=!c._soundWorkletReady;

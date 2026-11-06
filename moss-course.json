@@ -1,0 +1,668 @@
+{
+  "version": 1,
+  "author": "Moss 編寫 · 非 Sunny 教材",
+  "checked": "2026-11-06 · Toronto",
+  "limits": "原創教學整理；外部文件係參考，唔係法規／設備相容性嘅持續監察。ISED 須重新核對最新標準同個案條件。所有 lab 都係理論／紙上模型；無咪輸入、真 PA feedback、網絡設備控制或 SPL 量度。",
+  "lessons": [
+    {
+      "id": "fill",
+      "title": "Fill delay：先比較 arrival time",
+      "points": [
+        "先確認擺位、coverage、polarity 同 routing，再比較 main 同 fill 喺指定聽音點嘅 arrival time；唔係一嚟就扭 EQ。",
+        "到達時間 = 距離 ÷ 聲速 + 該路 DSP latency。本模型用 c = 343 m/s（近室溫嘅近似），實場要量度同驗證。",
+        "Fill 額外 delay = main 到達時間 − fill 原本到達時間。負數代表 fill 本身較遲；唔可以輸入負 delay，要重新設計或延遲較早嘅路徑。",
+        "對齊一個點唔等於全場啱；要巡聽多個座位。為定位刻意令 fill 較遲，亦唔等於 broadband phase 對齊；冇「永遠加 10 ms」規則。",
+        "同源 coherent 唔代表同時到達。等 level、同相先有約 +6 dB；line array 冇固定 3→6 dB 分界，曲陣亦唔只得直段有作用。"
+      ],
+      "lab": "fill",
+      "quiz": [
+        {
+          "prompt": "Fill 計到 −4 ms，應該？",
+          "options": [
+            "輸入 −4 ms",
+            "重新評估路徑／擺位，必要時延遲較早嗰路"
+          ],
+          "correct": 1,
+          "why": "普通 DSP 唔能夠預知未到嘅訊號；先搵到較早路徑。"
+        },
+        {
+          "prompt": "單一座位對齊後？",
+          "options": [
+            "全場一定對齊",
+            "再睇重疊 coverage 同多個座位"
+          ],
+          "correct": 1,
+          "why": "相對距離隨聽音位置而變。"
+        }
+      ],
+      "sources": [
+        "https://support.rationalacoustics.com/support/solutions/articles/150000183871-what-is-coherence-"
+      ],
+      "practice": {
+        "view": "training",
+        "module": "comb"
+      }
+    },
+    {
+      "id": "transfer",
+      "title": "Transfer Function：Magnitude / Phase / Coherence",
+      "points": [
+        "Dual-channel TF 用 reference 同 measurement 比較；要共同時間參考。Measurement delay 補償係量測參考，唔係已經幫喇叭加咗 DSP delay。",
+        "本圖係解析模型 H(f)=exp(−jωt)×[1+a exp(−jωτ)]。改 reference delay 只改顯示 phase，唔會改聲音或 magnitude。",
+        "Coherence 係資料一致性／SNR 等量測品質線索，唔係「平直程度」或同時到達證明。實際估計需要多段 averaging；單段 FFT 並唔足夠。",
+        "圖中 γ²=|H|²/(|H|²+N)：只適用於 noiseless reference、固定 LTI、單位 reference PSD、獨立 output noise 呢組假設。係理論 expected coherence，唔係咪量度。固定 delay／反射本身唔必然降低理想 coherence。",
+        "先查時間參考、SNR、位置、時變同反射；實際 window／averaging 都有影響。唔好盲目加大音量追 coherence，亦唔好 boost 深 spatial null。呢度唔係 Smaart 或校準量測工具。"
+      ],
+      "lab": "transfer",
+      "quiz": [
+        {
+          "prompt": "移動 reference delay 會？",
+          "options": [
+            "改變實際喇叭 delay",
+            "只改圖上時間參考／phase"
+          ],
+          "correct": 1,
+          "why": "量測參考唔係 DSP 輸出延遲。"
+        },
+        {
+          "prompt": "高 coherence 等於？",
+          "options": [
+            "一定頻響平直",
+            "模型／量測較一致，仍要睇 magnitude、phase 同位置"
+          ],
+          "correct": 1,
+          "why": "穩定 comb filtering 都可以有高 coherence。"
+        }
+      ],
+      "sources": [
+        "https://support.rationalacoustics.com/support/solutions/articles/150000183871-what-is-coherence-"
+      ],
+      "practice": {
+        "view": "explore",
+        "preset": "Neutral"
+      }
+    },
+    {
+      "id": "dante",
+      "title": "Dante：分開 clock、routing、transport",
+      "points": [
+        "有 link 燈唔代表有聲。依次查設備／網絡可見性、clock sync、sample rate、subscription、接收 latency／late packets，再查 mixer mute／fader／patch。",
+        "模型假設冇 SRC，同一受支援 clock domain：TX / RX sample rate 要相容。Clock leader、external sync、PTP／AES67 設定依設備文件，唔可以一句話話所有 Dante 都用同一 PTP 版本。",
+        "Receiver latency 係接收 buffer budget，唔係「越低越專業」。依拓撲、設備同 late-packet 指標設定；更改可能中斷或重建 flows，先協調維護／彩排時段。",
+        "Redundant 要設備同模式支援；Primary / Secondary 唔互接。真正抵禦 switch 硬件故障要獨立硬件路徑，單一 switch 分 VLAN 唔會消除共同硬件故障。Switched / daisy-chain 唔等於 redundant。",
+        "唔好喺演出中盲拔線做 failover test。IGMP、QoS、EEE 或 multicast 設定依供應商／網管文件，唔係一張通用 checklist 全部亂開關。呢個係紙上診斷，唔會連接網絡設備。"
+      ],
+      "lab": "dante",
+      "quiz": [
+        {
+          "prompt": "RX meter 冇聲而 sample rate 唔同，第一步？",
+          "options": [
+            "加 EQ gain",
+            "檢查相容 sample rate／SRC、clock 同訂閱"
+          ],
+          "correct": 1,
+          "why": "先修 transport，EQ 唔會修復 subscription。"
+        },
+        {
+          "prompt": "兩個 port 接同一 switch 就保證 redundancy？",
+          "options": [
+            "係",
+            "唔係；要查 mode、設備能力同故障獨立性"
+          ],
+          "correct": 1,
+          "why": "同一 switch 仍係共同故障點。"
+        }
+      ],
+      "sources": [
+        "https://dev.audinate.com/GA/dante-controller/userguide/webhelp/content/device_config_tab.htm",
+        "https://support.getdante.com/hc/en-gb/articles/6530425472159-Setting-Primary-Secondary-redundant-networks"
+      ],
+      "practice": {
+        "view": "explore",
+        "preset": "Speech / podcast"
+      }
+    },
+    {
+      "id": "rf",
+      "title": "RF / Wireless：加拿大 ISED-aware 工作流程",
+      "points": [
+        "先列齊 mic、IEM、comms、型號／band variant、加拿大 certification、地點同用途；再按最新 ISED 標準／牌照條件同場地協調確認可用性。美國 FCC 規則唔可以直接套用加拿大。",
+        "ISED CPC-2-1-11 以 certification 標準區分 licence-exempt RSS-210 同需牌照 RSS-123 等情況；實際以最新標準、核准設備同適用條件為準。本課唔列通用「合法 MHz」表，亦唔作牌照判定。",
+        "Scan 安靜唔等於合法或相容。Inventory、場地 exclusions／當地干擾、manufacturer profiles、互調、所有開機 transmitter 同 backup frequencies 都要納入 coordination。",
+        "本模型只計兩 carrier 第三階位置 2f₁−f₂、2f₂−f₁，用無單位數字，唔係 MHz／配頻方案；唔計互調強度、三機組合或實際 receiver selectivity。",
+        "Antenna 擺位／遮擋、電池、線材、IEM 同近距離高功率 transmitter 都可能影響；過多 RF gain 可 overload。完成 coordination 後受控 walk test，同時預備有線 fallback。唔好用音訊 EQ 去醫 RF dropout。"
+      ],
+      "lab": "rf",
+      "quiz": [
+        {
+          "prompt": "Scan 見到好乾淨嘅頻率就可以發射？",
+          "options": [
+            "可以",
+            "唔可以；仲要查核准、牌照／適用條件同 coordination"
+          ],
+          "correct": 1,
+          "why": "低 noise floor 唔係法律授權或相容保證。"
+        },
+        {
+          "prompt": "Dropout 時一律加 RF gain？",
+          "options": [
+            "係",
+            "唔係；先分辨遮擋、干擾、過載、供電等原因"
+          ],
+          "correct": 1,
+          "why": "過載時再加 gain 反而差。"
+        }
+      ],
+      "sources": [
+        "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/learn-more/key-documents/procedures/client-procedures-circulars-cpc/cpc-2-1-11-licensing-procedure-licensed-wireless-microphones",
+        "https://content-files.shure.com/Pubs/WWB/en-US/en-US/calculate-and-deploy-frequencies.html"
+      ],
+      "practice": {
+        "view": "explore",
+        "preset": "Speech / podcast"
+      }
+    },
+    {
+      "id": "monitor",
+      "title": "Monitor mix：先人、咪、擺位，再 DSP",
+      "points": [
+        "先問歌手要聽乜，確認 mic pattern 同 wedge 位置／距離；減少不需要嘅 stage spill 同 send。Pre／post-fader、FX return 同 mute 行為要查清楚。",
+        "先確保 input 唔 clip，再設合理 HPF／窄範圍 correction；HPF 過高會削走需要嘅 fundamental。冇問題唔需要為咗靚條 curve 而 EQ。",
+        "Compressor makeup、FX 同 monitor send 改動都可能降低 feedback margin。Gate 唔係穩定系統嘅替代品，亦可能切走細聲字尾。",
+        "呢個 App 只有受控錄音／合成 ringing，唔係真實 PA loop，唔會讀咪或教你製造 feedback。Explore 係單 channel，唔等於完整多軌 band mix。",
+        "每次只改一項、match level 比較，再確認 FOH／monitor 其他路徑冇副作用；有風險就 Stop。約 −18 dBFS average、peaks ≤約 −6 dBFS 只係數碼 headroom 起點，唔係每個 meter／樂器嘅硬規則。"
+      ],
+      "lab": "monitor",
+      "quiz": [
+        {
+          "prompt": "Wedge 開始唔穩定，首選？",
+          "options": [
+            "加 compressor makeup",
+            "先降低需要嘅 send／增益，檢查咪同 wedge 擺位"
+          ],
+          "correct": 1,
+          "why": "先控制風險同聲學路徑。"
+        },
+        {
+          "prompt": "好聽就可以忽略 input clip？",
+          "options": [
+            "可以",
+            "唔可以；下游 fader 救唔返上游 clipping"
+          ],
+          "correct": 1,
+          "why": "先建立 headroom。"
+        }
+      ],
+      "sources": [],
+      "practice": {
+        "view": "training",
+        "module": "feedback"
+      }
+    },
+    {
+      "id": "hearing",
+      "title": "Hearing / SPL exposure：模型唔係安全保證",
+      "points": [
+        "App 冇校準咪，唔係 SPL meter、dosimeter 或聽力測試。Limiter 只限制數碼訊號，唔代表耳機／PA 聲壓安全；手機音量百分比亦冇固定 dBA 意義。",
+        "以下只用手動假設數字示範 NIOSH 職業建議模型：85 dBA、8 小時、3 dB exchange；88 dBA→4h、91→2h、94→1h、100→15min。唔係 Ontario 法例或人人安全門檻。",
+        "T=8×2^((85−L)/3) 小時；多段 dose=100×Σ(t/T)。88 dBA 2h 加 91 dBA 1h，模型 dose=100%。100% 唔代表冇風險；唔提供「仲可以安全聽幾耐」倒數。",
+        "加拿大規則依省／聯邦、行業同工作情境而異，要核對現行適用法規。衝擊聲、peak、個人敏感度同估計誤差未納入簡化模型；休息唔會將已累積 dose 清零。",
+        "優先減低音源／暴露時間、改善位置同安排安靜休息；耳塞要合適同 fit。唔可以將包裝 NRR／SNR 簡單直接扣落現場 dBA 當真實保護量。",
+        "耳痛、耳鳴或覺得聽覺變差就停、去安靜地方並尋求合資格醫療／聽力專業意見；突然聽力下降應盡快求醫。唔好靠 app 分數診斷。電力問題交合資格人員，唔好自行探測 live mains。"
+      ],
+      "lab": "hearing",
+      "quiz": [
+        {
+          "prompt": "App limiter 代表 PA 對耳仔安全？",
+          "options": [
+            "代表",
+            "唔代表；未知實際 SPL 同 exposure"
+          ],
+          "correct": 1,
+          "why": "數碼 peak 同耳仔收到嘅聲壓係唔同量。"
+        },
+        {
+          "prompt": "NIOSH 85 dBA / 8h 係 Ontario 通用法律？",
+          "options": [
+            "係",
+            "唔係；係指定職業建議模型，法規要另查"
+          ],
+          "correct": 1,
+          "why": "地區、行業、法規同個人風險不可混為一談。"
+        }
+      ],
+      "sources": [
+        "https://www.cdc.gov/niosh/noise/prevent/understand.html",
+        "https://www.ccohs.ca/oshanswers/phys_agents/exposure_can.html"
+      ],
+      "practice": {
+        "view": "explore",
+        "preset": "Neutral"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "wedge",
+      "title": "人聲混濁＋wedge 唔穩定",
+      "brief": "細舞台兩支 vocal mic；先穩定 monitor，再處理音色。所有「現場」狀態都係文字模擬，冇真 feedback。",
+      "steps": [
+        {
+          "id": "safe",
+          "prompt": "一開 send 開始有尖聲，首先？",
+          "options": [
+            "先減 send／需要時停聲，查 mic pattern、擺位",
+            "加 makeup 硬推過去",
+            "先 boost 6 kHz"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "先控制增益同聲學路徑，唔靠暴力 ring-out。",
+          "kind": "choice"
+        },
+        {
+          "id": "tone",
+          "prompt": "穩定後錄音仍有 mud，想作有用 A/B？",
+          "options": [
+            "越細聲嗰個一定較好",
+            "Level-match，小幅減 problem band，確認有冇削走 body"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "先喺 Vocal problems 辨認，再喺 Explore 比較；工具會另開，唔會自動播放。",
+          "kind": "choice",
+          "practice": {
+            "view": "training",
+            "module": "vocal"
+          }
+        },
+        {
+          "id": "ring",
+          "prompt": "一個窄頻 resonance 需要 correction，選擇？",
+          "options": [
+            "所有 31 band 拉到 −12 dB",
+            "有根據、適量窄 cut，再確認 headroom 同聽感"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "唔好濫 cut 或 boost spatial null；呢度只可以用安全模擬 GEQ 練手。",
+          "kind": "choice",
+          "practice": {
+            "view": "training",
+            "module": "feedback"
+          }
+        },
+        {
+          "id": "verify",
+          "prompt": "最後加咗 compressor makeup，應？",
+          "options": [
+            "重查 monitor send／gain margin，同歌手確認所需聲量",
+            "以前 ring 過一次就唔使再睇"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "Dynamics／routing 改動可能改變 margin；此概念自測唔係真場安全認證。",
+          "kind": "choice",
+          "practice": {
+            "view": "explore",
+            "preset": "Vocal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rhythm",
+      "title": "Kick / bass 低頻打交",
+      "brief": "先逐 channel 確認 headroom，再聽編曲 context。Explore 係單 channel，唔會假裝完整多軌混音。",
+      "steps": [
+        {
+          "id": "input",
+          "prompt": "Kick preamp 已 clip，拉低 channel fader 可否救返？",
+          "options": [
+            "可以",
+            "唔可以；降低上游 gain、保留 headroom"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "下游 level 唔能夠還原已經 clip 嘅波形。",
+          "kind": "choice"
+        },
+        {
+          "id": "gate",
+          "prompt": "Gate 食咗細聲 kick 同尾音，應？",
+          "options": [
+            "調 threshold／range／hold／release，聽 attack 同尾音",
+            "一律更高 threshold、更短 release"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "避免把 gate 當 feedback fix；先保留演奏動態。",
+          "kind": "choice",
+          "practice": {
+            "view": "explore",
+            "preset": "Kick"
+          },
+          "dsp": {
+            "kind": "gate-tail",
+            "instruction": "去 Kick Explore，示範將 Gate ON、range 20 dB、hold 100 ms、release 200 ms；返回後檢查目前儲存嘅設定。只係聆聽實驗目標，唔係真場標準。"
+          }
+        },
+        {
+          "id": "comp",
+          "prompt": "Bass 忽大忽細：應點比較 compression？",
+          "options": [
+            "Match output level，觀察 GR／回復同 groove",
+            "越大聲越代表壓得靚"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "Attack／release 冇一組萬用值；先聽 transient、sustain 同 pumping。",
+          "kind": "choice",
+          "practice": {
+            "view": "training",
+            "module": "compression"
+          }
+        },
+        {
+          "id": "mix",
+          "prompt": "單獨 bass 聽得好就完成？",
+          "options": [
+            "完成",
+            "再放返完整 mix，確認 kick / bass 角色同其他位置"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "單 source demo 唔係實際多軌驗收；冇問題唔使為圖好睇而 EQ。",
+          "kind": "choice",
+          "practice": {
+            "view": "explore",
+            "preset": "Bass"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fills",
+      "title": "宴會廳 speech fill 有 echo",
+      "brief": "同一訊號：main 到座位 12 m、DSP 1 ms；fill 3 m、DSP 2 ms。先假設 c=343 m/s。",
+      "steps": [
+        {
+          "id": "reference",
+          "prompt": "開始比 phase 前應？",
+          "options": [
+            "確認同一 reference、routing、polarity 同 measurement delay",
+            "見到 dip 就 boost 18 dB"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "先查位置／時間參考，避免 boost 幾何 null。",
+          "kind": "choice",
+          "practice": {
+            "view": "lesson",
+            "id": "transfer"
+          }
+        },
+        {
+          "id": "delay",
+          "kind": "number",
+          "prompt": "Fill 應額外加幾多 ms？（容差 ±0.5 ms）",
+          "expected": 25.23906705539359,
+          "tolerance": 0.5,
+          "why": "Main=12/343×1000+1=35.985 ms；fill=3/343×1000+2=10.746 ms；相差 25.239 ms。",
+          "practice": {
+            "view": "lesson",
+            "id": "fill"
+          }
+        },
+        {
+          "id": "meaning",
+          "prompt": "改 TF reference delay 等於已經處理 fill DSP？",
+          "options": [
+            "等於",
+            "唔等於；reference 只改量測顯示"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "真正 DSP 要另行設定並以實測／聽感確認。",
+          "kind": "choice"
+        },
+        {
+          "id": "coverage",
+          "prompt": "一個座位對齊後？",
+          "options": [
+            "巡聽多區、確認 level／coverage／定位，安全情況先驗證",
+            "保證全場同相同時到達"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "位置改變相對路徑；唔好盲目套固定額外 delay。",
+          "kind": "choice",
+          "practice": {
+            "view": "training",
+            "module": "comb"
+          }
+        }
+      ]
+    },
+    {
+      "id": "speech",
+      "title": "嘉賓 speech 忽大忽細",
+      "brief": "換嘉賓後 proximity effect、峰值同 intelligibility 都變咗；唔好用單一 preset 當答案。",
+      "steps": [
+        {
+          "id": "source",
+          "prompt": "咪距離變動又 input clip，先？",
+          "options": [
+            "協助穩定咪距、調 trim 留 headroom",
+            "只壓 limiter 然後加 fader"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "先 source／input，再做 dynamics。",
+          "kind": "choice"
+        },
+        {
+          "id": "hpf",
+          "prompt": "HPF 應？",
+          "options": [
+            "固定 400 Hz 先專業",
+            "逐步減不需要 rumble，唔好切走聲音 body"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "按素材判斷，冇一個 frequency 適合所有聲。",
+          "kind": "choice",
+          "practice": {
+            "view": "explore",
+            "preset": "Speech / podcast"
+          },
+          "dsp": {
+            "kind": "speech-strip",
+            "instruction": "去 Speech Explore，示範將 HPF ON 70 Hz、compressor ON、threshold −26 dBFS、ratio 2:1、makeup 0 dB；返回檢查設定並試聽。唔係所有嘉賓嘅標準答案。"
+          }
+        },
+        {
+          "id": "level",
+          "prompt": "Compressor A/B 應？",
+          "options": [
+            "Match makeup level，睇 GR 同字頭／字尾",
+            "比較邊個大聲就算"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "避免 louder-is-better 偏差，亦留意 monitor margin。",
+          "kind": "choice",
+          "practice": {
+            "view": "training",
+            "module": "compression"
+          }
+        },
+        {
+          "id": "safety",
+          "prompt": "覺得刺耳、聽覺攰應？",
+          "options": [
+            "推大音量習慣佢",
+            "降低／停止，休息及評估暴露；有症狀求專業意見"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "數碼 meter 同 limiter 冇量度耳仔 SPL。",
+          "kind": "choice",
+          "practice": {
+            "view": "lesson",
+            "id": "hearing"
+          }
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "title": "Dante TX 有 meter，RX 冇聲",
+      "brief": "TX=48 kHz、RX=44.1 kHz；本模型冇 SRC。維護窗口先改會中斷嘅設定。",
+      "steps": [
+        {
+          "id": "transport",
+          "prompt": "第一個明確問題？",
+          "options": [
+            "EQ boost 唔夠",
+            "Sample rate 唔相容；再檢查 clock／subscription"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "將 transport 同 mixer audio-path 問題分開。",
+          "kind": "choice",
+          "practice": {
+            "view": "lesson",
+            "id": "dante"
+          }
+        },
+        {
+          "id": "latency",
+          "prompt": "Sample rate 修好但有 late packets？",
+          "options": [
+            "盲目選最低 latency",
+            "查網絡同 receiver budget，協調後按設備文件調整"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "唔好未排查就亂改 QoS／IGMP，live 改 latency 可能中斷 flows。",
+          "kind": "choice"
+        },
+        {
+          "id": "redundancy",
+          "prompt": "Primary / Secondary 接同一 switch，保證不怕 switch 死？",
+          "options": [
+            "唔保證；查獨立硬件、mode／能力，唔互接 P/S",
+            "保證"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "VLAN 唔會移除共同硬件故障。",
+          "kind": "choice"
+        },
+        {
+          "id": "handoff",
+          "prompt": "Transport ready 後仍無 FOH 聲，下一步？",
+          "options": [
+            "安全檢查 patch／mute／trim／fader；低 level 驗證",
+            "Live 直接拔所有 primary cables 測試"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "受控排查由訊號路徑逐段確認；呢個 app 唔會控制 Dante 設備。",
+          "kind": "choice",
+          "practice": {
+            "view": "explore",
+            "preset": "Speech / podcast"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wireless",
+      "title": "Wireless 彩排正常，開 show dropout",
+      "brief": "附近加咗 IEM 同其他劇組設備；先分 RF／network／audio 症狀，準備有線後備。",
+      "steps": [
+        {
+          "id": "law",
+          "prompt": "見 scan 乾淨就部署新 frequency？",
+          "options": [
+            "先確認加拿大 certification、適用 ISED 條件／牌照、場地 inventory 同 coordination",
+            "直接照美國 FCC 網上列表"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "唔作通用合法 band 判定；以現行 ISED、設備核准同場地條件為準。",
+          "kind": "choice",
+          "practice": {
+            "view": "lesson",
+            "id": "rf"
+          }
+        },
+        {
+          "id": "coord",
+          "prompt": "只 scan 自己一支 mic 夠？",
+          "options": [
+            "夠",
+            "納入 mic／IEM／comms、exclusions／互調、全系統同備頻"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "Scan 冇干擾唔等於所有 transmitter 開機後都相容。",
+          "kind": "choice"
+        },
+        {
+          "id": "diagnose",
+          "prompt": "遇到近距離大功率 IEM 旁邊 dropout，應？",
+          "options": [
+            "一律加最大 RF gain",
+            "查 antenna／遮擋／overload／電池、供電同協調"
+          ],
+          "correct": [
+            1
+          ],
+          "why": "過多 gain 可造成 overload；先分清 RF 同 audio clipping。",
+          "kind": "choice"
+        },
+        {
+          "id": "fallback",
+          "prompt": "節目快開始仍唔穩定？",
+          "options": [
+            "用事先測好嘅有線 fallback，安全驗證 gain，記錄交更",
+            "用 EQ 同大 volume 掩蓋 dropout"
+          ],
+          "correct": [
+            0
+          ],
+          "why": "安全 handoff 比盲推 gain 好；呢度只係決策練習，唔係 RF 配頻認證。",
+          "kind": "choice",
+          "practice": {
+            "view": "explore",
+            "preset": "Speech / podcast"
+          }
+        }
+      ]
+    }
+  ]
+}
