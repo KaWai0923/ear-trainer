@@ -1,0 +1,61 @@
+{
+  "browserValidation": "NOT RUN: no permitted browser automation tool available",
+  "screenshots": {
+    "captured": false,
+    "reason": "No browser/desktop tool; existing PNGs predate this batch"
+  },
+  "viewportLogicWidths": [
+    1440,
+    390
+  ],
+  "runner": "Node + jsdom (mocked audio nodes/canvas), not Chromium; no real audio/rendering/CPU claim",
+  "tests": [
+    {
+      "name": "1: opposite-sign / flat EQ cannot pass; per-skill mastery rejects legacy false positives",
+      "passed": true
+    },
+    {
+      "name": "2: live GEQ nodes update without restart, clear and bypass restore unity; actual-response scoring",
+      "passed": true
+    },
+    {
+      "name": "3: first play preserves question and answer; reading/download/idle excluded from elapsed",
+      "passed": true
+    },
+    {
+      "name": "4: four entry points, safety-gated onboarding and contextual return",
+      "passed": true
+    },
+    {
+      "name": "5: mobile folds / compact GEQ, empty graph cannot drag, node drag changes response, ordinary wheel preserved",
+      "passed": true
+    },
+    {
+      "name": "6a: Sunny answers, reference acknowledgements and calculator drafts survive panel and top-level navigation",
+      "passed": true
+    },
+    {
+      "name": "6b: versioned backup round-trip, all-store reset, invalid/prototype/unsafe-DSP rejection",
+      "passed": true
+    },
+    {
+      "name": "6c: teaching quiz and pending training answer restore; corrupted legacy storage does not crash",
+      "passed": true
+    },
+    {
+      "name": "6d: tab return keeps pending question, reload keeps Explore snapshots without playback, storage-denied mode stays usable",
+      "passed": true
+    },
+    {
+      "name": "2b: compatibility scoring reads native getFrequencyResponse, not the matched-filter approximation",
+      "passed": true
+    },
+    {
+      "name": "Sunny formula regression: all 45 approved example fixtures still match",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": 11,
+  "total": 11
+}

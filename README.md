@@ -1,3 +1,32 @@
+# Current release: v1.6 · Batch 1
+
+Items 1–6 are implemented. No git actions or publishing. Static deployment still has no build step; upload the complete folder, including new `training-logic.js` and `batch1.js`. Changed asset references use `?v=1.6` to avoid mixing old cached UI scripts with this release.
+
+- EQ wrong-sign / flat answers cannot pass; Level 2 also checks per-skill mastery. Legacy scores remain visible, but cannot falsely establish new EQ mastery.
+- Ring-out has 31 live filter nodes; band controls, ±1 dB, clear and bypass change the current audition without a restart. Scoring reads the actual matched-filter math, or native `getFrequencyResponse` in compatibility mode. Tone-damage penalty is separate. Practice is untimed; Challenge speed counts only successful, bounded audition time.
+- First Play preserves the question and controls. Session countdown starts only after successful playback; explicit pause and background pause are supported.
+- Four labelled entry points, optional safety-gated A/B onboarding, and contextual return-to-lesson navigation.
+- Compact mobile channel folds/jumps, sticky shared transport, scrollable graph background and 44 px node-only touch targets. Q uses the existing slider or Alt+wheel. Mobile ring-out uses band buttons plus ±1 dB instead of the long fader bank.
+- Autosaved Teaching/Sunny form and calculator drafts, pending Training answers, Explore state/snapshots, and last view. No automatic playback after reload.
+- Unified all-progress reset; versioned, validated JSON export/import with unsafe keys/ranges rejected. Imported audio and separately imported course JSON are deliberately NOT embedded; retain those original files. Local progress remains origin-specific until exported/imported.
+
+## v1.6 verification status
+
+`tests/batch1.cjs` runs 11 Node + jsdom regression groups, including all 45 Sunny formula fixtures / 75 numeric checks. Audio nodes/canvas are mocks: the suite verifies state, wiring, AudioParam updates, scoring and interaction handlers, NOT audible sound, real layout or phone CPU. Results: `batch1-test-results.json`.
+
+Re-run without adding runtime dependencies to the app:
+
+```sh
+npm install --prefix /tmp/soundcheck-tests jsdom
+NODE_PATH=/tmp/soundcheck-tests/node_modules node tests/batch1.cjs
+```
+
+No permitted browser/desktop automation tool was available for this batch. Chromium and fresh desktop/mobile screenshots were therefore NOT run/captured. Existing screenshot PNGs and earlier Chromium reports below predate v1.6; do not treat them as current validation. Browser acceptance still needed: desktop 1440 px and mobile 390/320 px, real node drag/scroll, audible live GEQ, iOS audio, console/network errors and fresh screenshots.
+
+The earlier release notes below are historical.
+
+---
+
 # Soundcheck Lab · Live Sound 練耳室 v1
 
 無 backend／build step。請用 HTTP(S) static server：例如喺呢個資料夾用 `python3 -m http.server 8000`，再開 `http://localhost:8000`。唔好用 file://（JSON fetch / AudioWorklet 需要正確 origin）；worklet 要 HTTPS 或 localhost。首次主動播放先啟動 Web Audio。呢個交付無 git 操作、無公開部署。
