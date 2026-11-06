@@ -1,0 +1,22 @@
+{
+  "errors": [],
+  "rotaryDragValue": "-9",
+  "doubleClickReset": true,
+  "touchKnobValue": "-28",
+  "eqAB": true,
+  "compABAndCopy": true,
+  "eqBypass": true,
+  "compBypass": true,
+  "spectrumEnergy": "14325",
+  "peakHolds": [
+    "HOLD -4.2",
+    "HOLD 22.2",
+    "HOLD -4.2"
+  ],
+  "noQuestionLeak": true,
+  "dragLabel": {
+    "freq": 2380.7062535329446,
+    "gain": 9.072
+  },
+  "overflow": false
+}

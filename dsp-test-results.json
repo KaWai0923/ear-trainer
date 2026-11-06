@@ -1,0 +1,164 @@
+{
+  "errors": [],
+  "eqAnswer": {
+    "freq": 3576,
+    "gain": 12.9,
+    "Q": 1.4,
+    "amount": "light",
+    "fast": false,
+    "delay": 1,
+    "flip": false,
+    "nullFreq": null,
+    "problem": "none",
+    "fix": "none"
+  },
+  "dragChangesResponse": true,
+  "meters": {
+    "gr": -17.943458557128906,
+    "input": -7.066519372632115,
+    "output": -11.020013367322342,
+    "match": 0.7739666124000761
+  },
+  "layouts": [
+    {
+      "width": 320,
+      "module": "frequency",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "eq",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "compression",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "comb",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "vocal",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "sandbox",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "frequency",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "eq",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "compression",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "comb",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "vocal",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "sandbox",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "frequency",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "eq",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "compression",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "comb",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "vocal",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "sandbox",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "module": "frequency",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "module": "eq",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "module": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "module": "compression",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "module": "comb",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "module": "vocal",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "module": "sandbox",
+      "overflow": false
+    }
+  ]
+}

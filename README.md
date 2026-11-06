@@ -67,3 +67,25 @@ Limitations: Freesound HQ previews are lossy originals for this build. Short phr
 
 ### Validation for sample update
 Headless Google Chrome: all 12 MP3s fetched and decoded (nonzero RMS, 10–20 s), all six modules played original/question/answer, synthetic and local import paths passed, delayed fetch + STOP cancelled correctly. Zero console/page errors. No horizontal overflow for all five sample-based modules at widths 320, 390, 768, 1280. See `sample-test-results.json` and `samples-mobile-screenshot.png`. No real iOS or human listening validation performed.
+
+
+## DSP channel-strip GUI update
+
+New `dsp.js` must be deployed alongside app.js, samples.js, style.css and samples/.
+No libraries, build step or external requests were added for DSP.
+
+- EQ and Vocal exercises: responsive log-frequency 20 Hz–20 kHz / ±18 dB canvas, actual combined BiquadFilterNode.getFrequencyResponse response. Pointer/touch-drag frequency/gain; wheel or Q slider. EQ canvas is an answer input, synchronized with continuous numeric Hz/gain/Q controls. Practice/Challenge hide the correct curve until Reveal; Learn shows it. Correct curve is amber/dashed against green user curve. Vocal graph is the correction curve (not the problem boost); a custom EQ audition is optional. Vocal scoring remains problem category + treatment, not the custom curve.
+- Feedback: 31 vertical cut faders, horizontally scrollable on phones, with combined response matching the existing Q=4.318 peaking-filter processing. Existing band buttons / selected-band control and reset are synchronized.
+- DSP Sandbox: unscored, sample picker including real/synthetic/imported audio, 4-band PEQ, switchable 12 dB/oct HPF/LPF, compressor and 20-second playback. EQ and compressor parameter changes update the live audio path; enabling/disabling a pass filter stops audio for an intentional restart. Existing master volume/limiter/soft ceiling remain active.
+- Compressor: threshold, ratio, knee, attack, release, makeup; soft-knee transfer illustration; actual live DynamicsCompressorNode.reduction meter and peak input/output dBFS meters, pre-master. The browser's internal static knee is not exactly exposed, so the transfer illustration is explicitly labelled approximate. Compression exercise hides all DSP detail until Reveal (or Learn) to avoid answer leakage. A/B remains RMS-matched via offline calibration followed by live compression; calibration gain is displayed separately from makeup. Revealed B settings can be tweaked; original A remains Light/Fast.
+- Live spectrum is now available behind the EQ curve in Sandbox / Reveal / Learn; hidden before a scored question is revealed. Its independent display scale is −100 to −10 dBFS. Audio meters are signal meters, not physical SPL or hearing-safety measurements.
+
+Validation: headless Chromium tested mouse dragging, touch dragging via CDP, Q slider, faders/reset, playback, live EQ gain and compressor threshold/ratio wiring, HPF topology, actual nonzero gain reduction, hidden-answer/reveal states. No console/page errors. No horizontal page overflow at 320/390/768/1280 px across all seven modules. Existing sample decoding/import/STOP-during-load tests also rerun. See `dsp-test-results.json`, `dsp-touch-test-results.json`, `sample-test-results.json` and `dsp-mobile-screenshot.png`. Real iPhone/Android audio and human listening were not tested.
+
+
+### Plugin-style polish
+Original **PRISM EQ** / **FORGE DYNAMICS** visual design (no third-party logos or copied skins): large dark EQ display, glowing curve, independently coloured band nodes, live AnalyserNode spectrum and on-drag Hz/dB tooltip. Compressor has a brushed dark chassis, six rotary knobs (vertical mouse/touch drag, fine slider, keyboard arrows, double-click/double-tap factory reset), luminous value windows, LED GR meter and IN/OUT meters with 1.5-second peak hold and decay. Spectrum uses smoothed data / 30fps display; meter and knob movements are animated.
+
+Each processor has real bypass plus A/B setting snapshots and a copy-to-other-slot button. Sandbox bypass crossfades live dry/wet routes; EQ exercise bypass auditions the user's processing on replay, never changes the hidden question. Snapshot slots are local to the current module, not persistent saved presets. A/B changes pass-filter topology stop playback for restart, as do the corresponding HPF/LPF switches.
+
+`plugin-test-results.json` verifies mouse rotary drag, double-click reset, mobile touch knob/graph drags, tooltip, EQ and compressor A/B recall/copy, actual dry/wet bypass gains, zero bypass GR, active spectrum, peak-hold readouts, hidden-question spectrum and mobile overflow. `plugin-desktop-screenshot.png` and `plugin-mobile-screenshot.png` show the updated design. Existing DSP and sample regression tests remain available.
