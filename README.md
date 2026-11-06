@@ -27,3 +27,43 @@
 ## 驗證
 `node --check app.js` 通過。
 Headless Chromium 實測六模組 A/B/答案播放、Reveal、三種模式、390px mobile 無橫向溢出、本機 WAV 解碼／loop、localStorage 保留、正確答案 100%、20題升級、Stop／visibilitychange／session 到時停聲。冇 JavaScript pageerror／console error。RMS matching 有程式數值核對。結果在 `test-results.json`、`edge-test-results.json`；`mobile-screenshot.png` 係測試畫面。
+
+## Real sample library (v1.1)
+
+12 locally hosted, CC0 1.0 recordings; 44.1 kHz stereo MP3 at 128 kbps.
+Serve the complete folder over HTTP(S) (fetching built-in MP3 files is not supported from file://).
+Audio is decoded lazily, cached in memory; no user files leave the browser.
+Each non-tone module has its own remembered-in-session picker and fitting default.
+The original synthetic sources and local file importer remain available.
+
+### Provenance
+
+- `samples/female-sung.mp3` — owstu; CC0 1.0; https://freesound.org/people/owstu/sounds/508814/
+  Short improvised notes, repeated. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/male-sung.mp3` — Hajisounds; CC0 1.0; https://freesound.org/people/Hajisounds/sounds/679210/
+  Processed sung F note: autotune, phasing and reverb; repeated. Not a dry vocal. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/female-spoken.mp3` — pyro13djt; CC0 1.0; https://freesound.org/people/pyro13djt/sounds/367425/
+  Welcome to Lazare Edits; phrase with pauses. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/male-spoken.mp3` — germanio; CC0 1.0; https://freesound.org/people/germanio/sounds/369908/
+  Audio signal processing for music applications; repeated. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/kick.mp3` — Sound_Bar_KK; CC0 1.0; https://freesound.org/people/Sound_Bar_KK/sounds/685865/
+  Acoustic kick one-shot repeated with a 0.75 s beat interval. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/snare.mp3` — KEVOY; CC0 1.0; https://freesound.org/people/KEVOY/sounds/82249/
+  DW custom shop snare one-shot repeated with a 0.75 s beat interval. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/drum-kit.mp3` — esares; CC0 1.0; https://freesound.org/people/esares/sounds/431874/
+  Acoustic drums performed by Pedro Galindo. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/bass.mp3` — josefpres; CC0 1.0; https://freesound.org/people/josefpres/sounds/483131/
+  Electric bass guitar phrase repeated. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/acoustic-guitar.mp3` — deadrobotmusic; CC0 1.0; https://freesound.org/people/deadrobotmusic/sounds/628766/
+  Strummed loop at 155 BPM. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/electric-guitar.mp3` — loudernoises; CC0 1.0; https://freesound.org/people/loudernoises/sounds/453384/
+  Gibson Les Paul Junior DI; strumming and arpeggiation. No effects. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/piano.mp3` — amandajbono; CC0 1.0; https://freesound.org/people/amandajbono/sounds/146165/
+  Improvised acoustic piano excerpt. Trimmed/repeated, loudness normalized to -23 LUFS target, peak ceiling -3 dBTP, edge fades, 44.1 kHz MP3 128 kbps.
+- `samples/full-mix.mp3` — German OER Community (Jointly), 2017; CC0 1.0; https://jointly.info/oer-song/
+  30–50 s excerpt of Share for Free; vocals and band. Credits: Annett Zobel, Britta Radig, Christian Rotzoll, Jan Rieger, Lia Orr, Matthias Hupfer, Petra Amasreiter, Philipp von Böselager, Stephan Clemenz, Steffen Hippeli, Tobias Westphal, Torsten Simon. Excerpt, normalized -23 LUFS target / -3 dBTP, fades, MP3 128 kbps.
+
+Limitations: Freesound HQ previews are lossy originals for this build. Short phrases/hits are repeated to make training loops. Male singing is already processed (not dry); there are no long dry sung stems. Loop joins are faded but not guaranteed beat-perfect. Real iOS/device listening still required.
+
+### Validation for sample update
+Headless Google Chrome: all 12 MP3s fetched and decoded (nonzero RMS, 10–20 s), all six modules played original/question/answer, synthetic and local import paths passed, delayed fetch + STOP cancelled correctly. Zero console/page errors. No horizontal overflow for all five sample-based modules at widths 320, 390, 768, 1280. See `sample-test-results.json` and `samples-mobile-screenshot.png`. No real iOS or human listening validation performed.

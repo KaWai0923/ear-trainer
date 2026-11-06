@@ -1,0 +1,221 @@
+{
+  "errors": [],
+  "decoded": [
+    {
+      "id": "female-sung",
+      "duration": 10,
+      "rms": 0.04072646233422684,
+      "peak": 0.16011303663253784,
+      "channels": 2
+    },
+    {
+      "id": "male-sung",
+      "duration": 13.4008125,
+      "rms": 0.04017133652390606,
+      "peak": 0.1191733255982399,
+      "channels": 2
+    },
+    {
+      "id": "female-spoken",
+      "duration": 20,
+      "rms": 0.04644152190979088,
+      "peak": 0.359645277261734,
+      "channels": 2
+    },
+    {
+      "id": "male-spoken",
+      "duration": 12.74775,
+      "rms": 0.048500667267222346,
+      "peak": 0.4758179485797882,
+      "channels": 2
+    },
+    {
+      "id": "kick",
+      "duration": 12,
+      "rms": 0.045340506373045465,
+      "peak": 0.49993205070495605,
+      "channels": 2
+    },
+    {
+      "id": "snare",
+      "duration": 12,
+      "rms": 0.03674077705202624,
+      "peak": 0.49357911944389343,
+      "channels": 2
+    },
+    {
+      "id": "drum-kit",
+      "duration": 18.143979166666668,
+      "rms": 0.06016661704423849,
+      "peak": 0.6617557406425476,
+      "channels": 2
+    },
+    {
+      "id": "bass",
+      "duration": 10,
+      "rms": 0.053214787636968436,
+      "peak": 0.2664402723312378,
+      "channels": 2
+    },
+    {
+      "id": "acoustic-guitar",
+      "duration": 16.300395833333333,
+      "rms": 0.0430469803478503,
+      "peak": 0.45301735401153564,
+      "channels": 2
+    },
+    {
+      "id": "electric-guitar",
+      "duration": 10.7885625,
+      "rms": 0.04108042879376655,
+      "peak": 0.3301248848438263,
+      "channels": 2
+    },
+    {
+      "id": "piano",
+      "duration": 20,
+      "rms": 0.04026066470271595,
+      "peak": 0.5279598832130432,
+      "channels": 2
+    },
+    {
+      "id": "full-mix",
+      "duration": 20,
+      "rms": 0.05354451611957589,
+      "peak": 0.24591924250125885,
+      "channels": 2
+    }
+  ],
+  "modules": [
+    {
+      "id": "frequency",
+      "source": "full-mix"
+    },
+    {
+      "id": "eq",
+      "source": "full-mix"
+    },
+    {
+      "id": "feedback",
+      "source": "full-mix"
+    },
+    {
+      "id": "compression",
+      "source": "drum-kit"
+    },
+    {
+      "id": "comb",
+      "source": "acoustic-guitar"
+    },
+    {
+      "id": "vocal",
+      "source": "female-spoken"
+    }
+  ],
+  "pickerCount": 16,
+  "layouts": [
+    {
+      "width": 320,
+      "id": "eq",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "id": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "id": "compression",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "id": "comb",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "id": "vocal",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "id": "eq",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "id": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "id": "compression",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "id": "comb",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "id": "vocal",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "id": "eq",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "id": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "id": "compression",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "id": "comb",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "id": "vocal",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "id": "eq",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "id": "feedback",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "id": "compression",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "id": "comb",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "id": "vocal",
+      "overflow": false
+    }
+  ],
+  "localFileImport": true,
+  "stopDuringLoad": true,
+  "totalBytes": 2818184
+}
