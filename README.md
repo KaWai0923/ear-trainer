@@ -1,3 +1,30 @@
+# Current release: v1.7 · Batch 2
+
+Audit items 7–12 implemented. Still plain static files: no build step, no git, no publishing. Deploy the complete folder including `modules/`, `icons/`, `manifest.webmanifest`, `sw.js`, `precache.json`, and `synthetic-worker.js`. Serve HTTPS (or localhost for development), from the folder's trailing-slash URL.
+
+## Changes
+
+- **PCM/RAM:** 32 MiB retained PCM budget with LRU eviction, in-flight reservations and playing-buffer leases. Built-in samples are lazy-decoded; synthetic sources are generated only when chosen, in a Worker (cooperative chunks if Worker is unavailable). User import checks metadata BEFORE reading/decoding: ≤12 MiB compressed, ≤60 s, mono/stereo, ≤24 MiB estimated/decoded PCM. Longer files must be locally trimmed first; this release does not stream whole songs. High sample rates reduce accepted duration. Temporary decoder/OfflineAudioContext memory is additional; this is not a total browser-heap guarantee.
+- **CPU:** reuse analyser arrays; visible/playing-only plugin drawing, 8 fps reduced-motion meters, idle checks without repainting, serialised/cached scalar RMS calibration. Detector/envelope constants are cached without changing DSP samples (golden max difference 0). No phone CPU benchmark is claimed. If realtime worklets work but offline worklets do not, scalar RMS matching uses the identical custom compressor math in cooperative chunks; it does not silently mark the realtime engine as native.
+- **iOS recovery:** statechange UI for suspended/interrupted/closed, bounded resume timeout, prominent explicit Resume and safe Rebuild; no automatic playback or gain increase. Page return stays silent. Stop invalidates pending Sunny auditions too, and PCM leases are released even if a closed context rejects gain automation. Physical iPhone/call/Bluetooth tests are still needed.
+- **PWA:** installable manifest/icons, scoped versioned service worker, complete versioned app-shell/course cache, explicit download/removal of all 12 MP3s (~2.69 MiB), byte-range support, update check and user-approved save/Stop/reload. Initial shell install fails cleanly if incomplete; other sites' caches are untouched. Sunny's course manifest is network-first and prefetches its JSON files, preserving JSON-only course additions; offline falls back to cached material. Browser storage can still be evicted: JSON progress backups remain important. A new cache version clears old-version recordings; re-download the optional sample pack after an update before relying on offline audio.
+- **Adaptive practice:** per-module recent weak-band weighting with 25% uniform exploration; missed vocal/compression/comb targets are revisited. Due review targets can be launched directly; buttons do not reveal the answer frequency. Existing local stats are used; this is not a diagnostic hearing test or a guarantee a particular headphone/sample reproduces every frequency.
+- **Accessibility:** actual keyboard tabs/ARIA-selected/controlled hidden panels, lesson/module focus restoration, numeric EQ alternatives, expanded rotary keys (Home/End/PageUp/PageDown), Alt+wheel only, Escape Stop, skip link, clearer text/LED states and reduced-motion CSS. Selected contrast pairs pass 4.5:1; no blanket WCAG/VoiceOver certification.
+- **Retention:** 3/5/10-question goals, Toronto calendar/DST, private daily counts, clearly labelled healthy-habit streak (rest days count but do not impersonate practice), and missed-target review at 15 min / 1 / 3 / 7 / 14 / 30 days. No reward for louder/longer listening or competitive leaderboard.
+- **Modules/tests:** `modules/events.js` provides explicit render hooks instead of reassigning view functions. Resource, lifecycle, offline-render, visuals, learning, persistence, UI and offline services are separate classic-script modules; no framework/build dependency. Backup schema remains version 1, accepts v1.6 backups and includes the new learning state. Unified reset includes goals/streak/reviews. Audio files/imported course originals are not embedded in backups.
+
+## Verification
+
+Run `tests/batch2.cjs` as documented in `tests/README.md`; results: `batch2-test-results.json`. It runs the 11 v1.6 regression groups (including Sunny's 45 examples / 75 numeric checks), plus batch-two tests. Actual custom AudioWorklets are rendered through **node-web-audio-api OfflineAudioContext**, not mocked for the DSP numerical tests. UI tests use jsdom, and service-worker tests use a Cache API model. Numerical figures are recorded in the report; no browser/device performance claim is made.
+
+No fresh Chromium/Safari browser run or new screenshots in this environment. Existing screenshots/older browser reports are historical, not v1.7 layout validation. Keep low physical volume, output limiter and immediate Stop; offline support does not imply calibrated SPL or safe PA operation.
+
+For future code releases, increment the SW/cache version, all script/worker version references and `precache.json` together; do not call `skipWaiting` automatically. Test cached offline reload and update acceptance. Keep test dependencies outside the public folder. New Sunny JSON remains subject to its existing schema/calculator/safety boundaries.
+
+Earlier release notes below are historical.
+
+---
+
 # Current release: v1.6 · Batch 1
 
 Items 1–6 are implemented. No git actions or publishing. Static deployment still has no build step; upload the complete folder, including new `training-logic.js` and `batch1.js`. Changed asset references use `?v=1.6` to avoid mixing old cached UI scripts with this release.

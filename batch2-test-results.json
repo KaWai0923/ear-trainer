@@ -1,0 +1,118 @@
+{
+  "version": "1.7",
+  "environment": "Node + jsdom, service-worker Cache API model, and node-web-audio-api real OfflineAudioContext/custom AudioWorklets; NOT Safari or Chromium",
+  "baseline": {
+    "passed": 11,
+    "total": 11
+  },
+  "tests": [
+    {
+      "name": "7: PCM LRU respects 32 MiB, pinned buffers and keep-alive imports",
+      "passed": true
+    },
+    {
+      "name": "7: Stop releases PCM leases even if a closed context rejects gain automation",
+      "passed": true
+    },
+    {
+      "name": "7: concurrent decode reservations prevent oversubscription and pending cache retries recover",
+      "passed": true
+    },
+    {
+      "name": "7: long user file is rejected from metadata before arrayBuffer/decode",
+      "passed": true
+    },
+    {
+      "name": "7: synthesis is lazy, cooperative fallback bounded and finite",
+      "passed": true
+    },
+    {
+      "name": "7: offline scalar calibration cache deduplicates and serialises renders",
+      "passed": true
+    },
+    {
+      "name": "7: cooperative RMS fallback uses the identical custom gain computer and detector",
+      "passed": true
+    },
+    {
+      "name": "8: audio resume handles suspended/interrupted, timeout, late state and no autoplay",
+      "passed": true
+    },
+    {
+      "name": "8: global Stop also invalidates a pending Sunny audition, so resume cannot start stale audio",
+      "passed": true
+    },
+    {
+      "name": "8: unsupported offline worklets do not mark a working realtime engine as native fallback",
+      "passed": true
+    },
+    {
+      "name": "8: offline install is atomic; cached shell, 12 samples, ranges and scoped cleanup work offline",
+      "passed": true
+    },
+    {
+      "name": "8: precache covers every runtime asset, worker dependency and local manifest icon",
+      "passed": true
+    },
+    {
+      "name": "9: seeded adaptive sampling favours weak bands but retains exploration; other skills use misses",
+      "passed": true
+    },
+    {
+      "name": "11: daily goals, duplicate protection, spaced intervals, Toronto midnight/DST and rest days",
+      "passed": true
+    },
+    {
+      "name": "10: keyboard tabs, hidden panels, numeric alternatives, rotary End and reduced motion",
+      "passed": true
+    },
+    {
+      "name": "10: selected foreground/background contrast pairs exceed WCAG AA normal text",
+      "passed": true
+    },
+    {
+      "name": "12: v1.6 backups migrate; v1.7 learning state exports/restores/resets; unsafe review targets rejected",
+      "passed": true
+    },
+    {
+      "name": "12: DSP optimisation preserves golden samples from v1.6 exactly",
+      "passed": true
+    },
+    {
+      "name": "12: real OfflineAudioContext renders custom matched EQ at 44.1/48 kHz across 20 Hz–20 kHz",
+      "passed": true
+    },
+    {
+      "name": "12: real OfflineAudioContext compressor static curve and rough attack/release timing",
+      "passed": true
+    }
+  ],
+  "numbers": {
+    "goldenMaxError": 0,
+    "eq": [
+      {
+        "sampleRate": 44100,
+        "maxErrorDb": 1.9967052167224608e-7,
+        "bins": 36
+      },
+      {
+        "sampleRate": 48000,
+        "maxErrorDb": 2.1333736066608822e-7,
+        "bins": 36
+      }
+    ],
+    "compressor": {
+      "staticMaxErrorDb": 5.109652114754226e-7,
+      "attack63Ms": 19.979166666666657,
+      "release63MsIncludingDetectorHold": 106.02083333333334
+    }
+  },
+  "passed": 20,
+  "total": 20,
+  "errors": [],
+  "limits": [
+    "No real iPhone/Android CPU/RAM or Safari interruption test",
+    "No browser layout/VoiceOver/axe contrast certification",
+    "Service-worker tests use a standards-shaped Cache API model, not an installed browser PWA"
+  ]
+}
