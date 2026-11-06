@@ -1,4 +1,22 @@
-# Current release: v1.9 · Aux FX + Starting Point
+# Current release: v1.9.1 · Starting Point 真實 EQ curves
+
+- 28張 Starting Point 卡片改用 plugin-style 20Hz–20kHz log grid／±18dB grid，繪出 HPF＋已提供 bell／shelf／LPF 嘅真實 biquad response：綠色加總、淡色單段、號碼節點及可展開文字設定。
+- 共用 `SoundDSP.coeff`／`response`／`passSections`（Vicanek matched bell/shelves、RBJ pass filters）；48kHz reference。唔用頻率色帶冒充 EQ 曲線，超出 ±18dB 只裁圖，唔改計算值。
+- 預設 Mid 算術中點；可切 Low／Mid／High。Low/High 係參數下限／上限組合，唔係逐頻率最小／最大 envelope。Slope 只用原稿離散端點，Mid 採較低端點，唔捏造15dB/oct；原稿冇 slope 嘅 LPF 明確略過。
+- 參考曲線假設已提供 filters 啟用作比較，唔代表建議全套；切圖唔改音訊或 loader checkbox。原有安全 loader 仍全部預設旁通，手動揀值時圖會標明「已選值預覽」。原始 JSON／Markdown／核查紀錄保持不變；保留「音響工程課程」名稱。
+- Mobile 採窄版座標／精簡 frequency labels；SVG title/desc、各節點數值、文字版本及 native keyboard buttons 支援 accessibility。
+- 所有 runtime URLs、service-worker VERSION／precache 升至1.9.1。無 git、無發布。
+
+## v1.9.1 QA
+
+`NODE_PATH=/path/to/node_modules node tests/starting-eq.cjs` 會重跑全部 Batch1／2／3、FX、Starting Point suites，再驗證28卡×3種範圍、分段／加總 math、缺值處理、320/390/1440 DOM widths、controls／loader 無自動播放、來源原稿不變及 cache版本。
+
+另外用真正 Node OfflineAudioContext，將 reference settings 送入 App 同一個 AudioWorklet filter chain，對20Hz–20kHz 做32頻點 DFT，比較繪圖 response；數值見 `starting-eq-test-results.json`／`v1.9.1-test-results.json`。DOM 測試係 jsdom，唔係實際 Chromium／Safari layout，冇新 screenshots／手機實測。舊版 browser reports 屬歷史資料。
+
+---
+
+## Previous release: v1.9 · Aux FX + Starting Point (historical notes)
+
 
 ## v1.9 新增
 

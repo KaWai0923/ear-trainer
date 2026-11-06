@@ -1,5 +1,5 @@
 {
-  "version": "1.9",
+  "version": "1.9.1",
   "environment": "Node/jsdom DOM widths 320/390/1440; real node-web-audio-api OfflineAudioContext AudioWorklets; Cache API model. NOT Chromium/Safari.",
   "baseline": {
     "batch1": {

@@ -28,3 +28,9 @@ New report: `batch3-test-results.json`. No Chromium, real layout or screenshots 
 `NODE_PATH=/path/to/node_modules node tests/starting-points.cjs`
 
 Runs batch1, batch2, batch3, `fx.cjs`, and all reference-card checks. Uses actual Node OfflineAudioContext for stereo-delay timing, native pre/post routing, Convolver pre-delay/IR matching, and preserved EQ/comp audits. IR RT60 uses Schroeder -5…-35dB fit; gated/reverse are not natural RT60. UI/keyboard/help/backup/source-preservation/navigation checks are jsdom mocks, not browser layout certification. Reports: `v1.9-test-results.json`, `fx-test-results.json`, `starting-points-test-results.json`.
+
+## v1.9.1 — shared-math Starting Point curves
+
+`NODE_PATH=/path/to/node_modules node tests/starting-eq.cjs`
+
+Runs all previous suites, then source-constrained low/mid/high interpolation, combined and per-band responses, HPF/LPF order handling, omitted missing slopes, SVG grid/node/description semantics, keyboard/native buttons, no-audio side effects, loader preview separation, all28 cards and3 modes. Actual Node OfflineAudioContext/custom worklet impulse chains are DFT-probed at32 log frequencies20Hz–20kHz. Reports: `starting-eq-test-results.json`, `v1.9.1-test-results.json`. No new real-browser screenshots/layout/device claims.

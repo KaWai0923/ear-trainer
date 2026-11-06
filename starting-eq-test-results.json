@@ -1,0 +1,92 @@
+{
+  "version": "1.9.1",
+  "environment": "Node/jsdom DOM tests at 320/390/1440; actual node-web-audio-api OfflineAudioContext/custom shared-math AudioWorklets, not Chromium/Safari.",
+  "baseline": {
+    "batch1": {
+      "passed": 11,
+      "total": 11
+    },
+    "batch2": {
+      "passed": 20,
+      "total": 20
+    },
+    "batch3": {
+      "passed": 16,
+      "total": 16
+    }
+  },
+  "fx": {
+    "passed": 14,
+    "total": 14
+  },
+  "startingPoints": {
+    "passed": 9,
+    "total": 9
+  },
+  "tests": [
+    {
+      "name": "Entire existing Batch1/2/3, FX and Starting Point suites rerun",
+      "passed": true
+    },
+    {
+      "name": "Every card low/mid/high uses only source endpoints or declared arithmetic interpolation; no source mutation",
+      "passed": true
+    },
+    {
+      "name": "Combined dB equals actual shared biquad response sum; bell centre gain matches; null shelf Q is not invented",
+      "passed": true
+    },
+    {
+      "name": "Missing LPF slope is explicitly omitted; no invented HPF on buses; 18dB/oct uses actual one/two-pole sections",
+      "passed": true
+    },
+    {
+      "name": "Desktop/mobile SVG grid, numbered bands, accessible numeric descriptions and controls with no audio side effects",
+      "passed": true
+    },
+    {
+      "name": "All 28 cards render every mode including neutral buses, with finite paths and no duplicate SVG IDs",
+      "passed": true
+    },
+    {
+      "name": "Loader preview still represents explicit choices, not the hypothetical reference; toggles never select bands",
+      "passed": true
+    },
+    {
+      "name": "Actual OfflineAudioContext custom worklet chain agrees with plotted response across 20Hz–20kHz",
+      "passed": true
+    },
+    {
+      "name": "v1.9.1 SW/runtime/cache and research provenance preserved",
+      "passed": true
+    }
+  ],
+  "numbers": {
+    "maxSumErrorDb": 7.105427357601002e-15,
+    "offline": [
+      {
+        "card": "lead_vocal_male",
+        "mode": "mid",
+        "sampleRate": 48000,
+        "bins": 32,
+        "maxErrorDb": 0.00001645661003379928
+      },
+      {
+        "card": "bass_di",
+        "mode": "high",
+        "sampleRate": 48000,
+        "bins": 32,
+        "maxErrorDb": 0.000005740298377077124
+      }
+    ]
+  },
+  "passed": 9,
+  "total": 9,
+  "errors": [],
+  "limits": [
+    "No new browser screenshots or physical phone/layout validation.",
+    "Low/mid/high are source-parameter combinations, NOT pointwise response extrema or an exhaustive envelope.",
+    "48kHz reference. Missing slope is omitted; mid slope uses the source lower endpoint, not an invented filter order.",
+    "Reference graphics assume supplied bands enabled; playback/import safety defaults unchanged."
+  ]
+}
