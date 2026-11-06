@@ -1,0 +1,828 @@
+{
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "scope": "OfflineAudioContext, CPU worklets; input/output safety limiter excluded from linear EQ / static compressor audit"
+  },
+  "eq": [
+    {
+      "sampleRate": 48000,
+      "bands": [
+        {
+          "type": "highpass",
+          "freq": 70,
+          "Q": 1.3065629648763766,
+          "gain": 0
+        },
+        {
+          "type": "highpass",
+          "freq": 70,
+          "Q": 0.541196100146197,
+          "gain": 0
+        },
+        {
+          "freq": 100,
+          "gain": 4,
+          "Q": 1
+        },
+        {
+          "freq": 500,
+          "gain": -6,
+          "Q": 2
+        },
+        {
+          "freq": 3000,
+          "gain": 5,
+          "Q": 1.2
+        },
+        {
+          "freq": 16000,
+          "gain": -5,
+          "Q": 2
+        },
+        {
+          "type": "lowpass1",
+          "freq": 19000,
+          "Q": 0.707,
+          "gain": 0
+        }
+      ],
+      "maxErrorDb": 0.000005184768438581955,
+      "rmsErrorDb": 8.264515611425284e-7,
+      "p95ErrorDb": 0.000001773331629983943,
+      "browserGetFrequencyResponseMaxDb": 0.000002102835978234907,
+      "bins": 27279,
+      "rangeHz": [
+        20,
+        20000
+      ]
+    },
+    {
+      "sampleRate": 44100,
+      "bands": [
+        {
+          "freq": 18000,
+          "gain": 12,
+          "Q": 1
+        },
+        {
+          "freq": 19500,
+          "gain": -6,
+          "Q": 4
+        }
+      ],
+      "maxErrorDb": 0.0000013775603404653225,
+      "rmsErrorDb": 3.035491384699149e-7,
+      "p95ErrorDb": 6.062707980092341e-7,
+      "browserGetFrequencyResponseMaxDb": 0.0000025507309109329412,
+      "bins": 29692,
+      "rangeHz": [
+        20,
+        20000
+      ]
+    },
+    {
+      "sampleRate": 48000,
+      "bands": [
+        {
+          "type": "lowshelf",
+          "freq": 120,
+          "gain": 6,
+          "Q": 1
+        },
+        {
+          "type": "highshelf",
+          "freq": 16000,
+          "gain": 9,
+          "Q": 1
+        },
+        {
+          "freq": 6000,
+          "gain": -6,
+          "Q": 2
+        }
+      ],
+      "maxErrorDb": 0.000003833737474367993,
+      "rmsErrorDb": 8.155846986071878e-7,
+      "p95ErrorDb": 0.000001657326492932043,
+      "browserGetFrequencyResponseMaxDb": 0.00000118481847177776,
+      "bins": 27279,
+      "rangeHz": [
+        20,
+        20000
+      ]
+    },
+    {
+      "sampleRate": 44100,
+      "bands": [
+        {
+          "freq": 1000,
+          "gain": 9,
+          "Q": 2,
+          "proportional": true
+        },
+        {
+          "freq": 16000,
+          "gain": -9,
+          "Q": 1,
+          "proportional": true
+        }
+      ],
+      "maxErrorDb": 0.000005142962615778401,
+      "rmsErrorDb": 8.630552727152035e-7,
+      "p95ErrorDb": 0.0000019009693854599163,
+      "browserGetFrequencyResponseMaxDb": 0.0000015352801536749894,
+      "bins": 29692,
+      "rangeHz": [
+        20,
+        20000
+      ]
+    }
+  ],
+  "customCompressor": [
+    {
+      "params": {
+        "threshold": -24,
+        "ratio": 4,
+        "knee": 0,
+        "attack": 0.005,
+        "release": 0.1,
+        "makeup": 0,
+        "detector": "peak",
+        "ballistics": "branching",
+        "oversample": 1,
+        "autoMakeup": false,
+        "programRelease": false,
+        "lookahead": 0
+      },
+      "measurements": [
+        {
+          "inputPeakDb": -48,
+          "inputDetectorDb": -48,
+          "outputDetectorDb": -48.0000027803257,
+          "predictedDb": -48,
+          "errorDb": -0.0000027803257012237736,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -36,
+          "inputDetectorDb": -36,
+          "outputDetectorDb": -36.00000191608043,
+          "predictedDb": -36,
+          "errorDb": -0.0000019160804285434097,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -30,
+          "inputDetectorDb": -30,
+          "outputDetectorDb": -30.00000285194836,
+          "predictedDb": -30,
+          "errorDb": -0.0000028519483592504002,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -24,
+          "inputDetectorDb": -24,
+          "outputDetectorDb": -24.000002513777115,
+          "predictedDb": -24,
+          "errorDb": -0.0000025137771153538324,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -18,
+          "inputDetectorDb": -18,
+          "outputDetectorDb": -22.500000964603547,
+          "predictedDb": -22.5,
+          "errorDb": -9.646035472599124e-7,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -21.00000089349905,
+          "predictedDb": -21,
+          "errorDb": -8.934990489706252e-7,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -6,
+          "inputDetectorDb": -6,
+          "outputDetectorDb": -19.500000931806664,
+          "predictedDb": -19.5,
+          "errorDb": -9.318066638286382e-7,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": 0,
+          "inputDetectorDb": 0,
+          "outputDetectorDb": -17.99991079614642,
+          "predictedDb": -18,
+          "errorDb": 0.00008920385358024419,
+          "nativeModelDb": null
+        }
+      ],
+      "maxErrorDb": 0.00008920385358024419
+    },
+    {
+      "params": {
+        "threshold": -24,
+        "ratio": 4,
+        "knee": 12,
+        "attack": 0.005,
+        "release": 0.1,
+        "makeup": 0,
+        "detector": "peak",
+        "ballistics": "branching",
+        "oversample": 1,
+        "autoMakeup": false,
+        "programRelease": false,
+        "lookahead": 0
+      },
+      "measurements": [
+        {
+          "inputPeakDb": -48,
+          "inputDetectorDb": -48,
+          "outputDetectorDb": -48.0000027803257,
+          "predictedDb": -48,
+          "errorDb": -0.0000027803257012237736,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -36,
+          "inputDetectorDb": -36,
+          "outputDetectorDb": -36.00000191608043,
+          "predictedDb": -36,
+          "errorDb": -0.0000019160804285434097,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -30,
+          "inputDetectorDb": -30,
+          "outputDetectorDb": -30.00000285194836,
+          "predictedDb": -30,
+          "errorDb": -0.0000028519483592504002,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -24,
+          "inputDetectorDb": -24,
+          "outputDetectorDb": -25.12500171693403,
+          "predictedDb": -25.125,
+          "errorDb": -0.0000017169340296163682,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -18,
+          "inputDetectorDb": -18,
+          "outputDetectorDb": -22.500000964603547,
+          "predictedDb": -22.5,
+          "errorDb": -9.646035472599124e-7,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -21.00000089349905,
+          "predictedDb": -21,
+          "errorDb": -8.934990489706252e-7,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -6,
+          "inputDetectorDb": -6,
+          "outputDetectorDb": -19.500000931806664,
+          "predictedDb": -19.5,
+          "errorDb": -9.318066638286382e-7,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": 0,
+          "inputDetectorDb": 0,
+          "outputDetectorDb": -17.99991079614642,
+          "predictedDb": -18,
+          "errorDb": 0.00008920385358024419,
+          "nativeModelDb": null
+        }
+      ],
+      "maxErrorDb": 0.00008920385358024419
+    },
+    {
+      "params": {
+        "threshold": -12,
+        "ratio": 2,
+        "knee": 6,
+        "attack": 0.005,
+        "release": 0.1,
+        "makeup": 0,
+        "detector": "peak",
+        "ballistics": "branching",
+        "oversample": 1,
+        "autoMakeup": false,
+        "programRelease": false,
+        "lookahead": 0
+      },
+      "measurements": [
+        {
+          "inputPeakDb": -48,
+          "inputDetectorDb": -48,
+          "outputDetectorDb": -48.0000027803257,
+          "predictedDb": -48,
+          "errorDb": -0.0000027803257012237736,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -36,
+          "inputDetectorDb": -36,
+          "outputDetectorDb": -36.00000191608043,
+          "predictedDb": -36,
+          "errorDb": -0.0000019160804285434097,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -30,
+          "inputDetectorDb": -30,
+          "outputDetectorDb": -30.00000285194836,
+          "predictedDb": -30,
+          "errorDb": -0.0000028519483592504002,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -24,
+          "inputDetectorDb": -24,
+          "outputDetectorDb": -24.000002513777115,
+          "predictedDb": -24,
+          "errorDb": -0.0000025137771153538324,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -18,
+          "inputDetectorDb": -18,
+          "outputDetectorDb": -18.00000282546808,
+          "predictedDb": -18,
+          "errorDb": -0.0000028254680799477683,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -12.375002076234118,
+          "predictedDb": -12.375,
+          "errorDb": -0.000002076234117964759,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": -6,
+          "inputDetectorDb": -6,
+          "outputDetectorDb": -9.000001574632106,
+          "predictedDb": -9,
+          "errorDb": -0.0000015746321064824542,
+          "nativeModelDb": null
+        },
+        {
+          "inputPeakDb": 0,
+          "inputDetectorDb": 0,
+          "outputDetectorDb": -5.999941324118879,
+          "predictedDb": -6,
+          "errorDb": 0.000058675881120962003,
+          "nativeModelDb": null
+        }
+      ],
+      "maxErrorDb": 0.000058675881120962003
+    }
+  ],
+  "rmsCompressor": [
+    {
+      "inputPeakDb": -36,
+      "inputDetectorDb": -39.01029995663981,
+      "outputDetectorDb": -39.01030187272024,
+      "predictedDb": -39.01029995663981,
+      "errorDb": -0.0000019160804285434097,
+      "nativeModelDb": null
+    },
+    {
+      "inputPeakDb": -24,
+      "inputDetectorDb": -27.010299956639813,
+      "outputDetectorDb": -27.29164751732992,
+      "predictedDb": -27.289622030054435,
+      "errorDb": -0.0020254872754854603,
+      "nativeModelDb": null
+    },
+    {
+      "inputPeakDb": -12,
+      "inputDetectorDb": -15.010299956639813,
+      "outputDetectorDb": -21.76067020968743,
+      "predictedDb": -21.752574989159953,
+      "errorDb": -0.008095220527476243,
+      "nativeModelDb": null
+    },
+    {
+      "inputPeakDb": -6,
+      "inputDetectorDb": -9.010299956639813,
+      "outputDetectorDb": -20.260670243862844,
+      "predictedDb": -20.252574989159953,
+      "errorDb": -0.008095254702890742,
+      "nativeModelDb": null
+    }
+  ],
+  "autoMakeupOversample4": [
+    {
+      "inputPeakDb": -36,
+      "inputDetectorDb": -36,
+      "outputDetectorDb": -25.20000190712103,
+      "predictedDb": -25.200000000000003,
+      "errorDb": -0.0000019071210282106676,
+      "nativeModelDb": null
+    },
+    {
+      "inputPeakDb": -18,
+      "inputDetectorDb": -18,
+      "outputDetectorDb": -11.700000960577064,
+      "predictedDb": -11.700000000000001,
+      "errorDb": -9.605770632248323e-7,
+      "nativeModelDb": null
+    },
+    {
+      "inputPeakDb": -6,
+      "inputDetectorDb": -6,
+      "outputDetectorDb": -8.700000943487902,
+      "predictedDb": -8.700000000000001,
+      "errorDb": -9.43487901139406e-7,
+      "nativeModelDb": null
+    }
+  ],
+  "nativeCompressorBeforeFix": [
+    {
+      "params": {
+        "threshold": -24,
+        "ratio": 4,
+        "knee": 0,
+        "attack": 0.005,
+        "release": 0.1,
+        "makeup": 0,
+        "detector": "peak",
+        "ballistics": "branching",
+        "oversample": 1,
+        "autoMakeup": false,
+        "programRelease": false,
+        "lookahead": 0
+      },
+      "measurements": [
+        {
+          "inputPeakDb": -48,
+          "inputDetectorDb": -48,
+          "outputDetectorDb": -37.20013572677175,
+          "predictedDb": -48,
+          "errorDb": 10.799864273228252,
+          "nativeModelDb": -37.2
+        },
+        {
+          "inputPeakDb": -36,
+          "inputDetectorDb": -36,
+          "outputDetectorDb": -25.20013486080164,
+          "predictedDb": -36,
+          "errorDb": 10.79986513919836,
+          "nativeModelDb": -25.200000000000003
+        },
+        {
+          "inputPeakDb": -30,
+          "inputDetectorDb": -30,
+          "outputDetectorDb": -19.200135775634703,
+          "predictedDb": -30,
+          "errorDb": 10.799864224365297,
+          "nativeModelDb": -19.200000000000003
+        },
+        {
+          "inputPeakDb": -24,
+          "inputDetectorDb": -24,
+          "outputDetectorDb": -13.20013547011419,
+          "predictedDb": -24,
+          "errorDb": 10.79986452988581,
+          "nativeModelDb": -13.200000000000001
+        },
+        {
+          "inputPeakDb": -18,
+          "inputDetectorDb": -18,
+          "outputDetectorDb": -11.557221079326714,
+          "predictedDb": -22.5,
+          "errorDb": 10.942778920673286,
+          "nativeModelDb": -11.700000000000001
+        },
+        {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -9.92841448198285,
+          "predictedDb": -21,
+          "errorDb": 11.07158551801715,
+          "nativeModelDb": -10.200000000000001
+        },
+        {
+          "inputPeakDb": -6,
+          "inputDetectorDb": -6,
+          "outputDetectorDb": -8.32493199116624,
+          "predictedDb": -19.5,
+          "errorDb": 11.17506800883376,
+          "nativeModelDb": -8.700000000000001
+        },
+        {
+          "inputPeakDb": 0,
+          "inputDetectorDb": 0,
+          "outputDetectorDb": -6.591011505306433,
+          "predictedDb": -18,
+          "errorDb": 11.408988494693567,
+          "nativeModelDb": -7.200000000000001
+        }
+      ],
+      "oldQuadraticGuiMaxErrorDb": 11.408988494693567,
+      "nativeKernelModelMaxErrorDb": 0.608988494693568
+    },
+    {
+      "params": {
+        "threshold": -24,
+        "ratio": 4,
+        "knee": 12,
+        "attack": 0.005,
+        "release": 0.1,
+        "makeup": 0,
+        "detector": "peak",
+        "ballistics": "branching",
+        "oversample": 1,
+        "autoMakeup": false,
+        "programRelease": false,
+        "lookahead": 0
+      },
+      "measurements": [
+        {
+          "inputPeakDb": -48,
+          "inputDetectorDb": -48,
+          "outputDetectorDb": -39.79254817198693,
+          "predictedDb": -48,
+          "errorDb": 8.20745182801307,
+          "nativeModelDb": -39.79333552557717
+        },
+        {
+          "inputPeakDb": -36,
+          "inputDetectorDb": -36,
+          "outputDetectorDb": -27.7925473507746,
+          "predictedDb": -36,
+          "errorDb": 8.207452649225399,
+          "nativeModelDb": -27.79333552557717
+        },
+        {
+          "inputPeakDb": -30,
+          "inputDetectorDb": -30,
+          "outputDetectorDb": -21.79254828543998,
+          "predictedDb": -30,
+          "errorDb": 8.207451714560019,
+          "nativeModelDb": -21.79333552557717
+        },
+        {
+          "inputPeakDb": -24,
+          "inputDetectorDb": -24,
+          "outputDetectorDb": -15.792547891938582,
+          "predictedDb": -25.125,
+          "errorDb": 9.332452108061418,
+          "nativeModelDb": -15.793335525577168
+        },
+        {
+          "inputPeakDb": -18,
+          "inputDetectorDb": -18,
+          "outputDetectorDb": -10.96704917129107,
+          "predictedDb": -22.5,
+          "errorDb": 11.53295082870893,
+          "nativeModelDb": -11.01047586786302
+        },
+        {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -8.330980184227432,
+          "predictedDb": -21,
+          "errorDb": 12.669019815772568,
+          "nativeModelDb": -8.47110964961522
+        },
+        {
+          "inputPeakDb": -6,
+          "inputDetectorDb": -6,
+          "outputDetectorDb": -6.699268900904045,
+          "predictedDb": -19.5,
+          "errorDb": 12.800731099095955,
+          "nativeModelDb": -6.9711096496152205
+        },
+        {
+          "inputPeakDb": 0,
+          "inputDetectorDb": 0,
+          "outputDetectorDb": -5.096996130432114,
+          "predictedDb": -18,
+          "errorDb": 12.903003869567886,
+          "nativeModelDb": -5.4711096496152205
+        }
+      ],
+      "oldQuadraticGuiMaxErrorDb": 12.903003869567886,
+      "nativeKernelModelMaxErrorDb": 0.37411351918310665
+    },
+    {
+      "params": {
+        "threshold": -12,
+        "ratio": 2,
+        "knee": 6,
+        "attack": 0.005,
+        "release": 0.1,
+        "makeup": 0,
+        "detector": "peak",
+        "ballistics": "branching",
+        "oversample": 1,
+        "autoMakeup": false,
+        "programRelease": false,
+        "lookahead": 0
+      },
+      "measurements": [
+        {
+          "inputPeakDb": -48,
+          "inputDetectorDb": -48,
+          "outputDetectorDb": -45.252060394138084,
+          "predictedDb": -48,
+          "errorDb": 2.747939605861916,
+          "nativeModelDb": -45.25211009145449
+        },
+        {
+          "inputPeakDb": -36,
+          "inputDetectorDb": -36,
+          "outputDetectorDb": -33.25205949033107,
+          "predictedDb": -36,
+          "errorDb": 2.747940509668929,
+          "nativeModelDb": -33.25211009145449
+        },
+        {
+          "inputPeakDb": -30,
+          "inputDetectorDb": -30,
+          "outputDetectorDb": -27.25206046734581,
+          "predictedDb": -30,
+          "errorDb": 2.7479395326541898,
+          "nativeModelDb": -27.252110091454494
+        },
+        {
+          "inputPeakDb": -24,
+          "inputDetectorDb": -24,
+          "outputDetectorDb": -21.252060126033065,
+          "predictedDb": -24,
+          "errorDb": 2.747939873966935,
+          "nativeModelDb": -21.252110091454494
+        },
+        {
+          "inputPeakDb": -18,
+          "inputDetectorDb": -18,
+          "outputDetectorDb": -15.252060418970729,
+          "predictedDb": -18,
+          "errorDb": 2.7479395810292715,
+          "nativeModelDb": -15.252110091454494
+        },
+        {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -9.252060195670227,
+          "predictedDb": -12.375,
+          "errorDb": 3.122939804329773,
+          "nativeModelDb": -9.252110091454494
+        },
+        {
+          "inputPeakDb": -6,
+          "inputDetectorDb": -6,
+          "outputDetectorDb": -4.781654721895185,
+          "predictedDb": -9,
+          "errorDb": 4.218345278104815,
+          "nativeModelDb": -4.831926605697005
+        },
+        {
+          "inputPeakDb": 0,
+          "inputDetectorDb": 0,
+          "outputDetectorDb": -1.7062304710125464,
+          "predictedDb": -6,
+          "errorDb": 4.293769528987454,
+          "nativeModelDb": -1.8319266056970043
+        }
+      ],
+      "oldQuadraticGuiMaxErrorDb": 4.293769528987454,
+      "nativeKernelModelMaxErrorDb": 0.12569613468445784
+    }
+  ],
+  "timing": [
+    {
+      "engine": "custom",
+      "attackTauMs": 10,
+      "releaseTauMs": 100,
+      "steadyReductionDb": 13.499999566508036,
+      "attack10Ms": 1.5000000000000013,
+      "attack63Ms": 10.499999999999954,
+      "attack90Ms": 23.499999999999964,
+      "release10Ms": 16.499999999999957,
+      "release63Ms": 106.50000000000004,
+      "release90Ms": 236.50000000000014
+    },
+    {
+      "engine": "custom",
+      "attackTauMs": 30,
+      "releaseTauMs": 200,
+      "steadyReductionDb": 13.499999566508036,
+      "attack10Ms": 3.500000000000003,
+      "attack63Ms": 30.49999999999997,
+      "attack90Ms": 69.49999999999996,
+      "release10Ms": 27.500000000000078,
+      "release63Ms": 206.5000000000001,
+      "release90Ms": 466.5000000000001
+    },
+    {
+      "engine": "native",
+      "attackTauMs": 10,
+      "releaseTauMs": 100,
+      "steadyReductionDb": 12.977819469389472,
+      "attack10Ms": 0.49999999999995015,
+      "attack63Ms": 0.49999999999995015,
+      "attack90Ms": 3.499999999999953,
+      "release10Ms": 2.499999999999952,
+      "release63Ms": 26.499999999999975,
+      "release90Ms": 57.500000000000114
+    }
+  ],
+  "gate": {
+    "holdSettingMs": 80,
+    "releaseTauMs": 20,
+    "firstAttenuationAfterStepMs": 84.56249999999999,
+    "close63AfterStepMs": 104.3958333333333,
+    "expectedDetectorDecayPlusHoldMs": 84.37965498201216
+  },
+  "advanced": {
+    "extra": [
+      {
+        "options": {
+          "oversample": 2
+        },
+        "measurement": {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -21.00000089349905,
+          "predictedDb": -21,
+          "errorDb": -8.934990489706252e-7,
+          "nativeModelDb": null
+        }
+      },
+      {
+        "options": {
+          "ballistics": "decoupled"
+        },
+        "measurement": {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -21.00000089349905,
+          "predictedDb": -21,
+          "errorDb": -8.934990489706252e-7,
+          "nativeModelDb": null
+        }
+      },
+      {
+        "options": {
+          "programRelease": true
+        },
+        "measurement": {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -21.00000089349905,
+          "predictedDb": -21,
+          "errorDb": -8.934990489706252e-7,
+          "nativeModelDb": null
+        }
+      },
+      {
+        "options": {
+          "autoMakeup": true
+        },
+        "measurement": {
+          "inputPeakDb": -12,
+          "inputDetectorDb": -12,
+          "outputDetectorDb": -10.200000912934275,
+          "predictedDb": -10.200000000000001,
+          "errorDb": -9.129342739555568e-7,
+          "nativeModelDb": null
+        }
+      }
+    ],
+    "latency": [
+      {
+        "lookaheadMs": 0,
+        "measuredMs": 0
+      },
+      {
+        "lookaheadMs": 5,
+        "measuredMs": 5
+      },
+      {
+        "lookaheadMs": 20,
+        "measuredMs": 20
+      }
+    ],
+    "stereoQuadratureRMS": {
+      "actual": -21.7639633821156,
+      "expected": -21.752574989159953,
+      "errorDb": -0.01138839295564864
+    }
+  },
+  "summary": "Chromium / OfflineAudioContext 實測（44.1 / 48 kHz，指定測試）：20 Hz–20 kHz EQ FFT 對曲線最大誤差 0.000005 dB（<0.001 dB）。Compressor peak 靜態誤差 0.00009 dB；mono RMS 0.0081 dB；stereo quadrature RMS max-link ripple 0.0114 dB，整體 <0.02 dB。預設 branching / peak：attack τ=10 / 30 ms，63% 約 10.5 / 30.5 ms；release τ=100 / 200 ms，含 detector hold 約 106.5 / 206.5 ms。10→90% attack 22 / 66 ms、release 220 / 439 ms。Gate hold 80 ms，含 detector decay 約 84.6 ms 開始關閉，release 20 ms 約 104.4 ms 到63%關閉。Lookahead 0 / 5 / 20 ms 實測 0 / 5 / 20 ms。舊 native 自動增益／knee 令簡化圖曾相差最多12.90 dB；custom 預設無暗藏 makeup。RMS 有有限 averaging ripple；圖 input axis 係 detector level。以上唔係全參數／所有 browser／硬件 emulation 認證，EQ 圖唔包括 nonlinear gate、comp、安全 limiter。",
+  "errors": []
+}

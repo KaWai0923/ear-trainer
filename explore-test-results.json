@@ -1,0 +1,66 @@
+{
+  "errors": [],
+  "customWorklet": true,
+  "gateWorks": true,
+  "trim": true,
+  "polarity": true,
+  "proportionalQ": true,
+  "order": true,
+  "faderMute": true,
+  "pan": true,
+  "snapshots": true,
+  "presets": [
+    {
+      "name": "Vocal",
+      "source": "female-spoken"
+    },
+    {
+      "name": "Kick",
+      "source": "kick"
+    },
+    {
+      "name": "Snare",
+      "source": "snare"
+    },
+    {
+      "name": "Bass",
+      "source": "bass"
+    },
+    {
+      "name": "Acoustic guitar",
+      "source": "acoustic-guitar"
+    },
+    {
+      "name": "Speech / podcast",
+      "source": "male-spoken"
+    },
+    {
+      "name": "Neutral",
+      "source": "full-mix"
+    }
+  ],
+  "localImport": true,
+  "layouts": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "trainingCustom": true
+}

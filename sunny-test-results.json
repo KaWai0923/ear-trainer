@@ -1,0 +1,1589 @@
+{
+  "errors": [],
+  "formulas": 23,
+  "exampleCases": 45,
+  "numericalAssertions": 75,
+  "math": [
+    {
+      "id": "sound_speed",
+      "checks": [
+        {
+          "key": "c",
+          "want": 343.42,
+          "got": 343.42,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "wavelength",
+      "checks": [
+        {
+          "key": "wavelength",
+          "want": 5.444444444,
+          "got": 5.444444444444445,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "point_distance",
+      "checks": [
+        {
+          "key": "L2",
+          "want": 81.917600347,
+          "got": 81.9176003468815,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "point_distance",
+      "checks": [
+        {
+          "key": "L2",
+          "want": 96.020599913,
+          "got": 96.02059991327963,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "point_distance",
+      "checks": [
+        {
+          "key": "L2",
+          "want": 83.979400087,
+          "got": 83.97940008672037,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "point_distance",
+      "checks": [
+        {
+          "key": "L2",
+          "want": 80,
+          "got": 80,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "point_distance",
+      "checks": [
+        {
+          "key": "L2",
+          "want": 87.958800173,
+          "got": 87.95880017344075,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "ideal_line_distance",
+      "checks": [
+        {
+          "key": "L2",
+          "want": 103.979400087,
+          "got": 103.97940008672037,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "aperture_scale",
+      "checks": [
+        {
+          "key": "R",
+          "want": 11.66180758,
+          "got": 11.661807580174926,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "aperture_scale",
+      "checks": [
+        {
+          "key": "R",
+          "want": 46.647230321,
+          "got": 46.647230320699705,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "path_delay",
+      "checks": [
+        {
+          "key": "seconds",
+          "want": 0.002,
+          "got": 0.002,
+          "ok": true
+        },
+        {
+          "key": "ms",
+          "want": 2,
+          "got": 2,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "path_delay",
+      "checks": [
+        {
+          "key": "ms",
+          "want": 1,
+          "got": 1,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "path_delay",
+      "checks": [
+        {
+          "key": "ms",
+          "want": 0.495626822,
+          "got": 0.4956268221574344,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "phase",
+      "checks": [
+        {
+          "key": "phase",
+          "want": 180,
+          "got": 180,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_nulls",
+      "checks": [
+        {
+          "key": "first",
+          "want": 500,
+          "got": 500,
+          "ok": true
+        },
+        {
+          "key": "second",
+          "want": 1500,
+          "got": 1500,
+          "ok": true
+        },
+        {
+          "key": "third",
+          "want": 2500,
+          "got": 2500,
+          "ok": true
+        },
+        {
+          "key": "spacing",
+          "want": 1000,
+          "got": 1000,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_nulls",
+      "checks": [
+        {
+          "key": "frequency",
+          "want": 250,
+          "got": 250,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_nulls",
+      "checks": [
+        {
+          "key": "frequency",
+          "want": 166.504854369,
+          "got": 166.50485436893447,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_nulls",
+      "checks": [
+        {
+          "key": "first",
+          "want": 1008.823529412,
+          "got": 1008.8235294126489,
+          "ok": true
+        },
+        {
+          "key": "second",
+          "want": 3026.470588235,
+          "got": 3026.4705882379467,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_nulls",
+      "checks": [
+        {
+          "key": "frequency",
+          "want": 3430,
+          "got": 3430.0000000043906,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_peaks",
+      "checks": [
+        {
+          "key": "first",
+          "want": 0,
+          "got": 0,
+          "ok": true
+        },
+        {
+          "key": "second",
+          "want": 1000,
+          "got": 1000,
+          "ok": true
+        },
+        {
+          "key": "third",
+          "want": 2000,
+          "got": 2000,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "coherent_sum",
+      "checks": [
+        {
+          "key": "gain",
+          "want": 6.020599913,
+          "got": 6.020599913279624,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "coherent_sum",
+      "checks": [
+        {
+          "key": "gain",
+          "want": "-Infinity",
+          "got": "-Infinity",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_response",
+      "checks": [
+        {
+          "key": "gain",
+          "want": -6.020599913,
+          "got": -6.020599913279624,
+          "ok": true
+        },
+        {
+          "key": "peak",
+          "want": 3.521825181,
+          "got": 3.5218251811136247,
+          "ok": true
+        },
+        {
+          "key": "valley",
+          "want": -6.020599913,
+          "got": -6.020599913279624,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_response",
+      "checks": [
+        {
+          "key": "gain",
+          "want": 2.386620961,
+          "got": 2.3866209613229614,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "comb_response",
+      "checks": [
+        {
+          "key": "gain",
+          "want": -3.301770774,
+          "got": -3.301770772537452,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "incoherent_sum",
+      "checks": [
+        {
+          "key": "total",
+          "want": 83.010299957,
+          "got": 83.01029995663981,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "db_ratios",
+      "checks": [
+        {
+          "key": "amplitudeDB",
+          "want": 6.020599913,
+          "got": 6.020599913279624,
+          "ok": true
+        },
+        {
+          "key": "powerDB",
+          "want": 3.010299957,
+          "got": 3.010299956639812,
+          "ok": true
+        },
+        {
+          "key": "amplitudeRatio",
+          "want": 2,
+          "got": 1.9999999999356142,
+          "ok": true
+        },
+        {
+          "key": "powerRatio",
+          "want": 4,
+          "got": 3.9999999997424567,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "three_to_one",
+      "checks": [
+        {
+          "key": "spacing",
+          "want": 0.6,
+          "got": 0.6000000000000001,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "headroom",
+      "checks": [
+        {
+          "key": "headroom",
+          "want": 2,
+          "got": 2,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "headroom",
+      "checks": [
+        {
+          "key": "headroom",
+          "want": 10,
+          "got": 10,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "gain_change",
+      "checks": [
+        {
+          "key": "output",
+          "want": -10,
+          "got": -10,
+          "ok": true
+        },
+        {
+          "key": "faderUnchanged",
+          "want": -25,
+          "got": -25,
+          "ok": true
+        },
+        {
+          "key": "faderCompensated",
+          "want": -17,
+          "got": -17,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "single_phase",
+      "checks": [
+        {
+          "key": "VA",
+          "want": 1920,
+          "got": 1920,
+          "ok": true
+        },
+        {
+          "key": "W",
+          "want": 1920,
+          "got": 1920,
+          "ok": true
+        },
+        {
+          "key": "inverseA",
+          "want": 16,
+          "got": 16,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "single_phase",
+      "checks": [
+        {
+          "key": "W",
+          "want": 1536,
+          "got": 1536,
+          "ok": true
+        },
+        {
+          "key": "inverseA",
+          "want": 16,
+          "got": 16,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "planning_cap",
+      "checks": [
+        {
+          "key": "A",
+          "want": 16,
+          "got": 16,
+          "ok": true
+        },
+        {
+          "key": "VA",
+          "want": 1920,
+          "got": 1920,
+          "ok": true
+        },
+        {
+          "key": "W",
+          "want": 1920,
+          "got": 1920,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "planning_cap",
+      "checks": [
+        {
+          "key": "A",
+          "want": 12,
+          "got": 12,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "circuits_lower_bound",
+      "checks": [
+        {
+          "key": "total",
+          "want": 27,
+          "got": 27,
+          "ok": true
+        },
+        {
+          "key": "lower",
+          "want": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "key": "bins",
+          "want": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "key": "oversized",
+          "want": false,
+          "got": false,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "circuits_lower_bound",
+      "checks": [
+        {
+          "key": "total",
+          "want": 19.6,
+          "got": 19.6,
+          "ok": true
+        },
+        {
+          "key": "lower",
+          "want": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "key": "bins",
+          "want": 2,
+          "got": 2,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "circuits_lower_bound",
+      "checks": [
+        {
+          "key": "total",
+          "want": 37.8,
+          "got": 37.8,
+          "ok": true
+        },
+        {
+          "key": "lower",
+          "want": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "key": "oversized",
+          "want": true,
+          "got": true,
+          "ok": true
+        },
+        {
+          "key": "bins",
+          "want": 0,
+          "got": 0,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "wye_voltage",
+      "checks": [
+        {
+          "key": "VLL",
+          "want": 207.846096908,
+          "got": 207.84609690826525,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "three_phase",
+      "checks": [
+        {
+          "key": "kVA",
+          "want": 36.026656797,
+          "got": 36.02665679743264,
+          "ok": true
+        },
+        {
+          "key": "kW",
+          "want": 36.026656797,
+          "got": 36.02665679743264,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "phase_planning",
+      "checks": [
+        {
+          "key": "A",
+          "want": 48,
+          "got": 48,
+          "ok": true
+        },
+        {
+          "key": "VA",
+          "want": 17292.795262768,
+          "got": 17292.79526276767,
+          "ok": true
+        },
+        {
+          "key": "kW",
+          "want": 17.292795263,
+          "got": 17.292795262767672,
+          "ok": true
+        }
+      ],
+      "source_note": "Source gives 17293.18 VA; precise sqrt(3) gives 17292.795 VA. Both round to 17.293 kW."
+    },
+    {
+      "id": "phase_planning",
+      "checks": [
+        {
+          "key": "kW",
+          "want": 13.83423621,
+          "got": 13.834236210214138,
+          "ok": true
+        }
+      ],
+      "source_note": "Source worked example says 13.835 kW; exact source formula gives 13.834 kW, disclosed in app."
+    },
+    {
+      "id": "phase_load",
+      "checks": [
+        {
+          "key": "A",
+          "want": 29.4,
+          "got": 29.400000000000002,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "phase_load",
+      "checks": [
+        {
+          "key": "A",
+          "want": 58.8,
+          "got": 58.8,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "phase_load",
+      "checks": [
+        {
+          "key": "A",
+          "want": 19.6,
+          "got": 19.6,
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "edge": {
+    "checks": [
+      {
+        "id": "wavelength",
+        "rejected": true
+      },
+      {
+        "id": "wavelength",
+        "rejected": true
+      },
+      {
+        "id": "path_delay",
+        "rejected": true
+      },
+      {
+        "id": "phase",
+        "rejected": true
+      },
+      {
+        "id": "comb_nulls",
+        "rejected": true
+      },
+      {
+        "id": "single_phase",
+        "rejected": true
+      },
+      {
+        "id": "single_phase",
+        "rejected": true
+      },
+      {
+        "id": "circuits_lower_bound",
+        "rejected": true
+      },
+      {
+        "id": "phase_load",
+        "rejected": true
+      }
+    ],
+    "delayZero": true,
+    "noComb": true,
+    "allCancel": true,
+    "PFUnknown": true,
+    "PFZero": true,
+    "otherLoad": true
+  },
+  "views": [
+    {
+      "lesson": 0,
+      "panel": "concepts",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 0,
+      "panel": "calculators",
+      "calculators": 14,
+      "diagrams": 0
+    },
+    {
+      "lesson": 0,
+      "panel": "diagrams",
+      "calculators": 0,
+      "diagrams": 6
+    },
+    {
+      "lesson": 0,
+      "panel": "listening",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 0,
+      "panel": "quiz",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 0,
+      "panel": "sources",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 1,
+      "panel": "concepts",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 1,
+      "panel": "calculators",
+      "calculators": 2,
+      "diagrams": 0
+    },
+    {
+      "lesson": 1,
+      "panel": "diagrams",
+      "calculators": 0,
+      "diagrams": 3
+    },
+    {
+      "lesson": 1,
+      "panel": "listening",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 1,
+      "panel": "quiz",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 1,
+      "panel": "sources",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 2,
+      "panel": "concepts",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 2,
+      "panel": "calculators",
+      "calculators": 3,
+      "diagrams": 0
+    },
+    {
+      "lesson": 2,
+      "panel": "diagrams",
+      "calculators": 0,
+      "diagrams": 4
+    },
+    {
+      "lesson": 2,
+      "panel": "listening",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 2,
+      "panel": "quiz",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 2,
+      "panel": "sources",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 3,
+      "panel": "concepts",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 3,
+      "panel": "calculators",
+      "calculators": 4,
+      "diagrams": 0
+    },
+    {
+      "lesson": 3,
+      "panel": "diagrams",
+      "calculators": 0,
+      "diagrams": 5
+    },
+    {
+      "lesson": 3,
+      "panel": "listening",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 3,
+      "panel": "quiz",
+      "calculators": 0,
+      "diagrams": 0
+    },
+    {
+      "lesson": 3,
+      "panel": "sources",
+      "calculators": 0,
+      "diagrams": 0
+    }
+  ],
+  "layouts": [
+    {
+      "lesson": 0,
+      "panel": "concepts",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "concepts",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "concepts",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "concepts",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "calculators",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "calculators",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "calculators",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "calculators",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "diagrams",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "diagrams",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "diagrams",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "diagrams",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "listening",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "listening",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "listening",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "listening",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "quiz",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "quiz",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "quiz",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "quiz",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "sources",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "sources",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "sources",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 0,
+      "panel": "sources",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "concepts",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "concepts",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "concepts",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "concepts",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "calculators",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "calculators",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "calculators",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "calculators",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "diagrams",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "diagrams",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "diagrams",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "diagrams",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "listening",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "listening",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "listening",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "listening",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "quiz",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "quiz",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "quiz",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "quiz",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "sources",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "sources",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "sources",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 1,
+      "panel": "sources",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "concepts",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "concepts",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "concepts",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "concepts",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "calculators",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "calculators",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "calculators",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "calculators",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "diagrams",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "diagrams",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "diagrams",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "diagrams",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "listening",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "listening",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "listening",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "listening",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "quiz",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "quiz",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "quiz",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "quiz",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "sources",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "sources",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "sources",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 2,
+      "panel": "sources",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "concepts",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "concepts",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "concepts",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "concepts",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "calculators",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "calculators",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "calculators",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "calculators",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "diagrams",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "diagrams",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "diagrams",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "diagrams",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "listening",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "listening",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "listening",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "listening",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "quiz",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "quiz",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "quiz",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "quiz",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "sources",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "sources",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "sources",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "lesson": 3,
+      "panel": "sources",
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "audio": [
+    {
+      "lesson": "1.1",
+      "index": 0,
+      "which": "A",
+      "preVolumePeak": 0.20000000298023224,
+      "preVolumeRMS": 0.021110562875289007,
+      "maxOutputPeak": 0.010000000149011612,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.1",
+      "index": 0,
+      "which": "B",
+      "preVolumePeak": 0.17944620549678802,
+      "preVolumeRMS": 0.023417616188574145,
+      "maxOutputPeak": 0.008972310274839402,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.1",
+      "index": 1,
+      "which": "A",
+      "preVolumePeak": 0.23927386105060577,
+      "preVolumeRMS": 0.09751506172224471,
+      "maxOutputPeak": 0.01196369305253029,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.1",
+      "index": 1,
+      "which": "B",
+      "preVolumePeak": 0.23999953269958496,
+      "preVolumeRMS": 0.13774779185615174,
+      "maxOutputPeak": 0.011999976634979249,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.1",
+      "index": 2,
+      "which": "A",
+      "preVolumePeak": 0.10367720574140549,
+      "preVolumeRMS": 0.011179307675080422,
+      "maxOutputPeak": 0.005183860287070275,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.1",
+      "index": 2,
+      "which": "B",
+      "preVolumePeak": 0.10261314362287521,
+      "preVolumeRMS": 0.01082737503643672,
+      "maxOutputPeak": 0.005130657181143761,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.2",
+      "index": 0,
+      "which": "A",
+      "preVolumePeak": 0.20000000298023224,
+      "preVolumeRMS": 0.021110562875289007,
+      "maxOutputPeak": 0.010000000149011612,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.2",
+      "index": 0,
+      "which": "B",
+      "preVolumePeak": 0.058863501995801926,
+      "preVolumeRMS": 0.021110522249007602,
+      "maxOutputPeak": 0.0029431750997900965,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.2",
+      "index": 1,
+      "which": "A",
+      "preVolumePeak": 0.15352068841457367,
+      "preVolumeRMS": 0.016202704289811513,
+      "maxOutputPeak": 0.007676034420728684,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.2",
+      "index": 1,
+      "which": "B",
+      "preVolumePeak": 0.1506270319223404,
+      "preVolumeRMS": 0.01585621031781755,
+      "maxOutputPeak": 0.00753135159611702,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.3",
+      "index": 0,
+      "which": "A",
+      "preVolumePeak": 0.20042164623737335,
+      "preVolumeRMS": 0.021662289230975105,
+      "maxOutputPeak": 0.010021082311868669,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.3",
+      "index": 0,
+      "which": "B",
+      "preVolumePeak": 0.20000000298023224,
+      "preVolumeRMS": 0.021110562875289007,
+      "maxOutputPeak": 0.010000000149011612,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.3b",
+      "index": 0,
+      "which": "A",
+      "preVolumePeak": 0.11999999731779099,
+      "preVolumeRMS": 0.08438089374661682,
+      "maxOutputPeak": 0.00599999986588955,
+      "seconds": 6
+    },
+    {
+      "lesson": "1.3b",
+      "index": 0,
+      "which": "B",
+      "preVolumePeak": 0.1041131392121315,
+      "preVolumeRMS": 0.08532456750955839,
+      "maxOutputPeak": 0.0052056569606065755,
+      "seconds": 6
+    }
+  ],
+  "quizProgress": true,
+  "viewTransitions": true,
+  "sourceArithmeticNotes": [
+    "Source gives 17293.18 VA; precise sqrt(3) gives 17292.795 VA. Both round to 17.293 kW.",
+    "Source worked example says 13.835 kW; exact source formula gives 13.834 kW, disclosed in app."
+  ]
+}

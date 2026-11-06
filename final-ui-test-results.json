@@ -1,0 +1,24 @@
+{
+  "errors": [],
+  "advancedControls": {
+    "detectorMode": 1,
+    "ballisticsMode": 1,
+    "oversample": 4,
+    "lookahead": 0.004999999888241291,
+    "autoMakeup": 1,
+    "programRelease": 1
+  },
+  "rotaryDragReset": true,
+  "compBypass": true,
+  "eqDrag": {
+    "changed": true,
+    "response": 5.929176889527082,
+    "liveMatches": true
+  },
+  "stereoOppositePhasePeak": 0.25,
+  "nativeButterworthPass": {
+    "Q": -3.0102999210357666,
+    "cornerDB": -3.0103001052924827
+  },
+  "localCourseImport": true
+}

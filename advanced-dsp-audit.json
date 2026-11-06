@@ -1,0 +1,76 @@
+{
+  "errors": [],
+  "extra": [
+    {
+      "options": {
+        "oversample": 2
+      },
+      "measurement": {
+        "inputPeakDb": -12,
+        "inputDetectorDb": -12,
+        "outputDetectorDb": -21.00000089349905,
+        "predictedDb": -21,
+        "errorDb": -8.934990489706252e-7,
+        "nativeModelDb": null
+      }
+    },
+    {
+      "options": {
+        "ballistics": "decoupled"
+      },
+      "measurement": {
+        "inputPeakDb": -12,
+        "inputDetectorDb": -12,
+        "outputDetectorDb": -21.00000089349905,
+        "predictedDb": -21,
+        "errorDb": -8.934990489706252e-7,
+        "nativeModelDb": null
+      }
+    },
+    {
+      "options": {
+        "programRelease": true
+      },
+      "measurement": {
+        "inputPeakDb": -12,
+        "inputDetectorDb": -12,
+        "outputDetectorDb": -21.00000089349905,
+        "predictedDb": -21,
+        "errorDb": -8.934990489706252e-7,
+        "nativeModelDb": null
+      }
+    },
+    {
+      "options": {
+        "autoMakeup": true
+      },
+      "measurement": {
+        "inputPeakDb": -12,
+        "inputDetectorDb": -12,
+        "outputDetectorDb": -10.200000912934275,
+        "predictedDb": -10.200000000000001,
+        "errorDb": -9.129342739555568e-7,
+        "nativeModelDb": null
+      }
+    }
+  ],
+  "latency": [
+    {
+      "lookaheadMs": 0,
+      "measuredMs": 0
+    },
+    {
+      "lookaheadMs": 5,
+      "measuredMs": 5
+    },
+    {
+      "lookaheadMs": 20,
+      "measuredMs": 20
+    }
+  ],
+  "stereoQuadratureRMS": {
+    "actual": -21.7639633821156,
+    "expected": -21.752574989159953,
+    "errorDb": -0.01138839295564864
+  }
+}
