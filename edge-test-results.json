@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "exact": {
+    "frequency": true,
+    "eq": true,
+    "compression": true,
+    "comb": true,
+    "vocal": true
+  },
+  "levelUp": true,
+  "stopped": true,
+  "hiddenStopped": true,
+  "expired": true
+}

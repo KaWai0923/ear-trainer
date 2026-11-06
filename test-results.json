@@ -1,0 +1,57 @@
+{
+  "errors": [],
+  "overflow": false,
+  "report": [
+    {
+      "module": "frequency",
+      "reveal": "0% · 再聽一次，慢慢練。\n\n4k Hz\n\noctave 誤差 2.000；score = max(0, 1 − octave error)。\n\n原聲 → 題目 → 你嘅答案，輪流比較。下一題前可以改答案控制做實驗，但唔會重新計分。\n\n▶ 原聲\n▶ 題目\n▶ 我嘅答案",
+      "status": "播放：你嘅答案 · 4 秒，自動淡出"
+    },
+    {
+      "module": "eq",
+      "reveal": "10% · 再聽一次，慢慢練。\n\n500 Hz · -6 dB · Q 0.7\n\n評分：frequency 60% / gain 25% / Q 15%。\n\n原聲 → 題目 → 你嘅答案，輪流比較。下一題前可以改答案控制做實驗，但唔會重新計分。\n\n▶ 原聲\n▶ 題目\n▶ 我嘅答案",
+      "status": "播放：你嘅答案 · 4 秒，自動淡出"
+    },
+    {
+      "module": "feedback",
+      "reveal": "0% · 再聽一次，慢慢練。\n\n8k Hz ringing；目標約 −6 dB，容許相鄰 band，但額外 cut 會扣分。\n\n最近 band 8k Hz · 估計有效 cut 0.0 dB · 額外 cut 6.0 dB · 1.0 秒。準確度 85% + 速度 15%，再扣過量 cut。\n\n原聲 → 題目 → 你嘅答案，輪流比較。下一題前可以改答案控制做實驗，但唔會重新計分。\n\n▶ 原聲\n▶ 題目\n▶ 我嘅答案",
+      "status": "播放：你嘅答案 · 4 秒，自動淡出"
+    },
+    {
+      "module": "compression",
+      "reveal": "50% · 再聽一次，慢慢練。\n\nLight · Slow (80/500 ms)；Light threshold −15 dB / ratio 2:1；Heavy −32 dB / 8:1。\n\n壓縮量同速度各佔 50%。\n\n原聲 → 題目 → 你嘅答案，輪流比較。下一題前可以改答案控制做實驗，但唔會重新計分。\n\n▶ 原聲\n▶ 題目\n▶ 我嘅答案",
+      "status": "播放：你嘅答案 · 4 秒，自動淡出"
+    },
+    {
+      "module": "comb",
+      "reveal": "30% · 再聽一次，慢慢練。\n\nΔd = 0.1715 m → Δt = 0.5 ms (c=343 m/s) · 正常 + · 第一個非零 null 1000.0 Hz\n\nDelay 40% / polarity 30% / 第一個非零 null 30%。\n\n原聲 → 題目 → 你嘅答案，輪流比較。下一題前可以改答案控制做實驗，但唔會重新計分。\n\n▶ 原聲\n▶ 題目\n▶ 我嘅答案",
+      "status": "播放：你嘅答案 · 4 秒，自動淡出"
+    },
+    {
+      "module": "vocal",
+      "reveal": "0% · 再聽一次，慢慢練。\n\nBoxy 箱聲 → 400–800 Hz，適量 bell cut。示範 EQ：600 Hz / +6 dB / Q 1.5\n\n問題辨認 60% / 處理方法 40%。\n\n原聲 → 題目 → 你嘅答案，輪流比較。下一題前可以改答案控制做實驗，但唔會重新計分。\n\n▶ 原聲\n▶ 題目\n▶ 我嘅答案\nDe-esser 答案試聽以靜態 bell cut 示意，未實作動態齒音處理。Boom 示範亦係低頻 bell boost，唔係真實 proximity effect。",
+      "status": "播放：你嘅答案 · 4 秒，自動淡出"
+    }
+  ],
+  "metrics": {
+    "pink": {
+      "rms": 0.18000000003157635,
+      "peak": 0.7620746493339539
+    },
+    "vocal": {
+      "rms": 0.1799999999762683,
+      "peak": 0.7416628003120422
+    },
+    "drums": {
+      "rms": 0.13574551007191976,
+      "peak": 0.8500000238418579
+    },
+    "compressionRms": [
+      0.06000000000518279,
+      0.059999999990926325
+    ]
+  },
+  "fileInfo": "已本機解碼：test.wav · 1.0 秒。Loop 播放可選片段。",
+  "exact": "100% · 做得好！Mud 混濁 → 200–400 Hz，適量 bell cut。示範 EQ：300 Hz / +6 dB / Q 1.2問題辨認 60% / 處理方法 40%。原聲 → 題目 → 你嘅答案，輪流比較。下一題前可以改答案控制做實驗，但唔會重新計分。▶ 原聲▶ 題目▶ 我嘅答案De-esser 答案試聽以靜態 bell cut 示意，未實作動態齒音處理。Boom 示範亦係低頻 bell boost，唔係真實 proximity effect。",
+  "persisted": true
+}
