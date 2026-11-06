@@ -1,0 +1,131 @@
+{
+  "version": "1.9",
+  "suite": "Starting Point + full regression",
+  "environment": "Node/jsdom DOM mocks; previous suite includes actual OfflineAudioContext FX tests. Not Chromium/Safari layout validation.",
+  "baseline": {
+    "batch1": {
+      "passed": 11,
+      "total": 11
+    },
+    "batch2": {
+      "passed": 20,
+      "total": 20
+    },
+    "batch3": {
+      "passed": 16,
+      "total": 16
+    }
+  },
+  "fx": {
+    "passed": 14,
+    "total": 14,
+    "numbers": {
+      "rt60": [
+        {
+          "nominalSeconds": 0.5,
+          "measuredSeconds": 0.499560833952462,
+          "errorPercent": 0.08783320950760398
+        },
+        {
+          "nominalSeconds": 1.2,
+          "measuredSeconds": 1.1996610790778526,
+          "errorPercent": 0.028243410178948235
+        },
+        {
+          "nominalSeconds": 2.5,
+          "measuredSeconds": 2.4991238466825636,
+          "errorPercent": 0.035046132697456045
+        }
+      ],
+      "stability": [
+        {
+          "mode": "mono",
+          "peak": 2.41483433889836,
+          "lastSecondPeak": 5.3588116297153045e-36
+        },
+        {
+          "mode": "stereo",
+          "peak": 5.214698965222862,
+          "lastSecondPeak": 1.4269017920418748e-33
+        },
+        {
+          "mode": "pingpong",
+          "peak": 2.175545203798921,
+          "lastSecondPeak": 2.0750787192940598e-41
+        }
+      ],
+      "delayTiming": [
+        {
+          "sampleRate": 44100,
+          "firstTapMs": [
+            124.98866213151926,
+            299.9773242630385
+          ],
+          "maxErrorMs": 0.022675736961502935
+        },
+        {
+          "sampleRate": 48000,
+          "firstTapMs": [
+            125,
+            300
+          ],
+          "maxErrorMs": 0
+        }
+      ],
+      "convolver": {
+        "maxSampleError": 6.631016731262207e-7,
+        "renderedRT60": 1.1996609428376126
+      },
+      "auxRoutingRMS": {
+        "pre": 0.3894807765386271,
+        "post": 0
+      }
+    }
+  },
+  "tests": [
+    {
+      "name": "Full FX + batch1/2/3 regressions rerun",
+      "passed": true
+    },
+    {
+      "name": "Three supplied research artifacts copied byte-for-byte; 28 instruments, unchanged source numeric values",
+      "passed": true
+    },
+    {
+      "name": "Fifth top-level tab, keyboard End and 320/390/1440 DOM rendering / all instrument details",
+      "passed": true
+    },
+    {
+      "name": "Search/category filters, explicit provenance / source-verification exclusions remain visible",
+      "passed": true
+    },
+    {
+      "name": "Every card safe-loads available JSON comp/gate endpoints, all processing initially bypassed; no audio starts",
+      "passed": true
+    },
+    {
+      "name": "Explicit HPF and selected EQ load source endpoints only, guard >4 bands/out-of-range/no-LPF-slope",
+      "passed": true
+    },
+    {
+      "name": "Two card loader forms have unique IDs, initial all-off choices; checkbox changes combined preview",
+      "passed": true
+    },
+    {
+      "name": "Programmatic and tab navigation leave reference exclusively, contextual play safe, reset clears active view",
+      "passed": true
+    },
+    {
+      "name": "Reference source data/scripts/Markdown verification all offline precached with v1.9",
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "errors": [],
+  "limits": [
+    "Research source verification preserved from supplied files; not independently reverified all web sources.",
+    "Explore uses up to four explicitly-selected PEQ bands. Unsupported/unspecified LPF slope, threshold and numeric knee are not invented.",
+    "No new browser screenshots / physical phone tests."
+  ]
+}

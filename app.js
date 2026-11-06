@@ -17,6 +17,7 @@ function stop(){
  const previous=voices;voices=[];
  for(const v of previous){
   try{v.fade.gain.cancelScheduledValues(ctx.currentTime);v.fade.gain.setTargetAtTime(0,ctx.currentTime,.012)}catch{}
+  try{v.cleanup?.()}catch{}
   for(const n of v.nodes)if(n.stop)try{n.stop((ctx?.currentTime||0)+.07)}catch{}
   setTimeout(()=>{for(const n of v.nodes)try{n.disconnect()}catch{}try{v.fade.disconnect()}catch{}},130);
  }

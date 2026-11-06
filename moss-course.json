@@ -239,6 +239,46 @@
         "view": "explore",
         "preset": "Neutral"
       }
+    },
+    {
+      "id": "effects",
+      "title": "Live Reverb / Delay：Clarity、節奏同 Return EQ",
+      "points": [
+        "Moss 編寫 · 非音響工程課程原教材。Parallel aux 通常用 100% wet return，再用 send／return level 控比例；FOH 多由 post-fader 開始，pre-fader send 唔會跟 channel fader 收聲。",
+        "Pre-delay 將 wet 同 dry 字頭分開；vocal 可先試 15–60 ms，但太長會變 slap／echo。短 room 約 .3–1 s、vocal plate/hall 約 1–2.5 s 只係起點，要連原場殘響同編曲一齊聽。",
+        "Quarter-note delay = 60000/BPM ms；1/8 = ×.5、dotted ×1.5、triplet ×2/3。120 BPM 嘅 quarter=500 ms，dotted eighth=375 ms。Tap tempo 只估你撳嘅拍子，唔分析錄音。",
+        "Return HPF 約 100–300 Hz、LPF 約 4–12 kHz 可以先試，避免 mud／齒音 tail；唔影響原聲。Loop EQ 每次 repeat 再濾一次，同 return EQ 一次過濾唔同。",
+        "Feedback 越高 repeats 越長；app 硬上限 94%，有 bounded loop／FX return 保護，同全局 STOP／limiter。冇 freeze、冇真實 PA feedback demo，唔保證實體聲壓安全。",
+        "Dry-key ducking 可以唱字時收 wet、停句後回復；要留意 threshold／release 同 dry level。Reverb modulation 係 wet delay LFO，唔係 time-varying IR；spring／gated／reverse 係原創 texture，唔聲稱硬件 emulation。",
+        "Try this：去 Explore，低音量用 vocal sample，比較 dry → short plate → long hall；試 25 ms pre-delay，再加 120 BPM dotted-eighth delay。逐次只改一項，level-match，檢查 mono 同 clarity。IR 最長 8 秒，gated／reverse 嘅 decay 係 envelope 長度，唔係自然 RT60。"
+      ],
+      "lab": "effects",
+      "quiz": [
+        {
+          "prompt": "120 BPM 嘅 dotted eighth delay 係？",
+          "options": [
+            "250 ms",
+            "375 ms",
+            "500 ms"
+          ],
+          "correct": 1,
+          "why": "60000/120×0.5×1.5=375 ms。"
+        },
+        {
+          "prompt": "Channel fader 收走後仲有好多 wet，首先查？",
+          "options": [
+            "盲目 boost return",
+            "Pre/post aux tap 同 routing／return"
+          ],
+          "correct": 1,
+          "why": "Pre-fader send 唔跟 channel fader；亦要分辨正常 tail 同仍然有 send。"
+        }
+      ],
+      "sources": [],
+      "practice": {
+        "view": "explore",
+        "preset": "Vocal"
+      }
     }
   ],
   "scenarios": [

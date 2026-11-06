@@ -1,4 +1,38 @@
-# Current release: v1.8 · Batch 3
+# Current release: v1.9 · Aux FX + Starting Point
+
+## v1.9 新增
+
+- **Explore Aux FX rack**：兩組 pre/post-fader aux sends、獨立濕聲 returns，dry 維持原 channel；所有 returns 仍入共同 fade／master limiter，global STOP／離頁切斷 tails。預設兩組 OFF、send −18 dB／return −12 dB；保留低實體音量。
+- **SPACE reverb**：原創 generated stereo IR（hall／plate／room／chamber／spring／gated／reverse）、pre-delay、nominal RT60、size、diffusion、density、ER level／late balance、low/HF decay multipliers／crossovers、wet modulation depth/rate、stereo width、input HPF/LPF、return HPF/LPF＋250Hz/6kHz shelves、wet mix／return level。
+- **ECHO delay**：獨立 L/R ms、tap tempo、quarter/eighth/sixteenth 與 dotted/triplet note sync、mono／stereo／ping-pong、feedback 硬限 94%、loop HPF/LPF、bounded tape saturation／wow/flutter、dry-key ducking／threshold/release、all-pass repeat diffusion。無 freeze／100% self-oscillation。
+- 原創 plugin-style knobs（上下拖／double-click reset／keyboard／直接輸入）、decay／echo visuals、FX A/B、per-type factory presets、最多16個本機 user presets（可刪除），連同 Explore snapshots／JSON backup／merge／unified reset。所有 FX 參數都有 Cantonese expandable 功能、起點範圍、何時用及常見錯誤；原有 EQ／comp／gate／channel 主要控制亦加入逐項 help。
+- **Moss effects lesson**：live vocal clarity／pre-delay、60000/BPM、dotted/triplet calculator、return EQ／aux tap。可跳 Explore，唔自動播放；清楚同「音響工程課程」原教材分開。未新增可選嘅 delay/decay ID scoring module。
+- **Starting Point 起手參數**：第五個 top-level tab；28張 instrument/bus cards、搜尋／UI category、HPF、EQ table／小圖、comp／gate、tips、mistakes、分歧、原則 evidence badge／numeric editorial status 同 source links。三份原稿逐 byte 複製到 `starting-points/`，保留來源核查／排除紀錄，唔聲稱本次重新逐頁查證。
+- **Load into Explore**：預設 flat／bypass；使用者自行揀 HPF 同最多4段 PEQ，圖按已選值即時預覽。只載 JSON 範圍內值；comp／gate 有提供嘅 timing／ratio 先取明示下限，仍保持 bypass。唔捏造 portable threshold、numeric knee、未提供嘅 LPF slope／sidechain filter；冇資料嘅欄位保留／手動校。唔自動開聲、唔將所有 EQ 一鍵套晒，唔係 console scene。
+- 保留使用者改名 **「音響工程課程」**。SW VERSION／全部 runtime URLs／precache 同步 **1.9**，新 scripts／worker／lesson／三份參考檔全部離線 shell cached；無 git、無發布。
+
+## FX 實作／安全界線
+
+`fx-core.js` 為共用 delay DSP／IR model；`fx-worklet.js` 處理 stereo delay；`fx-ir-worker.js` 離主執行緒產生 IR。`modules/fx-engine.js` 處理 routing／returns；state／help／UI 分模組。原 EQ／compressor DSP 未改音訊數學。
+
+IR 最長8秒，最高48kHz、stereo float32 約2.93MiB／份；一個 cache、最多兩個 crossfade Convolver，舊 inactive IR 釋放。Worker 最多一個 active＋一個合併待處理 request，唔讓拖動累積無限 IR jobs。Convolver FFT／browser resampling／暫存仍有額外 RAM；IR 係 sample PCM budget 之外，唔保證整個 browser RAM／手機 CPU。Worker 不可用會用16kHz IR fallback，會提示頻寬受限。改 IR shape 短 crossfade，唔係無縫 console recall。
+
+Natural RT60 指 IR mid-band envelope；low/high multipliers、濾波、ER、8秒截尾會影響量到嘅值；gated/reverse 只係 envelope duration。Modulation 係 Convolver 後 wet delay LFO，唔係 time-varying IR。Spring／tape 等為原創 texture，唔聲稱 REV-X／Lexicon／H3000／Echoplex 或其他硬件 emulation。
+
+AudioWorklet 不可用時，native delay 保留 routing／L-R timing／mono-stereo-pingpong／bounded feedback／loop filters；duck、saturation、wow/flutter、diffusion 明確停用。Native loop filters 為12dB/oct，custom 為一階，唔聲稱相同響應。每組 FX return 都有零 lookahead bounded soft ceiling，之後 dry／wet 共用原本 master dynamics limiter；唔額外喺 wet 路加 native compressor 嘅 lookahead latency；全部只管數碼輸出，唔係校準 SPL meter 或人耳安全保證。Aux mix 只縮放濕聲，唔重複混入 dry。
+
+## v1.9 QA
+
+執行 `NODE_PATH=/path/to/node_modules node tests/starting-points.cjs`：包括全部 Batch1／2／3、FX、Starting Point suites。報告：`v1.9-test-results.json`、`fx-test-results.json`、`starting-points-test-results.json`。測試依賴留喺 public folder 外面，無 build requirement。
+
+實際 Node OfflineAudioContext 測 custom delay timing／native aux routing／Convolver；Schroeder fit 檢查 nominal RT60，並測94% feedback、overload、ducking、Stop／backup／preset／navigation／help coverage／28張卡同原稿一致。jsdom 測320／390／1440 DOM widths；**唔係 Chromium／Safari 實際 layout，冇新 screenshots／真機 CPU 或 acoustic 驗證**。部署前請真機核對 mobile overflow、VoiceOver、Safari interruptions 同 installed-PWA offline update。舊 screenshots／browser reports 都係歷史交付。
+
+部署完整 static folder；cache version 變更會清理舊離線錄音，使用者確認更新後要重新下載選用 sample pack，再依賴離線播放。所有備份仍本機／手動 JSON，無 server/accounts。
+
+---
+
+## Previous release: v1.8 · Batch 3 (historical notes)
+
 
 ## 新增（Moss 編寫，非 Sunny 教材）
 - **現場 Lab**：入口有獨立顯眼按鈕，亦可由 Teaching sidebar 進入；沿用 Teaching tab，唔混入 Sunny 原教材。

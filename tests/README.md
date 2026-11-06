@@ -22,3 +22,9 @@ Limitations: Node's Web Audio engine is not Chromium or Safari. DOM/canvas geome
 Includes batch1 and batch2, then verifies all six four-step scenarios (wrong-answer blocking, numerical tolerance, progression, no fabricated training scores), all six Moss lessons at 320/390/1440 mock DOM widths, formulas/TF/reference/coherence, Dante transport assumptions, quiz/calculator/answer draft persistence, explicit practice/return navigation, no autoplay, legacy backups/reset/unsafe data, pure idempotent manual merges and v1.8 offline assets. The fixture reads script order from index.html instead of duplicating the runtime module list.
 
 New report: `batch3-test-results.json`. No Chromium, real layout or screenshots in this environment; device/PA/RF/network safety is NOT validated by these tests.
+
+## v1.9 — full FX + Starting Point regression runner
+
+`NODE_PATH=/path/to/node_modules node tests/starting-points.cjs`
+
+Runs batch1, batch2, batch3, `fx.cjs`, and all reference-card checks. Uses actual Node OfflineAudioContext for stereo-delay timing, native pre/post routing, Convolver pre-delay/IR matching, and preserved EQ/comp audits. IR RT60 uses Schroeder -5…-35dB fit; gated/reverse are not natural RT60. UI/keyboard/help/backup/source-preservation/navigation checks are jsdom mocks, not browser layout certification. Reports: `v1.9-test-results.json`, `fx-test-results.json`, `starting-points-test-results.json`.

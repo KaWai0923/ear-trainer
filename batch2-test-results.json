@@ -1,5 +1,5 @@
 {
-  "version": "1.8",
+  "version": "1.9",
   "suite": "batch2 regression",
   "environment": "Node + jsdom, service-worker Cache API model, and node-web-audio-api real OfflineAudioContext/custom AudioWorklets; NOT Safari or Chromium",
   "baseline": {

@@ -1,0 +1,251 @@
+[
+  {
+    "id": "sos-live-drums",
+    "title": "Engineering Drums Live: Part Two",
+    "url": "https://www.soundonsound.com/techniques/engineering-drums-live-part-two",
+    "final_url": "https://www.soundonsound.com/techniques/engineering-drums-live-part-two",
+    "http_status": 200,
+    "chars": 21717,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-essentials",
+    "title": "Mixing Essentials",
+    "url": "https://www.soundonsound.com/techniques/mixing-essentials",
+    "final_url": "https://www.soundonsound.com/techniques/mixing-essentials",
+    "http_status": 200,
+    "chars": 46109,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-vocal",
+    "title": "Vocal Production",
+    "url": "https://www.soundonsound.com/techniques/vocal-production",
+    "final_url": "https://www.soundonsound.com/techniques/vocal-production",
+    "http_status": 200,
+    "chars": 39899,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-drums-comp",
+    "title": "Drum Compression",
+    "url": "https://www.soundonsound.com/techniques/drum-compression",
+    "final_url": "https://www.soundonsound.com/techniques/drum-compression",
+    "http_status": 200,
+    "chars": 17957,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-acoustic",
+    "title": "Processing Acoustic Guitars",
+    "url": "https://www.soundonsound.com/techniques/processing-acoustic-guitars",
+    "final_url": "https://www.soundonsound.com/techniques/processing-acoustic-guitars",
+    "http_status": 200,
+    "chars": 17191,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-jazz",
+    "title": "Session Notes: Selwyn Jazz Part 2",
+    "url": "https://www.soundonsound.com/techniques/session-notes-selwyn-jazz-part-2",
+    "final_url": "https://www.soundonsound.com/techniques/session-notes-selwyn-jazz-part-2",
+    "http_status": 200,
+    "chars": 29723,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-brass",
+    "title": "Recording Brass & Reeds",
+    "url": "https://www.soundonsound.com/techniques/recording-brass-reeds",
+    "final_url": "https://www.soundonsound.com/techniques/recording-brass-reeds",
+    "http_status": 200,
+    "chars": 25321,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-strings",
+    "title": "Recording Strings",
+    "url": "https://www.soundonsound.com/techniques/recording-strings",
+    "final_url": "https://www.soundonsound.com/techniques/recording-strings",
+    "http_status": 200,
+    "chars": 28101,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "shure-system",
+    "title": "House of Worship Audio Systems",
+    "url": "https://www.shure.com/en-US/docs/education/house-of-worship-audio-systems",
+    "final_url": "https://www.shure.com/en-US/docs/education/house-of-worship-audio-systems",
+    "http_status": 200,
+    "chars": 141,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": false,
+    "excluded_reason": "HTTP challenge/short response; WebFetch timed out; not counted as verified content"
+  },
+  {
+    "id": "shure-choir",
+    "title": "Of Mics and Monitors: Live Sound Reinforcement Tips for Choirs",
+    "url": "https://www.shure.com/pt-br/insights/of-mics-and-monitors-live-sound-reinforcement-tips-for-choirs",
+    "final_url": "https://www.shure.com/pt-BR/insights/of-mics-and-monitors-live-sound-reinforcement-tips-for-choirs",
+    "http_status": 200,
+    "chars": 6876,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "yamaha-gate",
+    "title": "How to Use a Noise Gate",
+    "url": "https://hub.yamaha.com/proaudio/pa-how-to/tools-of-the-trade-how-to-use-a-gate/",
+    "final_url": "https://hub.yamaha.com/proaudio/pa-how-to/tools-of-the-trade-how-to-use-a-gate/",
+    "http_status": 200,
+    "chars": 80,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true,
+    "webfetch_verification": "success: complete article returned and inspected; raw HTTP response alone was insufficient"
+  },
+  {
+    "id": "yamaha-comp",
+    "title": "How to Use a Compressor",
+    "url": "https://hub.yamaha.com/proaudio/livesound/tools-of-the-trade-how-to-use-a-compressor/",
+    "final_url": "https://hub.yamaha.com/proaudio/livesound/tools-of-the-trade-how-to-use-a-compressor/",
+    "http_status": 200,
+    "chars": 80,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true,
+    "webfetch_verification": "success: complete article returned and inspected; raw HTTP response alone was insufficient"
+  },
+  {
+    "id": "yamaha-tech",
+    "title": "For Audio Techs: Compression",
+    "url": "https://www.yamaha.com/worship/troomdetails.html?CNTID=63653&CTID=560645&TROOM_ID=58934",
+    "final_url": "https://www.yamaha.com/worship/troomdetails.html?CNTID=63653&CTID=560645&TROOM_ID=58934",
+    "http_status": 200,
+    "chars": 5681,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "btm-guitar",
+    "title": "Mixing Electric Guitars",
+    "url": "https://www.behindthemixer.com/mixing-electric-guitars/",
+    "final_url": "https://www.behindthemixer.com/mixing-electric-guitars/",
+    "http_status": 202,
+    "chars": 0,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true,
+    "webfetch_verification": "success: complete article returned and inspected; raw HTTP response alone was insufficient"
+  },
+  {
+    "id": "btm-keys",
+    "title": "Keyboard Mixing",
+    "url": "https://www.behindthemixer.com/keyboard-mixing/",
+    "final_url": "https://www.behindthemixer.com/keyboard-mixing/",
+    "http_status": 202,
+    "chars": 0,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true,
+    "webfetch_verification": "success: complete article returned and inspected; raw HTTP response alone was insufficient"
+  },
+  {
+    "id": "btm-bass",
+    "title": "The Foundation of the Perfect Mix",
+    "url": "https://www.behindthemixer.com/foundation-perfect-mix/",
+    "final_url": "https://www.behindthemixer.com/foundation-perfect-mix/",
+    "http_status": 202,
+    "chars": 0,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true,
+    "webfetch_verification": "success: complete article returned and inspected; raw HTTP response alone was insufficient"
+  },
+  {
+    "id": "sos-pads",
+    "title": "Creating & Using Synth Pad Sounds",
+    "url": "https://www.soundonsound.com/techniques/creating-using-synth-pad-sounds",
+    "final_url": "https://www.soundonsound.com/techniques/creating-using-synth-pad-sounds",
+    "http_status": 200,
+    "chars": 18202,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "sos-bus",
+    "title": "Pro Tools: Bus & Group Compression",
+    "url": "https://www.soundonsound.com/node/4923363",
+    "final_url": "https://www.soundonsound.com/node/4923363",
+    "http_status": 200,
+    "chars": 11664,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "dpa-piano",
+    "title": "How to mic piano",
+    "url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-piano/",
+    "final_url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-piano/",
+    "http_status": 200,
+    "chars": 10617,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "dpa-violin",
+    "title": "How to mic violin",
+    "url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-violin/",
+    "final_url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-violin/",
+    "http_status": 200,
+    "chars": 6762,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "dpa-cello",
+    "title": "How to mic cello",
+    "url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-cello/",
+    "final_url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-cello/",
+    "http_status": 200,
+    "chars": 6793,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "dpa-saxophone",
+    "title": "How to mic saxophone",
+    "url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-saxophone/",
+    "final_url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-a-saxophone/",
+    "http_status": 200,
+    "chars": 7224,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "dpa-acoustic-guitar",
+    "title": "How to mic acoustic-guitar",
+    "url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-an-acoustic-guitar/",
+    "final_url": "https://www.dpamicrophones.com/mic-university/how-to-mic/how-to-mic-an-acoustic-guitar/",
+    "http_status": 200,
+    "chars": 6889,
+    "verified_at": "2026-11-06 America/Toronto",
+    "retained_in_reference": true
+  },
+  {
+    "id": "shure-processors",
+    "title": "Selection and Operation of Audio Signal Processors",
+    "url": "https://content-files.shure.com/Pubs/asp-selection-and-operation-of-audio-signal-processors/us_pro_audiosignalprocessor_ea.pdf",
+    "verified": "2026-11-06 America/Toronto",
+    "verification_method": "HTTP 200 PDF downloaded; pdftotext inspected",
+    "http_status": 200,
+    "context": "Shure sound-reinforcement educational publication",
+    "findings": [
+      "Speech-intelligibility example: 125 Hz low cut, 6 dB/oct; publication also gives a 4 kHz high cut. This narrow-band system example is not automatically adopted for modern full-range MC sound.",
+      "Gain structure/headroom and microphone/loudspeaker geometry are fundamental; EQ cannot fix arbitrary acoustic limits."
+    ]
+  }
+]

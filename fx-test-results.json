@@ -1,0 +1,147 @@
+{
+  "version": "1.9",
+  "suite": "FX and full regression",
+  "environment": "Node + jsdom DOM mocks, actual node-web-audio-api OfflineAudioContext/custom AudioWorklet and ConvolverNode. Not Chromium/Safari or acoustic validation.",
+  "baseline": {
+    "batch1": {
+      "passed": 11,
+      "total": 11
+    },
+    "batch2": {
+      "passed": 20,
+      "total": 20
+    },
+    "batch3": {
+      "passed": 16,
+      "total": 16
+    }
+  },
+  "tests": [
+    {
+      "name": "All existing batch 1–3 suites rerun",
+      "passed": true
+    },
+    {
+      "name": "Full FX schema, defaults OFF, feedback cap, invalid preset parameters rejected",
+      "passed": true
+    },
+    {
+      "name": "Quarter/dotted/triplet timing and 2-second sync cap",
+      "passed": true
+    },
+    {
+      "name": "All seven generated IR types finite/bounded, parameter changes audible data, IR memory/duration bounded",
+      "passed": true
+    },
+    {
+      "name": "Nominal broadband natural RT60 via Schroeder -5…-35 dB fit",
+      "passed": true
+    },
+    {
+      "name": "Custom delay feedback 94% bounded under impulse, sustained overload, wow/flutter/saturation/smear and duck",
+      "passed": true
+    },
+    {
+      "name": "Actual OfflineAudioContext delay worklet timing at 44.1/48kHz, mono and ping-pong legs",
+      "passed": true
+    },
+    {
+      "name": "Actual OfflineAudioContext Convolver IR + pre-delay placement and RT60",
+      "passed": true
+    },
+    {
+      "name": "FX GUI desktop/mobile DOM, every FX parameter has accessible explanation, rotary drag changes real state",
+      "passed": true
+    },
+    {
+      "name": "Tap tempo, sync, factory presets, FX A/B and user preset round-trip in local storage / JSON",
+      "passed": true
+    },
+    {
+      "name": "Actual native fallback aux routing: pre-fader FX survives fader-down, post-fader does not",
+      "passed": true
+    },
+    {
+      "name": "Explore playback wires FX cleanup into global Stop and fallback disables unsupported controls",
+      "passed": true
+    },
+    {
+      "name": "IR worker coalesces rapid changes to one active plus newest queued request",
+      "passed": true
+    },
+    {
+      "name": "Moss effects lesson, tempo worked example, engineering tab naming preserved and complete v1.9 cache",
+      "passed": true
+    }
+  ],
+  "numbers": {
+    "rt60": [
+      {
+        "nominalSeconds": 0.5,
+        "measuredSeconds": 0.499560833952462,
+        "errorPercent": 0.08783320950760398
+      },
+      {
+        "nominalSeconds": 1.2,
+        "measuredSeconds": 1.1996610790778526,
+        "errorPercent": 0.028243410178948235
+      },
+      {
+        "nominalSeconds": 2.5,
+        "measuredSeconds": 2.4991238466825636,
+        "errorPercent": 0.035046132697456045
+      }
+    ],
+    "stability": [
+      {
+        "mode": "mono",
+        "peak": 2.41483433889836,
+        "lastSecondPeak": 5.3588116297153045e-36
+      },
+      {
+        "mode": "stereo",
+        "peak": 5.214698965222862,
+        "lastSecondPeak": 1.4269017920418748e-33
+      },
+      {
+        "mode": "pingpong",
+        "peak": 2.175545203798921,
+        "lastSecondPeak": 2.0750787192940598e-41
+      }
+    ],
+    "delayTiming": [
+      {
+        "sampleRate": 44100,
+        "firstTapMs": [
+          124.98866213151926,
+          299.9773242630385
+        ],
+        "maxErrorMs": 0.022675736961502935
+      },
+      {
+        "sampleRate": 48000,
+        "firstTapMs": [
+          125,
+          300
+        ],
+        "maxErrorMs": 0
+      }
+    ],
+    "convolver": {
+      "maxSampleError": 6.631016731262207e-7,
+      "renderedRT60": 1.1996609428376126
+    },
+    "auxRoutingRMS": {
+      "pre": 0.3894807765386271,
+      "post": 0
+    }
+  },
+  "passed": 14,
+  "total": 14,
+  "errors": [],
+  "limits": [
+    "No new browser screenshots / rendered mobile layout validation; DOM widths 320/390/1440 only.",
+    "RT60 is nominal mid-band IR envelope; band multipliers/filters/ER/gate/reverse and 8s truncation change measured results.",
+    "Native fallback advanced delay features explicitly disabled; no physical mobile CPU/SPL safety guarantee."
+  ]
+}
