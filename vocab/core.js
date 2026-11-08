@@ -1,11 +1,12 @@
 /* Pure, testable scheduling and storage helpers. No browser dependencies. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.VocabCore=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
 'use strict';
+const P=typeof module==='object'&&module.exports?require('./phonics.js'):globalThis.VocabPhonics;
 const DAY=86400000, SCHEMA=1;
 const CATEGORIES=['買嘢飲食','健康睇醫生','銀行理財','學校育兒','屋企維修','交通出行','政府表格','工作溝通'];
 const key=s=>String(s).trim().toLowerCase().replace(/\s+/g,' ');
 function dayKey(time=Date.now()){const d=new Date(time);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
-function defaultState(){return {schema:SCHEMA,own:[],cards:{},activity:{},settings:{newPerDay:10,voice:''}};}
+function defaultState(){return {schema:SCHEMA,own:[],cards:{},activity:{},settings:{newPerDay:10,voice:'',speed:'normal'}};}
 function schedule(previous,grade,now=Date.now()){
  if(!['again','hard','good','easy'].includes(grade))throw Error('Unknown grade');
  const p=previous||{ease:2.5,interval:0,reps:0,lapses:0,reviews:0};
@@ -46,7 +47,7 @@ function cleanWord(w,own=false){
  const fields={id:100,word:100,ipa:150,pos:80,meaning:500,example:1000,translation:1000,category:80,definition:1500,audio:2000};let out={};
  for(const [f,max]of Object.entries(fields)){if(w[f]!==undefined&&typeof w[f]!=='string')throw Error('生字欄位必須係文字');out[f]=(w[f]||'').trim();if(out[f].length>max)throw Error('生字欄位太長');}
  if(!/^(b\d{3,4}|u[\w-]{1,90})$/.test(out.id)||(own&&!out.id.startsWith('u'))||!out.word||!out.meaning||!out.category)throw Error('缺少必填欄位或 ID 錯誤');
- if(out.audio&&!/^https:\/\//i.test(out.audio))throw Error('發音連結必須係 HTTPS');return out;
+ if(out.audio&&!/^https:\/\//i.test(out.audio))throw Error('發音連結必須係 HTTPS');if(w.phonics)out.phonics=P.validate(w.phonics,out.word);else if(own)out.phonics=P.draft(out.word,out.ipa);return out;
 }
 function validateState(input,builtins){
  if(!input||input.schema!==SCHEMA||!Array.isArray(input.own)||input.own.length>5000||!input.cards||typeof input.cards!=='object'||Array.isArray(input.cards)||!input.activity||typeof input.activity!=='object'||Array.isArray(input.activity))throw Error('備份格式／版本唔支援');
@@ -57,6 +58,7 @@ function validateState(input,builtins){
  out.cards[id]={};for(const f of ['ease','interval','reps','lapses','reviews','due','last','introduced'])out.cards[id][f]=c[f];}
  for(const [d,n]of Object.entries(input.activity)){if(!/^\d{4}-\d{2}-\d{2}$/.test(d)||!Number.isFinite(Date.parse(d))||!Number.isSafeInteger(n)||n<0)throw Error('學習紀錄錯誤');out.activity[d]=n;}
  const limit=input.settings?.newPerDay;if(!Number.isInteger(limit)||limit<1||limit>50)throw Error('每日新字數量錯誤');out.settings.newPerDay=limit;
+ if(['normal','slow','slower'].includes(input.settings.speed))out.settings.speed=input.settings.speed;
  if(typeof input.settings.voice==='string')out.settings.voice=input.settings.voice.slice(0,300);return out;
 }
 return {DAY,SCHEMA,CATEGORIES,key,dayKey,defaultState,schedule,queue,stats,streak,diff,cleanWord,validateState};
