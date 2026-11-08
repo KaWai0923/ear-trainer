@@ -1,0 +1,5002 @@
+[
+  {
+    "id": "b001",
+    "word": "receipt",
+    "ipa": "/rɪˈsit/",
+    "pos": "noun",
+    "meaning": "收據；單據",
+    "example": "Could I have a receipt, please?",
+    "translation": "唔該，可唔可以畀張收據我？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b002",
+    "word": "refund",
+    "ipa": "/ˈriˌfʌnd/",
+    "pos": "noun",
+    "meaning": "退款",
+    "example": "I'd like a refund for this broken kettle.",
+    "translation": "我想為呢個壞咗嘅電熱水壺申請退款。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b003",
+    "word": "exchange",
+    "ipa": "/ɪksˈtʃeɪndʒ/",
+    "pos": "verb",
+    "meaning": "換貨；交換",
+    "example": "Can I exchange this shirt for a larger size?",
+    "translation": "我可唔可以將呢件恤衫換大一個碼？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b004",
+    "word": "aisle",
+    "ipa": "/aɪl/",
+    "pos": "noun",
+    "meaning": "貨架之間嘅通道",
+    "example": "The rice is in aisle five.",
+    "translation": "啲米喺第五條通道。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b005",
+    "word": "checkout",
+    "ipa": "/ˈtʃɛkˌaʊt/",
+    "pos": "noun",
+    "meaning": "付款處；收銀處",
+    "example": "There's a long line at the checkout.",
+    "translation": "收銀處排緊好長嘅隊。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b006",
+    "word": "cashier",
+    "ipa": "/kæˈʃɪr/",
+    "pos": "noun",
+    "meaning": "收銀員",
+    "example": "The cashier scanned my groceries.",
+    "translation": "收銀員掃描咗我啲雜貨。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b007",
+    "word": "cart",
+    "ipa": "/kɑrt/",
+    "pos": "noun",
+    "meaning": "購物車",
+    "example": "Do we need a cart or just a basket?",
+    "translation": "我哋要購物車，定係用個籃就夠？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b008",
+    "word": "basket",
+    "ipa": "/ˈbæskɪt/",
+    "pos": "noun",
+    "meaning": "購物籃；籃",
+    "example": "Put the apples in the basket.",
+    "translation": "將啲蘋果放入個籃度。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b009",
+    "word": "coupon",
+    "ipa": "/ˈkuˌpɑn/",
+    "pos": "noun",
+    "meaning": "優惠券",
+    "example": "This coupon expires on Friday.",
+    "translation": "呢張優惠券星期五到期。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b010",
+    "word": "discount",
+    "ipa": "/ˈdɪsˌkaʊnt/",
+    "pos": "noun",
+    "meaning": "折扣",
+    "example": "Is there a discount for seniors?",
+    "translation": "長者有冇折扣？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b011",
+    "word": "sale",
+    "ipa": "/seɪl/",
+    "pos": "noun",
+    "meaning": "減價活動；銷售",
+    "example": "The winter boots are on sale.",
+    "translation": "啲冬天靴而家做緊減價。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b012",
+    "word": "clearance",
+    "ipa": "/ˈklɪrəns/",
+    "pos": "noun",
+    "meaning": "清貨減價",
+    "example": "I found this jacket in the clearance section.",
+    "translation": "我喺清貨區搵到呢件外套。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b013",
+    "word": "price tag",
+    "ipa": "/ˈpraɪs tæɡ/",
+    "pos": "noun",
+    "meaning": "價錢牌",
+    "example": "I can't find the price tag on this bag.",
+    "translation": "我搵唔到呢個袋嘅價錢牌。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b014",
+    "word": "subtotal",
+    "ipa": "/ˈsʌbˌtoʊtəl/",
+    "pos": "noun",
+    "meaning": "小計；未加稅等費用嘅金額",
+    "example": "The subtotal is forty dollars before tax.",
+    "translation": "未計稅嘅小計係四十蚊。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b015",
+    "word": "tax",
+    "ipa": "/tæks/",
+    "pos": "noun",
+    "meaning": "稅",
+    "example": "Does this price include tax?",
+    "translation": "呢個價錢包唔包稅？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b016",
+    "word": "change",
+    "ipa": "/tʃeɪndʒ/",
+    "pos": "noun",
+    "meaning": "找續嘅錢；零錢",
+    "example": "You can keep the change.",
+    "translation": "啲找續唔使畀返我。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b017",
+    "word": "loonie",
+    "ipa": "/ˈluni/",
+    "pos": "noun",
+    "meaning": "加拿大一蚊硬幣",
+    "example": "I need a loonie for the shopping cart.",
+    "translation": "我需要一個一蚊硬幣攞購物車。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b018",
+    "word": "toonie",
+    "ipa": "/ˈtuni/",
+    "pos": "noun",
+    "meaning": "加拿大兩蚊硬幣",
+    "example": "Do you have a toonie for the parking meter?",
+    "translation": "你有冇一個兩蚊硬幣畀停車錶？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b019",
+    "word": "bulk",
+    "ipa": "/bʌlk/",
+    "pos": "noun",
+    "meaning": "大批；散裝（常見於 in bulk）",
+    "example": "We buy rice in bulk to save money.",
+    "translation": "我哋買大包米嚟慳錢。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b020",
+    "word": "produce",
+    "ipa": "/ˈproʊdus/",
+    "pos": "noun",
+    "meaning": "新鮮蔬果",
+    "example": "The produce section is near the entrance.",
+    "translation": "蔬果區喺入口附近。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b021",
+    "word": "groceries",
+    "ipa": "/ˈɡroʊsəriz/",
+    "pos": "plural noun",
+    "meaning": "食品同日常雜貨",
+    "example": "I'll pick up groceries after work.",
+    "translation": "我放工後會去買餸同日用品。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b022",
+    "word": "ripe",
+    "ipa": "/raɪp/",
+    "pos": "adjective",
+    "meaning": "熟咗；成熟嘅",
+    "example": "These avocados aren't ripe yet.",
+    "translation": "呢幾個牛油果仲未熟。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b023",
+    "word": "frozen",
+    "ipa": "/ˈfroʊzən/",
+    "pos": "adjective",
+    "meaning": "急凍嘅；冰凍嘅",
+    "example": "We keep frozen vegetables in the freezer.",
+    "translation": "我哋將急凍蔬菜放喺冰格。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b024",
+    "word": "canned",
+    "ipa": "/kænd/",
+    "pos": "adjective",
+    "meaning": "罐裝嘅",
+    "example": "Canned beans are handy for a quick meal.",
+    "translation": "罐頭豆煮快餐好方便。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b025",
+    "word": "dairy",
+    "ipa": "/ˈdɛri/",
+    "pos": "noun",
+    "meaning": "奶類食品",
+    "example": "The dairy section is at the back of the store.",
+    "translation": "奶類食品區喺間舖後面。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b026",
+    "word": "whole milk",
+    "ipa": "/ˌhoʊl ˈmɪlk/",
+    "pos": "noun",
+    "meaning": "全脂奶",
+    "example": "We need a carton of whole milk.",
+    "translation": "我哋要買一盒全脂奶。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b027",
+    "word": "skim milk",
+    "ipa": "/ˌskɪm ˈmɪlk/",
+    "pos": "noun",
+    "meaning": "脫脂奶",
+    "example": "I'd like skim milk in my coffee.",
+    "translation": "我杯咖啡想加脫脂奶。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b028",
+    "word": "carton",
+    "ipa": "/ˈkɑrtən/",
+    "pos": "noun",
+    "meaning": "紙盒；紙盒裝嘅一份",
+    "example": "Please get a carton of eggs.",
+    "translation": "唔該買一盒雞蛋。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b029",
+    "word": "loaf",
+    "ipa": "/loʊf/",
+    "pos": "noun",
+    "meaning": "一條麵包",
+    "example": "Could you slice this loaf for me?",
+    "translation": "可唔可以幫我將呢條麵包切片？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b030",
+    "word": "sliced",
+    "ipa": "/slaɪst/",
+    "pos": "adjective",
+    "meaning": "切咗片嘅",
+    "example": "I'd like some sliced turkey.",
+    "translation": "我想要啲火雞肉片。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b031",
+    "word": "ground beef",
+    "ipa": "/ˌɡraʊnd ˈbif/",
+    "pos": "noun",
+    "meaning": "免治牛肉",
+    "example": "I'm using ground beef for the pasta sauce.",
+    "translation": "我用免治牛肉煮意粉醬。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b032",
+    "word": "lean",
+    "ipa": "/lin/",
+    "pos": "adjective",
+    "meaning": "瘦肉多、脂肪少嘅",
+    "example": "Choose lean meat for this recipe.",
+    "translation": "呢個食譜揀瘦肉就得。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b033",
+    "word": "boneless",
+    "ipa": "/ˈboʊnləs/",
+    "pos": "adjective",
+    "meaning": "去骨嘅",
+    "example": "Are these chicken thighs boneless?",
+    "translation": "呢啲雞髀肉係咪去咗骨？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b034",
+    "word": "portion",
+    "ipa": "/ˈpɔrʃən/",
+    "pos": "noun",
+    "meaning": "一份食物；分量",
+    "example": "One portion is enough for me.",
+    "translation": "我食一份就夠。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b035",
+    "word": "serving",
+    "ipa": "/ˈsɜrvɪŋ/",
+    "pos": "noun",
+    "meaning": "一份食用分量",
+    "example": "This package contains four servings.",
+    "translation": "呢包嘢有四份食用分量。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b036",
+    "word": "ingredient",
+    "ipa": "/ɪnˈɡridiənt/",
+    "pos": "noun",
+    "meaning": "材料；成分",
+    "example": "Check the ingredients for peanuts.",
+    "translation": "睇吓成分表有冇花生。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b037",
+    "word": "allergen",
+    "ipa": "/ˈælərdʒən/",
+    "pos": "noun",
+    "meaning": "致敏原",
+    "example": "Milk is a common food allergen.",
+    "translation": "牛奶係常見食物致敏原。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b038",
+    "word": "gluten-free",
+    "ipa": "/ˌɡlutən ˈfri/",
+    "pos": "adjective",
+    "meaning": "不含麩質嘅",
+    "example": "Do you have gluten-free bread?",
+    "translation": "你哋有冇無麩質麵包？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b039",
+    "word": "expiry date",
+    "ipa": "/ɪkˈspaɪri deɪt/",
+    "pos": "noun",
+    "meaning": "到期日；有效期限",
+    "example": "Check the expiry date before using it.",
+    "translation": "用之前睇吓有效期限。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b040",
+    "word": "best-before date",
+    "ipa": "/ˌbɛst bɪˈfɔr deɪt/",
+    "pos": "noun",
+    "meaning": "最佳食用日期（唔等同安全期限）",
+    "example": "The best-before date is printed on the lid.",
+    "translation": "最佳食用日期印喺個蓋上面。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b041",
+    "word": "reusable bag",
+    "ipa": "/riˈjuzəbəl bæɡ/",
+    "pos": "noun",
+    "meaning": "可重用購物袋",
+    "example": "I brought my own reusable bag.",
+    "translation": "我帶咗自己嘅環保袋。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b042",
+    "word": "out of stock",
+    "ipa": "/ˌaʊt əv ˈstɑk/",
+    "pos": "phrase",
+    "meaning": "冇貨；缺貨",
+    "example": "The diapers we need are out of stock.",
+    "translation": "我哋要嘅尿片而家冇貨。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b043",
+    "word": "in stock",
+    "ipa": "/ˌɪn ˈstɑk/",
+    "pos": "phrase",
+    "meaning": "有現貨",
+    "example": "Is this size still in stock?",
+    "translation": "呢個碼仲有冇貨？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b044",
+    "word": "restock",
+    "ipa": "/ˌriˈstɑk/",
+    "pos": "verb",
+    "meaning": "補貨",
+    "example": "When will you restock this item?",
+    "translation": "你哋幾時會補返呢件貨？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b045",
+    "word": "return policy",
+    "ipa": "/rɪˈtɜrn ˌpɑləsi/",
+    "pos": "noun",
+    "meaning": "退貨政策",
+    "example": "What's your return policy for electronics?",
+    "translation": "你哋電子產品嘅退貨政策係點？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b046",
+    "word": "warranty",
+    "ipa": "/ˈwɔrənti/",
+    "pos": "noun",
+    "meaning": "產品保養；保用承諾",
+    "example": "The blender comes with a one-year warranty.",
+    "translation": "呢部攪拌機有一年保養。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b047",
+    "word": "size",
+    "ipa": "/saɪz/",
+    "pos": "noun",
+    "meaning": "尺碼；大小",
+    "example": "Do you have this in a smaller size?",
+    "translation": "呢款有冇細啲嘅碼？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b048",
+    "word": "fit",
+    "ipa": "/fɪt/",
+    "pos": "verb",
+    "meaning": "大小合適；啱身",
+    "example": "These boots fit well with thick socks.",
+    "translation": "着厚襪時呢對靴好啱腳。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b049",
+    "word": "fitting room",
+    "ipa": "/ˈfɪtɪŋ rum/",
+    "pos": "noun",
+    "meaning": "試身室",
+    "example": "Where is the fitting room?",
+    "translation": "試身室喺邊度？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b050",
+    "word": "order",
+    "ipa": "/ˈɔrdər/",
+    "pos": "noun",
+    "meaning": "訂單；點咗嘅食物",
+    "example": "My order is ready for pickup.",
+    "translation": "我張訂單可以去攞喇。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b051",
+    "word": "pickup",
+    "ipa": "/ˈpɪkˌʌp/",
+    "pos": "noun",
+    "meaning": "自行取貨；接載",
+    "example": "I'd like to arrange a pickup for tomorrow.",
+    "translation": "我想安排聽日自取。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b052",
+    "word": "delivery",
+    "ipa": "/dɪˈlɪvəri/",
+    "pos": "noun",
+    "meaning": "送貨；外送",
+    "example": "Is delivery available in Markham?",
+    "translation": "萬錦區可唔可以送貨？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b053",
+    "word": "shipping",
+    "ipa": "/ˈʃɪpɪŋ/",
+    "pos": "noun",
+    "meaning": "貨品運送；運費",
+    "example": "How much is shipping to Ontario?",
+    "translation": "寄去安省嘅運費幾多？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b054",
+    "word": "tracking number",
+    "ipa": "/ˈtrækɪŋ ˌnʌmbər/",
+    "pos": "noun",
+    "meaning": "郵件或包裹追蹤號碼",
+    "example": "The tracking number is in your email.",
+    "translation": "追蹤號碼喺你封電郵入面。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b055",
+    "word": "package",
+    "ipa": "/ˈpækɪdʒ/",
+    "pos": "noun",
+    "meaning": "包裹；包裝",
+    "example": "A package arrived this morning.",
+    "translation": "今朝有個包裹送到。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b056",
+    "word": "substitute",
+    "ipa": "/ˈsʌbstɪˌtut/",
+    "pos": "noun",
+    "meaning": "代替品",
+    "example": "Is oat milk a suitable substitute?",
+    "translation": "燕麥奶可唔可以做代替品？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b057",
+    "word": "takeout",
+    "ipa": "/ˈteɪkˌaʊt/",
+    "pos": "noun",
+    "meaning": "外賣食物",
+    "example": "Let's get takeout tonight.",
+    "translation": "今晚不如買外賣。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b058",
+    "word": "tip",
+    "ipa": "/tɪp/",
+    "pos": "noun",
+    "meaning": "小費",
+    "example": "Is the tip already included in the bill?",
+    "translation": "張單係咪已經包咗小費？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b059",
+    "word": "bill",
+    "ipa": "/bɪl/",
+    "pos": "noun",
+    "meaning": "賬單",
+    "example": "Could we have the bill, please?",
+    "translation": "唔該，我哋想埋單。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b060",
+    "word": "split",
+    "ipa": "/splɪt/",
+    "pos": "verb",
+    "meaning": "分開；分攤",
+    "example": "Can we split the bill?",
+    "translation": "我哋可唔可以分開畀錢？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b061",
+    "word": "appointment",
+    "ipa": "/əˈpɔɪntmənt/",
+    "pos": "noun",
+    "meaning": "預約",
+    "example": "I'd like to book an appointment with my doctor.",
+    "translation": "我想預約睇我嘅醫生。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b062",
+    "word": "walk-in clinic",
+    "ipa": "/ˈwɔk ɪn ˌklɪnɪk/",
+    "pos": "noun",
+    "meaning": "免預約診所",
+    "example": "Is there a walk-in clinic nearby?",
+    "translation": "附近有冇免預約診所？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b063",
+    "word": "family doctor",
+    "ipa": "/ˈfæməli ˌdɑktər/",
+    "pos": "noun",
+    "meaning": "家庭醫生",
+    "example": "Are you accepting new patients as a family doctor?",
+    "translation": "你做家庭醫生有冇收新症？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b064",
+    "word": "patient",
+    "ipa": "/ˈpeɪʃənt/",
+    "pos": "noun",
+    "meaning": "病人",
+    "example": "The nurse called the next patient.",
+    "translation": "護士叫下一位病人。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b065",
+    "word": "health card",
+    "ipa": "/ˈhɛlθ kɑrd/",
+    "pos": "noun",
+    "meaning": "醫療卡；安省俗稱健康卡",
+    "example": "Please bring your health card to the clinic.",
+    "translation": "去診所請帶埋你張健康卡。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b066",
+    "word": "OHIP",
+    "ipa": "/ˈoʊhɪp/",
+    "pos": "noun",
+    "meaning": "安省醫療保險計劃（縮寫）",
+    "example": "Does OHIP cover this service?",
+    "translation": "呢項服務受唔受 OHIP 保障？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b067",
+    "word": "symptom",
+    "ipa": "/ˈsɪmptəm/",
+    "pos": "noun",
+    "meaning": "症狀",
+    "example": "When did your symptoms start?",
+    "translation": "你啲症狀幾時開始？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b068",
+    "word": "fever",
+    "ipa": "/ˈfivər/",
+    "pos": "noun",
+    "meaning": "發燒",
+    "example": "My child has had a fever since last night.",
+    "translation": "我個小朋友由昨晚開始發燒。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b069",
+    "word": "cough",
+    "ipa": "/kɔf/",
+    "pos": "noun",
+    "meaning": "咳；咳嗽",
+    "example": "I've had a cough for three days.",
+    "translation": "我咳咗三日。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b070",
+    "word": "sore throat",
+    "ipa": "/ˌsɔr ˈθroʊt/",
+    "pos": "noun",
+    "meaning": "喉嚨痛",
+    "example": "I have a sore throat and a runny nose.",
+    "translation": "我喉嚨痛又流鼻水。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b071",
+    "word": "runny nose",
+    "ipa": "/ˌrʌni ˈnoʊz/",
+    "pos": "noun",
+    "meaning": "流鼻水",
+    "example": "Her runny nose is keeping her awake.",
+    "translation": "佢流鼻水流到瞓唔着。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b072",
+    "word": "congestion",
+    "ipa": "/kənˈdʒɛstʃən/",
+    "pos": "noun",
+    "meaning": "鼻塞；充血堵塞",
+    "example": "The nasal congestion gets worse at night.",
+    "translation": "夜晚鼻塞會嚴重啲。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b073",
+    "word": "headache",
+    "ipa": "/ˈhɛdˌeɪk/",
+    "pos": "noun",
+    "meaning": "頭痛",
+    "example": "I've had a headache all morning.",
+    "translation": "我成個朝早都頭痛。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b074",
+    "word": "dizzy",
+    "ipa": "/ˈdɪzi/",
+    "pos": "adjective",
+    "meaning": "頭暈嘅",
+    "example": "I feel dizzy when I stand up.",
+    "translation": "我一企起身就覺得頭暈。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b075",
+    "word": "nausea",
+    "ipa": "/ˈnɔziə/",
+    "pos": "noun",
+    "meaning": "作嘔；噁心",
+    "example": "The medication gave me nausea.",
+    "translation": "嗰隻藥令我作嘔。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b076",
+    "word": "vomit",
+    "ipa": "/ˈvɑmɪt/",
+    "pos": "verb",
+    "meaning": "嘔；嘔吐",
+    "example": "He started to vomit after dinner.",
+    "translation": "佢食完晚飯後開始嘔。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b077",
+    "word": "diarrhea",
+    "ipa": "/ˌdaɪəˈriə/",
+    "pos": "noun",
+    "meaning": "肚瀉；腹瀉",
+    "example": "I've had diarrhea since yesterday.",
+    "translation": "我由琴日開始肚瀉。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b078",
+    "word": "constipation",
+    "ipa": "/ˌkɑnstəˈpeɪʃən/",
+    "pos": "noun",
+    "meaning": "便秘",
+    "example": "Could this medicine cause constipation?",
+    "translation": "呢隻藥會唔會引起便秘？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b079",
+    "word": "rash",
+    "ipa": "/ræʃ/",
+    "pos": "noun",
+    "meaning": "皮疹",
+    "example": "There's a rash on my baby's arm.",
+    "translation": "我個 BB 手臂出咗疹。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b080",
+    "word": "itchy",
+    "ipa": "/ˈɪtʃi/",
+    "pos": "adjective",
+    "meaning": "痕嘅；發癢嘅",
+    "example": "My eyes are red and itchy.",
+    "translation": "我對眼又紅又痕。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b081",
+    "word": "swollen",
+    "ipa": "/ˈswoʊlən/",
+    "pos": "adjective",
+    "meaning": "腫咗嘅",
+    "example": "My ankle is swollen after the fall.",
+    "translation": "我跌親之後腳眼腫咗。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b082",
+    "word": "bruise",
+    "ipa": "/bruz/",
+    "pos": "noun",
+    "meaning": "瘀傷；瘀痕",
+    "example": "I have a bruise on my knee.",
+    "translation": "我膝頭有一撻瘀。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b083",
+    "word": "sprain",
+    "ipa": "/spreɪn/",
+    "pos": "noun",
+    "meaning": "扭傷（韌帶受傷）",
+    "example": "The doctor said it was an ankle sprain.",
+    "translation": "醫生話係腳眼扭傷。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b084",
+    "word": "fracture",
+    "ipa": "/ˈfræktʃər/",
+    "pos": "noun",
+    "meaning": "骨折",
+    "example": "The X-ray showed a small fracture.",
+    "translation": "X 光顯示有一處輕微骨折。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b085",
+    "word": "pain",
+    "ipa": "/peɪn/",
+    "pos": "noun",
+    "meaning": "痛楚",
+    "example": "Where exactly do you feel the pain?",
+    "translation": "你確實覺得邊個位置痛？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b086",
+    "word": "sharp",
+    "ipa": "/ʃɑrp/",
+    "pos": "adjective",
+    "meaning": "尖銳嘅（痛）；鋒利嘅",
+    "example": "I feel a sharp pain in my shoulder.",
+    "translation": "我膊頭有一下刺痛。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b087",
+    "word": "ache",
+    "ipa": "/eɪk/",
+    "pos": "noun",
+    "meaning": "持續嘅隱痛或痠痛",
+    "example": "There's a dull ache in my lower back.",
+    "translation": "我腰部有持續嘅隱痛。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b088",
+    "word": "allergy",
+    "ipa": "/ˈælərdʒi/",
+    "pos": "noun",
+    "meaning": "過敏症",
+    "example": "Do you have any drug allergies?",
+    "translation": "你對任何藥物有冇敏感？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b089",
+    "word": "prescription",
+    "ipa": "/prɪˈskrɪpʃən/",
+    "pos": "noun",
+    "meaning": "處方；藥方",
+    "example": "I need to refill my prescription.",
+    "translation": "我需要配返處方藥。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b090",
+    "word": "pharmacy",
+    "ipa": "/ˈfɑrməsi/",
+    "pos": "noun",
+    "meaning": "藥房",
+    "example": "The pharmacy closes at nine.",
+    "translation": "藥房九點閂門。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b091",
+    "word": "pharmacist",
+    "ipa": "/ˈfɑrməsɪst/",
+    "pos": "noun",
+    "meaning": "藥劑師",
+    "example": "Ask the pharmacist about possible side effects.",
+    "translation": "問吓藥劑師可能有咩副作用。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b092",
+    "word": "dosage",
+    "ipa": "/ˈdoʊsɪdʒ/",
+    "pos": "noun",
+    "meaning": "用藥劑量；用量",
+    "example": "Please check the dosage with your pharmacist.",
+    "translation": "請同藥劑師核對用藥劑量。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b093",
+    "word": "side effect",
+    "ipa": "/ˈsaɪd ɪˌfɛkt/",
+    "pos": "noun",
+    "meaning": "副作用",
+    "example": "Is drowsiness a common side effect?",
+    "translation": "眼瞓係咪常見嘅副作用？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b094",
+    "word": "drowsy",
+    "ipa": "/ˈdraʊzi/",
+    "pos": "adjective",
+    "meaning": "眼瞓；昏昏欲睡嘅",
+    "example": "This medicine makes me drowsy.",
+    "translation": "呢隻藥令我好眼瞓。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b095",
+    "word": "over-the-counter",
+    "ipa": "/ˌoʊvər ðə ˈkaʊntər/",
+    "pos": "adjective",
+    "meaning": "唔使醫生處方都買到嘅",
+    "example": "Is this an over-the-counter medicine?",
+    "translation": "呢隻藥係咪唔使處方都買到？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b096",
+    "word": "referral",
+    "ipa": "/rɪˈfɜrəl/",
+    "pos": "noun",
+    "meaning": "轉介；轉介信",
+    "example": "Do I need a referral to see this specialist?",
+    "translation": "睇呢位專科醫生需唔需要轉介信？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b097",
+    "word": "specialist",
+    "ipa": "/ˈspɛʃəlɪst/",
+    "pos": "noun",
+    "meaning": "專科醫生；專家",
+    "example": "My doctor referred me to a specialist.",
+    "translation": "我嘅醫生轉介咗我睇專科。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b098",
+    "word": "blood test",
+    "ipa": "/ˈblʌd tɛst/",
+    "pos": "noun",
+    "meaning": "驗血",
+    "example": "I need to book a blood test.",
+    "translation": "我需要預約驗血。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b099",
+    "word": "blood pressure",
+    "ipa": "/ˈblʌd ˌprɛʃər/",
+    "pos": "noun",
+    "meaning": "血壓",
+    "example": "The nurse checked my blood pressure.",
+    "translation": "護士幫我量咗血壓。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b100",
+    "word": "fasting",
+    "ipa": "/ˈfæstɪŋ/",
+    "pos": "noun",
+    "meaning": "禁食；空腹",
+    "example": "Is fasting required before this test?",
+    "translation": "做呢個檢查之前需唔需要空腹？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b101",
+    "word": "vaccine",
+    "ipa": "/vækˈsin/",
+    "pos": "noun",
+    "meaning": "疫苗",
+    "example": "Which vaccines does my child need?",
+    "translation": "我個小朋友需要打邊啲疫苗？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b102",
+    "word": "booster",
+    "ipa": "/ˈbustər/",
+    "pos": "noun",
+    "meaning": "疫苗加強劑",
+    "example": "Am I due for a booster shot?",
+    "translation": "我係咪到期要打加強劑？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b103",
+    "word": "checkup",
+    "ipa": "/ˈtʃɛkˌʌp/",
+    "pos": "noun",
+    "meaning": "例行身體檢查",
+    "example": "I'm here for a routine checkup.",
+    "translation": "我嚟做例行身體檢查。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b104",
+    "word": "dentist",
+    "ipa": "/ˈdɛntɪst/",
+    "pos": "noun",
+    "meaning": "牙醫",
+    "example": "I have an appointment with the dentist tomorrow.",
+    "translation": "我聽日約咗睇牙醫。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b105",
+    "word": "cavity",
+    "ipa": "/ˈkævəti/",
+    "pos": "noun",
+    "meaning": "蛀牙嘅洞；齲洞",
+    "example": "The dentist found a small cavity.",
+    "translation": "牙醫發現咗一個細嘅蛀洞。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b106",
+    "word": "filling",
+    "ipa": "/ˈfɪlɪŋ/",
+    "pos": "noun",
+    "meaning": "補牙材料；補牙",
+    "example": "I need a filling in a back tooth.",
+    "translation": "我需要補一隻大牙。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b107",
+    "word": "gums",
+    "ipa": "/ɡʌmz/",
+    "pos": "plural noun",
+    "meaning": "牙肉；牙齦",
+    "example": "My gums bleed when I brush my teeth.",
+    "translation": "我刷牙嗰陣牙肉會流血。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b108",
+    "word": "coverage",
+    "ipa": "/ˈkʌvərɪdʒ/",
+    "pos": "noun",
+    "meaning": "保險保障範圍",
+    "example": "Does my plan include dental coverage?",
+    "translation": "我份計劃包唔包牙科保障？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b109",
+    "word": "emergency room",
+    "ipa": "/ɪˈmɜrdʒənsi rum/",
+    "pos": "noun",
+    "meaning": "急症室",
+    "example": "The ambulance took him to the emergency room.",
+    "translation": "救護車送咗佢去急症室。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b110",
+    "word": "urgent",
+    "ipa": "/ˈɜrdʒənt/",
+    "pos": "adjective",
+    "meaning": "緊急嘅；急切嘅",
+    "example": "I need urgent medical attention.",
+    "translation": "我需要緊急醫療協助。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b111",
+    "word": "ambulance",
+    "ipa": "/ˈæmbjələns/",
+    "pos": "noun",
+    "meaning": "救護車",
+    "example": "Someone has called an ambulance.",
+    "translation": "有人已經叫咗救護車。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b112",
+    "word": "shortness of breath",
+    "ipa": "/ˌʃɔrtnəs əv ˈbrɛθ/",
+    "pos": "noun",
+    "meaning": "氣促；呼吸困難",
+    "example": "I'm having shortness of breath.",
+    "translation": "我而家呼吸困難。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b113",
+    "word": "chest pain",
+    "ipa": "/ˈtʃɛst peɪn/",
+    "pos": "noun",
+    "meaning": "胸口痛",
+    "example": "He reported sudden chest pain.",
+    "translation": "佢話突然胸口痛。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b114",
+    "word": "numb",
+    "ipa": "/nʌm/",
+    "pos": "adjective",
+    "meaning": "麻痺嘅；冇知覺嘅",
+    "example": "My fingers feel numb.",
+    "translation": "我啲手指覺得麻痺。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b115",
+    "word": "recover",
+    "ipa": "/rɪˈkʌvər/",
+    "pos": "verb",
+    "meaning": "康復；恢復",
+    "example": "How long will it take to recover?",
+    "translation": "大概要幾耐先康復？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b116",
+    "word": "follow-up",
+    "ipa": "/ˈfɑloʊ ˌʌp/",
+    "pos": "noun",
+    "meaning": "覆診；後續跟進",
+    "example": "The doctor asked me to book a follow-up.",
+    "translation": "醫生叫我預約覆診。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b117",
+    "word": "thermometer",
+    "ipa": "/θərˈmɑmətər/",
+    "pos": "noun",
+    "meaning": "溫度計；體溫計",
+    "example": "Where did you put the thermometer?",
+    "translation": "你將體溫計放咗喺邊？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b118",
+    "word": "bandage",
+    "ipa": "/ˈbændɪdʒ/",
+    "pos": "noun",
+    "meaning": "繃帶；包紮用嘅敷料",
+    "example": "The nurse put a bandage on the wound.",
+    "translation": "護士幫傷口包咗繃帶。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b119",
+    "word": "infection",
+    "ipa": "/ɪnˈfɛkʃən/",
+    "pos": "noun",
+    "meaning": "感染",
+    "example": "The doctor checked for signs of infection.",
+    "translation": "醫生檢查有冇感染嘅跡象。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b120",
+    "word": "antibiotic",
+    "ipa": "/ˌæntibaɪˈɑtɪk/",
+    "pos": "noun",
+    "meaning": "抗生素",
+    "example": "The doctor prescribed an antibiotic.",
+    "translation": "醫生開咗抗生素。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b121",
+    "word": "chequing account",
+    "ipa": "/ˈtʃɛkɪŋ əˌkaʊnt/",
+    "pos": "noun",
+    "meaning": "日常交易戶口；支票戶口",
+    "example": "I'd like to open a chequing account.",
+    "translation": "我想開個日常交易戶口。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b122",
+    "word": "savings account",
+    "ipa": "/ˈseɪvɪŋz əˌkaʊnt/",
+    "pos": "noun",
+    "meaning": "儲蓄戶口",
+    "example": "I transfer money to my savings account each month.",
+    "translation": "我每個月轉錢入儲蓄戶口。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b123",
+    "word": "balance",
+    "ipa": "/ˈbæləns/",
+    "pos": "noun",
+    "meaning": "戶口結餘",
+    "example": "What's my current account balance?",
+    "translation": "我戶口而家嘅結餘係幾多？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b124",
+    "word": "deposit",
+    "ipa": "/dɪˈpɑzɪt/",
+    "pos": "verb",
+    "meaning": "存入款項",
+    "example": "Can I deposit this cheque at the ATM?",
+    "translation": "我可唔可以喺自動櫃員機入呢張支票？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b125",
+    "word": "withdraw",
+    "ipa": "/wɪðˈdrɔ/",
+    "pos": "verb",
+    "meaning": "提款；提取",
+    "example": "I'd like to withdraw two hundred dollars.",
+    "translation": "我想提取二百蚊。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b126",
+    "word": "transfer",
+    "ipa": "/ˈtrænsfɜr/",
+    "pos": "verb",
+    "meaning": "轉賬；轉移",
+    "example": "Please transfer the money to my chequing account.",
+    "translation": "請將筆錢轉去我嘅日常交易戶口。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b127",
+    "word": "e-transfer",
+    "ipa": "/ˈi ˌtrænsfɜr/",
+    "pos": "noun",
+    "meaning": "電子轉賬（加拿大常指 Interac）",
+    "example": "Can I pay the rent by e-transfer?",
+    "translation": "我可唔可以用電子轉賬交租？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b128",
+    "word": "autodeposit",
+    "ipa": "/ˌɔtoʊdɪˈpɑzɪt/",
+    "pos": "noun",
+    "meaning": "自動入賬（常見於電子轉賬）",
+    "example": "Have you enabled autodeposit for e-transfers?",
+    "translation": "你開咗電子轉賬自動入賬未？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b129",
+    "word": "cheque",
+    "ipa": "/tʃɛk/",
+    "pos": "noun",
+    "meaning": "支票（加拿大拼法）",
+    "example": "Please make the cheque payable to the school.",
+    "translation": "張支票嘅抬頭請寫學校個名。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b130",
+    "word": "void cheque",
+    "ipa": "/ˌvɔɪd ˈtʃɛk/",
+    "pos": "noun",
+    "meaning": "作廢支票（常用作提供戶口資料）",
+    "example": "My employer asked for a void cheque.",
+    "translation": "我僱主要求我提供一張作廢支票。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b131",
+    "word": "direct deposit",
+    "ipa": "/dəˌrɛkt dɪˈpɑzɪt/",
+    "pos": "noun",
+    "meaning": "直接入賬",
+    "example": "My pay arrives by direct deposit.",
+    "translation": "我份糧直接入戶口。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b132",
+    "word": "pre-authorized payment",
+    "ipa": "/ˌpri ˈɔθəraɪzd ˈpeɪmənt/",
+    "pos": "noun",
+    "meaning": "預先授權付款；自動扣賬",
+    "example": "Can I set up a pre-authorized payment?",
+    "translation": "我可唔可以設定自動扣賬？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b133",
+    "word": "statement",
+    "ipa": "/ˈsteɪtmənt/",
+    "pos": "noun",
+    "meaning": "月結單；賬戶結單",
+    "example": "I downloaded my bank statement.",
+    "translation": "我下載咗銀行月結單。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b134",
+    "word": "transaction",
+    "ipa": "/trænˈzækʃən/",
+    "pos": "noun",
+    "meaning": "交易；戶口收支紀錄",
+    "example": "I don't recognize this transaction.",
+    "translation": "我唔認得呢筆交易。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b135",
+    "word": "fee",
+    "ipa": "/fi/",
+    "pos": "noun",
+    "meaning": "費用；手續費",
+    "example": "Is there a monthly account fee?",
+    "translation": "呢個戶口有冇月費？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b136",
+    "word": "waive",
+    "ipa": "/weɪv/",
+    "pos": "verb",
+    "meaning": "豁免（費用或要求）",
+    "example": "Could you waive the monthly fee?",
+    "translation": "可唔可以豁免月費？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b137",
+    "word": "minimum balance",
+    "ipa": "/ˌmɪnɪməm ˈbæləns/",
+    "pos": "noun",
+    "meaning": "最低結餘要求",
+    "example": "Is there a minimum balance requirement?",
+    "translation": "有冇最低結餘要求？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b138",
+    "word": "overdraft",
+    "ipa": "/ˈoʊvərˌdræft/",
+    "pos": "noun",
+    "meaning": "透支",
+    "example": "Does this account have overdraft protection?",
+    "translation": "呢個戶口有冇透支保障？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b139",
+    "word": "insufficient funds",
+    "ipa": "/ˌɪnsəˈfɪʃənt fʌndz/",
+    "pos": "phrase",
+    "meaning": "戶口款項不足",
+    "example": "The payment failed because of insufficient funds.",
+    "translation": "因為戶口唔夠錢，付款失敗咗。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b140",
+    "word": "interest",
+    "ipa": "/ˈɪntrəst/",
+    "pos": "noun",
+    "meaning": "利息",
+    "example": "How much interest does this account earn?",
+    "translation": "呢個戶口有幾多利息？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b141",
+    "word": "interest rate",
+    "ipa": "/ˈɪntrəst reɪt/",
+    "pos": "noun",
+    "meaning": "利率",
+    "example": "Is the interest rate fixed or variable?",
+    "translation": "個利率係固定定浮動？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b142",
+    "word": "credit card",
+    "ipa": "/ˈkrɛdɪt kɑrd/",
+    "pos": "noun",
+    "meaning": "信用卡",
+    "example": "I need to report a lost credit card.",
+    "translation": "我要報失信用卡。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b143",
+    "word": "debit card",
+    "ipa": "/ˈdɛbɪt kɑrd/",
+    "pos": "noun",
+    "meaning": "扣賬卡",
+    "example": "Can I pay with a debit card?",
+    "translation": "我可唔可以用扣賬卡畀錢？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b144",
+    "word": "PIN",
+    "ipa": "/pɪn/",
+    "pos": "noun",
+    "meaning": "個人密碼（縮寫）",
+    "example": "Never share your PIN with anyone.",
+    "translation": "唔好同任何人分享你嘅個人密碼。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b145",
+    "word": "contactless",
+    "ipa": "/ˈkɑntæktləs/",
+    "pos": "adjective",
+    "meaning": "感應式；非接觸式嘅",
+    "example": "Does this machine accept contactless payments?",
+    "translation": "呢部機支唔支援感應付款？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b146",
+    "word": "credit limit",
+    "ipa": "/ˈkrɛdɪt ˌlɪmɪt/",
+    "pos": "noun",
+    "meaning": "信用額",
+    "example": "I'd like to lower my credit limit.",
+    "translation": "我想降低信用額。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b147",
+    "word": "due date",
+    "ipa": "/ˈdu deɪt/",
+    "pos": "noun",
+    "meaning": "付款到期日；截止日",
+    "example": "The payment due date is next Tuesday.",
+    "translation": "付款到期日係下個星期二。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b148",
+    "word": "minimum payment",
+    "ipa": "/ˌmɪnɪməm ˈpeɪmənt/",
+    "pos": "noun",
+    "meaning": "最低還款額",
+    "example": "The statement shows the minimum payment.",
+    "translation": "張月結單列咗最低還款額。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b149",
+    "word": "late payment",
+    "ipa": "/ˌleɪt ˈpeɪmənt/",
+    "pos": "noun",
+    "meaning": "逾期付款",
+    "example": "Will a late payment affect my credit score?",
+    "translation": "逾期付款會唔會影響我嘅信用評分？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b150",
+    "word": "credit score",
+    "ipa": "/ˈkrɛdɪt skɔr/",
+    "pos": "noun",
+    "meaning": "信用評分",
+    "example": "How can I check my credit score?",
+    "translation": "我可以點樣查自己嘅信用評分？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b151",
+    "word": "credit report",
+    "ipa": "/ˈkrɛdɪt rɪˌpɔrt/",
+    "pos": "noun",
+    "meaning": "信用報告",
+    "example": "There's an error on my credit report.",
+    "translation": "我份信用報告有個錯誤。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b152",
+    "word": "loan",
+    "ipa": "/loʊn/",
+    "pos": "noun",
+    "meaning": "貸款",
+    "example": "I'm comparing the costs of different loans.",
+    "translation": "我比較緊唔同貸款嘅成本。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b153",
+    "word": "mortgage",
+    "ipa": "/ˈmɔrɡɪdʒ/",
+    "pos": "noun",
+    "meaning": "樓宇按揭",
+    "example": "Our mortgage renewal is coming up.",
+    "translation": "我哋份按揭就快要續期。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b154",
+    "word": "down payment",
+    "ipa": "/ˈdaʊn ˌpeɪmənt/",
+    "pos": "noun",
+    "meaning": "首期；首付款",
+    "example": "We're saving for a down payment.",
+    "translation": "我哋儲緊錢畀首期。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b155",
+    "word": "principal",
+    "ipa": "/ˈprɪnsəpəl/",
+    "pos": "noun",
+    "meaning": "貸款本金",
+    "example": "Part of each payment goes toward the principal.",
+    "translation": "每次還款有一部分用嚟還本金。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b156",
+    "word": "instalment",
+    "ipa": "/ɪnˈstɔlmənt/",
+    "pos": "noun",
+    "meaning": "分期付款嘅一期款項",
+    "example": "The final instalment is due in June.",
+    "translation": "最後一期款項六月到期。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b157",
+    "word": "fixed rate",
+    "ipa": "/ˌfɪkst ˈreɪt/",
+    "pos": "noun",
+    "meaning": "固定利率",
+    "example": "We chose a fixed rate for our mortgage.",
+    "translation": "我哋份按揭揀咗固定利率。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b158",
+    "word": "variable rate",
+    "ipa": "/ˌvɛriəbəl ˈreɪt/",
+    "pos": "noun",
+    "meaning": "浮動利率",
+    "example": "A variable rate can change over time.",
+    "translation": "浮動利率會隨時間變動。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b159",
+    "word": "renewal",
+    "ipa": "/rɪˈnuəl/",
+    "pos": "noun",
+    "meaning": "續期；更新合約",
+    "example": "The bank sent us a renewal offer.",
+    "translation": "銀行寄咗份續期方案畀我哋。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b160",
+    "word": "term",
+    "ipa": "/tɜrm/",
+    "pos": "noun",
+    "meaning": "合約期限",
+    "example": "How long is the mortgage term?",
+    "translation": "呢份按揭合約嘅期限係幾耐？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b161",
+    "word": "budget",
+    "ipa": "/ˈbʌdʒɪt/",
+    "pos": "noun",
+    "meaning": "預算",
+    "example": "We're making a monthly household budget.",
+    "translation": "我哋制定緊每月家庭預算。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b162",
+    "word": "expense",
+    "ipa": "/ɪkˈspɛns/",
+    "pos": "noun",
+    "meaning": "開支",
+    "example": "Childcare is our biggest monthly expense.",
+    "translation": "託兒係我哋每月最大筆開支。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b163",
+    "word": "income",
+    "ipa": "/ˈɪnˌkʌm/",
+    "pos": "noun",
+    "meaning": "收入",
+    "example": "The form asks for your annual income.",
+    "translation": "張表要填你嘅全年收入。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b164",
+    "word": "payee",
+    "ipa": "/peɪˈi/",
+    "pos": "noun",
+    "meaning": "收款人或機構",
+    "example": "Add the utility company as a payee.",
+    "translation": "將公用事業公司加入收款人名單。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b165",
+    "word": "recipient",
+    "ipa": "/rɪˈsɪpiənt/",
+    "pos": "noun",
+    "meaning": "收件人；收款人",
+    "example": "Check the recipient's name before sending money.",
+    "translation": "轉錢之前核對收款人個名。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b166",
+    "word": "branch",
+    "ipa": "/bræntʃ/",
+    "pos": "noun",
+    "meaning": "分行",
+    "example": "Is this branch open on Saturday?",
+    "translation": "呢間分行星期六開唔開？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b167",
+    "word": "teller",
+    "ipa": "/ˈtɛlər/",
+    "pos": "noun",
+    "meaning": "銀行櫃員",
+    "example": "The teller helped me deposit the cash.",
+    "translation": "銀行櫃員幫我存入現金。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b168",
+    "word": "ATM",
+    "ipa": "/ˌeɪ ti ˈɛm/",
+    "pos": "noun",
+    "meaning": "自動櫃員機（縮寫）",
+    "example": "Is there an ATM nearby?",
+    "translation": "附近有冇自動櫃員機？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b169",
+    "word": "account number",
+    "ipa": "/əˈkaʊnt ˌnʌmbər/",
+    "pos": "noun",
+    "meaning": "戶口號碼",
+    "example": "Where can I find my account number?",
+    "translation": "我喺邊度可以搵到戶口號碼？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b170",
+    "word": "transit number",
+    "ipa": "/ˈtrænzɪt ˌnʌmbər/",
+    "pos": "noun",
+    "meaning": "銀行分行號碼（加拿大用語）",
+    "example": "The direct deposit form asks for a transit number.",
+    "translation": "張直接入賬表要填分行號碼。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b171",
+    "word": "institution number",
+    "ipa": "/ˌɪnstɪˈtuʃən ˌnʌmbər/",
+    "pos": "noun",
+    "meaning": "金融機構號碼（加拿大用語）",
+    "example": "Is the institution number on this form correct?",
+    "translation": "呢張表上面嘅金融機構號碼啱唔啱？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b172",
+    "word": "fraud",
+    "ipa": "/frɔd/",
+    "pos": "noun",
+    "meaning": "詐騙；欺詐",
+    "example": "I called the bank to report possible fraud.",
+    "translation": "我打畀銀行報告懷疑詐騙。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b173",
+    "word": "scam",
+    "ipa": "/skæm/",
+    "pos": "noun",
+    "meaning": "騙局",
+    "example": "That text message looks like a scam.",
+    "translation": "嗰個短訊似係騙局。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b174",
+    "word": "suspicious",
+    "ipa": "/səˈspɪʃəs/",
+    "pos": "adjective",
+    "meaning": "可疑嘅",
+    "example": "I received a suspicious email about my account.",
+    "translation": "我收到一封關於戶口嘅可疑電郵。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b175",
+    "word": "unauthorized",
+    "ipa": "/ʌnˈɔθəraɪzd/",
+    "pos": "adjective",
+    "meaning": "未經授權嘅",
+    "example": "I'd like to dispute an unauthorized charge.",
+    "translation": "我想對一筆未經授權嘅扣款提出爭議。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b176",
+    "word": "freeze",
+    "ipa": "/friz/",
+    "pos": "verb",
+    "meaning": "凍結；暫停使用",
+    "example": "Please freeze my card immediately.",
+    "translation": "請即刻凍結我張卡。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b177",
+    "word": "dispute",
+    "ipa": "/dɪˈspjut/",
+    "pos": "verb",
+    "meaning": "對交易等提出爭議",
+    "example": "How do I dispute this charge?",
+    "translation": "我點樣對呢筆扣款提出爭議？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b178",
+    "word": "reimbursement",
+    "ipa": "/ˌriɪmˈbɜrsmənt/",
+    "pos": "noun",
+    "meaning": "發還款項；報銷",
+    "example": "I'm waiting for reimbursement of my expenses.",
+    "translation": "我等緊公司報銷開支。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b179",
+    "word": "subscription",
+    "ipa": "/səbˈskrɪpʃən/",
+    "pos": "noun",
+    "meaning": "訂閱服務",
+    "example": "I cancelled the subscription before it renewed.",
+    "translation": "我喺續期之前取消咗訂閱。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b180",
+    "word": "exchange rate",
+    "ipa": "/ɪksˈtʃeɪndʒ reɪt/",
+    "pos": "noun",
+    "meaning": "匯率",
+    "example": "What's today's exchange rate for Hong Kong dollars?",
+    "translation": "今日港紙嘅匯率係幾多？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b181",
+    "word": "daycare",
+    "ipa": "/ˈdeɪˌkɛr/",
+    "pos": "noun",
+    "meaning": "日間託兒服務；託兒中心",
+    "example": "We're looking for daycare near home.",
+    "translation": "我哋搵緊屋企附近嘅託兒中心。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b182",
+    "word": "childcare",
+    "ipa": "/ˈtʃaɪldˌkɛr/",
+    "pos": "noun",
+    "meaning": "兒童照顧；託兒服務",
+    "example": "Childcare costs vary between centres.",
+    "translation": "唔同中心嘅託兒費用唔同。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b183",
+    "word": "waitlist",
+    "ipa": "/ˈweɪtˌlɪst/",
+    "pos": "noun",
+    "meaning": "輪候名單",
+    "example": "Can you add my child to the waitlist?",
+    "translation": "可唔可以將我個小朋友加入輪候名單？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b184",
+    "word": "enrolment",
+    "ipa": "/ɪnˈroʊlmənt/",
+    "pos": "noun",
+    "meaning": "入學或參加課程嘅登記",
+    "example": "When does kindergarten enrolment begin?",
+    "translation": "幼稚園幾時開始登記入學？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b185",
+    "word": "kindergarten",
+    "ipa": "/ˈkɪndərˌɡɑrtən/",
+    "pos": "noun",
+    "meaning": "幼稚園階段",
+    "example": "My daughter starts kindergarten in September.",
+    "translation": "我個女九月開始讀幼稚園。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b186",
+    "word": "preschool",
+    "ipa": "/ˈpriˌskul/",
+    "pos": "noun",
+    "meaning": "學前班；學前教育",
+    "example": "He goes to preschool three mornings a week.",
+    "translation": "佢每星期三個朝早返學前班。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b187",
+    "word": "infant",
+    "ipa": "/ˈɪnfənt/",
+    "pos": "noun",
+    "meaning": "嬰兒",
+    "example": "Does the centre have an infant room?",
+    "translation": "呢間中心有冇嬰兒班？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b188",
+    "word": "toddler",
+    "ipa": "/ˈtɑdlər/",
+    "pos": "noun",
+    "meaning": "學行階段嘅幼兒",
+    "example": "My toddler is learning to use a spoon.",
+    "translation": "我個幼兒學緊用匙羹。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b189",
+    "word": "newborn",
+    "ipa": "/ˈnuˌbɔrn/",
+    "pos": "noun",
+    "meaning": "初生嬰兒",
+    "example": "Our newborn wakes up often at night.",
+    "translation": "我哋個初生 BB 夜晚成日醒。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b190",
+    "word": "diaper",
+    "ipa": "/ˈdaɪpər/",
+    "pos": "noun",
+    "meaning": "尿片",
+    "example": "We need to change the baby's diaper.",
+    "translation": "我哋要幫 BB 換尿片。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b191",
+    "word": "wipes",
+    "ipa": "/waɪps/",
+    "pos": "plural noun",
+    "meaning": "濕紙巾",
+    "example": "Could you pass me the baby wipes?",
+    "translation": "可唔可以遞啲嬰兒濕紙巾畀我？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b192",
+    "word": "formula",
+    "ipa": "/ˈfɔrmjələ/",
+    "pos": "noun",
+    "meaning": "嬰兒配方奶",
+    "example": "Which formula does your baby drink?",
+    "translation": "你個 BB 飲邊款奶粉？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b193",
+    "word": "breastfeed",
+    "ipa": "/ˈbrɛstˌfid/",
+    "pos": "verb",
+    "meaning": "餵母乳",
+    "example": "Is there a quiet place where I can breastfeed?",
+    "translation": "有冇安靜啲嘅地方可以餵母乳？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b194",
+    "word": "bottle",
+    "ipa": "/ˈbɑtəl/",
+    "pos": "noun",
+    "meaning": "奶樽；樽",
+    "example": "The baby's bottle is in the diaper bag.",
+    "translation": "BB 個奶樽喺尿片袋入面。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b195",
+    "word": "sterilize",
+    "ipa": "/ˈstɛrəˌlaɪz/",
+    "pos": "verb",
+    "meaning": "消毒；滅菌",
+    "example": "How should I sterilize these bottles?",
+    "translation": "我應該點樣消毒呢啲奶樽？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b196",
+    "word": "pacifier",
+    "ipa": "/ˈpæsəˌfaɪər/",
+    "pos": "noun",
+    "meaning": "奶嘴；安撫奶嘴",
+    "example": "The pacifier fell on the floor.",
+    "translation": "個奶嘴跌咗落地下。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b197",
+    "word": "bib",
+    "ipa": "/bɪb/",
+    "pos": "noun",
+    "meaning": "口水肩",
+    "example": "Put a bib on the baby before lunch.",
+    "translation": "食午餐之前幫 BB 戴口水肩。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b198",
+    "word": "stroller",
+    "ipa": "/ˈstroʊlər/",
+    "pos": "noun",
+    "meaning": "嬰兒手推車",
+    "example": "Can I bring a stroller on the bus?",
+    "translation": "我可唔可以推嬰兒車上巴士？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b199",
+    "word": "crib",
+    "ipa": "/krɪb/",
+    "pos": "noun",
+    "meaning": "嬰兒床",
+    "example": "The baby is asleep in the crib.",
+    "translation": "BB 喺嬰兒床度瞓着咗。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b200",
+    "word": "car seat",
+    "ipa": "/ˈkɑr sit/",
+    "pos": "noun",
+    "meaning": "兒童汽車安全座椅",
+    "example": "We need to install the car seat properly.",
+    "translation": "我哋要正確安裝兒童安全座椅。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b201",
+    "word": "nap",
+    "ipa": "/næp/",
+    "pos": "noun",
+    "meaning": "小睡；午睡",
+    "example": "She usually takes a nap after lunch.",
+    "translation": "佢通常食完午餐會瞓晏覺。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b202",
+    "word": "nap time",
+    "ipa": "/ˈnæp taɪm/",
+    "pos": "noun",
+    "meaning": "午睡時間",
+    "example": "What time is nap time at daycare?",
+    "translation": "託兒中心嘅午睡時間係幾點？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b203",
+    "word": "bedtime",
+    "ipa": "/ˈbɛdˌtaɪm/",
+    "pos": "noun",
+    "meaning": "瞓覺時間",
+    "example": "We read a story before bedtime.",
+    "translation": "我哋瞓覺前會讀個故事。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b204",
+    "word": "teething",
+    "ipa": "/ˈtiðɪŋ/",
+    "pos": "noun",
+    "meaning": "出牙階段",
+    "example": "Could teething be making her uncomfortable?",
+    "translation": "佢唔舒服會唔會係因為出牙？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b205",
+    "word": "weaning",
+    "ipa": "/ˈwinɪŋ/",
+    "pos": "noun",
+    "meaning": "逐步斷奶；轉食其他食物嘅過程",
+    "example": "We asked the nurse for advice about weaning.",
+    "translation": "我哋向護士請教斷奶嘅事。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b206",
+    "word": "solid food",
+    "ipa": "/ˌsɑlɪd ˈfud/",
+    "pos": "noun",
+    "meaning": "固體食物；嬰兒輔食",
+    "example": "When should we introduce solid food?",
+    "translation": "我哋應該幾時開始加輔食？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b207",
+    "word": "puree",
+    "ipa": "/pjʊˈreɪ/",
+    "pos": "noun",
+    "meaning": "蓉狀食物",
+    "example": "I made a carrot puree for the baby.",
+    "translation": "我整咗啲紅蘿蔔蓉畀 BB。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b208",
+    "word": "choking",
+    "ipa": "/ˈtʃoʊkɪŋ/",
+    "pos": "noun",
+    "meaning": "哽塞；呼吸道被異物塞住",
+    "example": "This toy could be a choking hazard.",
+    "translation": "呢件玩具可能有哽塞風險。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b209",
+    "word": "permission slip",
+    "ipa": "/pərˈmɪʃən slɪp/",
+    "pos": "noun",
+    "meaning": "家長同意書",
+    "example": "Please sign the permission slip for the trip.",
+    "translation": "請簽署旅行嘅家長同意書。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b210",
+    "word": "field trip",
+    "ipa": "/ˈfild trɪp/",
+    "pos": "noun",
+    "meaning": "校外參觀；戶外學習活動",
+    "example": "The class is going on a field trip.",
+    "translation": "全班會去校外參觀。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b211",
+    "word": "lunchbox",
+    "ipa": "/ˈlʌntʃˌbɑks/",
+    "pos": "noun",
+    "meaning": "飯盒；午餐盒",
+    "example": "Her lunchbox is in her backpack.",
+    "translation": "佢個飯盒喺書包入面。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b212",
+    "word": "snack",
+    "ipa": "/snæk/",
+    "pos": "noun",
+    "meaning": "小食；茶點",
+    "example": "Please pack a healthy snack.",
+    "translation": "請準備一份健康小食。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b213",
+    "word": "nut-free",
+    "ipa": "/ˌnʌt ˈfri/",
+    "pos": "adjective",
+    "meaning": "不含堅果嘅",
+    "example": "Please bring only nut-free snacks.",
+    "translation": "請只帶不含堅果嘅小食。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b214",
+    "word": "backpack",
+    "ipa": "/ˈbækˌpæk/",
+    "pos": "noun",
+    "meaning": "背囊；書包",
+    "example": "Label your child's backpack with their name.",
+    "translation": "喺小朋友書包寫上佢個名。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b215",
+    "word": "label",
+    "ipa": "/ˈleɪbəl/",
+    "pos": "verb",
+    "meaning": "貼標籤；寫名標示",
+    "example": "Please label all clothing and bottles.",
+    "translation": "請喺所有衫同樽上面寫名。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b216",
+    "word": "cubby",
+    "ipa": "/ˈkʌbi/",
+    "pos": "noun",
+    "meaning": "學校放個人物品嘅小格仔",
+    "example": "Put your boots in your cubby.",
+    "translation": "將你對靴放入自己個儲物格。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b217",
+    "word": "indoor shoes",
+    "ipa": "/ˌɪndɔr ˈʃuz/",
+    "pos": "plural noun",
+    "meaning": "室內鞋",
+    "example": "Children need a pair of indoor shoes.",
+    "translation": "小朋友需要一對室內鞋。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b218",
+    "word": "spare clothes",
+    "ipa": "/ˌspɛr ˈkloʊðz/",
+    "pos": "plural noun",
+    "meaning": "後備衫褲",
+    "example": "Keep spare clothes in the daycare bag.",
+    "translation": "喺託兒袋入面放套後備衫褲。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b219",
+    "word": "attendance",
+    "ipa": "/əˈtɛndəns/",
+    "pos": "noun",
+    "meaning": "出席；出席紀錄",
+    "example": "The teacher takes attendance each morning.",
+    "translation": "老師每朝都點名。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b220",
+    "word": "absent",
+    "ipa": "/ˈæbsənt/",
+    "pos": "adjective",
+    "meaning": "缺席嘅",
+    "example": "My child will be absent tomorrow.",
+    "translation": "我個小朋友聽日會缺席。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b221",
+    "word": "late",
+    "ipa": "/leɪt/",
+    "pos": "adjective",
+    "meaning": "遲到嘅；遲嘅",
+    "example": "We'll be a few minutes late today.",
+    "translation": "我哋今日會遲幾分鐘。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b222",
+    "word": "early dismissal",
+    "ipa": "/ˌɜrli dɪsˈmɪsəl/",
+    "pos": "noun",
+    "meaning": "提早放學",
+    "example": "There's an early dismissal on Friday.",
+    "translation": "星期五提早放學。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b223",
+    "word": "report card",
+    "ipa": "/rɪˈpɔrt kɑrd/",
+    "pos": "noun",
+    "meaning": "成績表；學習報告",
+    "example": "The report card will be available online.",
+    "translation": "成績表會喺網上發放。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b224",
+    "word": "parent-teacher interview",
+    "ipa": "/ˌpɛrənt ˈtitʃər ˈɪntərvju/",
+    "pos": "noun",
+    "meaning": "家長同老師嘅面談",
+    "example": "I'd like to book a parent-teacher interview.",
+    "translation": "我想預約家長教師面談。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b225",
+    "word": "progress",
+    "ipa": "/ˈprɑɡrɛs/",
+    "pos": "noun",
+    "meaning": "進步；進展",
+    "example": "How is my child making progress in reading?",
+    "translation": "我個小朋友閱讀方面嘅進度點？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b226",
+    "word": "behaviour",
+    "ipa": "/bɪˈheɪvjər/",
+    "pos": "noun",
+    "meaning": "行為",
+    "example": "Have you noticed any changes in his behaviour?",
+    "translation": "你有冇留意到佢嘅行為有變？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b227",
+    "word": "share",
+    "ipa": "/ʃɛr/",
+    "pos": "verb",
+    "meaning": "分享；共用",
+    "example": "We're teaching her to share toys.",
+    "translation": "我哋教緊佢同人分享玩具。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b228",
+    "word": "turn",
+    "ipa": "/tɜrn/",
+    "pos": "noun",
+    "meaning": "輪次；輪到嘅機會",
+    "example": "Please wait for your turn.",
+    "translation": "請等輪到你先。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b229",
+    "word": "bully",
+    "ipa": "/ˈbʊli/",
+    "pos": "verb",
+    "meaning": "欺凌",
+    "example": "I'm worried that someone is bullying my child.",
+    "translation": "我擔心有人欺凌我個小朋友。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b230",
+    "word": "support",
+    "ipa": "/səˈpɔrt/",
+    "pos": "noun",
+    "meaning": "支援；幫助",
+    "example": "What learning support is available?",
+    "translation": "有咩學習支援可以提供？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b231",
+    "word": "speech delay",
+    "ipa": "/ˈspitʃ dɪˌleɪ/",
+    "pos": "noun",
+    "meaning": "語言發展遲緩",
+    "example": "We asked about an assessment for speech delay.",
+    "translation": "我哋查詢咗語言發展遲緩評估。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b232",
+    "word": "milestone",
+    "ipa": "/ˈmaɪlˌstoʊn/",
+    "pos": "noun",
+    "meaning": "發展里程碑；重要階段",
+    "example": "Walking is a major developmental milestone.",
+    "translation": "識行係一個重要嘅發展里程碑。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b233",
+    "word": "potty training",
+    "ipa": "/ˈpɑti ˌtreɪnɪŋ/",
+    "pos": "noun",
+    "meaning": "戒片；如廁訓練",
+    "example": "We've just started potty training.",
+    "translation": "我哋啱啱開始幫小朋友戒片。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b234",
+    "word": "accident",
+    "ipa": "/ˈæksɪdənt/",
+    "pos": "noun",
+    "meaning": "意外；（小朋友）瀨尿瀨屎",
+    "example": "He had an accident and needs clean pants.",
+    "translation": "佢瀨咗尿，需要換條乾淨褲。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b235",
+    "word": "separation anxiety",
+    "ipa": "/ˌsɛpəˈreɪʃən æŋˌzaɪəti/",
+    "pos": "noun",
+    "meaning": "分離焦慮",
+    "example": "She has some separation anxiety at drop-off.",
+    "translation": "送佢返學嗰陣佢有啲分離焦慮。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b236",
+    "word": "drop-off",
+    "ipa": "/ˈdrɑp ˌɔf/",
+    "pos": "noun",
+    "meaning": "送小朋友到學校等地點",
+    "example": "Morning drop-off is at the side door.",
+    "translation": "朝早送小朋友要去側門。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b237",
+    "word": "authorized pickup",
+    "ipa": "/ˈɔθəraɪzd ˈpɪkˌʌp/",
+    "pos": "noun",
+    "meaning": "獲授權接走小朋友嘅安排",
+    "example": "Is Grandpa on the authorized pickup list?",
+    "translation": "爺爺係咪喺獲授權接放學名單上？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b238",
+    "word": "emergency contact",
+    "ipa": "/ɪˈmɜrdʒənsi ˌkɑntækt/",
+    "pos": "noun",
+    "meaning": "緊急聯絡人",
+    "example": "Please update your emergency contact information.",
+    "translation": "請更新緊急聯絡人資料。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b239",
+    "word": "immunization record",
+    "ipa": "/ˌɪmjənəˈzeɪʃən ˌrɛkərd/",
+    "pos": "noun",
+    "meaning": "疫苗接種紀錄",
+    "example": "The school needs an immunization record.",
+    "translation": "學校需要疫苗接種紀錄。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b240",
+    "word": "subsidy",
+    "ipa": "/ˈsʌbsədi/",
+    "pos": "noun",
+    "meaning": "津貼；資助",
+    "example": "How do I apply for a childcare subsidy?",
+    "translation": "我點樣申請託兒津貼？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b241",
+    "word": "landlord",
+    "ipa": "/ˈlændˌlɔrd/",
+    "pos": "noun",
+    "meaning": "業主；房東",
+    "example": "I'll ask the landlord to fix the heater.",
+    "translation": "我會叫業主整暖氣。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b242",
+    "word": "tenant",
+    "ipa": "/ˈtɛnənt/",
+    "pos": "noun",
+    "meaning": "租客",
+    "example": "The tenant reported a leak in the ceiling.",
+    "translation": "租客報告天花漏水。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b243",
+    "word": "lease",
+    "ipa": "/lis/",
+    "pos": "noun",
+    "meaning": "租約",
+    "example": "Our lease ends in August.",
+    "translation": "我哋份租約八月完。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b244",
+    "word": "rent",
+    "ipa": "/rɛnt/",
+    "pos": "noun",
+    "meaning": "租金",
+    "example": "The rent is due on the first of the month.",
+    "translation": "租金每月一號到期。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b245",
+    "word": "utility",
+    "ipa": "/juˈtɪləti/",
+    "pos": "noun",
+    "meaning": "水電煤等公用服務",
+    "example": "Which utilities are included in the rent?",
+    "translation": "租金包邊啲水電煤費用？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b246",
+    "word": "hydro",
+    "ipa": "/ˈhaɪdroʊ/",
+    "pos": "noun",
+    "meaning": "電力；電費（安省口語）",
+    "example": "Does the rent include hydro?",
+    "translation": "租金包唔包電費？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b247",
+    "word": "furnace",
+    "ipa": "/ˈfɜrnəs/",
+    "pos": "noun",
+    "meaning": "暖氣爐",
+    "example": "The furnace isn't turning on.",
+    "translation": "個暖氣爐開唔到。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b248",
+    "word": "thermostat",
+    "ipa": "/ˈθɜrməˌstæt/",
+    "pos": "noun",
+    "meaning": "恆溫器；溫控器",
+    "example": "Can you lower the thermostat a little?",
+    "translation": "可唔可以將恆溫器調低少少？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b249",
+    "word": "filter",
+    "ipa": "/ˈfɪltər/",
+    "pos": "noun",
+    "meaning": "濾網；濾芯",
+    "example": "The furnace filter needs replacing.",
+    "translation": "暖氣爐個濾網要換。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b250",
+    "word": "air conditioner",
+    "ipa": "/ˈɛr kənˌdɪʃənər/",
+    "pos": "noun",
+    "meaning": "冷氣機",
+    "example": "The air conditioner is leaking water.",
+    "translation": "部冷氣機漏緊水。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b251",
+    "word": "humidifier",
+    "ipa": "/hjuˈmɪdəˌfaɪər/",
+    "pos": "noun",
+    "meaning": "加濕器",
+    "example": "We use a humidifier in the bedroom.",
+    "translation": "我哋喺睡房用加濕器。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b252",
+    "word": "dehumidifier",
+    "ipa": "/ˌdihjuˈmɪdəˌfaɪər/",
+    "pos": "noun",
+    "meaning": "抽濕機",
+    "example": "The basement needs a dehumidifier.",
+    "translation": "地庫需要一部抽濕機。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b253",
+    "word": "vent",
+    "ipa": "/vɛnt/",
+    "pos": "noun",
+    "meaning": "通風口；風口",
+    "example": "Don't block the heating vent.",
+    "translation": "唔好遮住暖氣出風口。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b254",
+    "word": "draft",
+    "ipa": "/dræft/",
+    "pos": "noun",
+    "meaning": "由罅隙吹入嘅冷風",
+    "example": "There's a cold draft near the window.",
+    "translation": "窗邊有冷風吹入嚟。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b255",
+    "word": "insulation",
+    "ipa": "/ˌɪnsəˈleɪʃən/",
+    "pos": "noun",
+    "meaning": "隔熱材料；保溫層",
+    "example": "The attic needs better insulation.",
+    "translation": "閣樓需要加強保溫。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b256",
+    "word": "leak",
+    "ipa": "/lik/",
+    "pos": "noun",
+    "meaning": "漏水；滲漏",
+    "example": "There's a leak under the kitchen sink.",
+    "translation": "廚房鋅盆下面漏水。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b257",
+    "word": "faucet",
+    "ipa": "/ˈfɔsɪt/",
+    "pos": "noun",
+    "meaning": "水龍頭",
+    "example": "The bathroom faucet keeps dripping.",
+    "translation": "浴室個水龍頭不停滴水。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b258",
+    "word": "drain",
+    "ipa": "/dreɪn/",
+    "pos": "noun",
+    "meaning": "去水位；排水管",
+    "example": "The shower drain is blocked.",
+    "translation": "淋浴間嘅去水位塞咗。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b259",
+    "word": "clogged",
+    "ipa": "/klɑɡd/",
+    "pos": "adjective",
+    "meaning": "塞咗嘅；堵塞嘅",
+    "example": "The toilet is clogged again.",
+    "translation": "個廁所又塞咗。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b260",
+    "word": "plunger",
+    "ipa": "/ˈplʌndʒər/",
+    "pos": "noun",
+    "meaning": "通渠吸盤",
+    "example": "Do we have a plunger for the toilet?",
+    "translation": "我哋有冇通廁所嘅吸盤？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b261",
+    "word": "plumber",
+    "ipa": "/ˈplʌmər/",
+    "pos": "noun",
+    "meaning": "水喉師傅",
+    "example": "We need a plumber to repair the pipe.",
+    "translation": "我哋要搵水喉師傅整條水管。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b262",
+    "word": "pipe",
+    "ipa": "/paɪp/",
+    "pos": "noun",
+    "meaning": "水管；管道",
+    "example": "A pipe burst in the basement.",
+    "translation": "地庫有條水管爆咗。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b263",
+    "word": "shut-off valve",
+    "ipa": "/ˈʃʌt ɔf vælv/",
+    "pos": "noun",
+    "meaning": "截流掣；總水掣等閥門",
+    "example": "Where is the main water shut-off valve?",
+    "translation": "總水掣喺邊度？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b264",
+    "word": "water heater",
+    "ipa": "/ˈwɔtər ˌhitər/",
+    "pos": "noun",
+    "meaning": "熱水爐",
+    "example": "The water heater needs servicing.",
+    "translation": "個熱水爐需要保養檢查。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b265",
+    "word": "electrician",
+    "ipa": "/ɪˌlɛkˈtrɪʃən/",
+    "pos": "noun",
+    "meaning": "電工；電器師傅",
+    "example": "An electrician will inspect the wiring.",
+    "translation": "電工會檢查電線。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b266",
+    "word": "outlet",
+    "ipa": "/ˈaʊtˌlɛt/",
+    "pos": "noun",
+    "meaning": "電源插座",
+    "example": "This outlet doesn't work.",
+    "translation": "呢個插座用唔到。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b267",
+    "word": "circuit breaker",
+    "ipa": "/ˈsɜrkɪt ˌbreɪkər/",
+    "pos": "noun",
+    "meaning": "斷路器；電掣",
+    "example": "The circuit breaker tripped.",
+    "translation": "個電掣跳咗。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b268",
+    "word": "power outage",
+    "ipa": "/ˈpaʊər ˌaʊtɪdʒ/",
+    "pos": "noun",
+    "meaning": "停電",
+    "example": "There's a power outage in our neighbourhood.",
+    "translation": "我哋附近停咗電。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b269",
+    "word": "smoke alarm",
+    "ipa": "/ˈsmoʊk əˌlɑrm/",
+    "pos": "noun",
+    "meaning": "煙霧警報器",
+    "example": "The smoke alarm needs a new battery.",
+    "translation": "煙霧警報器要換電池。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b270",
+    "word": "carbon monoxide",
+    "ipa": "/ˌkɑrbən məˈnɑksaɪd/",
+    "pos": "noun",
+    "meaning": "一氧化碳",
+    "example": "We installed a carbon monoxide alarm.",
+    "translation": "我哋裝咗一氧化碳警報器。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b271",
+    "word": "battery",
+    "ipa": "/ˈbætəri/",
+    "pos": "noun",
+    "meaning": "電池",
+    "example": "Do these batteries need replacing?",
+    "translation": "呢啲電池需唔需要換？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b272",
+    "word": "light bulb",
+    "ipa": "/ˈlaɪt bʌlb/",
+    "pos": "noun",
+    "meaning": "燈膽",
+    "example": "The light bulb in the hallway burned out.",
+    "translation": "走廊個燈膽燒咗。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b273",
+    "word": "mould",
+    "ipa": "/moʊld/",
+    "pos": "noun",
+    "meaning": "霉菌；霉（加拿大拼法）",
+    "example": "There's mould around the window.",
+    "translation": "個窗邊生咗霉。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b274",
+    "word": "condensation",
+    "ipa": "/ˌkɑndənˈseɪʃən/",
+    "pos": "noun",
+    "meaning": "凝結水氣；倒汗水",
+    "example": "There's condensation on the windows.",
+    "translation": "啲窗有倒汗水。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b275",
+    "word": "pest",
+    "ipa": "/pɛst/",
+    "pos": "noun",
+    "meaning": "害蟲；有害小動物",
+    "example": "The landlord arranged pest control.",
+    "translation": "業主安排咗滅蟲服務。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b276",
+    "word": "crack",
+    "ipa": "/kræk/",
+    "pos": "noun",
+    "meaning": "裂縫",
+    "example": "There's a crack in the wall.",
+    "translation": "幅牆有條裂縫。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b277",
+    "word": "ceiling",
+    "ipa": "/ˈsilɪŋ/",
+    "pos": "noun",
+    "meaning": "天花板",
+    "example": "The ceiling has a water stain.",
+    "translation": "天花有一撻水漬。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b278",
+    "word": "flooring",
+    "ipa": "/ˈflɔrɪŋ/",
+    "pos": "noun",
+    "meaning": "地板材料；地板",
+    "example": "We're replacing the flooring in the kitchen.",
+    "translation": "我哋換緊廚房地板。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b279",
+    "word": "baseboard",
+    "ipa": "/ˈbeɪsˌbɔrd/",
+    "pos": "noun",
+    "meaning": "牆腳線；踢腳板",
+    "example": "The baseboard is coming away from the wall.",
+    "translation": "條牆腳線甩緊出嚟。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b280",
+    "word": "caulk",
+    "ipa": "/kɔk/",
+    "pos": "noun",
+    "meaning": "填縫膠",
+    "example": "We need new caulk around the bathtub.",
+    "translation": "浴缸邊要重新唧填縫膠。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b281",
+    "word": "seal",
+    "ipa": "/sil/",
+    "pos": "verb",
+    "meaning": "密封；封好",
+    "example": "Please seal the gap around the window.",
+    "translation": "請封好窗邊條罅。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b282",
+    "word": "hinge",
+    "ipa": "/hɪndʒ/",
+    "pos": "noun",
+    "meaning": "門鉸；鉸鏈",
+    "example": "The door hinge is loose.",
+    "translation": "隻門嘅門鉸鬆咗。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b283",
+    "word": "screw",
+    "ipa": "/skru/",
+    "pos": "noun",
+    "meaning": "螺絲",
+    "example": "One screw is missing from the handle.",
+    "translation": "個手柄少咗一粒螺絲。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b284",
+    "word": "screwdriver",
+    "ipa": "/ˈskruˌdraɪvər/",
+    "pos": "noun",
+    "meaning": "螺絲批",
+    "example": "Could you pass me a screwdriver?",
+    "translation": "可唔可以遞把螺絲批畀我？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b285",
+    "word": "wrench",
+    "ipa": "/rɛntʃ/",
+    "pos": "noun",
+    "meaning": "士巴拿；扳手",
+    "example": "You'll need a wrench to tighten that nut.",
+    "translation": "你要用士巴拿扭實嗰粒螺絲帽。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b286",
+    "word": "ladder",
+    "ipa": "/ˈlædər/",
+    "pos": "noun",
+    "meaning": "梯",
+    "example": "Use a stable ladder to reach the shelf.",
+    "translation": "用張穩陣嘅梯攞架上面嘅嘢。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b287",
+    "word": "measurement",
+    "ipa": "/ˈmɛʒərmənt/",
+    "pos": "noun",
+    "meaning": "尺寸；量度結果",
+    "example": "Can you check the measurements of the room?",
+    "translation": "可唔可以核對間房嘅尺寸？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b288",
+    "word": "estimate",
+    "ipa": "/ˈɛstəmət/",
+    "pos": "noun",
+    "meaning": "估價；估算",
+    "example": "Could you give me a written estimate?",
+    "translation": "可唔可以畀份書面估價我？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b289",
+    "word": "quote",
+    "ipa": "/kwoʊt/",
+    "pos": "noun",
+    "meaning": "報價",
+    "example": "I'm getting a quote for the repairs.",
+    "translation": "我搵緊維修報價。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b290",
+    "word": "labour",
+    "ipa": "/ˈleɪbər/",
+    "pos": "noun",
+    "meaning": "人工；勞動",
+    "example": "Does the quote include labour and materials?",
+    "translation": "個報價包唔包人工同材料？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b291",
+    "word": "maintenance",
+    "ipa": "/ˈmeɪntənəns/",
+    "pos": "noun",
+    "meaning": "保養；維修",
+    "example": "The building needs regular maintenance.",
+    "translation": "棟大廈需要定期保養。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b292",
+    "word": "contractor",
+    "ipa": "/ˈkɑntræktər/",
+    "pos": "noun",
+    "meaning": "承建商；工程承辦人",
+    "example": "The contractor will start work on Monday.",
+    "translation": "承建商星期一開工。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b293",
+    "word": "renovation",
+    "ipa": "/ˌrɛnəˈveɪʃən/",
+    "pos": "noun",
+    "meaning": "裝修；翻新",
+    "example": "The kitchen renovation took three weeks.",
+    "translation": "廚房裝修用咗三個星期。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b294",
+    "word": "basement",
+    "ipa": "/ˈbeɪsmənt/",
+    "pos": "noun",
+    "meaning": "地庫",
+    "example": "We store winter clothes in the basement.",
+    "translation": "我哋將冬天衫放喺地庫。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b295",
+    "word": "gutter",
+    "ipa": "/ˈɡʌtər/",
+    "pos": "noun",
+    "meaning": "屋簷排水槽；雨水槽",
+    "example": "The gutters are full of leaves.",
+    "translation": "啲雨水槽塞滿咗樹葉。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b296",
+    "word": "downspout",
+    "ipa": "/ˈdaʊnˌspaʊt/",
+    "pos": "noun",
+    "meaning": "屋外落水管",
+    "example": "The downspout directs water away from the house.",
+    "translation": "條落水管將雨水引離間屋。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b297",
+    "word": "shovel",
+    "ipa": "/ˈʃʌvəl/",
+    "pos": "noun",
+    "meaning": "鏟；雪鏟",
+    "example": "I left the snow shovel in the garage.",
+    "translation": "我將雪鏟放咗喺車房。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b298",
+    "word": "recycling",
+    "ipa": "/riˈsaɪklɪŋ/",
+    "pos": "noun",
+    "meaning": "回收；回收物",
+    "example": "Which day is recycling collected?",
+    "translation": "邊日收回收物？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b299",
+    "word": "green bin",
+    "ipa": "/ˈɡrin bɪn/",
+    "pos": "noun",
+    "meaning": "廚餘等有機廢物回收桶",
+    "example": "Food scraps go in the green bin.",
+    "translation": "廚餘放入有機廢物桶。",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b300",
+    "word": "bulky item",
+    "ipa": "/ˌbʌlki ˈaɪtəm/",
+    "pos": "noun",
+    "meaning": "大型棄置物品",
+    "example": "How do I arrange collection of a bulky item?",
+    "translation": "我點樣安排收走大型棄置物品？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b301",
+    "word": "fare",
+    "ipa": "/fɛr/",
+    "pos": "noun",
+    "meaning": "車費",
+    "example": "How much is the bus fare?",
+    "translation": "巴士車費幾多？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b302",
+    "word": "PRESTO card",
+    "ipa": "/ˈprɛstoʊ kɑrd/",
+    "pos": "noun",
+    "meaning": "安省部分公共交通用嘅電子車票",
+    "example": "Can I reload my PRESTO card here?",
+    "translation": "我可唔可以喺度增值 PRESTO 卡？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b303",
+    "word": "reload",
+    "ipa": "/ˌriˈloʊd/",
+    "pos": "verb",
+    "meaning": "增值；重新載入",
+    "example": "I need to reload my transit card.",
+    "translation": "我要幫交通卡增值。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b304",
+    "word": "tap on",
+    "ipa": "/ˌtæp ˈɑn/",
+    "pos": "phrasal verb",
+    "meaning": "上車時拍卡",
+    "example": "Do I tap on when I board this train?",
+    "translation": "上呢班火車時要唔要拍卡？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b305",
+    "word": "tap off",
+    "ipa": "/ˌtæp ˈɔf/",
+    "pos": "phrasal verb",
+    "meaning": "落車時拍卡",
+    "example": "Do I need to tap off at this station?",
+    "translation": "喺呢個站落車要唔要拍卡？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b306",
+    "word": "route",
+    "ipa": "/rut/",
+    "pos": "noun",
+    "meaning": "路線",
+    "example": "Which route goes to the hospital?",
+    "translation": "邊條路線去醫院？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b307",
+    "word": "schedule",
+    "ipa": "/ˈskɛdʒul/",
+    "pos": "noun",
+    "meaning": "時間表",
+    "example": "Where can I check the bus schedule?",
+    "translation": "我喺邊度可以查巴士時間表？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b308",
+    "word": "stop",
+    "ipa": "/stɑp/",
+    "pos": "noun",
+    "meaning": "巴士站；停靠站",
+    "example": "Is this the stop for the community centre?",
+    "translation": "去社區中心係咪喺呢個站落？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b309",
+    "word": "station",
+    "ipa": "/ˈsteɪʃən/",
+    "pos": "noun",
+    "meaning": "車站",
+    "example": "How far is the GO station from here?",
+    "translation": "由呢度去 GO 車站有幾遠？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b310",
+    "word": "platform",
+    "ipa": "/ˈplætˌfɔrm/",
+    "pos": "noun",
+    "meaning": "月台",
+    "example": "Which platform does the train leave from?",
+    "translation": "班火車喺邊個月台開？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b311",
+    "word": "connection",
+    "ipa": "/kəˈnɛkʃən/",
+    "pos": "noun",
+    "meaning": "接駁班次；轉乘連接",
+    "example": "I missed my connection to the next bus.",
+    "translation": "我趕唔切轉下一班巴士。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b312",
+    "word": "delay",
+    "ipa": "/dɪˈleɪ/",
+    "pos": "noun",
+    "meaning": "延誤",
+    "example": "There's a twenty-minute delay on this line.",
+    "translation": "呢條線延誤二十分鐘。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b313",
+    "word": "cancelled",
+    "ipa": "/ˈkænsəld/",
+    "pos": "adjective",
+    "meaning": "已取消嘅",
+    "example": "The last train has been cancelled.",
+    "translation": "尾班車取消咗。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b314",
+    "word": "detour",
+    "ipa": "/ˈdiˌtʊr/",
+    "pos": "noun",
+    "meaning": "改道；繞道",
+    "example": "The bus is taking a detour today.",
+    "translation": "巴士今日改道。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b315",
+    "word": "commute",
+    "ipa": "/kəˈmjut/",
+    "pos": "noun",
+    "meaning": "返工返學嘅日常交通路程",
+    "example": "My commute takes about forty minutes.",
+    "translation": "我返工車程大約四十分鐘。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b316",
+    "word": "rush hour",
+    "ipa": "/ˈrʌʃ ˌaʊər/",
+    "pos": "noun",
+    "meaning": "繁忙時間",
+    "example": "Traffic is heavy during rush hour.",
+    "translation": "繁忙時間交通好擠塞。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b317",
+    "word": "traffic",
+    "ipa": "/ˈtræfɪk/",
+    "pos": "noun",
+    "meaning": "交通；車流",
+    "example": "We got stuck in traffic on Highway 7.",
+    "translation": "我哋喺七號公路塞車。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b318",
+    "word": "intersection",
+    "ipa": "/ˌɪntərˈsɛkʃən/",
+    "pos": "noun",
+    "meaning": "十字路口；交匯處",
+    "example": "Turn right at the next intersection.",
+    "translation": "下個路口轉右。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b319",
+    "word": "crosswalk",
+    "ipa": "/ˈkrɔsˌwɔk/",
+    "pos": "noun",
+    "meaning": "行人過路處",
+    "example": "Please use the crosswalk to cross the road.",
+    "translation": "過馬路請用行人過路處。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b320",
+    "word": "pedestrian",
+    "ipa": "/pəˈdɛstriən/",
+    "pos": "noun",
+    "meaning": "行人",
+    "example": "Watch out for pedestrians at the corner.",
+    "translation": "喺轉角位留意行人。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b321",
+    "word": "sidewalk",
+    "ipa": "/ˈsaɪdˌwɔk/",
+    "pos": "noun",
+    "meaning": "行人路",
+    "example": "The sidewalk is icy this morning.",
+    "translation": "今朝條行人路結咗冰。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b322",
+    "word": "curb",
+    "ipa": "/kɜrb/",
+    "pos": "noun",
+    "meaning": "路邊石壆",
+    "example": "Don't park too close to the curb.",
+    "translation": "泊車唔好太貼石壆。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b323",
+    "word": "lane",
+    "ipa": "/leɪn/",
+    "pos": "noun",
+    "meaning": "行車線",
+    "example": "Stay in the right lane.",
+    "translation": "保持喺右邊行車線。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b324",
+    "word": "merge",
+    "ipa": "/mɜrdʒ/",
+    "pos": "verb",
+    "meaning": "併線；匯入車流",
+    "example": "Signal before you merge onto the highway.",
+    "translation": "駛入高速公路併線前要打燈。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b325",
+    "word": "yield",
+    "ipa": "/jild/",
+    "pos": "verb",
+    "meaning": "讓路",
+    "example": "Drivers must yield to pedestrians here.",
+    "translation": "司機喺呢度必須讓行人。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b326",
+    "word": "right of way",
+    "ipa": "/ˌraɪt əv ˈweɪ/",
+    "pos": "noun",
+    "meaning": "優先通行權",
+    "example": "Who has the right of way at this junction?",
+    "translation": "呢個路口邊個有優先通行權？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b327",
+    "word": "speed limit",
+    "ipa": "/ˈspid ˌlɪmɪt/",
+    "pos": "noun",
+    "meaning": "車速限制",
+    "example": "The speed limit drops to forty near the school.",
+    "translation": "近學校嘅限速降至四十。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b328",
+    "word": "roundabout",
+    "ipa": "/ˈraʊndəˌbaʊt/",
+    "pos": "noun",
+    "meaning": "迴旋處",
+    "example": "Take the second exit at the roundabout.",
+    "translation": "喺迴旋處第二個出口駛出。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b329",
+    "word": "exit",
+    "ipa": "/ˈɛɡzɪt/",
+    "pos": "noun",
+    "meaning": "出口",
+    "example": "We missed the highway exit.",
+    "translation": "我哋錯過咗高速公路出口。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b330",
+    "word": "entrance",
+    "ipa": "/ˈɛntrəns/",
+    "pos": "noun",
+    "meaning": "入口",
+    "example": "The parking entrance is on the left.",
+    "translation": "停車場入口喺左邊。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b331",
+    "word": "parking permit",
+    "ipa": "/ˈpɑrkɪŋ ˌpɜrmɪt/",
+    "pos": "noun",
+    "meaning": "泊車許可證",
+    "example": "Do I need a parking permit for this lot?",
+    "translation": "喺呢個停車場泊車要唔要許可證？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b332",
+    "word": "parking ticket",
+    "ipa": "/ˈpɑrkɪŋ ˌtɪkɪt/",
+    "pos": "noun",
+    "meaning": "違例泊車告票",
+    "example": "I found a parking ticket on my windshield.",
+    "translation": "我發現擋風玻璃上面有張泊車告票。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b333",
+    "word": "tow",
+    "ipa": "/toʊ/",
+    "pos": "verb",
+    "meaning": "拖走車輛",
+    "example": "Cars parked here may be towed.",
+    "translation": "泊喺呢度嘅車可能會被拖走。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b334",
+    "word": "accessible",
+    "ipa": "/əkˈsɛsəbəl/",
+    "pos": "adjective",
+    "meaning": "無障礙嘅；方便到達使用嘅",
+    "example": "Is this station wheelchair accessible?",
+    "translation": "呢個站方唔方便輪椅使用者出入？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b335",
+    "word": "elevator",
+    "ipa": "/ˈɛləˌveɪtər/",
+    "pos": "noun",
+    "meaning": "升降機",
+    "example": "The elevator to the platform is out of service.",
+    "translation": "去月台部升降機暫停使用。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b336",
+    "word": "escalator",
+    "ipa": "/ˈɛskəˌleɪtər/",
+    "pos": "noun",
+    "meaning": "扶手電梯",
+    "example": "Take the escalator down one level.",
+    "translation": "搭扶手電梯落一層。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b337",
+    "word": "seat belt",
+    "ipa": "/ˈsit bɛlt/",
+    "pos": "noun",
+    "meaning": "安全帶",
+    "example": "Please fasten your seat belt.",
+    "translation": "請扣好安全帶。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b338",
+    "word": "windshield",
+    "ipa": "/ˈwɪndˌʃild/",
+    "pos": "noun",
+    "meaning": "汽車擋風玻璃",
+    "example": "There's ice on the windshield.",
+    "translation": "擋風玻璃有冰。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b339",
+    "word": "wiper",
+    "ipa": "/ˈwaɪpər/",
+    "pos": "noun",
+    "meaning": "汽車雨撥",
+    "example": "One windshield wiper needs replacing.",
+    "translation": "其中一支雨撥要換。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b340",
+    "word": "washer fluid",
+    "ipa": "/ˈwɑʃər ˌfluɪd/",
+    "pos": "noun",
+    "meaning": "汽車玻璃清洗液",
+    "example": "We're running low on windshield washer fluid.",
+    "translation": "我哋啲擋風玻璃清洗液就快用晒。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b341",
+    "word": "tire",
+    "ipa": "/ˈtaɪər/",
+    "pos": "noun",
+    "meaning": "車胎",
+    "example": "The front tire looks flat.",
+    "translation": "前面個車胎好似冇氣。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b342",
+    "word": "tire pressure",
+    "ipa": "/ˈtaɪər ˌprɛʃər/",
+    "pos": "noun",
+    "meaning": "胎壓",
+    "example": "Could you check the tire pressure?",
+    "translation": "可唔可以檢查吓胎壓？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b343",
+    "word": "winter tires",
+    "ipa": "/ˈwɪntər ˌtaɪərz/",
+    "pos": "plural noun",
+    "meaning": "冬季車胎；雪胎",
+    "example": "We're switching to winter tires this week.",
+    "translation": "我哋今個星期換雪胎。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b344",
+    "word": "oil change",
+    "ipa": "/ˈɔɪl tʃeɪndʒ/",
+    "pos": "noun",
+    "meaning": "更換偈油",
+    "example": "I'd like to book an oil change.",
+    "translation": "我想預約換偈油。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b345",
+    "word": "brake",
+    "ipa": "/breɪk/",
+    "pos": "noun",
+    "meaning": "煞車；迫力",
+    "example": "The brakes are making a strange noise.",
+    "translation": "啲迫力發出奇怪聲音。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b346",
+    "word": "mechanic",
+    "ipa": "/məˈkænɪk/",
+    "pos": "noun",
+    "meaning": "汽車維修技工",
+    "example": "The mechanic found a loose belt.",
+    "translation": "整車師傅發現有條皮帶鬆咗。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b347",
+    "word": "inspection",
+    "ipa": "/ɪnˈspɛkʃən/",
+    "pos": "noun",
+    "meaning": "檢驗；檢查",
+    "example": "Does the car need a safety inspection?",
+    "translation": "架車需唔需要做安全檢驗？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b348",
+    "word": "licence plate",
+    "ipa": "/ˈlaɪsəns pleɪt/",
+    "pos": "noun",
+    "meaning": "車牌",
+    "example": "What's your licence plate number?",
+    "translation": "你架車嘅車牌號碼係咩？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b349",
+    "word": "driver's licence",
+    "ipa": "/ˈdraɪvərz ˌlaɪsəns/",
+    "pos": "noun",
+    "meaning": "駕駛執照；車牌",
+    "example": "My driver's licence expires next month.",
+    "translation": "我張駕駛執照下個月到期。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b350",
+    "word": "insurance",
+    "ipa": "/ɪnˈʃʊrəns/",
+    "pos": "noun",
+    "meaning": "保險",
+    "example": "Please keep proof of insurance in the car.",
+    "translation": "請喺車內備妥保險證明。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b351",
+    "word": "collision",
+    "ipa": "/kəˈlɪʒən/",
+    "pos": "noun",
+    "meaning": "撞車；碰撞",
+    "example": "We need to report the collision.",
+    "translation": "我哋需要報告呢宗撞車事故。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b352",
+    "word": "roadside assistance",
+    "ipa": "/ˈroʊdˌsaɪd əˈsɪstəns/",
+    "pos": "noun",
+    "meaning": "道路救援",
+    "example": "I'm calling roadside assistance for a flat tire.",
+    "translation": "我因為車胎冇氣打去道路救援。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b353",
+    "word": "fuel",
+    "ipa": "/ˈfjuəl/",
+    "pos": "noun",
+    "meaning": "燃料；汽油等",
+    "example": "We're almost out of fuel.",
+    "translation": "我哋就快冇油。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b354",
+    "word": "regular gas",
+    "ipa": "/ˈrɛɡjələr ɡæs/",
+    "pos": "noun",
+    "meaning": "普通汽油",
+    "example": "Does this car take regular gas?",
+    "translation": "呢架車係咪入普通汽油？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b355",
+    "word": "charging station",
+    "ipa": "/ˈtʃɑrdʒɪŋ ˌsteɪʃən/",
+    "pos": "noun",
+    "meaning": "充電站",
+    "example": "Is there a charging station nearby?",
+    "translation": "附近有冇充電站？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b356",
+    "word": "one-way",
+    "ipa": "/ˌwʌn ˈweɪ/",
+    "pos": "adjective",
+    "meaning": "單程嘅；單向嘅",
+    "example": "I'd like a one-way ticket to Union Station.",
+    "translation": "我想買張去 Union Station 嘅單程票。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b357",
+    "word": "round trip",
+    "ipa": "/ˈraʊnd trɪp/",
+    "pos": "noun",
+    "meaning": "來回程",
+    "example": "How much is a round trip to Toronto?",
+    "translation": "去多倫多來回車費幾多？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b358",
+    "word": "boarding",
+    "ipa": "/ˈbɔrdɪŋ/",
+    "pos": "noun",
+    "meaning": "登車；登機",
+    "example": "Boarding starts at gate twelve.",
+    "translation": "喺十二號閘口開始登機。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b359",
+    "word": "luggage",
+    "ipa": "/ˈlʌɡɪdʒ/",
+    "pos": "noun",
+    "meaning": "行李",
+    "example": "Is there space for luggage on this bus?",
+    "translation": "呢架巴士有冇位放行李？",
+    "category": "交通出行"
+  },
+  {
+    "id": "b360",
+    "word": "destination",
+    "ipa": "/ˌdɛstəˈneɪʃən/",
+    "pos": "noun",
+    "meaning": "目的地",
+    "example": "Enter your destination before you start driving.",
+    "translation": "開車前先輸入目的地。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b361",
+    "word": "application",
+    "ipa": "/ˌæplɪˈkeɪʃən/",
+    "pos": "noun",
+    "meaning": "申請；申請表",
+    "example": "I submitted my application online.",
+    "translation": "我喺網上交咗申請。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b362",
+    "word": "applicant",
+    "ipa": "/ˈæplɪkənt/",
+    "pos": "noun",
+    "meaning": "申請人",
+    "example": "The applicant must sign this section.",
+    "translation": "申請人必須喺呢部分簽名。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b363",
+    "word": "form",
+    "ipa": "/fɔrm/",
+    "pos": "noun",
+    "meaning": "表格",
+    "example": "Could you help me fill out this form?",
+    "translation": "可唔可以幫我填呢張表？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b364",
+    "word": "fill out",
+    "ipa": "/ˌfɪl ˈaʊt/",
+    "pos": "phrasal verb",
+    "meaning": "填寫（表格）",
+    "example": "Please fill out both sides of the form.",
+    "translation": "請填寫張表嘅兩面。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b365",
+    "word": "required",
+    "ipa": "/rɪˈkwaɪərd/",
+    "pos": "adjective",
+    "meaning": "必須嘅；必填嘅",
+    "example": "Fields marked with an asterisk are required.",
+    "translation": "有星號嘅欄位係必填嘅。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b366",
+    "word": "optional",
+    "ipa": "/ˈɑpʃənəl/",
+    "pos": "adjective",
+    "meaning": "可選嘅；唔一定要填嘅",
+    "example": "Providing a second phone number is optional.",
+    "translation": "第二個電話號碼可以唔填。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b367",
+    "word": "mandatory",
+    "ipa": "/ˈmændəˌtɔri/",
+    "pos": "adjective",
+    "meaning": "強制嘅；必須嘅",
+    "example": "Is this training mandatory?",
+    "translation": "呢個訓練係咪一定要參加？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b368",
+    "word": "field",
+    "ipa": "/fild/",
+    "pos": "noun",
+    "meaning": "表格欄位",
+    "example": "Please don't leave this field blank.",
+    "translation": "請唔好留空呢個欄位。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b369",
+    "word": "section",
+    "ipa": "/ˈsɛkʃən/",
+    "pos": "noun",
+    "meaning": "部分；章節",
+    "example": "You only need to complete section two.",
+    "translation": "你只需要填第二部分。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b370",
+    "word": "legal name",
+    "ipa": "/ˈliɡəl neɪm/",
+    "pos": "noun",
+    "meaning": "法定姓名",
+    "example": "Enter your full legal name.",
+    "translation": "請填你完整嘅法定姓名。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b371",
+    "word": "given name",
+    "ipa": "/ˈɡɪvən neɪm/",
+    "pos": "noun",
+    "meaning": "名字（唔包括姓氏）",
+    "example": "Write your given name as it appears on your passport.",
+    "translation": "按護照上面嘅寫法填你個名。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b372",
+    "word": "surname",
+    "ipa": "/ˈsɜrˌneɪm/",
+    "pos": "noun",
+    "meaning": "姓氏",
+    "example": "My surname is Wong.",
+    "translation": "我姓 Wong。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b373",
+    "word": "middle name",
+    "ipa": "/ˈmɪdəl neɪm/",
+    "pos": "noun",
+    "meaning": "中間名",
+    "example": "I don't have a middle name.",
+    "translation": "我冇中間名。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b374",
+    "word": "preferred name",
+    "ipa": "/prɪˈfɜrd neɪm/",
+    "pos": "noun",
+    "meaning": "希望人哋稱呼你嘅名字",
+    "example": "You can add your preferred name here.",
+    "translation": "你可以喺度填你想人哋叫你嘅名。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b375",
+    "word": "date of birth",
+    "ipa": "/ˌdeɪt əv ˈbɜrθ/",
+    "pos": "noun",
+    "meaning": "出生日期",
+    "example": "Please confirm your date of birth.",
+    "translation": "請確認你嘅出生日期。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b376",
+    "word": "marital status",
+    "ipa": "/ˈmærɪtəl ˌsteɪtəs/",
+    "pos": "noun",
+    "meaning": "婚姻狀況",
+    "example": "The form asks for your marital status.",
+    "translation": "張表問你嘅婚姻狀況。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b377",
+    "word": "spouse",
+    "ipa": "/spaʊs/",
+    "pos": "noun",
+    "meaning": "配偶",
+    "example": "Does your spouse need to sign as well?",
+    "translation": "你配偶係咪都要簽名？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b378",
+    "word": "common-law partner",
+    "ipa": "/ˌkɑmən lɔ ˈpɑrtnər/",
+    "pos": "noun",
+    "meaning": "普通法伴侶；符合相關條件嘅同居伴侶",
+    "example": "Does this program recognize a common-law partner?",
+    "translation": "呢個計劃認唔認可普通法伴侶？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b379",
+    "word": "dependant",
+    "ipa": "/dɪˈpɛndənt/",
+    "pos": "noun",
+    "meaning": "受供養人；依親人士",
+    "example": "List any dependants on the application.",
+    "translation": "喺申請表列出受供養人。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b380",
+    "word": "household",
+    "ipa": "/ˈhaʊsˌhoʊld/",
+    "pos": "noun",
+    "meaning": "住戶；同住家庭",
+    "example": "How many people are in your household?",
+    "translation": "你屋企共有幾多人同住？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b381",
+    "word": "address",
+    "ipa": "/ˈæˌdrɛs/",
+    "pos": "noun",
+    "meaning": "地址",
+    "example": "Please update your mailing address.",
+    "translation": "請更新你嘅郵寄地址。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b382",
+    "word": "postal code",
+    "ipa": "/ˈpoʊstəl koʊd/",
+    "pos": "noun",
+    "meaning": "郵政編碼",
+    "example": "What's the postal code for this address?",
+    "translation": "呢個地址嘅郵政編碼係咩？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b383",
+    "word": "unit number",
+    "ipa": "/ˈjunɪt ˌnʌmbər/",
+    "pos": "noun",
+    "meaning": "單位號碼",
+    "example": "Remember to include your unit number.",
+    "translation": "記住填埋單位號碼。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b384",
+    "word": "province",
+    "ipa": "/ˈprɑvɪns/",
+    "pos": "noun",
+    "meaning": "省",
+    "example": "Ontario is the province where I live.",
+    "translation": "我住嘅省份係安大略。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b385",
+    "word": "municipality",
+    "ipa": "/mjuˌnɪsəˈpæləti/",
+    "pos": "noun",
+    "meaning": "市鎮；地方行政區",
+    "example": "Which municipality do you live in?",
+    "translation": "你住喺邊個市鎮？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b386",
+    "word": "resident",
+    "ipa": "/ˈrɛzɪdənt/",
+    "pos": "noun",
+    "meaning": "居民",
+    "example": "This program is for Ontario residents.",
+    "translation": "呢個計劃係畀安省居民嘅。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b387",
+    "word": "permanent resident",
+    "ipa": "/ˌpɜrmənənt ˈrɛzɪdənt/",
+    "pos": "noun",
+    "meaning": "永久居民",
+    "example": "I'm a permanent resident of Canada.",
+    "translation": "我係加拿大永久居民。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b388",
+    "word": "citizenship",
+    "ipa": "/ˈsɪtɪzənˌʃɪp/",
+    "pos": "noun",
+    "meaning": "公民身份；國籍",
+    "example": "Where can I check my citizenship application status?",
+    "translation": "我喺邊度可以查入籍申請進度？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b389",
+    "word": "permit",
+    "ipa": "/ˈpɜrmɪt/",
+    "pos": "noun",
+    "meaning": "許可證",
+    "example": "Do I need a permit for this work?",
+    "translation": "做呢項工程需唔需要許可證？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b390",
+    "word": "identification",
+    "ipa": "/aɪˌdɛntɪfɪˈkeɪʃən/",
+    "pos": "noun",
+    "meaning": "身份證明文件",
+    "example": "Please bring two pieces of identification.",
+    "translation": "請帶兩份身份證明文件。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b391",
+    "word": "proof of address",
+    "ipa": "/ˌpruf əv ˈædrɛs/",
+    "pos": "noun",
+    "meaning": "住址證明",
+    "example": "Can I use this bill as proof of address?",
+    "translation": "我可唔可以用呢張賬單做住址證明？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b392",
+    "word": "supporting document",
+    "ipa": "/səˈpɔrtɪŋ ˌdɑkjəmənt/",
+    "pos": "noun",
+    "meaning": "證明文件；補充文件",
+    "example": "Please upload the supporting documents.",
+    "translation": "請上載相關證明文件。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b393",
+    "word": "original",
+    "ipa": "/əˈrɪdʒənəl/",
+    "pos": "noun",
+    "meaning": "正本；原件",
+    "example": "Do you need the original or a copy?",
+    "translation": "你需要正本定副本？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b394",
+    "word": "photocopy",
+    "ipa": "/ˈfoʊtoʊˌkɑpi/",
+    "pos": "noun",
+    "meaning": "影印本",
+    "example": "Please keep a photocopy for your records.",
+    "translation": "請保留一份影印本作紀錄。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b395",
+    "word": "certified copy",
+    "ipa": "/ˈsɜrtɪfaɪd ˌkɑpi/",
+    "pos": "noun",
+    "meaning": "核證副本",
+    "example": "Does this document need to be a certified copy?",
+    "translation": "呢份文件係咪需要核證副本？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b396",
+    "word": "signature",
+    "ipa": "/ˈsɪɡnətʃər/",
+    "pos": "noun",
+    "meaning": "簽名",
+    "example": "Your signature is missing from the last page.",
+    "translation": "最後一頁冇咗你嘅簽名。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b397",
+    "word": "initials",
+    "ipa": "/ɪˈnɪʃəlz/",
+    "pos": "plural noun",
+    "meaning": "姓名首字母；簡簽",
+    "example": "Put your initials beside each change.",
+    "translation": "喺每個改動旁邊簡簽。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b398",
+    "word": "consent",
+    "ipa": "/kənˈsɛnt/",
+    "pos": "noun",
+    "meaning": "同意；許可",
+    "example": "We need your consent before sharing this information.",
+    "translation": "分享呢啲資料之前需要你同意。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b399",
+    "word": "authorize",
+    "ipa": "/ˈɔθəˌraɪz/",
+    "pos": "verb",
+    "meaning": "授權；批准",
+    "example": "Do you authorize us to contact your employer?",
+    "translation": "你授唔授權我哋聯絡你僱主？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b400",
+    "word": "declare",
+    "ipa": "/dɪˈklɛr/",
+    "pos": "verb",
+    "meaning": "申報；聲明",
+    "example": "Do I need to declare this income?",
+    "translation": "我需唔需要申報呢筆收入？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b401",
+    "word": "eligible",
+    "ipa": "/ˈɛlɪdʒəbəl/",
+    "pos": "adjective",
+    "meaning": "符合資格嘅",
+    "example": "Am I eligible for this benefit?",
+    "translation": "我符唔符合資格攞呢項福利？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b402",
+    "word": "benefit",
+    "ipa": "/ˈbɛnəfɪt/",
+    "pos": "noun",
+    "meaning": "福利；津貼",
+    "example": "When will the benefit payment arrive?",
+    "translation": "筆福利金幾時到賬？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b403",
+    "word": "assessment",
+    "ipa": "/əˈsɛsmənt/",
+    "pos": "noun",
+    "meaning": "評估；評稅",
+    "example": "I received my notice of assessment.",
+    "translation": "我收到評稅通知書。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b404",
+    "word": "tax return",
+    "ipa": "/ˈtæks rɪˌtɜrn/",
+    "pos": "noun",
+    "meaning": "報稅表；報稅申報",
+    "example": "I filed my tax return online.",
+    "translation": "我喺網上報咗稅。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b405",
+    "word": "SIN",
+    "ipa": "/sɪn/",
+    "pos": "noun",
+    "meaning": "社會保險號碼（Social Insurance Number）",
+    "example": "Keep your SIN private and secure.",
+    "translation": "妥善保管你嘅社會保險號碼，唔好隨便透露。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b406",
+    "word": "reference number",
+    "ipa": "/ˈrɛfərəns ˌnʌmbər/",
+    "pos": "noun",
+    "meaning": "參考編號",
+    "example": "Keep the reference number for future enquiries.",
+    "translation": "保留參考編號，方便日後查詢。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b407",
+    "word": "confirmation",
+    "ipa": "/ˌkɑnfərˈmeɪʃən/",
+    "pos": "noun",
+    "meaning": "確認；確認通知",
+    "example": "You'll receive a confirmation email.",
+    "translation": "你會收到一封確認電郵。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b408",
+    "word": "processing time",
+    "ipa": "/ˈprɑsɛsɪŋ taɪm/",
+    "pos": "noun",
+    "meaning": "處理時間",
+    "example": "What's the current processing time?",
+    "translation": "而家處理時間大概幾耐？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b409",
+    "word": "pending",
+    "ipa": "/ˈpɛndɪŋ/",
+    "pos": "adjective",
+    "meaning": "等待處理或決定中嘅",
+    "example": "My application is still pending.",
+    "translation": "我份申請仲等緊處理。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b410",
+    "word": "approved",
+    "ipa": "/əˈpruvd/",
+    "pos": "adjective",
+    "meaning": "獲批准嘅",
+    "example": "Your application has been approved.",
+    "translation": "你份申請已經獲批。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b411",
+    "word": "denied",
+    "ipa": "/dɪˈnaɪd/",
+    "pos": "adjective",
+    "meaning": "被拒絕嘅",
+    "example": "My request was denied.",
+    "translation": "我個請求被拒絕咗。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b412",
+    "word": "appeal",
+    "ipa": "/əˈpil/",
+    "pos": "verb",
+    "meaning": "上訴；申請覆核",
+    "example": "How can I appeal this decision?",
+    "translation": "我可以點樣對呢個決定提出上訴？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b413",
+    "word": "expire",
+    "ipa": "/ɪkˈspaɪər/",
+    "pos": "verb",
+    "meaning": "到期；失效",
+    "example": "When does your permit expire?",
+    "translation": "你張許可證幾時到期？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b414",
+    "word": "renew",
+    "ipa": "/rɪˈnu/",
+    "pos": "verb",
+    "meaning": "續期；更新",
+    "example": "I need to renew my health card.",
+    "translation": "我要續期健康卡。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b415",
+    "word": "submit",
+    "ipa": "/səbˈmɪt/",
+    "pos": "verb",
+    "meaning": "提交；遞交",
+    "example": "Can I submit the form by mail?",
+    "translation": "我可唔可以郵寄交表？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b416",
+    "word": "deadline",
+    "ipa": "/ˈdɛdˌlaɪn/",
+    "pos": "noun",
+    "meaning": "截止日期或時間",
+    "example": "The application deadline is Friday.",
+    "translation": "申請截止日期係星期五。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b417",
+    "word": "extension",
+    "ipa": "/ɪkˈstɛnʃən/",
+    "pos": "noun",
+    "meaning": "延期；延長期限",
+    "example": "Can I request an extension of the deadline?",
+    "translation": "我可唔可以申請延長截止日期？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b418",
+    "word": "appointment slot",
+    "ipa": "/əˈpɔɪntmənt slɑt/",
+    "pos": "noun",
+    "meaning": "可預約時段",
+    "example": "Is there an appointment slot next week?",
+    "translation": "下星期有冇預約時段？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b419",
+    "word": "service counter",
+    "ipa": "/ˈsɜrvɪs ˌkaʊntər/",
+    "pos": "noun",
+    "meaning": "服務櫃枱",
+    "example": "Please take your documents to the service counter.",
+    "translation": "請攞啲文件去服務櫃枱。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b420",
+    "word": "not applicable",
+    "ipa": "/ˌnɑt əˈplɪkəbəl/",
+    "pos": "phrase",
+    "meaning": "不適用（常寫 N/A）",
+    "example": "Write not applicable if the question doesn't apply to you.",
+    "translation": "如果條問題唔適用，就寫「不適用」。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b421",
+    "word": "shift",
+    "ipa": "/ʃɪft/",
+    "pos": "noun",
+    "meaning": "更；工作班次",
+    "example": "My shift starts at seven in the morning.",
+    "translation": "我嗰更朝早七點開始。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b422",
+    "word": "overtime",
+    "ipa": "/ˈoʊvərˌtaɪm/",
+    "pos": "noun",
+    "meaning": "超時工作；加班",
+    "example": "Is overtime available this weekend?",
+    "translation": "今個週末有冇加班？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b423",
+    "word": "availability",
+    "ipa": "/əˌveɪləˈbɪləti/",
+    "pos": "noun",
+    "meaning": "可以工作或出席嘅時間",
+    "example": "Please send me your availability for next week.",
+    "translation": "請將你下星期可以做嘢嘅時間畀我。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b424",
+    "word": "day off",
+    "ipa": "/ˌdeɪ ˈɔf/",
+    "pos": "noun",
+    "meaning": "休息日；放假嗰日",
+    "example": "Tuesday is my day off.",
+    "translation": "星期二係我嘅休息日。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b425",
+    "word": "time off",
+    "ipa": "/ˌtaɪm ˈɔf/",
+    "pos": "noun",
+    "meaning": "休假時間",
+    "example": "I'd like to request some time off.",
+    "translation": "我想申請放假。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b426",
+    "word": "sick leave",
+    "ipa": "/ˈsɪk liv/",
+    "pos": "noun",
+    "meaning": "病假",
+    "example": "I'm on sick leave today.",
+    "translation": "我今日放病假。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b427",
+    "word": "parental leave",
+    "ipa": "/pəˈrɛntəl liv/",
+    "pos": "noun",
+    "meaning": "育兒假",
+    "example": "She's returning from parental leave next month.",
+    "translation": "佢下個月放完育兒假返工。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b428",
+    "word": "pay stub",
+    "ipa": "/ˈpeɪ stʌb/",
+    "pos": "noun",
+    "meaning": "糧單",
+    "example": "Where can I download my pay stub?",
+    "translation": "我可以喺邊度下載糧單？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b429",
+    "word": "payroll",
+    "ipa": "/ˈpeɪˌroʊl/",
+    "pos": "noun",
+    "meaning": "薪酬發放系統或部門",
+    "example": "Please ask payroll about the missing payment.",
+    "translation": "請問薪酬部門嗰筆未收到嘅款項。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b430",
+    "word": "hourly rate",
+    "ipa": "/ˈaʊərli reɪt/",
+    "pos": "noun",
+    "meaning": "時薪",
+    "example": "What's the hourly rate for this job?",
+    "translation": "呢份工時薪幾多？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b431",
+    "word": "salary",
+    "ipa": "/ˈsæləri/",
+    "pos": "noun",
+    "meaning": "薪金（通常指固定年薪或月薪）",
+    "example": "Is the salary paid monthly or biweekly?",
+    "translation": "份糧係每月出定每兩星期出？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b432",
+    "word": "biweekly",
+    "ipa": "/baɪˈwikli/",
+    "pos": "adverb",
+    "meaning": "每兩星期一次（薪酬語境常用）",
+    "example": "We get paid biweekly on Fridays.",
+    "translation": "我哋每兩個星期嘅星期五出糧。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b433",
+    "word": "deduction",
+    "ipa": "/dɪˈdʌkʃən/",
+    "pos": "noun",
+    "meaning": "扣除額；扣款",
+    "example": "What is this deduction on my pay stub?",
+    "translation": "糧單上呢項扣款係咩？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b434",
+    "word": "reimburse",
+    "ipa": "/ˌriɪmˈbɜrs/",
+    "pos": "verb",
+    "meaning": "發還已付費用；報銷",
+    "example": "Will the company reimburse my parking costs?",
+    "translation": "公司會唔會報銷我嘅泊車費？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b435",
+    "word": "invoice",
+    "ipa": "/ˈɪnˌvɔɪs/",
+    "pos": "noun",
+    "meaning": "發票；請款單",
+    "example": "Please send the invoice to accounting.",
+    "translation": "請將發票寄去會計部。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b436",
+    "word": "purchase order",
+    "ipa": "/ˈpɜrtʃəs ˌɔrdər/",
+    "pos": "noun",
+    "meaning": "採購單",
+    "example": "Do you need a purchase order before we proceed?",
+    "translation": "我哋繼續之前需唔需要採購單？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b437",
+    "word": "supervisor",
+    "ipa": "/ˈsupərˌvaɪzər/",
+    "pos": "noun",
+    "meaning": "主管",
+    "example": "Let your supervisor know if you're running late.",
+    "translation": "如果你會遲到，通知你主管。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b438",
+    "word": "colleague",
+    "ipa": "/ˈkɑliɡ/",
+    "pos": "noun",
+    "meaning": "同事",
+    "example": "I'll ask a colleague to cover my shift.",
+    "translation": "我會問同事可唔可以頂我更。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b439",
+    "word": "client",
+    "ipa": "/ˈklaɪənt/",
+    "pos": "noun",
+    "meaning": "客戶",
+    "example": "The client requested a few changes.",
+    "translation": "客戶要求改幾樣嘢。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b440",
+    "word": "supplier",
+    "ipa": "/səˈplaɪər/",
+    "pos": "noun",
+    "meaning": "供應商",
+    "example": "The supplier confirmed the delivery date.",
+    "translation": "供應商確認咗送貨日期。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b441",
+    "word": "contract",
+    "ipa": "/ˈkɑntrækt/",
+    "pos": "noun",
+    "meaning": "合約",
+    "example": "Please read the contract before signing.",
+    "translation": "簽名之前請睇清楚份合約。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b442",
+    "word": "probation",
+    "ipa": "/proʊˈbeɪʃən/",
+    "pos": "noun",
+    "meaning": "試用期",
+    "example": "The probation period is three months.",
+    "translation": "試用期係三個月。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b443",
+    "word": "resign",
+    "ipa": "/rɪˈzaɪn/",
+    "pos": "verb",
+    "meaning": "辭職",
+    "example": "She decided to resign from her position.",
+    "translation": "佢決定辭去職位。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b444",
+    "word": "notice period",
+    "ipa": "/ˈnoʊtɪs ˌpɪriəd/",
+    "pos": "noun",
+    "meaning": "離職等通知期",
+    "example": "What is the required notice period?",
+    "translation": "所需嘅通知期係幾耐？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b445",
+    "word": "reference",
+    "ipa": "/ˈrɛfərəns/",
+    "pos": "noun",
+    "meaning": "工作推薦人；推薦資料",
+    "example": "Can I list you as a reference?",
+    "translation": "我可唔可以填你做工作推薦人？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b446",
+    "word": "resume",
+    "ipa": "/ˈrɛzəˌmeɪ/",
+    "pos": "noun",
+    "meaning": "履歷；履歷表",
+    "example": "I've attached my resume to the email.",
+    "translation": "我喺電郵附上咗履歷。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b447",
+    "word": "interview",
+    "ipa": "/ˈɪntərvju/",
+    "pos": "noun",
+    "meaning": "面試；訪問",
+    "example": "I have a job interview tomorrow.",
+    "translation": "我聽日有個工作面試。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b448",
+    "word": "training",
+    "ipa": "/ˈtreɪnɪŋ/",
+    "pos": "noun",
+    "meaning": "培訓；訓練",
+    "example": "Will training be provided?",
+    "translation": "會唔會提供培訓？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b449",
+    "word": "procedure",
+    "ipa": "/prəˈsidʒər/",
+    "pos": "noun",
+    "meaning": "程序；做事步驟",
+    "example": "What's the procedure for reporting a problem?",
+    "translation": "報告問題嘅程序係點？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b450",
+    "word": "safety",
+    "ipa": "/ˈseɪfti/",
+    "pos": "noun",
+    "meaning": "安全",
+    "example": "Safety is our first priority.",
+    "translation": "安全係我哋首要考慮。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b451",
+    "word": "hazard",
+    "ipa": "/ˈhæzərd/",
+    "pos": "noun",
+    "meaning": "危險源；潛在危險",
+    "example": "Please report any safety hazards.",
+    "translation": "請報告任何安全隱患。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b452",
+    "word": "protective equipment",
+    "ipa": "/prəˈtɛktɪv ɪˈkwɪpmənt/",
+    "pos": "noun",
+    "meaning": "防護裝備",
+    "example": "Wear the required protective equipment.",
+    "translation": "請穿戴規定嘅防護裝備。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b453",
+    "word": "incident",
+    "ipa": "/ˈɪnsɪdənt/",
+    "pos": "noun",
+    "meaning": "事件；事故",
+    "example": "Please complete an incident report.",
+    "translation": "請填寫事故報告。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b454",
+    "word": "first aid",
+    "ipa": "/ˌfɜrst ˈeɪd/",
+    "pos": "noun",
+    "meaning": "急救",
+    "example": "Where is the first aid kit?",
+    "translation": "急救箱喺邊度？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b455",
+    "word": "loading dock",
+    "ipa": "/ˈloʊdɪŋ dɑk/",
+    "pos": "noun",
+    "meaning": "上落貨區；貨台",
+    "example": "The truck is waiting at the loading dock.",
+    "translation": "架貨車喺上落貨區等緊。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b456",
+    "word": "equipment",
+    "ipa": "/ɪˈkwɪpmənt/",
+    "pos": "noun",
+    "meaning": "器材；設備（不可數）",
+    "example": "Please check the equipment before the event.",
+    "translation": "活動開始之前請檢查器材。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b457",
+    "word": "inventory",
+    "ipa": "/ˈɪnvənˌtɔri/",
+    "pos": "noun",
+    "meaning": "存貨；器材清單",
+    "example": "We need to update the equipment inventory.",
+    "translation": "我哋要更新器材清單。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b458",
+    "word": "setup",
+    "ipa": "/ˈsɛtˌʌp/",
+    "pos": "noun",
+    "meaning": "架設；安裝安排",
+    "example": "How long will the setup take?",
+    "translation": "架設大概要幾耐？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b459",
+    "word": "pack up",
+    "ipa": "/ˌpæk ˈʌp/",
+    "pos": "phrasal verb",
+    "meaning": "收拾；執器材",
+    "example": "We can pack up after the guests leave.",
+    "translation": "客人走咗之後我哋就可以收拾。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b460",
+    "word": "confirm",
+    "ipa": "/kənˈfɜrm/",
+    "pos": "verb",
+    "meaning": "確認",
+    "example": "Could you confirm the start time?",
+    "translation": "可唔可以確認開始時間？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b461",
+    "word": "clarify",
+    "ipa": "/ˈklærəˌfaɪ/",
+    "pos": "verb",
+    "meaning": "澄清；解釋清楚",
+    "example": "Could you clarify what you need?",
+    "translation": "可唔可以講清楚你需要咩？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b462",
+    "word": "reschedule",
+    "ipa": "/ˌriˈskɛdʒul/",
+    "pos": "verb",
+    "meaning": "改期；重新安排時間",
+    "example": "Can we reschedule the meeting?",
+    "translation": "我哋可唔可以改會議時間？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b463",
+    "word": "postpone",
+    "ipa": "/poʊstˈpoʊn/",
+    "pos": "verb",
+    "meaning": "押後；延期",
+    "example": "We need to postpone the delivery.",
+    "translation": "我哋需要押後送貨。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b464",
+    "word": "priority",
+    "ipa": "/praɪˈɔrəti/",
+    "pos": "noun",
+    "meaning": "優先處理嘅事",
+    "example": "Which task is the highest priority?",
+    "translation": "邊項工作要最優先處理？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b465",
+    "word": "available",
+    "ipa": "/əˈveɪləbəl/",
+    "pos": "adjective",
+    "meaning": "得閒嘅；可供使用嘅",
+    "example": "Are you available on Thursday afternoon?",
+    "translation": "你星期四下晝得唔得閒？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b466",
+    "word": "update",
+    "ipa": "/ˈʌpˌdeɪt/",
+    "pos": "noun",
+    "meaning": "最新消息；進度更新",
+    "example": "Could you give me an update on the repairs?",
+    "translation": "可唔可以話我知維修最新進度？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b467",
+    "word": "attachment",
+    "ipa": "/əˈtætʃmənt/",
+    "pos": "noun",
+    "meaning": "電郵附件",
+    "example": "I couldn't open the attachment.",
+    "translation": "我開唔到個附件。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b468",
+    "word": "forward",
+    "ipa": "/ˈfɔrwərd/",
+    "pos": "verb",
+    "meaning": "轉寄；轉發",
+    "example": "Please forward the email to the team.",
+    "translation": "請將封電郵轉寄畀團隊。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b469",
+    "word": "reply",
+    "ipa": "/rɪˈplaɪ/",
+    "pos": "verb",
+    "meaning": "回覆",
+    "example": "I'll reply to your message this afternoon.",
+    "translation": "我今日下晝會覆你個訊息。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b470",
+    "word": "follow up",
+    "ipa": "/ˌfɑloʊ ˈʌp/",
+    "pos": "phrasal verb",
+    "meaning": "跟進",
+    "example": "I'll follow up with the supplier tomorrow.",
+    "translation": "我聽日會同供應商跟進。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b471",
+    "word": "resolve",
+    "ipa": "/rɪˈzɑlv/",
+    "pos": "verb",
+    "meaning": "解決",
+    "example": "We need to resolve this issue before Friday.",
+    "translation": "我哋要喺星期五之前解決呢個問題。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b472",
+    "word": "issue",
+    "ipa": "/ˈɪʃu/",
+    "pos": "noun",
+    "meaning": "問題；有待處理嘅事",
+    "example": "There's an issue with the booking.",
+    "translation": "個預訂有啲問題。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b473",
+    "word": "feedback",
+    "ipa": "/ˈfidˌbæk/",
+    "pos": "noun",
+    "meaning": "意見；回饋",
+    "example": "I'd appreciate your feedback on my work.",
+    "translation": "我好想聽吓你對我工作嘅意見。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b474",
+    "word": "request",
+    "ipa": "/rɪˈkwɛst/",
+    "pos": "noun",
+    "meaning": "請求；申請",
+    "example": "I've submitted a request for new equipment.",
+    "translation": "我交咗添置新器材嘅申請。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b475",
+    "word": "apologize",
+    "ipa": "/əˈpɑləˌdʒaɪz/",
+    "pos": "verb",
+    "meaning": "道歉",
+    "example": "I apologize for the delay.",
+    "translation": "對唔住，延誤咗。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b476",
+    "word": "appreciate",
+    "ipa": "/əˈpriʃiˌeɪt/",
+    "pos": "verb",
+    "meaning": "感激；欣賞",
+    "example": "I really appreciate your help.",
+    "translation": "我真係好多謝你幫手。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b477",
+    "word": "concern",
+    "ipa": "/kənˈsɜrn/",
+    "pos": "noun",
+    "meaning": "擔憂；關注嘅事",
+    "example": "I'd like to raise a safety concern.",
+    "translation": "我想提出一個安全方面嘅擔憂。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b478",
+    "word": "flexible",
+    "ipa": "/ˈflɛksəbəl/",
+    "pos": "adjective",
+    "meaning": "有彈性嘅；靈活嘅",
+    "example": "Are the working hours flexible?",
+    "translation": "工作時間有冇彈性？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b479",
+    "word": "reliable",
+    "ipa": "/rɪˈlaɪəbəl/",
+    "pos": "adjective",
+    "meaning": "可靠嘅",
+    "example": "We need a reliable internet connection.",
+    "translation": "我哋需要穩定可靠嘅網絡連線。",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b480",
+    "word": "responsible",
+    "ipa": "/rɪˈspɑnsəbəl/",
+    "pos": "adjective",
+    "meaning": "負責嘅；有責任嘅",
+    "example": "Who is responsible for locking up?",
+    "translation": "邊個負責鎖門？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b481",
+    "word": "rain check",
+    "ipa": "/ˈreɪn tʃɛk/",
+    "pos": "noun",
+    "meaning": "缺貨時保留優惠價嘅憑證；改日再約",
+    "example": "Can I get a rain check for this sale item?",
+    "translation": "呢件減價貨冇貨，可唔可以畀張保留優惠價嘅憑證我？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b482",
+    "word": "unit price",
+    "ipa": "/ˈjunɪt praɪs/",
+    "pos": "noun",
+    "meaning": "每單位價格",
+    "example": "Compare the unit price to find the better deal.",
+    "translation": "比較每單位價錢，睇吓邊款抵啲。",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b483",
+    "word": "self-checkout",
+    "ipa": "/ˌsɛlf ˈtʃɛkˌaʊt/",
+    "pos": "noun",
+    "meaning": "自助付款機；自助收銀處",
+    "example": "Can I use cash at the self-checkout?",
+    "translation": "自助付款機可唔可以用現金？",
+    "category": "買嘢飲食"
+  },
+  {
+    "id": "b484",
+    "word": "inhaler",
+    "ipa": "/ɪnˈheɪlər/",
+    "pos": "noun",
+    "meaning": "吸入器；吸入式藥物裝置",
+    "example": "Could you show me how to use this inhaler?",
+    "translation": "可唔可以教我點用呢個吸入器？",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b485",
+    "word": "physiotherapy",
+    "ipa": "/ˌfɪzioʊˈθɛrəpi/",
+    "pos": "noun",
+    "meaning": "物理治療",
+    "example": "The doctor recommended physiotherapy for my knee.",
+    "translation": "醫生建議我個膝頭做物理治療。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b486",
+    "word": "mental health",
+    "ipa": "/ˌmɛntəl ˈhɛlθ/",
+    "pos": "noun",
+    "meaning": "精神健康；心理健康",
+    "example": "I'd like to talk to someone about my mental health.",
+    "translation": "我想搵人傾吓我嘅心理健康。",
+    "category": "健康睇醫生"
+  },
+  {
+    "id": "b487",
+    "word": "annual fee",
+    "ipa": "/ˌænjuəl ˈfi/",
+    "pos": "noun",
+    "meaning": "年費",
+    "example": "Does this credit card have an annual fee?",
+    "translation": "呢張信用卡有冇年費？",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b488",
+    "word": "security question",
+    "ipa": "/sɪˈkjʊrəti ˌkwɛstʃən/",
+    "pos": "noun",
+    "meaning": "保安問題；安全驗證問題",
+    "example": "Don't share the answer to your security question.",
+    "translation": "唔好透露你嘅保安問題答案。",
+    "category": "銀行理財"
+  },
+  {
+    "id": "b489",
+    "word": "PA day",
+    "ipa": "/ˌpi ˈeɪ deɪ/",
+    "pos": "noun",
+    "meaning": "教師專業活動日（安省學生通常唔使返學）",
+    "example": "There's no school on the PA day next Friday.",
+    "translation": "下星期五係教師專業活動日，唔使返學。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b490",
+    "word": "school board",
+    "ipa": "/ˈskul bɔrd/",
+    "pos": "noun",
+    "meaning": "教育局；學校管理機構",
+    "example": "Which school board serves our neighbourhood?",
+    "translation": "我哋呢區屬邊個教育局？",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b491",
+    "word": "screen time",
+    "ipa": "/ˈskrin taɪm/",
+    "pos": "noun",
+    "meaning": "用電子屏幕嘅時間",
+    "example": "We're trying to limit screen time before bed.",
+    "translation": "我哋嘗試減少瞓前睇屏幕嘅時間。",
+    "category": "學校育兒"
+  },
+  {
+    "id": "b492",
+    "word": "snow removal",
+    "ipa": "/ˈsnoʊ rɪˌmuvəl/",
+    "pos": "noun",
+    "meaning": "剷雪；清雪服務",
+    "example": "Does the lease include snow removal?",
+    "translation": "份租約包唔包剷雪服務？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b493",
+    "word": "property tax",
+    "ipa": "/ˈprɑpərti tæks/",
+    "pos": "noun",
+    "meaning": "物業稅；地稅",
+    "example": "When is the next property tax payment due?",
+    "translation": "下一期地稅幾時到期？",
+    "category": "屋企維修"
+  },
+  {
+    "id": "b494",
+    "word": "freezing rain",
+    "ipa": "/ˌfrizɪŋ ˈreɪn/",
+    "pos": "noun",
+    "meaning": "凍雨（落到物件表面結冰嘅雨）",
+    "example": "Freezing rain has made the roads slippery.",
+    "translation": "凍雨令路面好滑。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b495",
+    "word": "black ice",
+    "ipa": "/ˌblæk ˈaɪs/",
+    "pos": "noun",
+    "meaning": "路面薄而透明、難察覺嘅冰",
+    "example": "Watch out for black ice on the bridge.",
+    "translation": "小心橋面有難察覺嘅薄冰。",
+    "category": "交通出行"
+  },
+  {
+    "id": "b496",
+    "word": "library card",
+    "ipa": "/ˈlaɪˌbrɛri kɑrd/",
+    "pos": "noun",
+    "meaning": "圖書證",
+    "example": "What do I need to get a library card?",
+    "translation": "申請圖書證要帶啲咩？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b497",
+    "word": "community centre",
+    "ipa": "/kəˈmjunəti ˌsɛntər/",
+    "pos": "noun",
+    "meaning": "社區中心",
+    "example": "The swimming lessons are at the community centre.",
+    "translation": "游水班喺社區中心上。",
+    "category": "政府表格"
+  },
+  {
+    "id": "b498",
+    "word": "recreation program",
+    "ipa": "/ˌrɛkriˈeɪʃən ˌproʊɡræm/",
+    "pos": "noun",
+    "meaning": "康樂活動課程",
+    "example": "When does registration for the recreation program open?",
+    "translation": "康樂活動課程幾時開始報名？",
+    "category": "政府表格"
+  },
+  {
+    "id": "b499",
+    "word": "load-in",
+    "ipa": "/ˈloʊd ˌɪn/",
+    "pos": "noun",
+    "meaning": "器材進場；搬入場地嘅時段",
+    "example": "What time is load-in for tomorrow's event?",
+    "translation": "聽日個活動幾點可以搬器材入場？",
+    "category": "工作溝通"
+  },
+  {
+    "id": "b500",
+    "word": "soundcheck",
+    "ipa": "/ˈsaʊndˌtʃɛk/",
+    "pos": "noun",
+    "meaning": "試音；演出前音響檢查",
+    "example": "The band needs thirty minutes for soundcheck.",
+    "translation": "隊 band 需要三十分鐘試音。",
+    "category": "工作溝通"
+  }
+]
