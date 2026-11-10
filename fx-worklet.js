@@ -1,2 +1,2 @@
-import './fx-core.js?v=1.9.2';
+import './fx-core.js?v=1.9.3';
 class StereoEcho extends AudioWorkletProcessor{constructor(o){super();this.delay=new globalThis.SoundFXCore.Delay(sampleRate,o.processorOptions);this.port.onmessage=e=>this.delay.update(e.data)}process(inputs,outputs){const input=inputs[0]||[],key=inputs[1]||[],out=outputs[0];for(let i=0;i<out[0].length;i++){const l=input[0]?.[i]||0,r=input[1]?.[i]??l,k=key[0]?.[i]||0,v=this.delay.process(l,r,k,key[1]?.[i]??k);out[0][i]=v[0];if(out[1])out[1][i]=v[1]}return true}}registerProcessor('soundcheck-stereo-echo',StereoEcho);

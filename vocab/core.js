@@ -5,6 +5,30 @@ const P=typeof module==='object'&&module.exports?require('./phonics.js'):globalT
 const DAY=86400000, SCHEMA=1;
 const CATEGORIES=['買嘢飲食','健康睇醫生','銀行理財','學校育兒','屋企維修','交通出行','政府表格','工作溝通'];
 const key=s=>String(s).trim().toLowerCase().replace(/\s+/g,' ');
+// Autofill helpers (pure). A machine translation is only usable as 中文解釋 when it
+// contains Chinese characters and is not just the English query echoed back.
+const CJK=/[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u{20000}-\u{2ffff}]/u;
+function hasCJK(text){return CJK.test(String(text||''));}
+function usableTranslation(source,translated){const t=String(translated||'').trim();if(!t||!hasCJK(t))return '';if(key(t)===key(source))return '';return t;}
+// dictionaryapi.dev phonetics: prefer US, then CA, then unlabelled; British/Australian
+// audio is skipped (device en-CA/en-US TTS is used instead). Accent is reported honestly.
+function audioAccent(url){const m=/-(us|ca|uk|au|ie|nz|in|sco)\.(?:mp3|ogg|wav|m4a)(?:\?|$)/i.exec(String(url||''));return m?m[1].toUpperCase():'';}
+function looksBritish(ipa){return /ɒ|əʊ|ː/.test(String(ipa||''));}
+function pickPhonetics(entries){
+ const list=(Array.isArray(entries)?entries:[entries]).filter(Boolean);
+ const phon=list.flatMap(d=>Array.isArray(d.phonetics)?d.phonetics:[]).map(p=>({text:typeof p.text==='string'?p.text.trim():'',audio:typeof p.audio==='string'?p.audio.trim():'',accent:audioAccent(p.audio)}));
+ const tops=list.map(d=>typeof d.phonetic==='string'?d.phonetic.trim():'').filter(Boolean);
+ const rank={US:0,CA:1,'':2};const na=phon.filter(p=>p.accent in rank).sort((a,b)=>rank[a.accent]-rank[b.accent]);
+ const audioPick=na.find(p=>p.audio&&p.accent!=='')||na.find(p=>p.audio&&!looksBritish(p.text));
+ let ipa='',ipaAccent='unknown',otherIpa='',otherIpaAccent='';
+ const usText=na.find(p=>p.text&&(p.accent==='US'||p.accent==='CA'));
+ if(usText){ipa=usText.text;ipaAccent=usText.accent;}
+ else{const neutral=[...na.filter(p=>p.text).map(p=>p.text),...tops].find(t=>!looksBritish(t));const any=phon.find(p=>p.text)?.text||tops[0]||'';
+  if(neutral){ipa=neutral;ipaAccent='unknown';}else if(any){otherIpa=any;otherIpaAccent=phon.find(p=>p.text===any&&p.accent)?.accent||'UK';}}
+ const skipped=phon.filter(p=>p.audio&&!(p.accent in rank)).map(p=>p.accent);
+ let audio=audioPick?.audio||'';if(audio.startsWith('//'))audio='https:'+audio;if(audio&&!/^https:\/\//i.test(audio))audio='';
+ return {ipa,ipaAccent,otherIpa,otherIpaAccent,audio,audioAccent:audio?(audioPick.accent||'unknown'):'',skippedAudio:[...new Set(skipped)]};
+}
 function dayKey(time=Date.now()){const d=new Date(time);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
 function defaultState(){return {schema:SCHEMA,own:[],cards:{},activity:{},settings:{newPerDay:10,voice:'',speed:'normal'}};}
 function schedule(previous,grade,now=Date.now()){
@@ -61,5 +85,5 @@ function validateState(input,builtins){
  if(['normal','slow','slower'].includes(input.settings.speed))out.settings.speed=input.settings.speed;
  if(typeof input.settings.voice==='string')out.settings.voice=input.settings.voice.slice(0,300);return out;
 }
-return {DAY,SCHEMA,CATEGORIES,key,dayKey,defaultState,schedule,queue,stats,streak,diff,cleanWord,validateState};
+return {DAY,SCHEMA,CATEGORIES,key,hasCJK,usableTranslation,audioAccent,looksBritish,pickPhonetics,dayKey,defaultState,schedule,queue,stats,streak,diff,cleanWord,validateState};
 });

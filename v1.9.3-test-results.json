@@ -1,0 +1,135 @@
+{
+  "version": "1.9.3",
+  "environment": "Node/jsdom DOM tests at 320/390/1440; actual node-web-audio-api OfflineAudioContext/custom shared-math AudioWorklets, not Chromium/Safari.",
+  "baseline": {
+    "batch1": {
+      "passed": 11,
+      "total": 11
+    },
+    "batch2": {
+      "passed": 20,
+      "total": 20
+    },
+    "batch3": {
+      "passed": 16,
+      "total": 16
+    }
+  },
+  "fx": {
+    "passed": 14,
+    "total": 14
+  },
+  "startingPoints": {
+    "passed": 9,
+    "total": 9
+  },
+  "tests": [
+    {
+      "name": "Entire existing Batch1/2/3, FX and Starting Point suites rerun",
+      "passed": true
+    },
+    {
+      "name": "Every card low/mid/high uses only source endpoints or declared arithmetic interpolation; no source mutation",
+      "passed": true
+    },
+    {
+      "name": "Combined dB equals actual shared biquad response sum; bell centre gain matches; null shelf Q is not invented",
+      "passed": true
+    },
+    {
+      "name": "Missing LPF slope is explicitly omitted; no invented HPF on buses; 18dB/oct uses actual one/two-pole sections",
+      "passed": true
+    },
+    {
+      "name": "Desktop/mobile SVG grid, numbered bands, accessible numeric descriptions and controls with no audio side effects",
+      "passed": true
+    },
+    {
+      "name": "All 28 cards render every mode including neutral buses, with finite paths and no duplicate SVG IDs",
+      "passed": true
+    },
+    {
+      "name": "Loader preview still represents explicit choices, not the hypothetical reference; toggles never select bands",
+      "passed": true
+    },
+    {
+      "name": "Actual OfflineAudioContext custom worklet chain agrees with plotted response across 20Hz–20kHz",
+      "passed": true
+    },
+    {
+      "name": "v1.9.3 SW/runtime/cache and research provenance preserved",
+      "passed": true
+    },
+    {
+      "name": "E-02 muted/secondary text >= 4.5:1 on bg, surface, elevated in light + both dark token blocks",
+      "passed": true
+    },
+    {
+      "name": "E-03 STOP/danger and skip-link white text >= 4.5:1 in both themes; buttons use the solid tokens",
+      "passed": true
+    },
+    {
+      "name": "E-01 graph tokens: readable labels/curves/bands on graph backgrounds in light and dark",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '#191919'\n- '#08121b'\n\n    at /workspace/ear-build/tests/starting-eq.cjs:24:642\n    at test (/workspace/ear-build/tests/starting-eq.cjs:2:40)\n    at /workspace/ear-build/tests/starting-eq.cjs:24:8\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "E-01 canvases read --graph-* at draw time (dark fallback = previous palette) and redraw on et-themechange",
+      "passed": true
+    },
+    {
+      "name": "E-01 Starting Point SVG uses theme classes/vars with original dark colours as fallbacks",
+      "passed": true
+    },
+    {
+      "name": "E-04 tap targets: theme buttons stay 44x44 at <=650px, A/B + plugin buttons min 44, FX checkbox hit label 44, source links 44 tall",
+      "passed": true
+    },
+    {
+      "name": "iOS audio session: playback set when supported, silently skipped otherwise; no other audio path change",
+      "passed": true
+    },
+    {
+      "name": "v1.9.3 version tags consistent: no previous-version tag left in runtime/tests (excluding result files and vocab/)",
+      "passed": true
+    },
+    {
+      "name": "O-02 EQ frequency labels never overlap at 320/390/1024 canvas widths; 20 and 20k kept; label layout only",
+      "passed": true
+    },
+    {
+      "name": "O-01/ON regression CSS: 320px title may wrap (no ellipsis), Explore section ON >= 44; no .at() in runtime JS",
+      "passed": true
+    }
+  ],
+  "numbers": {
+    "maxSumErrorDb": 7.105427357601002e-15,
+    "offline": [
+      {
+        "card": "lead_vocal_male",
+        "mode": "mid",
+        "sampleRate": 48000,
+        "bins": 32,
+        "maxErrorDb": 0.00001645661003379928
+      },
+      {
+        "card": "bass_di",
+        "mode": "high",
+        "sampleRate": 48000,
+        "bins": 32,
+        "maxErrorDb": 0.000005740298377077124
+      }
+    ]
+  },
+  "passed": 18,
+  "total": 19,
+  "errors": [
+    "E-01 graph tokens: readable labels/curves/bands on graph backgrounds in light and dark"
+  ],
+  "limits": [
+    "No new browser screenshots or physical phone/layout validation.",
+    "Low/mid/high are source-parameter combinations, NOT pointwise response extrema or an exhaustive envelope.",
+    "48kHz reference. Missing slope is omitted; mid slope uses the source lower endpoint, not an invented filter order.",
+    "Reference graphics assume supplied bands enabled; playback/import safety defaults unchanged."
+  ]
+}

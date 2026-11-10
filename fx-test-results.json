@@ -1,5 +1,5 @@
 {
-  "version": "1.9.2",
+  "version": "1.9.3",
   "suite": "FX and full regression",
   "environment": "Node + jsdom DOM mocks, actual node-web-audio-api OfflineAudioContext/custom AudioWorklet and ConvolverNode. Not Chromium/Safari or acoustic validation.",
   "baseline": {

@@ -1,5 +1,5 @@
 {
-  "version": "1.9.2",
+  "version": "1.9.3",
   "environment": "Node/jsdom DOM tests at 320/390/1440; actual node-web-audio-api OfflineAudioContext/custom shared-math AudioWorklets, not Chromium/Safari.",
   "baseline": {
     "batch1": {
@@ -57,7 +57,48 @@
       "passed": true
     },
     {
-      "name": "v1.9.2 SW/runtime/cache and research provenance preserved",
+      "name": "v1.9.3 SW/runtime/cache and research provenance preserved",
+      "passed": true
+    },
+    {
+      "name": "E-02 muted/secondary text >= 4.5:1 on bg, surface, elevated in light + both dark token blocks",
+      "passed": true
+    },
+    {
+      "name": "E-03 STOP/danger and skip-link white text >= 4.5:1 in both themes; buttons use the solid tokens",
+      "passed": true
+    },
+    {
+      "name": "E-01 graph tokens: readable labels/curves/bands on graph backgrounds in light and dark",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '#191919'\n- '#08121b'\n\n    at /workspace/ear-build/tests/starting-eq.cjs:24:642\n    at test (/workspace/ear-build/tests/starting-eq.cjs:2:40)\n    at /workspace/ear-build/tests/starting-eq.cjs:24:8\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "E-01 canvases read --graph-* at draw time (dark fallback = previous palette) and redraw on et-themechange",
+      "passed": true
+    },
+    {
+      "name": "E-01 Starting Point SVG uses theme classes/vars with original dark colours as fallbacks",
+      "passed": true
+    },
+    {
+      "name": "E-04 tap targets: theme buttons stay 44x44 at <=650px, A/B + plugin buttons min 44, FX checkbox hit label 44, source links 44 tall",
+      "passed": true
+    },
+    {
+      "name": "iOS audio session: playback set when supported, silently skipped otherwise; no other audio path change",
+      "passed": true
+    },
+    {
+      "name": "v1.9.3 version tags consistent: no previous-version tag left in runtime/tests (excluding result files and vocab/)",
+      "passed": true
+    },
+    {
+      "name": "O-02 EQ frequency labels never overlap at 320/390/1024 canvas widths; 20 and 20k kept; label layout only",
+      "passed": true
+    },
+    {
+      "name": "O-01/ON regression CSS: 320px title may wrap (no ellipsis), Explore section ON >= 44; no .at() in runtime JS",
       "passed": true
     }
   ],
@@ -80,9 +121,11 @@
       }
     ]
   },
-  "passed": 9,
-  "total": 9,
-  "errors": [],
+  "passed": 18,
+  "total": 19,
+  "errors": [
+    "E-01 graph tokens: readable labels/curves/bands on graph backgrounds in light and dark"
+  ],
   "limits": [
     "No new browser screenshots or physical phone/layout validation.",
     "Low/mid/high are source-parameter combinations, NOT pointwise response extrema or an exhaustive envelope.",

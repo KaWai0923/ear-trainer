@@ -1,5 +1,5 @@
 {
-  "version": "1.9.2",
+  "version": "1.9.3",
   "suite": "Starting Point + full regression",
   "environment": "Node/jsdom DOM mocks; previous suite includes actual OfflineAudioContext FX tests. Not Chromium/Safari layout validation.",
   "baseline": {

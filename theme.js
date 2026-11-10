@@ -17,10 +17,13 @@
     var btns=document.querySelectorAll('[data-theme-choice]');
     for(var i=0;i<btns.length;i++)btns[i].setAttribute('aria-pressed',String(btns[i].getAttribute('data-theme-choice')===mode));
   }
+  // v1.9.3: let JS-painted graphs (EQ / compressor canvases) repaint with the new --graph-* colours.
+  function notify(mode){try{window.dispatchEvent(new CustomEvent('et-themechange',{detail:{mode:mode}}))}catch(e){}}
   function apply(mode){
     if(MODES.indexOf(mode)<0)mode='system';
     if(mode==='system')delete root.dataset.theme;else root.dataset.theme=mode;
     setMeta(mode);mark(mode);
+    notify(mode);
   }
   function choose(mode){write(mode);apply(mode)}
   document.addEventListener('click',function(e){
@@ -28,6 +31,7 @@
     if(t)choose(t.getAttribute('data-theme-choice'));
   });
   window.addEventListener('storage',function(e){if(e.key===KEY||e.key===null)apply(read())});
+  try{var mq=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)');var onOS=function(){if(read()==='system')notify('system')};if(mq&&mq.addEventListener)mq.addEventListener('change',onOS);else if(mq&&mq.addListener)mq.addListener(onOS)}catch(e){}
   apply(read());
   window.EarTheme={get:read,set:choose};
 })();

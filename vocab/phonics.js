@@ -4,6 +4,7 @@
 const LETTERS={a:'ay',b:'bee',c:'see',d:'dee',e:'ee',f:'eff',g:'gee',h:'aitch',i:'eye',j:'jay',k:'kay',l:'ell',m:'em',n:'en',o:'oh',p:'pee',q:'cue',r:'ar',s:'ess',t:'tee',u:'you',v:'vee',w:'double you',x:'ex',y:'why',z:'zee'};
 const SIMPLE={a:'æ',e:'ɛ',i:'ɪ',o:'ɑ',u:'ʌ',b:'b',c:'k',d:'d',f:'f',g:'ɡ',h:'h',j:'dʒ',k:'k',l:'l',m:'m',n:'n',p:'p',q:'k',r:'r',s:'s',t:'t',v:'v',w:'w',x:'ks',y:'j',z:'z'};
 const DIGRAPHS={igh:'aɪ',sh:'ʃ',ch:'tʃ',th:'θ',ph:'f',ng:'ŋ',ck:'k',qu:'kw',ee:'i',ea:'i',ai:'eɪ',ay:'eɪ',oa:'oʊ',oo:'u',oi:'ɔɪ',oy:'ɔɪ',ou:'aʊ',ow:'aʊ',ar:'ɑr',er:'ər',ir:'ɜr',ur:'ɜr'};
+function needsSpeechGap(nav={}){const ua=nav.userAgent||'';return isIOS(nav)||(/Safari\//.test(ua)&&!/Chrome|Chromium|CriOS|Edg|Android/.test(ua));}
 function isIOS(nav={}){return /iPad|iPhone|iPod/i.test(nav.userAgent||'')||(/Mac/i.test(nav.platform||'')&&nav.maxTouchPoints>1);}
 function rate(speed,ios=false){if(speed===true)speed='slow';if(speed===false)speed='normal';return {normal:.9,slow:ios?.45:.6,slower:ios?.28:.4}[speed]??.9;}
 function normalizeSpeech(text){return String(text).toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');}
@@ -16,7 +17,7 @@ function draft(word,ipa=''){
   let nuclei=[...low.matchAll(/[aeiouy]+/g)].map(m=>({start:m.index,end:m.index+m[0].length}));
   const silentE=nuclei.length>1&&/[^aeiou]e$/.test(low)&&!/[bcdfghjklmnpqrstvwxyz]le$/.test(low);
   if(silentE)nuclei=nuclei.filter(n=>n.start!==low.length-1);
-  let starts=[0];for(let n=1;n<nuclei.length;n++){const a=nuclei[n-1],b=nuclei[n],between=low.slice(a.end,b.start);let cut=between.length<=1?a.end:between.length===2&&/^(ch|sh|th|ph|wh)$/.test(between)?a.end:b.start-1;starts.push(Math.max(starts.at(-1)+1,cut));}
+  let starts=[0];for(let n=1;n<nuclei.length;n++){const a=nuclei[n-1],b=nuclei[n],between=low.slice(a.end,b.start);let cut=between.length<=1?a.end:between.length===2&&/^(ch|sh|th|ph|wh)$/.test(between)?a.end:b.start-1;starts.push(Math.max(starts[starts.length-1]+1,cut));}
   starts=[...new Set(starts)].filter(x=>x<token.length);
   for(let s=0;s<starts.length;s++){const text=token.slice(starts[s],starts[s+1]??token.length),groups=[];let i=0;
    while(i<text.length){const tail=text.slice(i).toLowerCase();const dig=Object.keys(DIGRAPHS).find(x=>tail.startsWith(x));const letters=dig?text.slice(i,i+dig.length):text[i];let sound=dig?DIGRAPHS[dig]:SIMPLE[letters.toLowerCase()]||'';
@@ -28,7 +29,7 @@ function draft(word,ipa=''){
    syllables.push({text,ipa:groups.map(g=>g.ipa).join('')||'?',stress:s===0?1:0,before:s===0?word.slice(last,match.index):'',wordIndex:wi,groups,cue:text});
   }last=match.index+token.length;
  }
- if(syllables.length&&last<word.length){const tail=word.slice(last),s=syllables.at(-1);s.text+=tail;s.groups.push({letters:tail,ipa:'',kind:'silent',rule:'標點符號，唔另讀一節。'});}
+ if(syllables.length&&last<word.length){const tail=word.slice(last),s=syllables[syllables.length-1];s.text+=tail;s.groups.push({letters:tail,ipa:'',kind:'silent',rule:'標點符號，唔另讀一節。'});}
  if(!syllables.length)syllables.push({text:String(word)||'?',ipa:'?',stress:0,before:'',wordIndex:0,cue:String(word),groups:[{letters:String(word)||'?',ipa:'?',kind:'sound',rule:'暫時無法估計，請手動核對。'}]});
  return {version:1,source:'estimated',accent:'自動估計，未核對',note:'呢個係規則估計，唔係已核實嘅音節／IPA／重音。英文不規則拼法好多；請用下面編輯欄同字典核對。'+(ipa?' 原有整詞 IPA：'+ipa:''),syllables};
 }
@@ -41,5 +42,5 @@ function validate(p,word){
  if(copy.groups.map(g=>g.letters).join('')!==copy.text||copy.groups.map(g=>g.ipa).join('')!==copy.ipa)throw Error('字母組同音節嘅拼法／IPA 對唔上');out.syllables.push(copy);}
  if(out.syllables.map(s=>s.before+s.text).join('').toLowerCase()!==String(word).toLowerCase())throw Error('拼讀分節同英文生字唔一致');return out;
 }
-return {LETTERS,isIOS,rate,normalizeSpeech,matchSpeech,splitLetters,draft,validate};
+return {LETTERS,isIOS,needsSpeechGap,rate,normalizeSpeech,matchSpeech,splitLetters,draft,validate};
 });

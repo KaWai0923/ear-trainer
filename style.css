@@ -6,12 +6,21 @@
   --font-sans:"Inter",-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei","Segoe UI",sans-serif;
   --font-mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   --bg:#FFFFFF;--surface:#F6F5F4;--surface-hover:#EFEDE9;--surface-active:#E8E6E3;--elevated:#FFFFFF;
-  --text:#1A1A1A;--text-secondary:#615D59;--text-muted:#8A8A8E;
+  --text:#1A1A1A;--text-secondary:#615D59;--text-muted:#6F6F73;
   --border:#E8E6E3;--border-strong:#D3D1CB;--overlay:#0000000D;
   --accent:#2383E2;--accent-text:#1F6FC0;--accent-soft:#E7F3F8;--on-accent:#FFFFFF;--link:var(--accent-text);
   --success:#448361;--success-soft:#EDF3EC;
   --warning:#C1912F;--warning-text:#8A6416;--warning-soft:#FBF3DB;
   --danger:#D44C47;--danger-text:#B83A35;--danger-soft:#FDEBEC;
+  /* solid fills that carry white text (STOP / destructive / skip link): >= 4.5:1 in both themes */
+  --danger-solid:#C4403B;--danger-solid-hover:#A9322D;--accent-solid:#1F6FC0;
+  /* v1.9.3 theme-aware graphs: EQ / compressor canvases (read by dsp.js graphTheme() at draw time)
+   and the Starting Point SVG. Light values below; dark values reproduce the previous instrument palette. */
+  --graph-bg:#FFFFFF;--graph-grid:#E8E6E3;--graph-grid-strong:#B5B2AC;--graph-label:#615D59;--graph-curve:#2383E2;--graph-target:#9A5A00;--graph-threshold:#8A8A8E;
+  --graph-node-text:#FFFFFF;--graph-tooltip-bg:#FFFFFF;--graph-tooltip-text:#1A1A1A;--graph-spectrum-top:#2383E240;--graph-spectrum-bottom:#2383E205;--graph-spectrum-line:#2383E266;--graph-border:#E8E6E3;
+  --graph-plugin-0:#0A7A5C;--graph-plugin-1:#9A5A00;--graph-plugin-2:#7B52D9;--graph-plugin-3:#1F6FC0;
+  --graph-band-0:#9A5A00;--graph-band-1:#1F6FC0;--graph-band-2:#C2387F;--graph-band-3:#0A7A5C;--graph-band-4:#7B52D9;--graph-band-5:#7F7000;--graph-band-6:#0B7F8C;
+  --graph-svg-bg:#FFFFFF;--graph-svg-grid:#E8E6E3;--graph-svg-grid-strong:#B5B2AC;--graph-svg-text:#615D59;--graph-svg-curve:#2383E2;--graph-svg-node-text:#FFFFFF;--graph-svg-node-stroke:#FFFFFF;
   /* dark "instrument display" wells – match the colours the JS canvases/SVGs paint */
   --display-bg:#0B141D;--display-surface:#17242F;--display-border:#24323E;--display-grid:#26384B;--display-grid-strong:#7890A6;
   --display-text:#BDCDDD;--display-curve:#76EFC8;
@@ -27,24 +36,34 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   color-scheme:dark;
   --bg:#191919;--surface:#202020;--surface-hover:#2F2F2F;--surface-active:#373737;--elevated:#252525;
-  --text:#E6E6E6;--text-secondary:#9B9B9B;--text-muted:#7F7F7F;
+  --text:#E6E6E6;--text-secondary:#9B9B9B;--text-muted:#8C8C8C;
   --border:#373737;--border-strong:#4A4A4A;--overlay:#FFFFFF0D;
   --accent:#2383E2;--accent-text:#5AA6F0;--accent-soft:#1E3A55;
   --success:#4DAB9A;--success-soft:#1F332E;
   --warning:#D9A63C;--warning-text:#E8C26A;--warning-soft:#3A3122;
   --danger:#E5534B;--danger-text:#FF7369;--danger-soft:#3C2324;
   --shadow-float:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.4);
+  --graph-bg:#191919;--graph-grid:#373737;--graph-grid-strong:#4A4A4A;--graph-label:#9B9B9B;--graph-curve:#5AA6F0;--graph-target:#E8C26A;--graph-threshold:#8C8C8C;
+  --graph-node-text:#191919;--graph-tooltip-bg:#252525;--graph-tooltip-text:#E6E6E6;--graph-spectrum-top:#5AA6F040;--graph-spectrum-bottom:#5AA6F005;--graph-spectrum-line:#5AA6F066;--graph-border:#373737;
+  --graph-plugin-0:#7EC9B8;--graph-plugin-1:#E0B45C;--graph-plugin-2:#B8A0E0;--graph-plugin-3:#7EB8F5;
+  --graph-band-0:#E0B45C;--graph-band-1:#7EB8F5;--graph-band-2:#E08AB8;--graph-band-3:#7EC9B8;--graph-band-4:#B8A0E0;--graph-band-5:#D4C56A;--graph-band-6:#7ECAD0;
+  --graph-svg-bg:#191919;--graph-svg-grid:#373737;--graph-svg-grid-strong:#4A4A4A;--graph-svg-text:#9B9B9B;--graph-svg-curve:#5AA6F0;--graph-svg-node-text:#191919;--graph-svg-node-stroke:#191919;
 }}
 :root[data-theme="dark"]{
   color-scheme:dark;
   --bg:#191919;--surface:#202020;--surface-hover:#2F2F2F;--surface-active:#373737;--elevated:#252525;
-  --text:#E6E6E6;--text-secondary:#9B9B9B;--text-muted:#7F7F7F;
+  --text:#E6E6E6;--text-secondary:#9B9B9B;--text-muted:#8C8C8C;
   --border:#373737;--border-strong:#4A4A4A;--overlay:#FFFFFF0D;
   --accent:#2383E2;--accent-text:#5AA6F0;--accent-soft:#1E3A55;
   --success:#4DAB9A;--success-soft:#1F332E;
   --warning:#D9A63C;--warning-text:#E8C26A;--warning-soft:#3A3122;
   --danger:#E5534B;--danger-text:#FF7369;--danger-soft:#3C2324;
   --shadow-float:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.4);
+  --graph-bg:#191919;--graph-grid:#373737;--graph-grid-strong:#4A4A4A;--graph-label:#9B9B9B;--graph-curve:#5AA6F0;--graph-target:#E8C26A;--graph-threshold:#8C8C8C;
+  --graph-node-text:#191919;--graph-tooltip-bg:#252525;--graph-tooltip-text:#E6E6E6;--graph-spectrum-top:#5AA6F040;--graph-spectrum-bottom:#5AA6F005;--graph-spectrum-line:#5AA6F066;--graph-border:#373737;
+  --graph-plugin-0:#7EC9B8;--graph-plugin-1:#E0B45C;--graph-plugin-2:#B8A0E0;--graph-plugin-3:#7EB8F5;
+  --graph-band-0:#E0B45C;--graph-band-1:#7EB8F5;--graph-band-2:#E08AB8;--graph-band-3:#7EC9B8;--graph-band-4:#B8A0E0;--graph-band-5:#D4C56A;--graph-band-6:#7ECAD0;
+  --graph-svg-bg:#191919;--graph-svg-grid:#373737;--graph-svg-grid-strong:#4A4A4A;--graph-svg-text:#9B9B9B;--graph-svg-curve:#5AA6F0;--graph-svg-node-text:#191919;--graph-svg-node-stroke:#191919;
 }
 :root[data-theme="light"]{color-scheme:light}
 
@@ -161,11 +180,11 @@ button:hover{background:var(--surface-hover);border-color:var(--border-strong)}
 button:active{background:var(--surface-active)}
 button.active,button[aria-pressed=true],button[aria-current],button[aria-current=step],button[aria-selected=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-text);box-shadow:none}
 button:disabled{opacity:1;color:var(--text-muted);background:var(--surface);border-color:var(--border);cursor:not-allowed}
-button.danger,.danger{background:var(--danger);border-color:var(--danger);color:#fff;font-weight:600;box-shadow:none}
-button.danger:hover{background:var(--danger-text);border-color:var(--danger-text)}
+button.danger,.danger{background:var(--danger-solid);border-color:var(--danger-solid);color:#fff;font-weight:600;box-shadow:none}
+button.danger:hover,button.danger:active{background:var(--danger-solid-hover);border-color:var(--danger-solid-hover);color:#fff}
 #stop{position:static;flex:0 0 auto;padding:10px 16px}
 :focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.rotary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.skip-link{background:var(--accent);color:var(--on-accent);border-radius:var(--radius)}
+.skip-link{background:var(--accent-solid);color:#fff;border-radius:var(--radius)}
 
 /* app mode tabs: quiet segmented control */
 .app-view-tabs{gap:var(--space-1);padding:var(--space-1);margin:var(--space-4) 0;background:var(--surface);border-radius:var(--radius-lg)}
@@ -358,8 +377,30 @@ body>header{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-ite
   body>header small{grid-area:eyebrow;align-self:center}
   body>header h1{grid-area:title;align-self:center;margin:0}
   .theme-switch{grid-area:theme;justify-self:end}
-  .theme-switch button{height:36px;min-height:36px}
-  .theme-switch button::after{content:"";position:absolute;inset:-4px 0}
   #stop{grid-area:stop;padding:10px 12px;font-size:14px}
   body>header h1{font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+
+/* ───────────── v1.9.3 QA fixes (E-01…E-04) ───────────── */
+/* E-01: graphs follow the active theme */
+.dsp-strip canvas,.dsp-strip #eqCanvas,.dsp-strip #compCanvas,#eqCanvas,#compCanvas{background:var(--graph-bg);border-color:var(--graph-border)}
+.starting-curve .starting-eq-display{border-color:var(--graph-border)}
+.starting-eq-display .starting-eq-bg{fill:var(--graph-svg-bg)}
+.starting-eq-display text{fill:var(--graph-svg-text)}
+.starting-eq-grid{stroke:var(--graph-svg-grid)}
+.starting-eq-grid.zero{stroke:var(--graph-svg-grid-strong)}
+.starting-eq-combined{stroke:var(--graph-svg-curve)}
+.starting-eq-display .starting-eq-node{fill:var(--graph-svg-node-text)}
+/* E-04: tap targets >= 44 px */
+.plugin-bar button,.ab-switch button{min-width:var(--tap);min-height:var(--tap)}
+label.check,label:has(>input[type=checkbox]),label:has(>input[type=radio]){min-height:var(--tap)}
+label.check{align-items:center}
+.fx-param>label.fx-hit{display:inline-flex;align-items:center;justify-content:center;min-width:var(--tap);min-height:var(--tap);margin:0;cursor:pointer}
+.sunny-list>a{display:inline-flex;align-items:center;min-height:var(--tap);padding:0 var(--space-1)}
+/* v1.9.3 regression fixes (O-01, Explore ON) */
+.section-power{min-width:var(--tap);min-height:var(--tap)}
+@media(max-width:380px){
+  body>header h1{white-space:nowrap;overflow:visible;text-overflow:clip;line-height:1.2;font-size:17px}
+  body>header h1 span{display:block}
+  body>header small{font-size:10px;letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 }
