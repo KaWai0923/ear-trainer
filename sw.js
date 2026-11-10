@@ -1,6 +1,6 @@
 /* Versioned, same-origin static app cache. No user audio or progress is uploaded. */
 'use strict';
-const VERSION='1.9.1',BASE=new URL('./',self.location.href),PREFIX='soundcheck-'+encodeURIComponent(BASE.pathname)+'-',SHELL=PREFIX+VERSION+'-shell',SAMPLES=PREFIX+VERSION+'-samples';
+const VERSION='1.9.2',BASE=new URL('./',self.location.href),PREFIX='soundcheck-'+encodeURIComponent(BASE.pathname)+'-',SHELL=PREFIX+VERSION+'-shell',SAMPLES=PREFIX+VERSION+'-samples';
 let manifest;
 async function assets(){if(!manifest){let r;try{r=await fetch(new URL('precache.json?v='+VERSION,BASE),{cache:'reload'});if(!r.ok)throw Error('Offline manifest HTTP '+r.status);const data=await r.clone().json();if(data.version!==VERSION)throw Error('App / cache version mismatch');manifest=data}catch(e){r=await (await caches.open(SHELL)).match(new URL('precache.json?v='+VERSION,BASE).href);if(!r)throw e;manifest=await r.json();if(manifest.version!==VERSION)throw e}}return manifest}
 self.addEventListener('install',event=>event.waitUntil((async()=>{const m=await assets(),cache=await caches.open(SHELL);try{await cache.addAll(m.shell.map(p=>new Request(new URL(p,BASE),{cache:'reload'})))}catch(e){await caches.delete(SHELL);throw e}})()));

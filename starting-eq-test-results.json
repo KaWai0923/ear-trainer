@@ -1,5 +1,5 @@
 {
-  "version": "1.9.1",
+  "version": "1.9.2",
   "environment": "Node/jsdom DOM tests at 320/390/1440; actual node-web-audio-api OfflineAudioContext/custom shared-math AudioWorklets, not Chromium/Safari.",
   "baseline": {
     "batch1": {
@@ -57,7 +57,7 @@
       "passed": true
     },
     {
-      "name": "v1.9.1 SW/runtime/cache and research provenance preserved",
+      "name": "v1.9.2 SW/runtime/cache and research provenance preserved",
       "passed": true
     }
   ],
