@@ -1,0 +1,3929 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "schema": "spec-v0.2",
+    "version": "0.2.1-draft",
+    "authored_on": "2026-11-10",
+    "author": "Rei (BJJ content consultant)",
+    "content_review_status": "仍係草稿（待教練審）",
+    "owner_id_placeholder": null,
+    "note": "owner_id 全部係 null，導入時由 Moss 換成 seed user 固定 UUID。"
+  },
+  "users": [],
+  "shares": [],
+  "positions": [
+    {
+      "id": "pos-standing",
+      "owner_id": null,
+      "name_zh": "站立",
+      "name_en": "Standing",
+      "top_or_bottom": "neutral",
+      "parent_position": null,
+      "aliases": [
+        "Stand-up",
+        "Feet"
+      ],
+      "kind": "group",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": "spec 5.4 parent『Standing』，補做一行",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-guard-bottom",
+      "owner_id": null,
+      "name_zh": "護擋（下位）",
+      "name_en": "Guard (bottom)",
+      "top_or_bottom": "bottom",
+      "parent_position": null,
+      "aliases": [
+        "Guard"
+      ],
+      "kind": "group",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": "spec 5.4 parent『Guard (bottom)』，補做一行",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-open-guard-top",
+      "owner_id": null,
+      "name_zh": "開放式 Guard（上位）",
+      "name_en": "Open Guard Top",
+      "top_or_bottom": "top",
+      "parent_position": null,
+      "aliases": [
+        "Open Guard (top)",
+        "Passing position",
+        "OG top"
+      ],
+      "kind": "group",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": "spec 5.4 parent『Open Guard (top)』；亦係兩張 Road Map 嘅連接節點。下位對應 open-guard（group 唔用 perspective_of）",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-standing-neutral",
+      "owner_id": null,
+      "name_zh": "站立（中立）",
+      "name_en": "Standing (Neutral)",
+      "top_or_bottom": "neutral",
+      "parent_position": "pos-standing",
+      "aliases": [
+        "Neutral",
+        "Standing"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-standing-clinch",
+      "owner_id": null,
+      "name_zh": "站立（纏抱）",
+      "name_en": "Standing (Clinch)",
+      "top_or_bottom": "neutral",
+      "parent_position": "pos-standing",
+      "aliases": [
+        "Clinch",
+        "Pummel",
+        "纏抱"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-closed-guard",
+      "owner_id": null,
+      "name_zh": "封閉式 Guard",
+      "name_en": "Closed Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-guard-bottom",
+      "aliases": [
+        "CG",
+        "Full guard",
+        "Closed Guard Bottom",
+        "閉鎖式防守"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-open-guard",
+      "owner_id": null,
+      "name_zh": "開放式 Guard",
+      "name_en": "Open Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-guard-bottom",
+      "aliases": [
+        "OG",
+        "Open Guard Bottom"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-half-guard",
+      "owner_id": null,
+      "name_zh": "半護擋",
+      "name_en": "Half Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-guard-bottom",
+      "aliases": [
+        "Half",
+        "Half Guard Bottom",
+        "半防守"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-butterfly-guard",
+      "owner_id": null,
+      "name_zh": "蝴蝶護擋",
+      "name_en": "Butterfly Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-open-guard",
+      "aliases": [
+        "BF",
+        "Butterfly"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-spider-guard",
+      "owner_id": null,
+      "name_zh": "蜘蛛護擋 (gi)",
+      "name_en": "Spider Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-open-guard",
+      "aliases": [
+        "Spider",
+        "蜘蛛"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-lasso-guard",
+      "owner_id": null,
+      "name_zh": "套索護擋 (gi)",
+      "name_en": "Lasso Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-open-guard",
+      "aliases": [
+        "Lasso",
+        "套索"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-de-la-riva",
+      "owner_id": null,
+      "name_zh": "De La Riva",
+      "name_en": "De La Riva",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-open-guard",
+      "aliases": [
+        "DLR"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-reverse-de-la-riva",
+      "owner_id": null,
+      "name_zh": "Reverse De La Riva",
+      "name_en": "Reverse De La Riva",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-open-guard",
+      "aliases": [
+        "RDLR"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-single-leg-x",
+      "owner_id": null,
+      "name_zh": "SLX / X-Guard",
+      "name_en": "Single Leg X / X-Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-open-guard",
+      "aliases": [
+        "SLX",
+        "X",
+        "Ashi garami (SLX)"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-combat-base",
+      "owner_id": null,
+      "name_zh": "Combat Base",
+      "name_en": "Combat Base",
+      "top_or_bottom": "top",
+      "parent_position": "pos-open-guard-top",
+      "aliases": [
+        "Seated base",
+        "單膝跪 base"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-headquarters",
+      "owner_id": null,
+      "name_zh": "Headquarters",
+      "name_en": "Headquarters",
+      "top_or_bottom": "top",
+      "parent_position": "pos-open-guard-top",
+      "aliases": [
+        "HQ",
+        "Knee staple"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-side-control",
+      "owner_id": null,
+      "name_zh": "側控 / 側壓",
+      "name_en": "Side Control",
+      "top_or_bottom": "top",
+      "parent_position": null,
+      "aliases": [
+        "Side mount",
+        "Side Control Top",
+        "100 kilos"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-north-south",
+      "owner_id": null,
+      "name_zh": "南北位",
+      "name_en": "North-South",
+      "top_or_bottom": "top",
+      "parent_position": "pos-side-control",
+      "aliases": [
+        "N/S",
+        "North South"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-knee-on-belly",
+      "owner_id": null,
+      "name_zh": "膝壓肚",
+      "name_en": "Knee on Belly",
+      "top_or_bottom": "top",
+      "parent_position": "pos-side-control",
+      "aliases": [
+        "KOB",
+        "Knee on stomach",
+        "Knee ride"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-mount",
+      "owner_id": null,
+      "name_zh": "騎乘",
+      "name_en": "Mount",
+      "top_or_bottom": "top",
+      "parent_position": null,
+      "aliases": [
+        "Full mount",
+        "Mount Top",
+        "騎乘上位"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-back-control",
+      "owner_id": null,
+      "name_zh": "背後控制",
+      "name_en": "Back Control",
+      "top_or_bottom": "top",
+      "parent_position": null,
+      "aliases": [
+        "Back take",
+        "Rear mount",
+        "Back mount"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-turtle-top",
+      "owner_id": null,
+      "name_zh": "烏龜位（上）",
+      "name_en": "Turtle (top)",
+      "top_or_bottom": "top",
+      "parent_position": null,
+      "aliases": [
+        "Turtle ride"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-turtle-bottom",
+      "owner_id": null,
+      "name_zh": "烏龜位（下）",
+      "name_en": "Turtle (bottom)",
+      "top_or_bottom": "bottom",
+      "parent_position": null,
+      "aliases": [
+        "Turtle"
+      ],
+      "kind": "preloaded",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-closed-guard-top",
+      "owner_id": null,
+      "name_zh": "封閉式 Guard（上位）",
+      "name_en": "Closed Guard Top",
+      "top_or_bottom": "top",
+      "parent_position": null,
+      "aliases": [
+        "In someone's guard",
+        "CG top"
+      ],
+      "kind": "perspective",
+      "perspective_of": "pos-closed-guard",
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-half-guard-top",
+      "owner_id": null,
+      "name_zh": "半護擋（上位）",
+      "name_en": "Half Guard Top",
+      "top_or_bottom": "top",
+      "parent_position": null,
+      "aliases": [
+        "Half guard passing",
+        "HG top"
+      ],
+      "kind": "perspective",
+      "perspective_of": "pos-half-guard",
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-side-control-bottom",
+      "owner_id": null,
+      "name_zh": "側控（下位）",
+      "name_en": "Side Control Bottom",
+      "top_or_bottom": "bottom",
+      "parent_position": null,
+      "aliases": [
+        "Bottom side control",
+        "被側壓"
+      ],
+      "kind": "perspective",
+      "perspective_of": "pos-side-control",
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-mount-bottom",
+      "owner_id": null,
+      "name_zh": "騎乘（下位）",
+      "name_en": "Mount Bottom",
+      "top_or_bottom": "bottom",
+      "parent_position": null,
+      "aliases": [
+        "Bottom mount",
+        "被騎"
+      ],
+      "kind": "perspective",
+      "perspective_of": "pos-mount",
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-recovered-guard",
+      "owner_id": null,
+      "name_zh": "回復 Guard",
+      "name_en": "Recovered Guard",
+      "top_or_bottom": "bottom",
+      "parent_position": "pos-guard-bottom",
+      "aliases": [
+        "Guard recovery",
+        "Guard replacement"
+      ],
+      "kind": "group",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": "大類：泛指逃脫後重新攞返任何 guard（closed / half / open），唔係某一個位置嘅上下對調，所以唔係 perspective；屬 guard-bottom 之下",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-spider-guard-top",
+      "owner_id": null,
+      "name_zh": "Spider Guard（上位過腳）",
+      "name_en": "Spider Guard Top (passing)",
+      "top_or_bottom": "top",
+      "parent_position": "pos-open-guard-top",
+      "aliases": [
+        "Passing spider",
+        "vs Spider"
+      ],
+      "kind": "perspective",
+      "perspective_of": "pos-spider-guard",
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-lasso-guard-top",
+      "owner_id": null,
+      "name_zh": "Lasso Guard（上位過腳）",
+      "name_en": "Lasso Guard Top (passing)",
+      "top_or_bottom": "top",
+      "parent_position": "pos-open-guard-top",
+      "aliases": [
+        "Passing lasso",
+        "vs Lasso"
+      ],
+      "kind": "perspective",
+      "perspective_of": "pos-lasso-guard",
+      "is_preloaded": true,
+      "notes": null,
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "pos-submission",
+      "owner_id": null,
+      "name_zh": "降服（終結）",
+      "name_en": "Submission",
+      "top_or_bottom": "neutral",
+      "parent_position": null,
+      "aliases": [
+        "Finish",
+        "Tap",
+        "終結"
+      ],
+      "kind": "terminal",
+      "perspective_of": null,
+      "is_preloaded": true,
+      "notes": "終結點，唔係真實位置；上位同下位都可以降服，所以 top_or_bottom = neutral",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "tech-shrimp-escape",
+      "owner_id": null,
+      "title_zh": "蝦式逃脫（側控下）",
+      "title_en": "Shrimp Escape from Side Control",
+      "aliases": [
+        "Hip escape",
+        "Elbow escape",
+        "蝦行"
+      ],
+      "category": [
+        "escape",
+        "guard retention"
+      ],
+      "tags": [
+        "fundamental",
+        "frames"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 1,
+      "start_position": "pos-side-control-bottom",
+      "end_position": "pos-recovered-guard",
+      "alt_end_positions": [],
+      "user_role": "bottom",
+      "summary": "被側壓時用 frames 撐出空間，bridge 之後蝦行（shrimp）將髖部移開，塞返膝頭／小腿入去，重新攞返 guard。",
+      "key_concepts": [
+        "先 frame 後郁：前臂撐頸／鎖骨、另一手撐髖",
+        "Bridge 製造空間，shrimp 先至係真正移位",
+        "目標係將膝頭塞返入你同對手之間"
+      ],
+      "steps": [
+        "側身面向對手，近側前臂 frame 住對手頸／鎖骨，遠側手撐對手髖部",
+        "雙腳踩地，向對手方向細 bridge，令對手重心郁",
+        "趁空位，腳踩地推，髖部向遠離對手方向蝦行",
+        "即刻將近側膝頭／小腿塞入對手髖部前面",
+        "繼續轉身面向對手，將腳放返入去，回復 closed、half 或 open guard"
+      ],
+      "grips": [
+        "前臂 frame 喺對手頸側／鎖骨（唔係推臉）",
+        "手掌撐髖部或腰帶位置"
+      ],
+      "common_mistakes": [
+        "平躺唔側身，frames 冇力",
+        "伸直手臂推，畀對手壓落嚟就鎖住手肘",
+        "Bridge 完唔 shrimp，空位即刻冇咗",
+        "塞膝太慢，對手追返落嚟"
+      ],
+      "opponent_reactions": [
+        "對手跟住你蝦行重新壓胸",
+        "對手轉 knee on belly 或 mount",
+        "對手搶 crossface 壓住頭"
+      ],
+      "counters": [
+        "對手跟住你 → 反方向 bridge，或者轉做 turtle / 起身 single leg",
+        "對手搶 mount → 用 elbow-knee escape 防守"
+      ],
+      "follow_ups": [
+        "回復 closed guard",
+        "Half guard bottom → underhook"
+      ],
+      "safety_notes": [
+        "frame 唔好用手指戳對手面或者頸前",
+        "Bridge 時唔好用頸撐地，用肩膊同腳"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-upa-trap-and-roll",
+      "owner_id": null,
+      "title_zh": "Upa 鎖手鎖腳翻身",
+      "title_en": "Trap and Roll (Upa)",
+      "aliases": [
+        "Upa",
+        "Bridge and roll",
+        "橋式翻身"
+      ],
+      "category": [
+        "escape",
+        "sweep"
+      ],
+      "tags": [
+        "fundamental",
+        "mount escape"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 1,
+      "start_position": "pos-mount-bottom",
+      "end_position": "pos-closed-guard-top",
+      "alt_end_positions": [],
+      "user_role": "bottom",
+      "summary": "被騎乘時鎖住同一邊嘅手同腳，向上斜 bridge 越過對手肩膊翻身，落喺對手 closed guard 入面。",
+      "key_concepts": [
+        "同一邊鎖手（手臂／袖）同鎖腳",
+        "向對手被鎖嗰邊嘅肩膊方向斜住 bridge",
+        "翻完即刻 posture，唔好留手喺 guard 入面"
+      ],
+      "steps": [
+        "保護頸同手肘，手肘收埋",
+        "用雙手鎖住對手一隻手臂（抓袖／上臂），拉埋你胸前",
+        "同一邊腳放喺對手腳外側，鎖住佢唔可以撐地",
+        "雙腳踩實，向上斜住越過被鎖嗰邊肩膊爆發 bridge",
+        "翻身落喺對手 guard 入面，即刻 posture up"
+      ],
+      "grips": [
+        "雙手鎖對手同一隻手臂（gi 可抓袖同手肘位置）",
+        "腳背／腳掌貼住對手腳外側"
+      ],
+      "common_mistakes": [
+        "直上直落 bridge，唔係斜向肩膊",
+        "鎖手唔鎖腳，對手撐地就翻唔到",
+        "翻完低頭撞入去，畀人鎖頸或者 armbar",
+        "對手騎得好高先做，冇空間"
+      ],
+      "opponent_reactions": [
+        "對手手撐闊 base",
+        "對手騎高到腋下（high mount）",
+        "對手 bridge 嗰陣轉 S-mount"
+      ],
+      "counters": [
+        "對手撐闊手 → 轉做 elbow-knee escape",
+        "對手騎高 → 先推髖部令佢跌返低位再鎖"
+      ],
+      "follow_ups": [
+        "Standing Guard Break（喺 closed guard 上位）",
+        "如果對手開腳 → 直接過腳"
+      ],
+      "safety_notes": [
+        "翻身方向前確認冇其他人喺旁邊",
+        "落地時唔好整個身壓落對手頭頸"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-elbow-knee-escape",
+      "owner_id": null,
+      "title_zh": "肘膝逃脫（騎乘下）",
+      "title_en": "Elbow-Knee Escape from Mount",
+      "aliases": [
+        "Elbow escape",
+        "Knee-elbow escape",
+        "Shrimp escape from mount"
+      ],
+      "category": [
+        "escape",
+        "guard retention"
+      ],
+      "tags": [
+        "fundamental",
+        "mount escape"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-mount-bottom",
+      "end_position": "pos-half-guard",
+      "alt_end_positions": [
+        "pos-recovered-guard"
+      ],
+      "user_role": "bottom",
+      "summary": "被騎乘時側身 frame，蝦行令手肘同膝頭重新連埋，將膝頭塞入對手腳下面，先攞 half guard，再可以回復 full guard。",
+      "key_concepts": [
+        "手肘同膝頭連埋，對手先入唔到",
+        "側身 + shrimp，唔好平躺推",
+        "一邊一邊嚟：先 half guard，再搶返另一隻腳"
+      ],
+      "steps": [
+        "手肘收埋，手撐對手髖部",
+        "細 bridge 令對手重心向前",
+        "側身，向一邊蝦行，令膝頭同手肘碰埋",
+        "將膝頭塞入對手大腿下面，用腳勾住佢一隻腳 → half guard",
+        "需要嘅話再向另一邊蝦行，搶返另一隻腳，回復 closed guard"
+      ],
+      "grips": [
+        "手掌撐對手髖部（唔係腹部）",
+        "腳勾住對手腳（half guard 鎖腳）"
+      ],
+      "common_mistakes": [
+        "伸直手推對手胸，被 armbar",
+        "唔側身，膝頭塞唔入",
+        "腳攤平，對手好易騎返上嚟"
+      ],
+      "opponent_reactions": [
+        "對手 grapevine 腳",
+        "對手騎高推前",
+        "對手跟住你轉身加 crossface"
+      ],
+      "counters": [
+        "對手 grapevine → 先撐開一隻腳再逃",
+        "對手騎高 → 轉 upa 方向"
+      ],
+      "follow_ups": [
+        "Half guard bottom → underhook back take",
+        "回復 closed guard"
+      ],
+      "safety_notes": [
+        "frame 唔好推對手頸前",
+        "被 crossface 時轉頭保護頸"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-guard-pull",
+      "owner_id": null,
+      "title_zh": "拉入 Guard",
+      "title_en": "Guard Pull to Closed Guard",
+      "aliases": [
+        "Pull guard",
+        "坐低拉 guard",
+        "Sit-down guard pull"
+      ],
+      "category": [
+        "guard pull"
+      ],
+      "tags": [
+        "fundamental",
+        "standing"
+      ],
+      "gi_mode": "gi-adaptable",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 1,
+      "start_position": "pos-standing-neutral",
+      "end_position": "pos-closed-guard",
+      "alt_end_positions": [],
+      "user_role": "standing",
+      "summary": "企位抓住領同袖，一隻腳踩對手髖部，坐低貼近自己腳跟，拉對手入你 closed guard。坐低，唔係跳。",
+      "key_concepts": [
+        "先有 grips 先坐低",
+        "坐落近自己腳跟，唔好遠離對手",
+        "落地即刻鎖腳"
+      ],
+      "steps": [
+        "抓對手領（collar）同袖（sleeve），或 no-gi 抓頸同手腕",
+        "一隻腳踩對手髖部",
+        "控制住下坐，臀部落喺接近企嗰隻腳跟位置",
+        "用 grips 拉對手向前，雙腳繞過對手腰",
+        "雙腳喺對手背後扣埋，破對手 posture"
+      ],
+      "grips": [
+        "同側 collar + sleeve",
+        "No-gi：collar tie + wrist"
+      ],
+      "common_mistakes": [
+        "冇 grips 就坐低，對手直接過腳",
+        "坐得太遠，鎖唔到腳",
+        "跳上去（jump guard），自己膝頭／對手膝頭受傷"
+      ],
+      "opponent_reactions": [
+        "對手後退甩開 grips",
+        "對手 posture up 企高",
+        "對手直接搶過腳（toreando）"
+      ],
+      "counters": [
+        "對手後退 → 跟進保持 open guard",
+        "對手搶過腳 → 用腳 frame 髖部，回復 guard"
+      ],
+      "follow_ups": [
+        "Scissor Sweep",
+        "Hip Bump Sweep",
+        "Cross Collar Choke (gi)",
+        "Armbar from Guard"
+      ],
+      "safety_notes": [
+        "唔好 jump guard，坐低就得；有膝頭受傷風險",
+        "坐低時唔好拉對手面朝地撞落你身"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": "唔同賽規對 jump guard 同 guard pull 有限制（尤其兒童／部分白帶組別），比賽前要睇清規則。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-scissor-sweep",
+      "owner_id": null,
+      "title_zh": "剪刀掃",
+      "title_en": "Scissor Sweep",
+      "aliases": [
+        "Scissor",
+        "剪刀腳掃"
+      ],
+      "category": [
+        "sweep"
+      ],
+      "tags": [
+        "fundamental",
+        "closed guard"
+      ],
+      "gi_mode": "gi-adaptable",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-closed-guard",
+      "end_position": "pos-mount",
+      "alt_end_positions": [],
+      "user_role": "bottom",
+      "summary": "Closed guard 抓領同袖，蝦行出角度，上腳小腿橫過對手腹部，下腳喺膝頭位置斬，同時拉 grips，將對手剪翻，騎上 mount。",
+      "key_concepts": [
+        "角度：先蝦行出一邊",
+        "上腳小腿做 shin across belly，下腳貼地斬膝",
+        "上身 grips 拉，腳先剪，兩樣同時發生"
+      ],
+      "steps": [
+        "抓對手同側領（深）同另一邊袖",
+        "開腳，向抓袖嗰邊蝦行出角度",
+        "上腳膝頭帶入，小腿橫放對手腹部",
+        "下腳貼地放喺對手膝頭側面",
+        "用 grips 拉對手向你頭方向，同時上腳掃、下腳斬",
+        "跟住翻身，騎上 mount，即刻 base 穩"
+      ],
+      "grips": [
+        "Cross collar grip（深）",
+        "Same-side sleeve grip",
+        "No-gi：overhook / wrist control 代替"
+      ],
+      "common_mistakes": [
+        "冇出角度就剪，對手唔郁",
+        "冇拉 grips，淨係用腳",
+        "掃完自己唔跟上，失去上位"
+      ],
+      "opponent_reactions": [
+        "對手 base 闊、後坐",
+        "對手放低身體重心",
+        "對手撐手防翻"
+      ],
+      "counters": [
+        "對手撐手 → 轉 hip bump sweep",
+        "對手後坐 → 轉 armbar 或 cross collar choke"
+      ],
+      "follow_ups": [
+        "Mount → Armbar from Mount",
+        "Mount → Cross Collar Choke (gi)"
+      ],
+      "safety_notes": [
+        "斬腳時踢對手膝頭側面要控制，唔好用力撞膝",
+        "對手落地要自己 post 好，唔好用手撐直落地"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-hip-bump-sweep",
+      "owner_id": null,
+      "title_zh": "髖撞掃",
+      "title_en": "Hip Bump Sweep",
+      "aliases": [
+        "Sit-up sweep",
+        "Bump sweep"
+      ],
+      "category": [
+        "sweep"
+      ],
+      "tags": [
+        "fundamental",
+        "closed guard"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-closed-guard",
+      "end_position": "pos-mount",
+      "alt_end_positions": [],
+      "user_role": "bottom",
+      "summary": "對手喺你 guard 入面企直 posture 時，坐起身、一手撐後，用髖部向前撞，另一手 overhook 對手手臂，翻到 mount。",
+      "key_concepts": [
+        "Timing：對手 posture up 嗰陣",
+        "坐起身，手撐喺身後同側",
+        "髖部向上向前撞，overhook 封住對手手唔撐得"
+      ],
+      "steps": [
+        "對手企直上身時，開腳",
+        "坐起身，一手喺身後撐地",
+        "另一手越過對手肩膊 overhook 對手同側手臂",
+        "髖部抬高向前撞對手胸",
+        "向撐地手嗰邊翻，騎上 mount"
+      ],
+      "grips": [
+        "Overhook 對手手臂（越過肩膊）",
+        "撐地手貼近臀部"
+      ],
+      "common_mistakes": [
+        "坐起身太慢，對手已經壓返落嚟",
+        "冇 overhook，對手撐手防翻",
+        "撐地手離身太遠"
+      ],
+      "opponent_reactions": [
+        "對手壓返落嚟 posture down",
+        "對手撐手防翻",
+        "對手後退"
+      ],
+      "counters": [
+        "對手撐手 → 轉 kimura（之後先學）或 guillotine（之後先學）",
+        "對手後退 → 轉 scissor sweep"
+      ],
+      "follow_ups": [
+        "Mount → Armbar from Mount",
+        "Mount → Cross Collar Choke (gi)"
+      ],
+      "safety_notes": [
+        "翻身時對手手臂唔好被壓喺身下扭"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-armbar-from-guard",
+      "owner_id": null,
+      "title_zh": "Guard 十字固",
+      "title_en": "Armbar from Closed Guard",
+      "aliases": [
+        "Juji gatame",
+        "十字鎖",
+        "Straight armbar"
+      ],
+      "category": [
+        "submission"
+      ],
+      "tags": [
+        "fundamental",
+        "arm lock"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-closed-guard",
+      "end_position": "pos-submission",
+      "alt_end_positions": [],
+      "user_role": "bottom",
+      "summary": "Closed guard 控制對手一隻手，腳踩髖部轉角度，腳過頭，膝頭夾實，拇指朝上，慢慢抬髖完成十字固。",
+      "key_concepts": [
+        "先 isolate 手臂（手肘過咗中線）",
+        "轉角度：身體同對手成接近 90°",
+        "膝頭夾實，對手拇指朝天，慢慢抬髖"
+      ],
+      "steps": [
+        "控制對手一隻手（抓袖或 2-on-1），拉過你胸中線",
+        "同邊腳踩對手髖部，蝦行轉角度",
+        "另一隻腳越過對手頭，壓住頭",
+        "雙膝夾緊對手手臂，抱住手臂貼胸",
+        "對手拇指朝上，慢慢向上抬髖；感覺到壓力就停，等 tap"
+      ],
+      "grips": [
+        "Cross sleeve / wrist grip",
+        "2-on-1 控制手臂"
+      ],
+      "common_mistakes": [
+        "冇轉角度，腳過唔到頭",
+        "膝頭鬆，對手抽手出",
+        "抬髖太快太大力"
+      ],
+      "opponent_reactions": [
+        "對手抽手（hitchhiker escape）",
+        "對手 stack 你",
+        "對手兩手互扣防守"
+      ],
+      "counters": [
+        "對手 stack → 轉 triangle（之後先學）或 omoplata（之後先學）",
+        "對手扣手 → 用腳踢開或者換 grip 拆手"
+      ],
+      "follow_ups": [
+        "失手 → 返 closed guard",
+        "轉 Scissor Sweep"
+      ],
+      "safety_notes": [
+        "收到 tap（拍兩下或口講 tap）即刻放手；練習時慢慢加壓（slow finish），被鎖嗰方要早 tap（tap early）。",
+        "手肘受傷好快，練習時一定慢，唔好用 bridge 爆發"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-cross-collar-choke-guard",
+      "owner_id": null,
+      "title_zh": "Guard 交叉領絞",
+      "title_en": "Cross Collar Choke from Guard",
+      "aliases": [
+        "Cross choke",
+        "X-choke",
+        "十字絞"
+      ],
+      "category": [
+        "submission"
+      ],
+      "tags": [
+        "fundamental",
+        "choke",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-closed-guard",
+      "end_position": "pos-submission",
+      "alt_end_positions": [],
+      "user_role": "bottom",
+      "summary": "Closed guard 一手四指入深領，另一手拇指入另一邊領，拉低對手破 posture，手肘向外、手腕捲收，完成絞。",
+      "key_concepts": [
+        "第一隻手越深越好（接近頸後）",
+        "Guard 用腳拉低對手 posture",
+        "手肘開、手腕捲，好似剪刀咁"
+      ],
+      "steps": [
+        "用腳拉低對手，破 posture",
+        "第一隻手四指入對手領，伸到頸側後面越深越好",
+        "第二隻手拇指入另一邊領（或四指入，按個人習慣）",
+        "手肘向外打開，手腕向內捲，拉對手向你",
+        "慢慢加壓，等 tap"
+      ],
+      "grips": [
+        "深領 grip（四指入）",
+        "第二隻手拇指入領（thumb-in）"
+      ],
+      "common_mistakes": [
+        "第一隻手唔夠深，絞唔到",
+        "冇用腳破 posture",
+        "淨係用手拉，冇開手肘"
+      ],
+      "opponent_reactions": [
+        "對手 posture up",
+        "對手撥開手肘",
+        "對手向前壓頭"
+      ],
+      "counters": [
+        "對手 posture up → 轉 hip bump sweep",
+        "對手撥手 → 轉 armbar from guard"
+      ],
+      "follow_ups": [
+        "Armbar from Guard",
+        "Hip Bump Sweep"
+      ],
+      "safety_notes": [
+        "收到 tap（拍兩下或口講 tap）即刻放手；練習時慢慢加壓（slow finish），被鎖嗰方要早 tap（tap early）。",
+        "絞技會好快暈，被絞要早 tap；壓力放喺頸側，唔好壓喉嚨前面"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-standing-guard-break",
+      "owner_id": null,
+      "title_zh": "企起破 Closed Guard",
+      "title_en": "Standing Guard Break",
+      "aliases": [
+        "Stand-up guard break",
+        "企起拆 guard"
+      ],
+      "category": [
+        "guard pass",
+        "transition/control"
+      ],
+      "tags": [
+        "fundamental",
+        "closed guard top"
+      ],
+      "gi_mode": "gi-adaptable",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-closed-guard-top",
+      "end_position": "pos-open-guard-top",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "喺對手 closed guard 入面，先 posture，控制住對手，然後一腳一腳企起，令對手扣腳打開。",
+      "key_concepts": [
+        "Posture 先：腰直、頭高、手推住對手",
+        "企起時手要控制住（唔好留手喺對手兩腳中間冇控制）",
+        "企直後髖部向前，膝頭外分令腳鬆開"
+      ],
+      "steps": [
+        "坐直 posture，雙手撐住對手腰帶／髖部或領",
+        "一隻腳企起，腳尖向外",
+        "另一隻腳企起，雙膝微屈 base 穩",
+        "一手控制，另一手推對手膝頭向下，或者後退一步，令對手扣腳打開",
+        "打開後保持 posture，準備過腳"
+      ],
+      "grips": [
+        "雙手撐腰帶／褲頭或胸前領（gi）",
+        "No-gi：雙手撐髖部"
+      ],
+      "common_mistakes": [
+        "頭向前低，被拉落嚟",
+        "企起時手伸直入對手兩腳之間，畀人 armbar／triangle",
+        "企得太快冇 base，被掃"
+      ],
+      "opponent_reactions": [
+        "對手抓腳踝掃（ankle pick sweep）",
+        "對手拉你袖破 posture",
+        "對手開腳轉 open guard"
+      ],
+      "counters": [
+        "對手抓腳踝 → 重心落返低，保持 base",
+        "對手轉 open guard → 開始過腳（toreando / knee cut）"
+      ],
+      "follow_ups": [
+        "Toreando Pass",
+        "Knee Cut Pass",
+        "對手轉 Spider/Lasso → 跳第二張 map"
+      ],
+      "safety_notes": [
+        "企起時唔好將對手抽起再摔落（slam）；部分賽規會即刻 DQ",
+        "推膝頭時唔好用全身重量壓膝"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": "被 closed guard 抽起時唔好 slam；IBJJF 等賽規屬嚴重犯規。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-toreando-pass",
+      "owner_id": null,
+      "title_zh": "鬥牛士過腳",
+      "title_en": "Toreando Pass",
+      "aliases": [
+        "Bullfighter pass",
+        "Torreando",
+        "Toreando"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "fundamental",
+        "standing pass"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-open-guard-top",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "企喺對手 open guard 前面，抓住褲膝位（gi）或膝頭，將對手雙腳推去一邊，繞過去另一邊，落側控。",
+      "key_concepts": [
+        "控制雙腳：推埋一齊、推落地",
+        "繞過去要快，身體角度轉出去",
+        "落側控先壓胸同控制髖"
+      ],
+      "steps": [
+        "企位，雙手抓對手褲膝位（gi）或雙膝外側（no-gi）",
+        "將對手雙腳推向一邊、按向地面",
+        "向相反方向繞步走過對手腳",
+        "下身降低，胸壓對手胸，手控制遠側髖或 crossface",
+        "穩定側控"
+      ],
+      "grips": [
+        "雙手抓褲膝位外側（手指唔入褲腳）",
+        "No-gi：抓膝頭／小腿"
+      ],
+      "common_mistakes": [
+        "推腳冇推落地，對手腳返入嚟",
+        "繞步太細，被對手 frame 返",
+        "過咗之後唔即刻壓，對手 shrimp 走"
+      ],
+      "opponent_reactions": [
+        "對手用腳 frame 你髖",
+        "對手轉身入 turtle",
+        "對手抓你袖拉返入 guard"
+      ],
+      "counters": [
+        "對手 frame → 轉 knee cut",
+        "對手入 turtle → 去 turtle top / back take（之後先學）"
+      ],
+      "follow_ups": [
+        "Side Control → Mount Transition",
+        "Side Control → Knee on Belly",
+        "Side Control → Americana"
+      ],
+      "safety_notes": [
+        "推對手膝頭時唔好扭對手膝關節"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": "Gi 賽規：唔可以將手指伸入對手褲腳或袖口（IBJJF 犯規）。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-knee-cut-pass",
+      "owner_id": null,
+      "title_zh": "膝切過腳",
+      "title_en": "Knee Cut Pass",
+      "aliases": [
+        "Knee slice",
+        "Knee slide pass",
+        "Knee cut"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "fundamental",
+        "pressure pass"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 3,
+      "start_position": "pos-open-guard-top",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "膝頭斜切過對手大腿，同時控制頭（crossface）或攞 underhook，阻住對手髖部，滑過去側控。",
+      "key_concepts": [
+        "膝頭斜切，唔係直插",
+        "上身控制：crossface 或 underhook，阻住對手轉身",
+        "後腳伸直撐 base，切完先放平"
+      ],
+      "steps": [
+        "控制對手一隻腳（褲膝位或膝頭），令佢腳放平",
+        "同一邊膝頭斜住越過對手大腿，膝頭貼地",
+        "一手 crossface 或者攞遠側 underhook",
+        "後腳伸直撐，膝頭繼續滑過對手大腿",
+        "髖部落地，收返腳，落側控"
+      ],
+      "grips": [
+        "褲膝位 grip（gi）",
+        "Crossface 或 far-side underhook",
+        "No-gi：knee grip + underhook"
+      ],
+      "common_mistakes": [
+        "冇控制上身，對手轉身攞 underhook",
+        "膝頭切得太直，被 knee shield 擋",
+        "切完唔清腳，被 half guard 鎖返"
+      ],
+      "opponent_reactions": [
+        "對手攞 underhook 起身",
+        "對手 knee shield",
+        "對手鎖住你後腳成 half guard"
+      ],
+      "counters": [
+        "對手 underhook → whizzer + crossface 壓返",
+        "對手鎖腳 → 用另一隻腳撐開抽出"
+      ],
+      "follow_ups": [
+        "Side Control → Mount Transition",
+        "Side Control → Americana"
+      ],
+      "safety_notes": [
+        "切過時唔好跪落對手膝頭內側"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-side-control-to-mount",
+      "owner_id": null,
+      "title_zh": "側控轉騎乘",
+      "title_en": "Side Control to Mount Transition",
+      "aliases": [
+        "Mount transition",
+        "Knee slide to mount"
+      ],
+      "category": [
+        "transition/control"
+      ],
+      "tags": [
+        "fundamental",
+        "control"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-side-control",
+      "end_position": "pos-mount",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "側控保持壓力，清開對手膝頭，膝頭滑過對手腹部（或抬腳越過），騎上 mount。",
+      "key_concepts": [
+        "先控制上身再郁下身",
+        "清開對手 frames 同膝頭",
+        "膝頭貼住腹部滑過，唔好留大空位"
+      ],
+      "steps": [
+        "側控，crossface 同控制遠側手臂",
+        "近側手推住對手髖部或膝頭，阻住佢縮膝",
+        "膝頭貼住對手腹部滑過去另一邊",
+        "落地即刻低 base，膝頭夾實",
+        "穩住 mount，手撐地或控制頭"
+      ],
+      "grips": [
+        "Crossface + far underhook",
+        "手推對手近側髖／膝"
+      ],
+      "common_mistakes": [
+        "上身鬆，對手 frame 推走",
+        "膝頭抬太高，對手塞膝入嚟",
+        "騎上去重心太高，被 upa"
+      ],
+      "opponent_reactions": [
+        "對手縮膝 knee shield",
+        "對手轉身面向你",
+        "對手鎖腳成 half guard"
+      ],
+      "counters": [
+        "對手鎖腳 → 抽腳或轉 knee on belly",
+        "對手轉向你 → 返側控重新壓"
+      ],
+      "follow_ups": [
+        "Armbar from Mount",
+        "Cross Collar Choke from Mount (gi)"
+      ],
+      "safety_notes": [
+        "唔好用膝頭撞對手腹部"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-knee-on-belly",
+      "owner_id": null,
+      "title_zh": "膝壓肚",
+      "title_en": "Knee on Belly Transition",
+      "aliases": [
+        "KOB",
+        "Knee ride",
+        "Knee on stomach"
+      ],
+      "category": [
+        "transition/control"
+      ],
+      "tags": [
+        "control",
+        "mobility"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_advanced",
+      "difficulty": 2,
+      "start_position": "pos-side-control",
+      "end_position": "pos-knee-on-belly",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "由側控彈起，膝頭放對手腹部，另一隻腳伸出撐 base，抓領同褲／髖保持控制。",
+      "key_concepts": [
+        "膝頭放腹部／肋下，唔係胸骨",
+        "另一隻腳伸出闊 base",
+        "重心跟住對手郁，用 grips 平衡"
+      ],
+      "steps": [
+        "側控，手控制領同髖",
+        "彈起，近側膝頭放對手腹部",
+        "另一隻腳伸出撐地，腳尖向外",
+        "一手抓領／肩，一手抓褲腰／髖",
+        "對手郁就跟住調整，準備轉 mount 或 armbar"
+      ],
+      "grips": [
+        "Far collar grip",
+        "Belt / pants grip at hip"
+      ],
+      "common_mistakes": [
+        "重心太後，對手推膝跌走",
+        "膝頭壓喺胸骨或喉嚨",
+        "Base 太窄，被掃"
+      ],
+      "opponent_reactions": [
+        "對手推膝頭",
+        "對手轉身向你 shrimp",
+        "對手抓腳掃"
+      ],
+      "counters": [
+        "對手推膝 → 轉 mount 或 armbar（之後先學）",
+        "對手轉向你 → 返側控"
+      ],
+      "follow_ups": [
+        "Side Control → Mount Transition"
+      ],
+      "safety_notes": [
+        "慢慢落重心，唔好成個人跳落去膝頭；對手要早 tap",
+        "唔好壓喺肋骨尾"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-americana",
+      "owner_id": null,
+      "title_zh": "美式鎖（側控）",
+      "title_en": "Americana from Side Control",
+      "aliases": [
+        "Keylock",
+        "Ude garami",
+        "Paintbrush"
+      ],
+      "category": [
+        "submission"
+      ],
+      "tags": [
+        "fundamental",
+        "shoulder lock"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-side-control",
+      "end_position": "pos-submission",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "側控將對手手腕按喺地，手肘彎 90°，figure-four 鎖住，手腕向對手髖部方向拖，手肘慢慢抬起。",
+      "key_concepts": [
+        "手腕貼地，手肘 90°",
+        "Figure-four：你手腕抓佢手腕，另一手穿過佢手臂下抓自己手腕",
+        "Paintbrush：手腕拖向下，手肘抬起"
+      ],
+      "steps": [
+        "側控壓胸，對手手臂向頭方向",
+        "近頭嗰隻手抓對手手腕，按落地，對手手肘 90°",
+        "另一手穿過對手上臂下面，抓返自己手腕（figure-four）",
+        "對手手腕沿地面拖向佢髖部方向",
+        "慢慢抬起對手手肘，等 tap"
+      ],
+      "grips": [
+        "Wrist pin（掌心向下按）",
+        "Figure-four grip"
+      ],
+      "common_mistakes": [
+        "手腕離地，對手轉身走",
+        "手肘唔夠 90°，鎖唔實",
+        "快速扭，對手肩膊受傷"
+      ],
+      "opponent_reactions": [
+        "對手伸直手",
+        "對手抓自己衫／腰帶防守",
+        "對手 bridge 轉身"
+      ],
+      "counters": [
+        "對手伸直手 → 轉 armbar（之後先學）",
+        "對手抓衫 → 先拆 grip 或轉 mount"
+      ],
+      "follow_ups": [
+        "失手 → 返側控 / 轉 Mount"
+      ],
+      "safety_notes": [
+        "收到 tap（拍兩下或口講 tap）即刻放手；練習時慢慢加壓（slow finish），被鎖嗰方要早 tap（tap early）。",
+        "肩膊受傷唔一定痛先，練習一定慢拖，對手有少少壓力就 tap"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-armbar-from-mount",
+      "owner_id": null,
+      "title_zh": "騎乘十字固",
+      "title_en": "Armbar from Mount",
+      "aliases": [
+        "Mount armbar",
+        "Juji gatame from mount"
+      ],
+      "category": [
+        "submission"
+      ],
+      "tags": [
+        "fundamental",
+        "arm lock"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 3,
+      "start_position": "pos-mount",
+      "end_position": "pos-submission",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "騎乘爬高，isolate 一隻手，轉 S-mount，腳越過頭坐低，膝頭夾實，拇指朝上，慢慢抬髖。",
+      "key_concepts": [
+        "先 high mount，手臂離開對手身",
+        "坐低要貼近對手肩膊",
+        "膝頭夾，拇指朝上，慢慢抬髖"
+      ],
+      "steps": [
+        "騎高到腋下（high mount）",
+        "抱住對手一隻手臂貼胸，手肘離開地面",
+        "一隻膝頭頂起，轉 S-mount",
+        "腳越過對手頭，坐低貼近對手肩膊",
+        "雙膝夾實，對手拇指朝上，慢慢抬髖，等 tap"
+      ],
+      "grips": [
+        "雙手抱手臂貼胸",
+        "S-mount 時一手撐地平衡"
+      ],
+      "common_mistakes": [
+        "坐得太遠，手臂抽返出去",
+        "腳越頭時冇控制，對手坐起身",
+        "抬髖太快"
+      ],
+      "opponent_reactions": [
+        "對手 hitchhiker 轉拇指出",
+        "對手坐起身 stack",
+        "對手扣手防守"
+      ],
+      "counters": [
+        "對手坐起 → 返 mount 或轉 triangle（之後先學）",
+        "對手扣手 → 換 grip 拆手"
+      ],
+      "follow_ups": [
+        "失手 → 返 mount",
+        "對手翻身 → 轉 back control"
+      ],
+      "safety_notes": [
+        "收到 tap（拍兩下或口講 tap）即刻放手；練習時慢慢加壓（slow finish），被鎖嗰方要早 tap（tap early）。",
+        "坐落時唔好成個人跌落對手頭面；腳越頭時控制住"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-cross-collar-choke-mount",
+      "owner_id": null,
+      "title_zh": "騎乘交叉領絞",
+      "title_en": "Cross Collar Choke from Mount",
+      "aliases": [
+        "Cross choke from mount",
+        "X-choke"
+      ],
+      "category": [
+        "submission"
+      ],
+      "tags": [
+        "fundamental",
+        "choke",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-mount",
+      "end_position": "pos-submission",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "騎乘第一隻手深入領，第二隻手入另一邊領，前臂壓低，額頭／手肘落地喺對手頭側，慢慢加壓。",
+      "key_concepts": [
+        "第一隻手越深越好",
+        "重心低，唔好畀對手 upa",
+        "手肘開，前臂收向頸側"
+      ],
+      "steps": [
+        "低 mount，base 穩",
+        "第一隻手四指入對手領，伸到頸後",
+        "第二隻手越過入另一邊領",
+        "身體向前，手肘向外撐地喺對手頭側",
+        "前臂收緊，慢慢加壓，等 tap"
+      ],
+      "grips": [
+        "深領 grip（四指入）",
+        "第二隻手 thumb-in 或 palm-up"
+      ],
+      "common_mistakes": [
+        "第一隻手唔夠深",
+        "上身太高，對手 upa 翻走",
+        "淨係用手扯，冇用身體重量"
+      ],
+      "opponent_reactions": [
+        "對手撥手肘",
+        "對手 upa",
+        "對手轉身"
+      ],
+      "counters": [
+        "對手轉身 → 轉 back control",
+        "對手撥手 → 轉 armbar from mount"
+      ],
+      "follow_ups": [
+        "Armbar from Mount",
+        "Back Control"
+      ],
+      "safety_notes": [
+        "收到 tap（拍兩下或口講 tap）即刻放手；練習時慢慢加壓（slow finish），被鎖嗰方要早 tap（tap early）。",
+        "壓力放頸側，唔好壓喉嚨前面"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-half-guard-underhook-back-take",
+      "owner_id": null,
+      "title_zh": "Half Guard Underhook 拎背",
+      "title_en": "Half Guard Underhook to Back Take",
+      "aliases": [
+        "Dogfight to back",
+        "Underhook back take",
+        "Half guard back take"
+      ],
+      "category": [
+        "back take",
+        "sweep"
+      ],
+      "tags": [
+        "half guard",
+        "dogfight"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-half-guard",
+      "end_position": "pos-back-control",
+      "alt_end_positions": [],
+      "user_role": "bottom",
+      "summary": "Half guard 下側身攞 underhook（同被夾嗰隻腳同一邊），起身 dogfight，繞到對手背後，攞 seatbelt 同 hooks。",
+      "key_concepts": [
+        "側身，唔好平躺",
+        "Underhook 係關鍵",
+        "頭貼對手身，唔好畀 crossface"
+      ],
+      "steps": [
+        "Half guard 下，側身向被夾腳嗰邊",
+        "同邊手攞 underhook，深入對手腋下",
+        "頭頂住對手胸／肩，起身用另一手肘撐地（dogfight）",
+        "繞到對手後面，underhook 轉 seatbelt",
+        "放 hooks 入對手大腿，穩 back control"
+      ],
+      "grips": [
+        "Deep underhook",
+        "Seatbelt（一手 over、一手 under）"
+      ],
+      "common_mistakes": [
+        "平躺被 crossface",
+        "Underhook 太淺",
+        "起身太慢，對手 whizzer 壓返"
+      ],
+      "opponent_reactions": [
+        "對手 whizzer（overhook）",
+        "對手 crossface",
+        "對手轉身面向你"
+      ],
+      "counters": [
+        "對手 whizzer → 轉做 sweep（之後先學 old school / single leg）",
+        "對手 crossface → 先 frame 恢復 knee shield"
+      ],
+      "follow_ups": [
+        "Rear Naked Choke",
+        "Back Control 保持"
+      ],
+      "safety_notes": [
+        "Hooks 唔好交叉扣腳（對手可以鎖腳踝）"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-rear-naked-choke",
+      "owner_id": null,
+      "title_zh": "裸絞",
+      "title_en": "Rear Naked Choke",
+      "aliases": [
+        "RNC",
+        "Mata leão",
+        "Lion killer",
+        "後裸絞"
+      ],
+      "category": [
+        "submission"
+      ],
+      "tags": [
+        "fundamental",
+        "choke"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 2,
+      "start_position": "pos-back-control",
+      "end_position": "pos-submission",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "背後控制，絞手手肘對準對手下巴下面，手掌放另一手二頭肌，另一手放對手頭後，收手肘擴胸，慢慢加壓。",
+      "key_concepts": [
+        "手肘對準下巴，前臂同二頭肌夾頸側",
+        "手唔好壓下巴（唔係 neck crank）",
+        "擴胸 + 收手肘，慢慢加壓"
+      ],
+      "steps": [
+        "Seatbelt + hooks，穩住 back control",
+        "絞手由上面越過對手頸，手肘對準對手下巴",
+        "絞手手掌搭住另一手二頭肌",
+        "另一手放對手頭後",
+        "收手肘、擴胸，慢慢加壓，等 tap"
+      ],
+      "grips": [
+        "Seatbelt",
+        "RNC figure-four（手掌搭二頭肌）"
+      ],
+      "common_mistakes": [
+        "手臂壓下巴，變成 jaw crank",
+        "Hooks 鬆，對手轉身逃",
+        "太快太大力"
+      ],
+      "opponent_reactions": [
+        "對手 2-on-1 拉手",
+        "對手縮下巴",
+        "對手轉身去 underhook 嗰邊"
+      ],
+      "counters": [
+        "對手縮下巴 → 換 grip 或轉 bow and arrow（gi，之後先學）",
+        "對手轉身 → 跟住調整，或轉 mount"
+      ],
+      "follow_ups": [
+        "失手 → 保持 back control"
+      ],
+      "safety_notes": [
+        "收到 tap（拍兩下或口講 tap）即刻放手；練習時慢慢加壓（slow finish），被鎖嗰方要早 tap（tap early）。",
+        "絞技會好快暈；壓頸側，唔好壓喉嚨或者 crank 下巴／頸"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-double-leg-takedown",
+      "owner_id": null,
+      "title_zh": "雙腳抱摔",
+      "title_en": "Double Leg Takedown",
+      "aliases": [
+        "Double leg",
+        "Double",
+        "雙抱"
+      ],
+      "category": [
+        "takedown"
+      ],
+      "tags": [
+        "fundamental",
+        "wrestling"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 3,
+      "start_position": "pos-standing-neutral",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [
+        "pos-half-guard-top"
+      ],
+      "user_role": "standing",
+      "summary": "降低重心（level change），踏步入去，頭貼對手身側，抱住雙腳膝後，轉角度推倒，唔好抱起摔落。",
+      "key_concepts": [
+        "Level change 先，唔好彎腰低頭",
+        "Penetration step 入得夠深",
+        "轉角度推倒（turn the corner），唔係抱高摔"
+      ],
+      "steps": [
+        "保持姿勢，距離適中",
+        "屈膝降低重心（level change）",
+        "前腳踏入對手兩腳之間（penetration step）",
+        "頭貼對手身側、胸前，雙手抱對手膝後",
+        "推前轉角度令對手倒地，跟住落側控或 half guard top"
+      ],
+      "grips": [
+        "雙手抱膝後（behind the knees）",
+        "頭位：對手身側／胸前"
+      ],
+      "common_mistakes": [
+        "彎腰唔屈膝，頭低被 guillotine",
+        "入得太淺，對手 sprawl",
+        "抱起再摔（slam）"
+      ],
+      "opponent_reactions": [
+        "Sprawl",
+        "Guillotine",
+        "Front headlock"
+      ],
+      "counters": [
+        "對手 sprawl → 轉 single leg 或起身重新嚟",
+        "對手 guillotine → 手先保護頸，轉向 guillotine 嗰邊"
+      ],
+      "follow_ups": [
+        "Side Control → Mount Transition",
+        "Half Guard Top → Knee Cut"
+      ],
+      "safety_notes": [
+        "唔好抱起對手再摔落（slam）",
+        "對手要學 breakfall；練習要有足夠墊位"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": "Slam 喺大部分賽規屬犯規／DQ；白帶模板唔包含 slam。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-single-leg-takedown",
+      "owner_id": null,
+      "title_zh": "單腳抱摔",
+      "title_en": "Single Leg Takedown",
+      "aliases": [
+        "Single leg",
+        "Single",
+        "單抱"
+      ],
+      "category": [
+        "takedown"
+      ],
+      "tags": [
+        "fundamental",
+        "wrestling"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_fundamental",
+      "difficulty": 3,
+      "start_position": "pos-standing-neutral",
+      "end_position": "pos-half-guard-top",
+      "alt_end_positions": [
+        "pos-side-control"
+      ],
+      "user_role": "standing",
+      "summary": "Level change 抱住對手一隻腳，頭貼對手身，抽腳企高，再用 run the pipe 或絆腳完成，跟住過腳。",
+      "key_concepts": [
+        "頭位要貼身，唔好低過對手腰",
+        "抱腳後即刻企高",
+        "完成時對手腳離地／失衡"
+      ],
+      "steps": [
+        "Level change，前腳踏近對手前腳",
+        "雙手抱住對手前腳（膝或大腿）",
+        "頭貼住對手胸側，脊骨直",
+        "企起身，將對手腳夾喺你兩腳之間或抱高",
+        "Run the pipe（向斜後拉落）或絆對手撐地腳，對手倒地後過腳"
+      ],
+      "grips": [
+        "雙手抱腳（hands locked around thigh / knee）",
+        "Gi：可抓褲"
+      ],
+      "common_mistakes": [
+        "頭低過腰，被 guillotine 或 front headlock",
+        "抱住腳唔企起，冇方向",
+        "完成時自己跌落對手 guard 入面"
+      ],
+      "opponent_reactions": [
+        "對手跳腳後退",
+        "Guillotine",
+        "Whizzer / 推頭"
+      ],
+      "counters": [
+        "對手後跳 → 跟住推，轉 double leg",
+        "對手推頭 → 保持頭貼身，調整"
+      ],
+      "follow_ups": [
+        "Half Guard Top → Knee Cut",
+        "Side Control"
+      ],
+      "safety_notes": [
+        "唔好抱起摔落（slam）",
+        "Run the pipe 時唔好扭對手膝頭"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": "Slam 喺大部分賽規屬犯規／DQ；部分賽規對某些 leg reap 有限制。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-white-belt-starter",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-spider-posture-frame",
+      "owner_id": null,
+      "title_zh": "Spider 防守姿勢",
+      "title_en": "Posture & Frame vs Spider Guard",
+      "aliases": [
+        "Spider defensive posture",
+        "Spider guard posture"
+      ],
+      "category": [
+        "defense/counter",
+        "guard pass"
+      ],
+      "tags": [
+        "spider",
+        "posture",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 2,
+      "start_position": "pos-open-guard-top",
+      "end_position": "pos-spider-guard-top",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "對手抓雙袖、腳踩你二頭肌建立 Spider 時，先唔好急過，第一步係保持姿勢：手肘貼身、肩膊平衡、髖部後坐，唔畀佢拉直你手臂。",
+      "key_concepts": [
+        "手肘貼返上身（elbows connected to upper body）（來自 Ka Wai 筆記）",
+        "兩邊肩膊保持水平，上身好似長方形；肩膊同手肘向同一方向，用嚟防守（來自 Ka Wai 筆記）",
+        "遠距離時可以向後退拉開，或者起身（stand up）重新調整（來自 Ka Wai 筆記）",
+        "髖部後坐、膝微屈，重心喺自己 base"
+      ],
+      "steps": [
+        "認出對手建立 Spider：雙手抓袖，一隻或兩隻腳踩你二頭肌",
+        "手肘向下收向自己髖部，唔好畀對手踩直你手臂",
+        "肩膊保持水平，唔好一邊被拉前（rectangle 框架）",
+        "距離太近就向後退一步拉開距離，重新企好 base",
+        "企穩之後揀路：拆袖（sleeve strip）、壓摺（fold to HQ）或過腳"
+      ],
+      "grips": [
+        "主要係防守對手袖 grip；自己可抓對手褲膝位",
+        "雙手可以做 2-on-1 拆對手一邊 grip"
+      ],
+      "common_mistakes": [
+        "伸直手臂畀對手踩，肩膊被拉開",
+        "一邊肩膊前、一邊肩膊後，被拉失衡",
+        "企太直、重心太高，被掃（例如 spider sweep）",
+        "一俾 spider 就即刻衝入去"
+      ],
+      "opponent_reactions": [
+        "對手踩實二頭肌伸直你手",
+        "對手轉 lasso 或 spider-lasso 組合",
+        "對手拉你向前做 sweep / triangle"
+      ],
+      "counters": [
+        "對手伸直你手 → 手肘向下打圈、向後退拉開",
+        "對手轉 lasso → 跳去 Lasso 防守姿勢"
+      ],
+      "follow_ups": [
+        "Spider：拆袖起 Combat Base",
+        "Spider：Fold／Smash 去 HQ",
+        "Toreando vs Spider",
+        "Knee Cut vs Spider"
+      ],
+      "safety_notes": [
+        "唔好用肩膊硬頂對手腳；肩膊被拉直時退後，唔好硬撐"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": "Ka Wai 自己記低（未核對原片）：位置上可以起身或者向後；兩個肩頭最好水平，好似長方形；肩頭同 elbow 喺同一個方向，用嚟防守；手肘 connect 上身。",
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": true,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-lasso-posture-frame",
+      "owner_id": null,
+      "title_zh": "Lasso 防守姿勢",
+      "title_en": "Posture & Frame vs Lasso Guard",
+      "aliases": [
+        "Lasso defensive posture",
+        "Lasso guard posture"
+      ],
+      "category": [
+        "defense/counter",
+        "guard pass"
+      ],
+      "tags": [
+        "lasso",
+        "posture",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 2,
+      "start_position": "pos-open-guard-top",
+      "end_position": "pos-lasso-guard-top",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "對手用腳由外向內纏住你手臂（lasso）同抓袖時，先保持姿勢：被纏嗰隻手肘收向自己髖部，肩膊平衡，唔畀佢拉你轉身或拉前。",
+      "key_concepts": [
+        "被 lasso 嗰隻手肘收埋，唔好伸直（來自 Ka Wai 筆記）",
+        "肩膊水平、上身似長方形，唔畀對手拉轉（來自 Ka Wai 筆記）",
+        "遠距離時向後退，先拉開再處理（來自 Ka Wai 筆記）",
+        "Lasso 主要控制你手臂同上身轉向；清 lasso 前唔好急住過腳"
+      ],
+      "steps": [
+        "認出 lasso：對手小腿由外纏過你手臂，腳掌喺你手臂內側／胸前，同時抓住你袖",
+        "被纏手嘅手肘向下收向自己髖部",
+        "肩膊保持水平，髖部後坐，重心喺 base",
+        "另一隻手控制對手另一隻腳（褲膝位）或者準備拆 grip",
+        "企穩之後揀路：清 lasso（unwind）或 smash／stack"
+      ],
+      "grips": [
+        "自由手抓對手褲膝位",
+        "被 lasso 嗰隻手：手肘收向髖，唔好拉直"
+      ],
+      "common_mistakes": [
+        "被拉直手臂，肩膊被扭",
+        "上身轉向被 lasso 嗰邊，失去平衡",
+        "一被 lasso 就用力抽手，反而畀對手掃"
+      ],
+      "opponent_reactions": [
+        "對手加另一邊 spider（lasso-spider 組合）",
+        "對手拉你向前做 lasso sweep",
+        "對手轉 omoplata 入口"
+      ],
+      "counters": [
+        "對手加 spider → 先 pin spider 嗰邊（見 Unwind／Clear Lasso）",
+        "對手拉前 → 向後退，手肘收，降低重心"
+      ],
+      "follow_ups": [
+        "Lasso：Unwind／清 Lasso",
+        "Smash／Stack vs Lasso"
+      ],
+      "safety_notes": [
+        "Lasso 會扭肩膊；感到肩膊壓力要退或者 tap，唔好硬抽"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": "Ka Wai 自己記低（未核對原片）：同 Spider 嘅姿勢概念一樣，肩頭水平、手肘 connect 上身。",
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": true,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-spider-sleeve-strip-combat-base",
+      "owner_id": null,
+      "title_zh": "拆袖起 Combat Base（vs Spider）",
+      "title_en": "Sleeve Grip Strip to Combat Base vs Spider",
+      "aliases": [
+        "Spider grip break",
+        "Break spider grips",
+        "拆 spider 袖"
+      ],
+      "category": [
+        "guard pass",
+        "defense/counter"
+      ],
+      "tags": [
+        "spider",
+        "grip fighting",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-spider-guard-top",
+      "end_position": "pos-combat-base",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "對 Spider：手肘向下向內打圈、後退拉，逐邊拆開對手抓袖，拆完即刻落 Combat Base，抓褲控制對手雙腳。",
+      "key_concepts": [
+        "一次拆一邊，用 2-on-1 或者手肘打圈",
+        "手肘拉返去自己髖部方向，連住後退（來自 Ka Wai 筆記）",
+        "拆完即刻控制褲，唔畀佢重新抓袖"
+      ],
+      "steps": [
+        "保持 Spider 防守姿勢（手肘貼身、肩膊平衡）",
+        "揀一邊：手肘向內向下打圈，令對手腳滑離二頭肌",
+        "同時向後退，將手肘拉返去自己髖部，袖 grip 被拉鬆",
+        "需要時用另一手抓對手手腕／袖，2-on-1 拆開",
+        "拆完即刻一膝落地成 Combat Base，雙手抓對手褲膝位壓低雙腳"
+      ],
+      "grips": [
+        "2-on-1 抓對手手腕／袖口外側",
+        "拆完：雙手抓褲膝位"
+      ],
+      "common_mistakes": [
+        "淨係用力扯手，冇後退冇打圈",
+        "拆完唔控制，對手即刻抓返",
+        "落 Combat Base 時膝頭太遠，對手入腳"
+      ],
+      "opponent_reactions": [
+        "對手即刻重新抓袖",
+        "對手轉 lasso",
+        "對手轉 De La Riva"
+      ],
+      "counters": [
+        "重新抓袖 → 先控制褲，再拆",
+        "轉 lasso → Lasso 防守姿勢"
+      ],
+      "follow_ups": [
+        "Combat Base → Headquarters",
+        "Toreando（拆完之後）"
+      ],
+      "safety_notes": [
+        "拆 grip 時唔好扭對手手指；對手抓得好實時拉手腕／袖，唔好拗手指"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": "Gi 賽規：唔可以將手指伸入對手袖口或褲腳（IBJJF 犯規）；抓褲膝位外側就得。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": true,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-spider-fold-smash-hq",
+      "owner_id": null,
+      "title_zh": "Fold／Smash Spider 去 HQ",
+      "title_en": "Fold & Smash Spider to Headquarters",
+      "aliases": [
+        "Spider fold pass",
+        "Spider smash",
+        "Pin spider leg"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "spider",
+        "pressure",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-spider-guard-top",
+      "end_position": "pos-headquarters",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "手肘打圈離開對手 spider 腳，將佢小腿／膝壓落地（fold 落另一隻腳），用手 pin 住，踏入 Headquarters。",
+      "key_concepts": [
+        "用手 pin 住 spider 嗰邊（例如 C-grip 抓膝／小腿）（來自 Ka Wai 筆記）",
+        "壓落地、壓埋另一隻腳，令對手兩腳失去角度",
+        "踏入 HQ：內膝頂對手大腿，外腳撐出"
+      ],
+      "steps": [
+        "保持防守姿勢，揀一隻踩二頭肌嘅腳",
+        "手肘向外向下打圈，令對手腳離開二頭肌",
+        "同一隻手 C-grip 抓對手膝／小腿，將佢壓落地、摺過另一隻腳（來自 Ka Wai 筆記）",
+        "重心壓落被 pin 嗰隻腳，內腳踏入對手兩腳之間",
+        "成 Headquarters：膝頭頂住對手大腿，外腳撐出，手繼續 pin"
+      ],
+      "grips": [
+        "C-grip（拇指同四指成 C 形）壓膝／小腿（來自 Ka Wai 筆記）；確實位置因應對手，未從片核對",
+        "另一手抓褲膝位或控制袖"
+      ],
+      "common_mistakes": [
+        "冇打圈就壓，腳踩住你手推唔落",
+        "壓咗腳但重心冇跟上，對手抽返",
+        "踏入 HQ 時膝頭太後，對手入 DLR"
+      ],
+      "opponent_reactions": [
+        "對手轉 De La Riva",
+        "對手抽腳 retention",
+        "對手轉身 turtle"
+      ],
+      "counters": [
+        "轉 DLR → 保持 HQ 壓力，膝頭頂實",
+        "抽腳 → 返去 Combat Base 重新控制"
+      ],
+      "follow_ups": [
+        "Knee Cut from HQ",
+        "Toreando"
+      ],
+      "safety_notes": [
+        "壓摺腳時唔好扭對手膝頭；對手膝頭方向要跟住大腿"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": true,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-toreando-vs-spider",
+      "owner_id": null,
+      "title_zh": "Toreando vs Spider",
+      "title_en": "Toreando Pass vs Spider Guard",
+      "aliases": [
+        "Spider toreando",
+        "Bullfighter vs spider"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "spider",
+        "standing pass",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-spider-guard-top",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "企位先拆或者打圈清走 spider 腳，即刻抓雙褲膝位，將雙腳推去一邊，繞步過去落側控。",
+      "key_concepts": [
+        "先清 spider 腳離二頭肌，先至有空間抓褲",
+        "雙腳推埋、推落地",
+        "繞步要大，身體轉角度"
+      ],
+      "steps": [
+        "保持企位防守姿勢",
+        "手肘打圈或後退，令一隻或兩隻 spider 腳離開",
+        "即刻抓雙褲膝位外側",
+        "將對手雙腳推去一邊、壓落地",
+        "繞步過去，胸壓落，落側控"
+      ],
+      "grips": [
+        "雙手抓褲膝位外側",
+        "可以 2-on-1 先拆袖再抓褲"
+      ],
+      "common_mistakes": [
+        "未清 spider 就抓褲，手臂被腳頂住",
+        "推腳太高，對手腳返入嚟",
+        "繞步太細，被 frame 返"
+      ],
+      "opponent_reactions": [
+        "對手腳踩返你髖或二頭肌",
+        "對手抓袖拉返",
+        "對手轉身 turtle"
+      ],
+      "counters": [
+        "踩返 → 返防守姿勢重新嚟",
+        "對手轉 turtle → 去 turtle top（之後先學）"
+      ],
+      "follow_ups": [
+        "Side Control → Mount",
+        "Side Control → Americana"
+      ],
+      "safety_notes": [
+        "推腳時唔好扭膝頭"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": "Gi 賽規：唔可以將手指伸入對手袖口或褲腳（IBJJF 犯規）；抓褲膝位外側就得。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-knee-cut-vs-spider",
+      "owner_id": null,
+      "title_zh": "Knee Cut vs Spider",
+      "title_en": "Knee Cut Pass vs Spider Guard",
+      "aliases": [
+        "Spider knee cut",
+        "Knee slice vs spider"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "spider",
+        "pressure pass",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-spider-guard-top",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "先 pin 住 spider 嗰邊隻腳落地，膝頭斜切過對手大腿，攞 crossface／underhook，滑過去側控。",
+      "key_concepts": [
+        "先 pin spider 嗰邊（來自 Ka Wai 筆記）",
+        "膝頭斜切，唔係直插",
+        "上身控制阻住對手轉身"
+      ],
+      "steps": [
+        "保持姿勢，手肘打圈清一邊 spider 腳",
+        "用手壓住嗰隻腳落地（C-grip 或抓褲膝位）",
+        "同邊膝頭斜切過對手大腿",
+        "另一手攞 crossface 或 far-side underhook",
+        "後腳伸直撐 base，滑過去落側控"
+      ],
+      "grips": [
+        "Pin：C-grip 或褲膝位",
+        "Crossface／underhook"
+      ],
+      "common_mistakes": [
+        "Spider 腳仲踩住手臂就切，被推走",
+        "切完冇上身控制",
+        "後腳被 half guard 鎖返"
+      ],
+      "opponent_reactions": [
+        "對手 knee shield",
+        "對手攞 underhook",
+        "對手鎖後腳"
+      ],
+      "counters": [
+        "Underhook → whizzer + crossface",
+        "鎖腳 → 撐開抽出"
+      ],
+      "follow_ups": [
+        "Side Control → Mount",
+        "Side Control → Americana"
+      ],
+      "safety_notes": [
+        "膝頭唔好跪落對手膝內側"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": true,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-lasso-unwind-clear",
+      "owner_id": null,
+      "title_zh": "Unwind／清 Lasso",
+      "title_en": "Unwind & Clear the Lasso",
+      "aliases": [
+        "Lasso escape",
+        "Clear lasso",
+        "Disconnect lasso"
+      ],
+      "category": [
+        "guard pass",
+        "defense/counter"
+      ],
+      "tags": [
+        "lasso",
+        "grip fighting",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-lasso-guard-top",
+      "end_position": "pos-combat-base",
+      "alt_end_positions": [
+        "pos-headquarters"
+      ],
+      "user_role": "top",
+      "summary": "被 lasso 嗰隻手肘收向髖，手向纏繞相反方向打圈解開，同時壓住對手 lasso 腳；如果另一邊係 spider，先 pin spider 嗰邊再繞返 lasso 嗰邊解。清完落 Combat Base 或 HQ。",
+      "key_concepts": [
+        "遠距離：向後退拉開（來自 Ka Wai 筆記）",
+        "手肘貼返上身（來自 Ka Wai 筆記）",
+        "有 spider 嗰邊：用手 pin 住，C-grip 控制（來自 Ka Wai 筆記）",
+        "繞返 lasso 嗰邊，用打圈手（circling hand）解開 lasso（來自 Ka Wai 筆記）"
+      ],
+      "steps": [
+        "向後退，拉開距離，保持手肘貼身（來自 Ka Wai 筆記）",
+        "如果另一邊係 spider：用手將 spider 腳壓落地，C-grip 控制（來自 Ka Wai 筆記）",
+        "繞返 lasso 嗰邊（來自 Ka Wai 筆記）",
+        "被纏嘅手肘向下收、手向纏繞相反方向打圈，令對手小腿滑出你手臂（來自 Ka Wai 筆記）；同時自由手壓住 lasso 腳膝位",
+        "解開後即刻抓褲，一膝落地成 Combat Base，或者直接踏入 HQ"
+      ],
+      "grips": [
+        "自由手：C-grip 或褲膝位壓 lasso／spider 腳",
+        "被纏手：解開後轉抓褲膝位"
+      ],
+      "common_mistakes": [
+        "直接向後扯手，反而拉緊 lasso",
+        "打圈方向錯（同纏繞方向一樣）",
+        "解開後唔即刻控制腳，對手重新纏"
+      ],
+      "opponent_reactions": [
+        "對手重新纏 lasso",
+        "對手抓緊袖拉你向前",
+        "對手轉 omoplata／triangle 入口"
+      ],
+      "counters": [
+        "重新纏 → 返 Lasso 防守姿勢",
+        "拉前 → 後退、降重心，先保護手肘"
+      ],
+      "follow_ups": [
+        "Combat Base → Headquarters",
+        "Knee Cut after Lasso Clear"
+      ],
+      "safety_notes": [
+        "解 lasso 時肩膊有扭力就停，唔好硬扯；對手唔好用 lasso 硬扭肩膊"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": "Gi 賽規：唔可以將手指伸入對手袖口或褲腳（IBJJF 犯規）；抓褲膝位外側就得。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": "Ka Wai 自己記低（未核對原片）：1 Far distance，moving back；2 elbow connect to upper body；3 用手 pin down spider side，C grab control 住佢；4 circle back to lasso side，circling hand 去 disconnect 佢個 lasso。",
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": true,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-knee-cut-after-lasso-clear",
+      "owner_id": null,
+      "title_zh": "清 Lasso 後 Knee Cut",
+      "title_en": "Knee Cut after Lasso Clear",
+      "aliases": [
+        "Lasso knee cut",
+        "Knee slice after lasso"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "lasso",
+        "pressure pass",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-lasso-guard-top",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "Lasso 一解開，即刻用手 pin 住對手 lasso 腳落地，膝頭斜切過大腿，上身控制，過去側控。重點係唔畀對手有時間重新纏。",
+      "key_concepts": [
+        "解開同過腳要連續",
+        "Pin 住 lasso 腳先切",
+        "上身控制：crossface 或 underhook"
+      ],
+      "steps": [
+        "用 Unwind／清 Lasso 解開對手 lasso",
+        "即刻抓 lasso 腳褲膝位壓落地",
+        "同邊膝頭斜切過對手大腿",
+        "攞 crossface 或 far-side underhook",
+        "後腳伸直撐，滑過去落側控"
+      ],
+      "grips": [
+        "褲膝位 pin",
+        "Crossface／underhook"
+      ],
+      "common_mistakes": [
+        "解開後停頓，對手重新纏",
+        "切得太直，被 knee shield 擋",
+        "冇上身控制"
+      ],
+      "opponent_reactions": [
+        "對手重新抓袖",
+        "對手 knee shield",
+        "對手鎖後腳成 half guard"
+      ],
+      "counters": [
+        "重新抓袖 → 先拆再切",
+        "鎖後腳 → 撐開抽出"
+      ],
+      "follow_ups": [
+        "Side Control → Mount",
+        "Side Control → Americana"
+      ],
+      "safety_notes": [
+        "膝頭唔好跪落對手膝內側"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": "Gi 賽規：唔可以將手指伸入對手袖口或褲腳（IBJJF 犯規）；抓褲膝位外側就得。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-smash-stack-vs-lasso",
+      "owner_id": null,
+      "title_zh": "Smash／Stack vs Lasso",
+      "title_en": "Smash / Stack Pass vs Lasso",
+      "aliases": [
+        "Lasso stack pass",
+        "Lasso smash"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "lasso",
+        "pressure",
+        "stack",
+        "gi only"
+      ],
+      "gi_mode": "gi",
+      "suggested_belt": "blue",
+      "difficulty": 4,
+      "start_position": "pos-lasso-guard-top",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "被 lasso 嗰隻手肘收實，向前踏近，重心壓過對手 lasso 腳，將佢腳摺向胸（stack），令 lasso 失去作用，再繞到側面落側控。",
+      "key_concepts": [
+        "手肘收實先郁，唔好畀對手拉直",
+        "重心壓喺對手髖同 lasso 腳，唔係壓頸",
+        "摺腳之後繞去側面，唔好停喺 stack 太耐"
+      ],
+      "steps": [
+        "保持 Lasso 防守姿勢，手肘收實",
+        "自由手抓對手另一隻腳褲膝位，壓開或者壓落地",
+        "向前踏近，髖部向前，重心壓過 lasso 腳",
+        "將對手 lasso 腳摺向佢胸（stack），lasso 鬆咗",
+        "繞步去側面，胸壓落，落側控"
+      ],
+      "grips": [
+        "自由手：褲膝位",
+        "被纏手：手肘收向髖，可抓對手褲腰"
+      ],
+      "common_mistakes": [
+        "手臂被拉直先 stack，肩膊受傷風險",
+        "重心壓錯位，壓住對手頸",
+        "停喺 stack 唔郁，對手 roll 走"
+      ],
+      "opponent_reactions": [
+        "對手向後 roll 走（backward roll）",
+        "對手轉 triangle／omoplata",
+        "對手放開 lasso 轉 open guard"
+      ],
+      "counters": [
+        "對手 roll → 跟住控制，轉 turtle top 或重新過",
+        "放開 lasso → 用 toreando 或 knee cut"
+      ],
+      "follow_ups": [
+        "Side Control → Mount",
+        "Side Control → Americana"
+      ],
+      "safety_notes": [
+        "Stack 會壓對手頸同脊骨，一定慢慢落重心，對手要早 tap 或 roll 走",
+        "唔好將重量直接壓喺對手頭頸（唔係 neck crank）"
+      ],
+      "safety_level": "caution",
+      "ruleset_warning": "Gi 賽規：唔可以將手指伸入對手袖口或褲腳（IBJJF 犯規）；抓褲膝位外側就得。",
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-combat-base-to-hq",
+      "owner_id": null,
+      "title_zh": "Combat Base 轉 Headquarters",
+      "title_en": "Combat Base to Headquarters",
+      "aliases": [
+        "Combat base to HQ",
+        "Step to HQ"
+      ],
+      "category": [
+        "transition/control",
+        "guard pass"
+      ],
+      "tags": [
+        "passing",
+        "HQ"
+      ],
+      "gi_mode": "gi-adaptable",
+      "suggested_belt": "white_advanced",
+      "difficulty": 2,
+      "start_position": "pos-combat-base",
+      "end_position": "pos-headquarters",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "由 Combat Base 抓褲控制，將一隻腳踏入對手兩腳之間，膝頭頂住對手大腿內側，外腳撐出，成 Headquarters。",
+      "key_concepts": [
+        "控制一隻腳，壓佢落地",
+        "內膝頂實對手大腿，唔畀佢轉 DLR",
+        "外腳撐出，重心向前"
+      ],
+      "steps": [
+        "Combat Base，雙手抓褲膝位",
+        "揀一邊，將對手嗰隻腳壓落地",
+        "另一隻腳踏入對手兩腳之間，膝頭頂住佢大腿內側",
+        "外腳撐出闊 base",
+        "手繼續 pin 腳，準備 knee cut"
+      ],
+      "grips": [
+        "褲膝位 pin（gi）／膝頭 pin（no-gi）"
+      ],
+      "common_mistakes": [
+        "膝頭冇頂實，對手入 DLR",
+        "重心太後，冇壓力",
+        "手放鬆，對手抽腳"
+      ],
+      "opponent_reactions": [
+        "對手 DLR hook",
+        "對手 knee shield",
+        "對手抽腳 retention"
+      ],
+      "counters": [
+        "DLR → 膝頭頂實大腿，重心落",
+        "抽腳 → 返 Combat Base 重新控制"
+      ],
+      "follow_ups": [
+        "Knee Cut from HQ"
+      ],
+      "safety_notes": [
+        "膝頭頂大腿，唔好壓喺對手膝關節"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "tech-knee-cut-from-hq",
+      "owner_id": null,
+      "title_zh": "HQ Knee Cut",
+      "title_en": "Knee Cut from Headquarters",
+      "aliases": [
+        "HQ knee slice",
+        "Knee cut from HQ"
+      ],
+      "category": [
+        "guard pass"
+      ],
+      "tags": [
+        "passing",
+        "HQ",
+        "pressure pass"
+      ],
+      "gi_mode": "both",
+      "suggested_belt": "white_advanced",
+      "difficulty": 3,
+      "start_position": "pos-headquarters",
+      "end_position": "pos-side-control",
+      "alt_end_positions": [],
+      "user_role": "top",
+      "summary": "由 HQ 用內膝斜切過對手被 pin 住嘅大腿，上身攞 crossface／underhook，滑過去側控。",
+      "key_concepts": [
+        "HQ 壓力保持住先切",
+        "上身控制阻對手轉身",
+        "後腳伸直撐 base"
+      ],
+      "steps": [
+        "HQ，手 pin 住對手一隻腳",
+        "內膝斜切過對手大腿",
+        "手攞 crossface 或 far-side underhook",
+        "後腳伸直，膝頭繼續滑過",
+        "髖部落地，落側控"
+      ],
+      "grips": [
+        "褲膝位 pin",
+        "Crossface／underhook"
+      ],
+      "common_mistakes": [
+        "切時放鬆 pin，對手轉身",
+        "冇上身控制",
+        "後腳被鎖"
+      ],
+      "opponent_reactions": [
+        "對手 knee shield",
+        "對手 underhook",
+        "對手鎖後腳"
+      ],
+      "counters": [
+        "Underhook → whizzer + crossface",
+        "鎖腳 → 撐開抽出"
+      ],
+      "follow_ups": [
+        "Side Control → Mount",
+        "Side Control → Americana"
+      ],
+      "safety_notes": [
+        "膝頭唔好跪落對手膝內側"
+      ],
+      "safety_level": "standard",
+      "ruleset_warning": null,
+      "media_clips": [],
+      "source_name": null,
+      "source_url": null,
+      "instructor": null,
+      "personal_notes": null,
+      "status": "not started",
+      "confidence": null,
+      "last_practiced": null,
+      "practice_count": 0,
+      "sparring_success_count": 0,
+      "next_review_date": null,
+      "coach_feedback": null,
+      "deleted_at": null,
+      "content_review_status": "仍係草稿",
+      "ka_wai_notes_used": false,
+      "roadmap_id": "map-lasso-spider-passing",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "media_clips": [],
+  "roadmaps": [
+    {
+      "id": "map-white-belt-starter",
+      "owner_id": null,
+      "title_zh": "白帶 Starter Road Map",
+      "title_en": "White Belt Starter",
+      "description": "白帶入門 20 招，按五個學習階段排。Edges 照 spec v0.2 §8.1 鎖定版本。",
+      "stages": [
+        {
+          "key": 1,
+          "label": "生存與逃脫 Survival & Escapes"
+        },
+        {
+          "key": 2,
+          "label": "Closed Guard"
+        },
+        {
+          "key": 3,
+          "label": "過腳與控制 Passing & Control"
+        },
+        {
+          "key": 4,
+          "label": "終結 Finishing"
+        },
+        {
+          "key": 5,
+          "label": "站立 Takedowns"
+        }
+      ],
+      "hide_safety_restricted": true,
+      "nodes": [
+        {
+          "position_id": "pos-side-control-bottom",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-recovered-guard",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-mount-bottom",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-closed-guard-top",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-half-guard",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-standing-neutral",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-closed-guard",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-mount",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-submission",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-open-guard-top",
+          "link_to_roadmap": "map-lasso-spider-passing"
+        },
+        {
+          "position_id": "pos-side-control",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-knee-on-belly",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-back-control",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-half-guard-top",
+          "link_to_roadmap": null
+        }
+      ],
+      "content_review_status": "仍係草稿（edges 已鎖定；技術內容待教練審）",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "map-lasso-spider-passing",
+      "owner_id": null,
+      "title_zh": "Lasso / Spider Passing Road Map",
+      "title_en": "Lasso / Spider Passing (gi)",
+      "description": "Open Guard Top 子節點：對手建立 Spider 或 Lasso 時嘅過腳主線，以 gi 為主。",
+      "stages": [
+        {
+          "key": 1,
+          "label": "Spider 主線"
+        },
+        {
+          "key": 2,
+          "label": "Lasso 主線"
+        },
+        {
+          "key": 3,
+          "label": "Combat Base / HQ 收尾"
+        }
+      ],
+      "hide_safety_restricted": true,
+      "nodes": [
+        {
+          "position_id": "pos-open-guard-top",
+          "link_to_roadmap": "map-white-belt-starter"
+        },
+        {
+          "position_id": "pos-spider-guard-top",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-lasso-guard-top",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-combat-base",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-headquarters",
+          "link_to_roadmap": null
+        },
+        {
+          "position_id": "pos-side-control",
+          "link_to_roadmap": null
+        }
+      ],
+      "content_review_status": "仍係草稿",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "roadmap_edges": [
+    {
+      "id": "edge-white-belt-starter--shrimp-escape--recovered-guard",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-side-control-bottom",
+      "to_position": "pos-recovered-guard",
+      "technique_id": "tech-shrimp-escape",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 1,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--upa-trap-and-roll--closed-guard-top",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-mount-bottom",
+      "to_position": "pos-closed-guard-top",
+      "technique_id": "tech-upa-trap-and-roll",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 1,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--elbow-knee-escape--half-guard",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-mount-bottom",
+      "to_position": "pos-half-guard",
+      "technique_id": "tech-elbow-knee-escape",
+      "prerequisites": [],
+      "branch_condition": "先搶到一隻腳就停喺 half guard",
+      "stage": 1,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--elbow-knee-escape--recovered-guard",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-mount-bottom",
+      "to_position": "pos-recovered-guard",
+      "technique_id": "tech-elbow-knee-escape",
+      "prerequisites": [],
+      "branch_condition": "兩邊都 shrimp 成功，搶返 full guard",
+      "stage": 1,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--guard-pull--closed-guard",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-standing-neutral",
+      "to_position": "pos-closed-guard",
+      "technique_id": "tech-guard-pull",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 2,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--scissor-sweep--mount",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-closed-guard",
+      "to_position": "pos-mount",
+      "technique_id": "tech-scissor-sweep",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 2,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--hip-bump-sweep--mount",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-closed-guard",
+      "to_position": "pos-mount",
+      "technique_id": "tech-hip-bump-sweep",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 2,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--armbar-from-guard--submission",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-closed-guard",
+      "to_position": "pos-submission",
+      "technique_id": "tech-armbar-from-guard",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 2,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--cross-collar-choke-guard--submission",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-closed-guard",
+      "to_position": "pos-submission",
+      "technique_id": "tech-cross-collar-choke-guard",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 2,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--standing-guard-break--open-guard-top",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-closed-guard-top",
+      "to_position": "pos-open-guard-top",
+      "technique_id": "tech-standing-guard-break",
+      "prerequisites": [],
+      "branch_condition": "對手 closed guard 打開；若對手轉 Spider／Lasso → 跳去 Lasso / Spider map",
+      "stage": 2,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--toreando-pass--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-open-guard-top",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-toreando-pass",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 3,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--knee-cut-pass--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-open-guard-top",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-knee-cut-pass",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 3,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--side-control-to-mount--mount",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-side-control",
+      "to_position": "pos-mount",
+      "technique_id": "tech-side-control-to-mount",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 3,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--knee-on-belly--knee-on-belly",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-side-control",
+      "to_position": "pos-knee-on-belly",
+      "technique_id": "tech-knee-on-belly",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 3,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--americana--submission",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-side-control",
+      "to_position": "pos-submission",
+      "technique_id": "tech-americana",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 4,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--armbar-from-mount--submission",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-mount",
+      "to_position": "pos-submission",
+      "technique_id": "tech-armbar-from-mount",
+      "prerequisites": [
+        "tech-side-control-to-mount"
+      ],
+      "branch_condition": null,
+      "stage": 4,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--cross-collar-choke-mount--submission",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-mount",
+      "to_position": "pos-submission",
+      "technique_id": "tech-cross-collar-choke-mount",
+      "prerequisites": [
+        "tech-side-control-to-mount"
+      ],
+      "branch_condition": null,
+      "stage": 4,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--half-guard-underhook-back-take--back-control",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-half-guard",
+      "to_position": "pos-back-control",
+      "technique_id": "tech-half-guard-underhook-back-take",
+      "prerequisites": [],
+      "branch_condition": null,
+      "stage": 4,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--rear-naked-choke--submission",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-back-control",
+      "to_position": "pos-submission",
+      "technique_id": "tech-rear-naked-choke",
+      "prerequisites": [
+        "tech-half-guard-underhook-back-take"
+      ],
+      "branch_condition": null,
+      "stage": 4,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--double-leg-takedown--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-standing-neutral",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-double-leg-takedown",
+      "prerequisites": [],
+      "branch_condition": "對手倒地時腳已經清開",
+      "stage": 5,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--double-leg-takedown--half-guard-top",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-standing-neutral",
+      "to_position": "pos-half-guard-top",
+      "technique_id": "tech-double-leg-takedown",
+      "prerequisites": [],
+      "branch_condition": "對手倒地時鎖住你一隻腳",
+      "stage": 5,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--single-leg-takedown--half-guard-top",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-standing-neutral",
+      "to_position": "pos-half-guard-top",
+      "technique_id": "tech-single-leg-takedown",
+      "prerequisites": [],
+      "branch_condition": "對手倒地時鎖住你一隻腳（常見）",
+      "stage": 5,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-white-belt-starter--single-leg-takedown--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-white-belt-starter",
+      "from_position": "pos-standing-neutral",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-single-leg-takedown",
+      "prerequisites": [],
+      "branch_condition": "完成時對手腳已經清開",
+      "stage": 5,
+      "review_status": "locked_spec",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--spider-posture-frame--spider-guard-top",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-open-guard-top",
+      "to_position": "pos-spider-guard-top",
+      "technique_id": "tech-spider-posture-frame",
+      "prerequisites": [],
+      "branch_condition": "對手抓雙袖、腳踩二頭肌（對手建立 Spider）",
+      "stage": 1,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--lasso-posture-frame--lasso-guard-top",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-open-guard-top",
+      "to_position": "pos-lasso-guard-top",
+      "technique_id": "tech-lasso-posture-frame",
+      "prerequisites": [],
+      "branch_condition": "對手小腿由外纏過你手臂並抓袖（對手建立 Lasso）",
+      "stage": 2,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--spider-sleeve-strip-combat-base--combat-base",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-spider-guard-top",
+      "to_position": "pos-combat-base",
+      "technique_id": "tech-spider-sleeve-strip-combat-base",
+      "prerequisites": [
+        "tech-spider-posture-frame"
+      ],
+      "branch_condition": "距離較遠／對手 grip 未夠實，揀拆袖",
+      "stage": 1,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--spider-fold-smash-hq--headquarters",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-spider-guard-top",
+      "to_position": "pos-headquarters",
+      "technique_id": "tech-spider-fold-smash-hq",
+      "prerequisites": [
+        "tech-spider-posture-frame"
+      ],
+      "branch_condition": "對手 spider 腳可以被打圈清走同壓落地",
+      "stage": 1,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--toreando-vs-spider--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-spider-guard-top",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-toreando-vs-spider",
+      "prerequisites": [
+        "tech-spider-posture-frame"
+      ],
+      "branch_condition": "企位、已經清走 spider 腳，可以抓雙褲",
+      "stage": 1,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--knee-cut-vs-spider--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-spider-guard-top",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-knee-cut-vs-spider",
+      "prerequisites": [
+        "tech-spider-posture-frame"
+      ],
+      "branch_condition": "一邊 spider 腳已經 pin 落地",
+      "stage": 1,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--lasso-unwind-clear--combat-base",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-lasso-guard-top",
+      "to_position": "pos-combat-base",
+      "technique_id": "tech-lasso-unwind-clear",
+      "prerequisites": [
+        "tech-lasso-posture-frame"
+      ],
+      "branch_condition": "解開 lasso 後想先穩定、重新控制",
+      "stage": 2,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--lasso-unwind-clear--headquarters",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-lasso-guard-top",
+      "to_position": "pos-headquarters",
+      "technique_id": "tech-lasso-unwind-clear",
+      "prerequisites": [
+        "tech-lasso-posture-frame"
+      ],
+      "branch_condition": "解開 lasso 時對手腳已經被壓低，直接踏入 HQ",
+      "stage": 2,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--knee-cut-after-lasso-clear--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-lasso-guard-top",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-knee-cut-after-lasso-clear",
+      "prerequisites": [
+        "tech-lasso-unwind-clear"
+      ],
+      "branch_condition": "Lasso 啱啱解開，對手未重新纏",
+      "stage": 2,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--smash-stack-vs-lasso--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-lasso-guard-top",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-smash-stack-vs-lasso",
+      "prerequisites": [
+        "tech-lasso-posture-frame"
+      ],
+      "branch_condition": "手肘收得實、對手 lasso 腳可以被摺向胸",
+      "stage": 2,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--combat-base-to-hq--headquarters",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-combat-base",
+      "to_position": "pos-headquarters",
+      "technique_id": "tech-combat-base-to-hq",
+      "prerequisites": [],
+      "branch_condition": "控制住一隻腳，想加壓力",
+      "stage": 3,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "edge-lasso-spider-passing--knee-cut-from-hq--side-control",
+      "owner_id": null,
+      "roadmap_id": "map-lasso-spider-passing",
+      "from_position": "pos-headquarters",
+      "to_position": "pos-side-control",
+      "technique_id": "tech-knee-cut-from-hq",
+      "prerequisites": [
+        "tech-combat-base-to-hq"
+      ],
+      "branch_condition": "HQ 壓力穩定，對手腳已 pin",
+      "stage": 3,
+      "review_status": "draft",
+      "deleted_at": null,
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "practice_logs": []
+}

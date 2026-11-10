@@ -1,0 +1,134 @@
+/* BJJ 筆記 — Phase 0 tokens
+   Same working system as Ear Trainer / 日日識字.
+   Synthesized warm-gray neutrals; not an official Notion token file. */
+
+:root, [data-theme="light"] {
+  color-scheme: light;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans CJK TC", "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --bg: #FFFFFF;
+  --surface: #F6F5F4;
+  --surface-hover: #EFEDE9;
+  --surface-active: #E8E6E3;
+  --elevated: #FFFFFF;
+  --text: #1A1A1A;
+  --text-secondary: #615D59;
+  --text-muted: #6F6F73;
+  --border: #E8E6E3;
+  --border-strong: #D3D1CB;
+  --overlay: #0000000D;
+  --backdrop: rgba(15, 15, 15, .32);
+
+  --accent: #2383E2;
+  --accent-text: #1F6FC0;
+  --accent-soft: #E7F3F8;
+  --on-accent: #FFFFFF;
+  --link: var(--accent-text);
+
+  --primary-bg: #1A1A1A;
+  --on-primary: #FFFFFF;
+
+  --success: #448361;
+  --success-text: #2F6B4B;
+  --success-soft: #EDF3EC;
+  --warning: #C1912F;
+  --warning-text: #8A6416;
+  --warning-soft: #FBF3DB;
+  --danger: #D44C47;
+  --danger-text: #B83A35;
+  --danger-soft: #FDEBEC;
+
+  --nav-bg: rgba(255, 255, 255, .92);
+  --canvas-dot: #D3D1CB;
+  --edge: #8A8A8E;
+  --edge-strong: #615D59;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 48px;
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+  --tap: 44px;
+  --dur: 160ms;
+  --ease: cubic-bezier(.2, 0, 0, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #191919;
+    --surface: #202020;
+    --surface-hover: #2F2F2F;
+    --surface-active: #373737;
+    --elevated: #252525;
+    --text: #E6E6E6;
+    --text-secondary: #9B9B9B;
+    --text-muted: #8C8C8C;
+    --border: #373737;
+    --border-strong: #4A4A4A;
+    --overlay: #FFFFFF0D;
+    --backdrop: rgba(0, 0, 0, .6);
+    --accent: #2383E2;
+    --accent-text: #5AA6F0;
+    --accent-soft: #1E3A55;
+    --primary-bg: #E6E6E6;
+    --on-primary: #191919;
+    --success: #4DAB9A;
+    --success-text: #6CC4A1;
+    --success-soft: #1F332E;
+    --warning: #D9A63C;
+    --warning-text: #E8C26A;
+    --warning-soft: #3A3122;
+    --danger: #E5534B;
+    --danger-text: #FF7369;
+    --danger-soft: #3C2324;
+    --nav-bg: rgba(25, 25, 25, .92);
+    --canvas-dot: #4A4A4A;
+    --edge: #8C8C8C;
+    --edge-strong: #9B9B9B;
+  }
+}
+
+:root[data-theme="dark"], [data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #191919;
+  --surface: #202020;
+  --surface-hover: #2F2F2F;
+  --surface-active: #373737;
+  --elevated: #252525;
+  --text: #E6E6E6;
+  --text-secondary: #9B9B9B;
+  --text-muted: #8C8C8C;
+  --border: #373737;
+  --border-strong: #4A4A4A;
+  --overlay: #FFFFFF0D;
+  --backdrop: rgba(0, 0, 0, .6);
+  --accent: #2383E2;
+  --accent-text: #5AA6F0;
+  --accent-soft: #1E3A55;
+  --primary-bg: #E6E6E6;
+  --on-primary: #191919;
+  --success: #4DAB9A;
+  --success-text: #6CC4A1;
+  --success-soft: #1F332E;
+  --warning: #D9A63C;
+  --warning-text: #E8C26A;
+  --warning-soft: #3A3122;
+  --danger: #E5534B;
+  --danger-text: #FF7369;
+  --danger-soft: #3C2324;
+  --nav-bg: rgba(25, 25, 25, .92);
+  --canvas-dot: #4A4A4A;
+  --edge: #8C8C8C;
+  --edge-strong: #9B9B9B;
+}
+
+:root[data-theme="light"] { color-scheme: light; }

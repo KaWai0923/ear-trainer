@@ -1,0 +1,87 @@
+{
+ "_note": "Road Map 節點預設座標（Moss）。Rei 嘅 seed 冇座標，所以喺度補；用家拖過嘅位置會存喺 IndexedDB。 Key 用去咗 pos-／map-／roadmap- 前綴嘅 ID（core.idKey），所以新舊 seed 都用得。",
+ "white-belt-starter": {
+  "standing-neutral": {
+   "x": 160,
+   "y": 0
+  },
+  "closed-guard": {
+   "x": 0,
+   "y": 140
+  },
+  "closed-guard-top": {
+   "x": 160,
+   "y": 140
+  },
+  "half-guard-top": {
+   "x": 320,
+   "y": 140
+  },
+  "mount-bottom": {
+   "x": 0,
+   "y": 280
+  },
+  "mount": {
+   "x": 160,
+   "y": 280
+  },
+  "open-guard-top": {
+   "x": 320,
+   "y": 280
+  },
+  "side-control-bottom": {
+   "x": 0,
+   "y": 420
+  },
+  "submission": {
+   "x": 160,
+   "y": 420
+  },
+  "side-control": {
+   "x": 320,
+   "y": 420
+  },
+  "half-guard": {
+   "x": 0,
+   "y": 560
+  },
+  "back-control": {
+   "x": 160,
+   "y": 560
+  },
+  "knee-on-belly": {
+   "x": 320,
+   "y": 560
+  },
+  "recovered-guard": {
+   "x": 0,
+   "y": 700
+  }
+ },
+ "lasso-spider-passing": {
+  "open-guard-top": {
+   "x": 160,
+   "y": 0
+  },
+  "spider-guard-top": {
+   "x": 0,
+   "y": 150
+  },
+  "lasso-guard-top": {
+   "x": 320,
+   "y": 150
+  },
+  "combat-base": {
+   "x": 160,
+   "y": 300
+  },
+  "headquarters": {
+   "x": 160,
+   "y": 450
+  },
+  "side-control": {
+   "x": 160,
+   "y": 600
+  }
+ }
+}
