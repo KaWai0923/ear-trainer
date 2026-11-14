@@ -3,7 +3,7 @@
 (()=>{
 const P=window.VocabPhonics,C=window.VocabCore,$=id=>document.getElementById(id),STORE='everyday-vocab-v1';
 let builtins=[],state=C.defaultState(),tab='home',session=null,current=null,revealed=false,graded=false,visibleCount=60;
-let noticeTimer,recordTimer,recorder=null,recordStream=null,recordURL='',recordToken=0,dictAudio=null,lookupController=null,editorEpoch=0;
+let noticeTimer,recordTimer,recorder=null,recordStream=null,recordURL='',recordToken=0,dictAudio=null,lookupController=null,editorEpoch=0,dictController=null,dictEpoch=0,dictEntry=null;
 let speechToken=0,lastCancel=0,speechTimer,speechResolve=null,recognizer=null,recognitionToken=0,recognitionTimer,recognitionHost=null;
 // WebKit can drop an utterance spoken immediately after cancel(); wait a beat there.
 const SPEECH_GAP=120;
@@ -16,7 +16,7 @@ function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefine
 function button(text,action,cls='secondary'){const b=el('button',text,cls);b.type='button';b.onclick=action;return b;}
 function network(){const off=navigator.onLine===false;$('network').textContent=off?'離線 · 本機儲存':'本機儲存';$('network').classList.toggle('offline',off);document.querySelector('header')?.classList.toggle('is-offline',off);}
 function cleanupAudio(){stopSpeech();stopRecognition();recordToken++;clearTimeout(recordTimer);if(recorder&&recorder.state!=='inactive')recorder.stop();recorder=null;if(recordStream)recordStream.getTracks().forEach(t=>t.stop());recordStream=null;if(recordURL)URL.revokeObjectURL(recordURL);recordURL='';$('recording').pause();$('recording').removeAttribute('src');$('recording').hidden=true;$('record').textContent='開始錄音';$('record-status').textContent='';if(dictAudio){dictAudio.pause();dictAudio=null;}cancelSpeech();}
-function navigate(next){if(next!=='review'){cleanupAudio();session=null;current=null;}tab=next;document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==next);document.querySelectorAll('nav [data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===next);if(b.dataset.tab===next)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});if(next==='home')renderHome();if(next==='library'){visibleCount=60;renderLibrary();}if(next==='settings'){$('daily-limit').value=state.settings.newPerDay;$('speed-select').value=state.settings.speed;populateVoices();}window.scrollTo(0,0);}
+function navigate(next){if(next!=='review'){cleanupAudio();session=null;current=null;}tab=next;document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==next);document.querySelectorAll('nav [data-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.tab===next);if(b.dataset.tab===next)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});if(next==='home')renderHome();if(next==='library'){visibleCount=60;renderLibrary();}if(next==='dict')renderDict();if(next==='settings'){$('daily-limit').value=state.settings.newPerDay;$('speed-select').value=state.settings.speed;populateVoices();}window.scrollTo(0,0);}
 function renderHome(){
  const s=C.stats(words(),state),q=C.queue(words(),state);$('today-label').textContent=new Intl.DateTimeFormat('zh-Hant-HK',{month:'long',day:'numeric',weekday:'short'}).format(new Date());
  const items=[[s.streak,'連續學習（日）'],[s.due,'到期重溫'],[s.seen,'學過嘅字'],[s.learned,'熟習 ≥21日']];$('stats').replaceChildren(...items.map(([n,label])=>{const d=el('div',undefined,'stat');d.append(el('strong',String(n)),el('span',label));return d;}));
@@ -128,6 +128,90 @@ async function autofill(){const query=$('word-input').value.trim();if(!query||qu
  const extra=notes.length?' '+notes.join('；')+'。':'';$('lookup-status').textContent=successes.length?`搵到${successes.join('、')}。只填原本留空嘅欄位，請核對詞義、詞性同例句；未有嘅資料可以自己填。${extra}`:`暫時搵唔到可用資料（可能限額、冇網或字典冇呢個字）。你可以全部手動輸入。${extra}`;
  }catch(e){if(epoch===editorEpoch)$('lookup-status').textContent='查詢未完成，可以手動填寫。';}finally{clearTimeout(timer);if(lookupController===controller){$('autofill').disabled=false;lookupController=null;}}
 }
+
+const DICT_LANG_KEY='vocab-dict-lang',DICT_RECENT_KEY='vocab-dict-recent';
+function dictLang(){try{return localStorage.getItem(DICT_LANG_KEY)==='en'?'en':'zh';}catch(e){return 'zh';}}
+function markDictLang(){const mode=dictLang();document.querySelectorAll('[data-dict-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.getAttribute('data-dict-lang')===mode)));}
+function setDictLang(mode){const v=mode==='en'?'en':'zh';try{localStorage.setItem(DICT_LANG_KEY,v);}catch(e){}markDictLang();if(!dictEntry)return;renderDictResult();if(v==='zh'&&!dictEntry.zhTried)loadDictChinese();}
+function readRecent(){try{const raw=JSON.parse(localStorage.getItem(DICT_RECENT_KEY)||'[]');if(!Array.isArray(raw))return [];return raw.map(x=>typeof x==='string'?x:(x&&x.word)||'').map(s=>String(s).trim()).filter(Boolean).slice(0,12);}catch(e){return [];}}
+function pushRecent(word){const list=[word,...readRecent().filter(w=>C.key(w)!==C.key(word))].slice(0,12);try{localStorage.setItem(DICT_RECENT_KEY,JSON.stringify(list));}catch(e){}}
+function clearRecent(){try{localStorage.removeItem(DICT_RECENT_KEY);}catch(e){}renderRecent();}
+function alreadySaved(word){return words().some(w=>C.key(w.word)===C.key(word));}
+function setDictStatus(text,isError=false){const n=$('dict-status');n.textContent=text||'';n.classList.toggle('is-error',!!isError);}
+function renderDict(){markDictLang();renderRecent();if(dictEntry)renderDictResult();}
+function renderRecent(){const host=$('dict-recent-list'),items=readRecent();host.replaceChildren();$('dict-recent-empty').hidden=!!items.length;$('dict-clear-recent').hidden=!items.length;for(const word of items){const li=el('li'),b=button(word,()=>{$('dict-query').value=word;lookupDict();},'secondary');b.lang='en';b.setAttribute('aria-label','再查 '+word);li.append(b);host.append(li);}}
+function firstExample(entry){for(const m of entry.meanings){for(const d of m.definitions){if(d.example)return d;}}return null;}
+function renderDictResult(){
+ const host=$('dict-result'),entry=dictEntry,zh=dictLang()==='zh';host.hidden=!entry;if(!entry)return;host.replaceChildren();
+ const card=el('article',undefined,'dict-entry');const title=el('h2',entry.word);title.lang='en';card.append(title);
+ card.append(el('p',[entry.phonetics.ipa,entry.meanings[0]&&entry.meanings[0].pos].filter(Boolean).join(' · '),'ipa'));
+ if(zh&&entry.zhHead)card.append(el('p',entry.zhHead,'dict-meaning'));
+ else if(zh&&entry.zhTried&&!entry.zhHead)card.append(el('p','暫時未有中文解釋（翻譯服務可能限額或失敗）。','fine'));
+ const audio=el('div',undefined,'audio-buttons');audio.append(button('🔊 聽發音',()=>speakDict(false),'secondary'),button('🐢 慢速',()=>speakDict(true),'secondary'));card.append(audio);
+ const cap=zh?3:4;
+ for(const m of entry.meanings){const block=el('div',undefined,'dict-pos');if(m.pos)block.append(el('h3',m.pos));for(const d of m.definitions.slice(0,cap)){const item=el('div',undefined,'dict-def');const en=el('p',d.definition);en.lang='en';item.append(en);if(zh&&d.zh)item.append(el('p',d.zh,'dict-zh-line'));if(d.example){const ex=el('div',undefined,'example');const ep=el('p','“'+d.example+'”');ep.lang='en';ex.append(ep);if(zh&&d.zhExample)ex.append(el('p',d.zhExample));item.append(ex);}block.append(item);}card.append(block);}
+ const actions=el('div',undefined,'dict-actions');const saved=alreadySaved(entry.word);const saveBtn=button(saved?'已 save':'Save 生字',saved?()=>{$('search').value=entry.word;$('category-filter').value='';$('source-filter').value='';navigate('library');}:saveDictWord,saved?'secondary':'primary');saveBtn.id='dict-save';if(saved)saveBtn.setAttribute('aria-label','已喺生字簿，去睇呢個字');actions.append(saveBtn);card.append(actions);
+ card.append(el('p','英文解釋來自 Free Dictionary API（dictionaryapi.dev）。中文係 MyMemory 機器翻譯（en→zh-TW），可能唔準；Save 前請核對。查字典需要網絡。有字典音訊就播錄音，否則用部機發音。','fine'));
+ host.append(card);
+}
+function speakDict(slow){if(!dictEntry)return;speak({word:dictEntry.word,audio:dictEntry.phonetics.audio||''},slow);}
+async function enrichChinese(entry,signal){
+ if(entry.zhTried)return entry;
+ const firstDef=entry.meanings[0]&&entry.meanings[0].definitions[0];
+ const firstEx=firstExample(entry);
+ const jobs=[];
+ jobs.push(translate(entry.word,signal).then(t=>{entry.zhHead=C.usableTranslation(entry.word,t);}).catch(()=>{}));
+ if(firstDef&&firstDef.definition)jobs.push(translate(firstDef.definition,signal).then(t=>{firstDef.zh=C.usableTranslation(firstDef.definition,t);}).catch(()=>{}));
+ if(firstEx&&firstEx.example)jobs.push(translate(firstEx.example,signal).then(t=>{firstEx.zhExample=C.usableTranslation(firstEx.example,t);}).catch(()=>{}));
+ await Promise.all(jobs);entry.zhTried=true;return entry;
+}
+async function loadDictChinese(){
+ if(!dictEntry||dictEntry.zhTried)return;
+ const entry=dictEntry,epoch=dictEpoch;
+ const controller=new AbortController();dictController=controller;
+ const timer=setTimeout(()=>controller.abort(),15000);
+ setDictStatus('翻譯緊中文…');
+ try{await enrichChinese(entry,controller.signal);if(epoch!==dictEpoch||dictEntry!==entry)return;renderDictResult();setDictStatus(entry.zhHead?'':'中文翻譯暫時用唔到（服務限額或網絡），而家淨顯示英文。',!entry.zhHead);}
+ catch(e){if(epoch===dictEpoch&&dictEntry===entry)setDictStatus('中文翻譯暫時用唔到，而家淨顯示英文。',true);}
+ finally{clearTimeout(timer);if(dictController===controller)dictController=null;}
+}
+async function lookupDict(e){
+ e&&e.preventDefault&&e.preventDefault();
+ const query=$('dict-query').value.trim();
+ if(!query||query.length>100){setDictStatus('請輸入英文生字（最多 100 字元）。',true);return;}
+ if(navigator.onLine===false){setDictStatus('而家離線，查唔到網上字典。有網絡再試；你仍然可以去「加生字」自己填。',true);$('dict-result').hidden=true;dictEntry=null;return;}
+ dictController?.abort();const controller=new AbortController();dictController=controller;const epoch=++dictEpoch;
+ dictEntry=null;$('dict-result').hidden=true;$('dict-search').disabled=true;setDictStatus('查緊字典…');
+ const timer=setTimeout(()=>controller.abort(),15000);
+ try{
+  const r=await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(query),{signal:controller.signal,credentials:'omit',referrerPolicy:'no-referrer'});
+  let data=null;try{data=await r.json();}catch(err){}
+  if(epoch!==dictEpoch)return;
+  if(!r.ok){setDictStatus(r.status===404||(data&&data.title==='No Definitions Found')?'搵唔到「'+query+'」呢個字。試吓檢查串法，或者用單數／原形再查。':'字典服務暫時用唔到（'+r.status+'）。請稍後再試。',true);return;}
+  const entry=C.parseDictionary(data,query);
+  if(!entry){setDictStatus('搵唔到「'+query+'」呢個字。試吓檢查串法，或者用單數／原形再查。',true);return;}
+  clearTimeout(timer);
+  pushRecent(entry.word);renderRecent();dictEntry=entry;renderDictResult();setDictStatus('');
+  if(dictLang()==='zh')await loadDictChinese();
+ }catch(err){if(epoch!==dictEpoch)return;setDictStatus(err.name==='AbortError'?'查詢逾時或已取消，請再試一次。':'而家連唔到字典（可能冇網）。請檢查網絡再試。',true);}
+ finally{clearTimeout(timer);if(epoch===dictEpoch)$('dict-search').disabled=false;if(dictController===controller)dictController=null;}
+}
+async function saveDictWord(){
+ if(!dictEntry)return;
+ if(alreadySaved(dictEntry.word)){renderDictResult();tell('呢個字已經喺生字簿。');return;}
+ if(state.own.length>=5000){tell('自加字上限係 5,000 個，請先匯出備份同整理。');return;}
+ if(!dictEntry.zhTried&&navigator.onLine!==false){try{await loadDictChinese();}catch(e){}}
+ if(alreadySaved(dictEntry.word)){renderDictResult();return;}
+ const first=(dictEntry.meanings[0]&&dictEntry.meanings[0].definitions[0])||{};
+ const ex=firstExample(dictEntry)||{};
+ const clip=s=>String(s||'');
+ const own={id:'u'+(window.crypto?.randomUUID?.()||Date.now()+'-'+Math.random().toString(36).slice(2)),word:clip(dictEntry.word).slice(0,100),ipa:clip(dictEntry.phonetics.ipa).slice(0,150),pos:clip(dictEntry.meanings[0]&&dictEntry.meanings[0].pos).slice(0,80),meaning:clip(dictEntry.zhHead||first.definition||dictEntry.word).slice(0,500),example:clip(ex.example||first.example).slice(0,1000),translation:clip(ex.zhExample).slice(0,1000),definition:clip(first.definition).slice(0,1500),audio:clip(dictEntry.phonetics.audio).slice(0,2000),category:'自己收藏'};
+ let w;try{w=C.cleanWord(own,true);}catch(e){tell(e.message);return;}
+ if(alreadySaved(w.word)){renderDictResult();tell('呢個字已經喺生字簿，唔使重複加。');return;}
+ state.own.push(w);save();renderDictResult();
+ tell(dictEntry.zhHead?'已 save 落生字簿。新字會按每日上限加入練習。':'已 save。未有中文解釋，已用英文定義暫代；你可以之後喺生字簿編輯。');
+}
+
 function exportBackup(){try{const blob=new Blob([JSON.stringify({...state,exportedAt:new Date().toISOString()},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=`everyday-english-${C.dayKey()}.json`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);$('backup-status').textContent='已開始下載備份。iPhone 可喺「下載項目／檔案」搵返，請確認有儲存成功。';}catch(e){tell('匯出失敗，請再試一次。');}}
 async function importBackup(e){const file=e.target.files?.[0];if(!file)return;try{if(file.size>10*1024*1024)throw Error('備份大過 10 MB');const text=await file.text();const restored=C.validateState(JSON.parse(text),builtins);if(!confirm(`匯入 ${restored.own.length} 個自加字、${Object.keys(restored.cards).length} 個字嘅進度？呢個操作會取代現有資料。建議先匯出備份。`))return;state=restored;save();resetEditor();$('daily-limit').value=state.settings.newPerDay;$('speed-select').value=state.settings.speed;populateVoices();$('backup-status').textContent='已匯入，現有資料已取代。';}catch(err){$('backup-status').textContent='未匯入：'+(err instanceof SyntaxError?'檔案唔係有效 JSON。':err.message);}finally{e.target.value='';}}
 async function setupSW(){if(!('serviceWorker'in navigator))return;try{const reg=await navigator.serviceWorker.register('./sw.js');let reloading=false,requested=false;navigator.serviceWorker.addEventListener?.('controllerchange',()=>{if(requested&&!reloading){reloading=true;location.reload();}});$('apply-update').onclick=()=>{const w=reg.waiting;if(!w){$('update-bar').hidden=true;return;}requested=true;$('apply-update').disabled=true;$('apply-update').textContent='更新緊…';w.postMessage({type:'SKIP_WAITING'});};const ready=()=>{if(reg.waiting){$('update-bar').hidden=false;$('apply-update').disabled=false;$('apply-update').textContent='立即更新';}};ready();reg.addEventListener('updatefound',()=>{const worker=reg.installing;worker?.addEventListener('statechange',()=>{if(worker.state==='installed'){if(navigator.serviceWorker.controller)ready();else tell('離線資源已儲存好；下次冇網都可以開。');}});});$('check-update').onclick=async()=>{const btn=$('check-update');btn.disabled=true;tell('檢查緊更新…',true);try{await reg.update();const w=reg.installing;if(w&&!reg.waiting)await new Promise(res=>{const t=setTimeout(res,20000);const done=()=>{if(['installed','activated','redundant'].includes(w.state)){clearTimeout(t);res();}};w.addEventListener('statechange',done);done();});ready();tell(reg.waiting?'新版已準備好，撳下面「立即更新」就會換新版（進度唔會受影響）。':'已檢查：而家已經係最新版本。');}catch(e){tell('而家檢查唔到更新，可以有網時再試。');}finally{btn.disabled=false;}};}catch(e){tell('離線資源未能安裝。線上照用，進度仍儲存喺本機；請稍後用 HTTPS 再開。');}}
@@ -143,7 +227,7 @@ async function init(){network();window.addEventListener('online',network);window
  document.addEventListener('visibilitychange',()=>{if(document.hidden){stopSpeech();stopRecognition();if(recorder?.state==='recording')recorder.stop();cancelSpeech();}else if(tab==='home')renderHome();});window.addEventListener('pagehide',cleanupAudio);
  for(const id of ['search','category-filter','source-filter'])$(id).addEventListener(id==='search'?'input':'change',()=>{visibleCount=60;renderLibrary();});$('load-more').onclick=()=>{visibleCount+=60;renderLibrary();};
  $('close-dialog').onclick=closeDialog;$('word-dialog').addEventListener('close',cleanupAudio);
- $('word-form').onsubmit=saveWord;$('cancel-edit').onclick=resetEditor;$('autofill').onclick=autofill;
+ $('word-form').onsubmit=saveWord;$('cancel-edit').onclick=resetEditor;$('autofill').onclick=autofill;$('dict-form').onsubmit=lookupDict;$('dict-clear-recent').onclick=clearRecent;document.querySelectorAll('[data-dict-lang]').forEach(b=>b.onclick=()=>setDictLang(b.getAttribute('data-dict-lang')));markDictLang();
  $('save-settings').onclick=()=>{const value=Number($('daily-limit').value);if(!Number.isInteger(value)||value<1||value>50){tell('每日新字請填 1–50 之間嘅整數。');return;}state.settings.newPerDay=value;save();tell('已儲存每日新字上限。');};
  $('voice-select').onchange=()=>{state.settings.voice=$('voice-select').value;save();};$('test-voice').onclick=()=>speakTTS('Hello! A little practice every day goes a long way.',state.settings.speed);window.speechSynthesis?.addEventListener('voiceschanged',populateVoices);
  $('export').onclick=exportBackup;$('import-file').onchange=importBackup;$('check-update').onclick=()=>tell('呢個環境未啟用 Service Worker；部署到 HTTPS 後可以再試。');

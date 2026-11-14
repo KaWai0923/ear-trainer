@@ -85,5 +85,24 @@ function validateState(input,builtins){
  if(['normal','slow','slower'].includes(input.settings.speed))out.settings.speed=input.settings.speed;
  if(typeof input.settings.voice==='string')out.settings.voice=input.settings.voice.slice(0,300);return out;
 }
-return {DAY,SCHEMA,CATEGORIES,key,hasCJK,usableTranslation,audioAccent,looksBritish,pickPhonetics,dayKey,defaultState,schedule,queue,stats,streak,diff,cleanWord,validateState};
+function parseDictionary(entries,query){
+ const list=(Array.isArray(entries)?entries:[]).filter(e=>e&&typeof e==='object');
+ if(!list.length)return null;
+ const d=list[0],word=(typeof d.word==='string'&&d.word.trim())?d.word.trim():String(query||'').trim();
+ if(!word)return null;
+ const ph=pickPhonetics(list),meanings=[];
+ for(const m of list.flatMap(e=>Array.isArray(e.meanings)?e.meanings:[])){
+  const pos=typeof m.partOfSpeech==='string'?m.partOfSpeech.trim():'';
+  const defs=[];
+  for(const def of Array.isArray(m.definitions)?m.definitions:[]){
+   const definition=typeof def.definition==='string'?def.definition.trim():'';
+   const example=typeof def.example==='string'?def.example.trim():'';
+   if(definition)defs.push({definition,example});
+  }
+  if(defs.length)meanings.push({pos,definitions:defs.slice(0,6)});
+ }
+ if(!meanings.length)return null;
+ return {word,phonetics:ph,meanings:meanings.slice(0,6)};
+}
+return {DAY,SCHEMA,CATEGORIES,key,hasCJK,usableTranslation,audioAccent,looksBritish,pickPhonetics,parseDictionary,dayKey,defaultState,schedule,queue,stats,streak,diff,cleanWord,validateState};
 });

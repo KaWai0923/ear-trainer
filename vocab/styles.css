@@ -163,8 +163,8 @@ main{max-width:1000px;margin:auto;padding:var(--space-4) max(var(--space-5),env(
 .tip p{margin:0;font-size:14px}
 
 /* ───── bottom nav ───── */
-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:var(--nav-bg);-webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);border-top:1px solid var(--border);display:flex;justify-content:center;gap:var(--space-5);padding:6px max(var(--space-3),env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(var(--space-3),env(safe-area-inset-left))}
-nav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:none;border:0;color:var(--text-muted);font-size:11px;font-weight:500;min-width:72px;min-height:48px;padding:4px 12px}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:var(--nav-bg);-webkit-backdrop-filter:saturate(180%) blur(16px);backdrop-filter:saturate(180%) blur(16px);border-top:1px solid var(--border);display:flex;justify-content:center;gap:var(--space-2);padding:6px max(var(--space-2),env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(var(--space-2),env(safe-area-inset-left))}
+nav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:none;border:0;color:var(--text-muted);font-size:11px;font-weight:500;min-width:0;flex:1;max-width:96px;min-height:48px;padding:4px 6px}
 nav button:hover{background:none;color:var(--text)}
 nav button span{font-size:20px;line-height:1.1}
 nav button.active{color:var(--accent-text);background:none}
@@ -345,7 +345,7 @@ dialog::backdrop{background:var(--backdrop)}
   .flashcard h1{font-size:40px;margin:var(--space-5) 0 var(--space-3)}
   .example p:first-child{font-size:16px}
   nav{gap:0;justify-content:space-around}
-  nav button{min-width:64px;padding:4px 8px}
+  nav button{min-width:0;flex:1;max-width:88px;padding:4px 2px}
   #word-list{grid-template-columns:1fr}
   .settings-panel{padding:var(--space-4)}
   details.settings-panel{padding:0 var(--space-4)}
@@ -367,4 +367,40 @@ dialog::backdrop{background:var(--backdrop)}
 /* N-01: compact header so 日日識字 stays on one line with 44x44 theme buttons */
 @media(max-width:400px){.brand small{display:none}.header-actions{gap:var(--space-1)}header{gap:var(--space-2)}}
 @media(max-width:360px){#network:not(.offline){display:none}header.is-offline .brand-icon{display:none}}
+/* ───── dictionary ───── */
+#dict{max-width:640px}
+#dict>h1{margin-bottom:var(--space-2)}
+.dict-lang{display:grid;grid-template-columns:1fr 1fr;gap:2px;padding:2px;background:var(--surface);border-radius:var(--radius);max-width:280px;margin:var(--space-4) 0}
+.dict-lang button{margin:0;background:transparent;border:1px solid transparent;color:var(--text-secondary);font-size:14px}
+.dict-lang button:hover{color:var(--text)}
+.dict-lang button[aria-pressed=true]{background:var(--bg);border-color:var(--border);color:var(--accent-text)}
+#dict-status{min-height:1.5em;font-size:13px;color:var(--text-secondary);margin:var(--space-3) 0}
+#dict-status:empty{min-height:0;margin-bottom:0}
+#dict-status.is-error{color:var(--danger-text)}
+.dict-entry{border:1px solid var(--border);border-radius:var(--radius-lg);padding:var(--space-5);margin:var(--space-3) 0}
+.dict-entry h2{font-size:32px;letter-spacing:-.02em;margin:0 0 var(--space-2);color:var(--text);overflow-wrap:anywhere}
+.dict-meaning{font-size:20px;font-weight:500;color:var(--text-secondary);margin:var(--space-2) 0 var(--space-3)}
+.dict-pos{margin:var(--space-5) 0 0;padding-top:var(--space-4);border-top:1px solid var(--border)}
+.dict-pos:first-of-type{margin-top:var(--space-4)}
+.dict-pos h3{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-muted);margin:0 0 var(--space-3);font-weight:500}
+.dict-def{margin:0 0 var(--space-4)}
+.dict-def>p{margin:0;color:var(--text)}
+.dict-def .dict-zh-line{font-size:14px;color:var(--text-secondary);margin-top:4px}
+.dict-def .example{margin-top:var(--space-2);padding-top:var(--space-2);border-top:0}
+.dict-def .example p:first-child{font-size:15px}
+.dict-actions{display:flex;gap:var(--space-2);margin-top:var(--space-4);flex-wrap:wrap}
+.dict-actions .primary,.dict-actions #dict-save{flex:1;min-width:140px}
+#dict-recent{margin-top:var(--space-5)}
+#dict-recent .section-heading{margin-top:0}
+#dict-recent h2{font-size:17px}
+.dict-recent-list{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:0;padding:0;list-style:none}
+.dict-recent-list li{margin:0;padding:0}
+.dict-recent-list button{font-size:14px}
+@media(max-width:680px){
+  nav button{min-width:0;flex:1;max-width:88px;padding:4px 2px}
+}
+@media(max-width:400px){
+  .dict-entry{padding:var(--space-4)}
+  .dict-entry h2{font-size:28px}
+}
 @media(prefers-reduced-motion:no-preference){.view{animation:fade .16s ease-out}@keyframes fade{from{opacity:.6;transform:translateY(2px)}to{opacity:1;transform:none}}}

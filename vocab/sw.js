@@ -1,5 +1,5 @@
 'use strict';
-const VERSION = 'v1.1.2';
+const VERSION = 'v1.2.0';
 // Path-specific cache name prevents sibling apps on the same GitHub Pages origin
 // from deleting each other's caches. Never cache lookup/translation requests.
 const PREFIX='everyday-vocab:'+self.registration.scope+':';
